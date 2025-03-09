@@ -10,6 +10,7 @@ struct CustomProgressView: View {
         GeometryReader { geo in
             let height = geo.size.height
             let width = geo.size.width
+            let percentage = progress > 1 ? 1 : progress
             
             ZStack(alignment: .leading) {
                 Rectangle()
@@ -20,7 +21,7 @@ struct CustomProgressView: View {
                 
                 Rectangle()
                     .foregroundColor(filledColor)
-                    .frame(width: width * progress, height: height)
+                    .frame(width: width * percentage, height: height)
                     .cornerRadius(height / 2)
                     .animation(.easeInOut(duration: 0.5), value: progress)
 #if canImport(WidgetKit)
