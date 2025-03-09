@@ -345,6 +345,12 @@
 		F3C87A0F2D657A1500840745 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C87A0E2D657A1500840745 /* Feature.swift */; };
 		F3C87A102D657A1500840745 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C87A0E2D657A1500840745 /* Feature.swift */; };
 		F3C87A112D657A1500840745 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C87A0E2D657A1500840745 /* Feature.swift */; };
+		F3C8E54A2D7E24E900644E47 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3C8E5492D7E24E900644E47 /* InfoPlist.xcstrings */; };
+		F3C8E54B2D7E24E900644E47 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3C8E5492D7E24E900644E47 /* InfoPlist.xcstrings */; };
+		F3C8E54C2D7E24E900644E47 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3C8E5492D7E24E900644E47 /* InfoPlist.xcstrings */; };
+		F3C8E54D2D7E24E900644E47 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3C8E5492D7E24E900644E47 /* InfoPlist.xcstrings */; };
+		F3C8E54E2D7E24E900644E47 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3C8E5492D7E24E900644E47 /* InfoPlist.xcstrings */; };
+		F3C8E54F2D7E24E900644E47 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3C8E5492D7E24E900644E47 /* InfoPlist.xcstrings */; };
 		F3C9235E2D6C6CD3004D31A9 /* MCStatsDataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = F3C9235D2D6C6CD3004D31A9 /* MCStatsDataLayer */; };
 		F3C923602D6C6CDC004D31A9 /* MCStatsDataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = F3C9235F2D6C6CDC004D31A9 /* MCStatsDataLayer */; };
 		F3C923622D6C6CE2004D31A9 /* MCStatsDataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = F3C923612D6C6CE2004D31A9 /* MCStatsDataLayer */; };
@@ -592,6 +598,7 @@
 		F3C87A012D6574D200840745 /* FAQ Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FAQ Row.swift"; sourceTree = "<group>"; };
 		F3C87A052D6574DD00840745 /* FAQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQ.swift; sourceTree = "<group>"; };
 		F3C87A0E2D657A1500840745 /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
+		F3C8E5492D7E24E900644E47 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
 		F3DD08692D75226A00A67D4B /* Server List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Server List.swift"; sourceTree = "<group>"; };
 		F3EFC1712D70877F00EE988A /* Edit Server View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Edit Server View.swift"; sourceTree = "<group>"; };
 		F3EFC1732D709C5700EE988A /* Ping Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ping Error.swift"; sourceTree = "<group>"; };
@@ -773,6 +780,7 @@
 				F3C1E43A2D6C949900950F3D /* App Container Helper.swift */,
 				F39EAF722D6C82B900072794 /* Page Destinations.swift */,
 				F326DB572D6416E100BCCB69 /* Localizable.xcstrings */,
+				F3C8E5492D7E24E900644E47 /* InfoPlist.xcstrings */,
 				F13E60022A4BD615005BE9B2 /* Assets.xcassets */,
 				F3DD08852D75253000A67D4B /* Release Notes */,
 				F1E671752CA73A86002BDFC0 /* Custom Progress View.swift */,
@@ -1369,6 +1377,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3C8E54C2D7E24E900644E47 /* InfoPlist.xcstrings in Resources */,
 				F38218852D671BAB005025E7 /* Assets.xcassets in Resources */,
 				F326DB592D6416E100BCCB69 /* Localizable.xcstrings in Resources */,
 			);
@@ -1388,6 +1397,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F35E1A782D64DC2700718CB7 /* Assets.xcassets in Resources */,
+				F3C8E54A2D7E24E900644E47 /* InfoPlist.xcstrings in Resources */,
 				F326DB582D6416E100BCCB69 /* Localizable.xcstrings in Resources */,
 				F304725D2D63FBFC0055C007 /* MinecraftBold.otf in Resources */,
 				F304725E2D63FBFC0055C007 /* MinecraftBoldItalic.otf in Resources */,
@@ -1417,6 +1427,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3C8E54F2D7E24E900644E47 /* InfoPlist.xcstrings in Resources */,
 				F31D45E42D6DC7A800981B1C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1427,6 +1438,7 @@
 			files = (
 				F3DD08892D7527BF00A67D4B /* iMessage Icon.xcassets in Resources */,
 				F3DD08812D7524CF00A67D4B /* Localizable.xcstrings in Resources */,
+				F3C8E54B2D7E24E900644E47 /* InfoPlist.xcstrings in Resources */,
 				F3DD08822D7524DA00A67D4B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1441,6 +1453,7 @@
 				F360A8AC2D6C6942008E515E /* visionOS Icon.xcassets in Resources */,
 				F3D9AE622D6C68EB00069BDF /* Assets.xcassets in Resources */,
 				F35E1AC32D65237200718CB7 /* MinecraftBoldItalic.otf in Resources */,
+				F3C8E54E2D7E24E900644E47 /* InfoPlist.xcstrings in Resources */,
 				F35E1AC42D65237200718CB7 /* MinecraftItalic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1450,6 +1463,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F383D19B2D67E60400FE4239 /* Assets.xcassets in Resources */,
+				F3C8E54D2D7E24E900644E47 /* InfoPlist.xcstrings in Resources */,
 				F3C879D72D6572AA00840745 /* Localizable.xcstrings in Resources */,
 				F3C879F42D6572DF00840745 /* MinecraftRegular.otf in Resources */,
 				F3C879F52D6572DF00840745 /* MinecraftItalic.otf in Resources */,
