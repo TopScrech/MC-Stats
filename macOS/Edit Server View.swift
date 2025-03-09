@@ -83,7 +83,7 @@ struct EditServerView: View {
                     .headline()
                     .frame(width: 25, height: 25)
                 
-                TextField("Server Address/IP", text: $tempServerInput, prompt: Text("Server Address/IP"))
+                TextField("Server Address / IP", text: $tempServerInput, prompt: Text("Server Address / IP"))
                     .autocorrectionDisabled(true)
                     .submitLabel(.done)
                     .focused($focusedField, equals: .serverAddress)

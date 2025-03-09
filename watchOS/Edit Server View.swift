@@ -70,7 +70,7 @@ struct EditServerView: View {
                         focusedField = .serverAddress
                     }
                 
-                TextField("Server Address/IP", text: $tempServerInput, prompt: Text("Server Address/IP"))
+                TextField("Server Address / IP", text: $tempServerInput, prompt: Text("Server Address / IP"))
                     .autocorrectionDisabled(true)
                     .submitLabel(.done)
                     .focused($focusedField, equals: .serverAddress)

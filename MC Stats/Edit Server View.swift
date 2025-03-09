@@ -85,7 +85,7 @@ struct EditServerView: View {
                         .headline()
                         .frame(width: 25, height: 25)
                     
-                    TextField("Server Address/IP", text: $tempServerInput, prompt: Text("Server Address/IP"))
+                    TextField("Server Address / IP", text: $tempServerInput, prompt: Text("Server Address / IP"))
                         .autocapitalization(.none)
                         .keyboardType(.URL)
                         .autocorrectionDisabled(true)
