@@ -137,6 +137,7 @@
 		F304725E2D63FBFC0055C007 /* MinecraftBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = F30472592D63FBFC0055C007 /* MinecraftBoldItalic.otf */; };
 		F304725F2D63FBFC0055C007 /* MinecraftItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = F304725A2D63FBFC0055C007 /* MinecraftItalic.otf */; };
 		F30472602D63FBFC0055C007 /* MinecraftRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F304725B2D63FBFC0055C007 /* MinecraftRegular.otf */; };
+		F30D3ADF2D7F17E400B1361A /* Configure Widget View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30D3ADE2D7F17E400B1361A /* Configure Widget View.swift */; };
 		F31D45B92D6DC68F00981B1C /* MC Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13E5FFC2A4BD614005BE9B2 /* MC Stats.swift */; };
 		F31D45BC2D6DC6B700981B1C /* MCStatsDataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = F31D45BB2D6DC6B700981B1C /* MCStatsDataLayer */; };
 		F31D45BE2D6DC6BD00981B1C /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F31D45BD2D6DC6BD00981B1C /* ScrechKit */; };
@@ -562,6 +563,7 @@
 		F30472592D63FBFC0055C007 /* MinecraftBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MinecraftBoldItalic.otf; sourceTree = "<group>"; };
 		F304725A2D63FBFC0055C007 /* MinecraftItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MinecraftItalic.otf; sourceTree = "<group>"; };
 		F304725B2D63FBFC0055C007 /* MinecraftRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MinecraftRegular.otf; sourceTree = "<group>"; };
+		F30D3ADE2D7F17E400B1361A /* Configure Widget View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Configure Widget View.swift"; sourceTree = "<group>"; };
 		F31D45A12D6DC62600981B1C /* MC Stats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MC Stats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F31D45B22D6DC67B00981B1C /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		F31D45BA2D6DC6A800981B1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -906,6 +908,7 @@
 				F39296302D6CFFE90021E2ED /* Lock Screen */,
 				F30471FD2D63E9C00055C007 /* Medium Widget View.swift */,
 				F30471FF2D63E9C00055C007 /* Small Widget View.swift */,
+				F30D3ADE2D7F17E400B1361A /* Configure Widget View.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1630,6 +1633,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F304720B2D63E9C00055C007 /* Homescreen Provider.swift in Sources */,
+				F30D3ADF2D7F17E400B1361A /* Configure Widget View.swift in Sources */,
 				F304720C2D63E9C00055C007 /* Lockscreen Provider.swift in Sources */,
 				F30472372D63E9CF0055C007 /* Select Server Intent.swift in Sources */,
 				F30472382D63E9CF0055C007 /* Refresh Widget Intent.swift in Sources */,
