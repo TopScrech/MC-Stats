@@ -39,6 +39,15 @@
     "%lld ping" : {
 
     },
+    "1. **Long press** the widget" : {
+
+    },
+    "2. Tap on **Edit Widget**" : {
+
+    },
+    "3. **Choose your server** from the list" : {
+
+    },
     "Add Server" : {
       "localizations" : {
         "ru" : {
@@ -401,6 +410,9 @@
     },
     "MC" : {
       "shouldTranslate" : false
+    },
+    "MC Stats" : {
+
     },
     "MC Stats is used for checking the status an existing server. It will not create, setup, or host a new server" : {
 

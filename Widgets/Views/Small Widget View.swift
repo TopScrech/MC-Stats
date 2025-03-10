@@ -20,7 +20,7 @@ struct BaseWidgetView: View {
     }
     
     var body: some View {
-        ZStack {
+        ZStack {            
             VStack(alignment: .trailing, spacing: 0) {
                 Text(entry.vm.serverName)
                     .semibold()
@@ -59,13 +59,15 @@ struct BaseWidgetView: View {
                     if #available(iOSApplicationExtension 18, *) {
                         Image(uiImage: entry.vm.icon)
                             .resizable()
-                            .widgetAccentedRenderingMode(WidgetAccentedRenderingMode.accentedDesaturated)
-                            .scaledToFit().frame(width: 36, height: 36, alignment: .leading)
+                            .widgetAccentedRenderingMode(.accentedDesaturated)
+                            .scaledToFit()
+                            .frame(width: 36, height: 36, alignment: .leading)
                             .widgetAccentable()
                     } else {
                         Image(uiImage: entry.vm.icon)
                             .resizable()
-                            .scaledToFit().frame(width: 36, height: 36, alignment: .leading)
+                            .scaledToFit()
+                            .frame(width: 36, height: 36, alignment: .leading)
                     }
                     
                     if let statusIcon = entry.vm.statusIcon, !statusIcon.isEmpty {
@@ -128,19 +130,41 @@ struct SmallWidgetView: View {
     }
     
     var body: some View {
-        if entry.configuration.Theme == nil || entry.configuration.Theme?.id ?? "" == Theme.auto.rawValue {
-            BaseWidgetView(entry)
-                .padding()
-                .padding(.bottom, 3)
+        if entry.vm.viewType == .Unconfigured {
+            VStack(spacing: 10) {
+                Label {
+                    Text("MC Stats")
+                        .bold()
+                } icon: {
+                    Image(.icon)
+                        .resizable()
+                        .frame(width: 32, height: 32)
+                        .clipShape(.rect(cornerRadius: 8))
+                }
+                
+                VStack(alignment: .leading, spacing: 5) {
+                    Text("1. **Long press** the widget")
+                    Text("2. Tap on **Edit Widget**")
+                    Text("3. **Choose your server** from the list")
+                }
+                .fontSize(10)
+            }
+            .padding()
         } else {
-            BaseWidgetView(entry)
-                .padding()
-                .padding(.bottom, 3)
-                .environment(
-                    \.colorScheme,
-                     (entry.configuration.Theme?.id ?? "" == Theme.dark.rawValue)
-                     ? .dark : .light
-                )
+            if entry.configuration.Theme == nil || entry.configuration.Theme?.id ?? "" == Theme.auto.rawValue {
+                BaseWidgetView(entry)
+                    .padding()
+                    .padding(.bottom, 3)
+            } else {
+                BaseWidgetView(entry)
+                    .padding()
+                    .padding(.bottom, 3)
+                    .environment(
+                        \.colorScheme,
+                         (entry.configuration.Theme?.id ?? "" == Theme.dark.rawValue)
+                         ? .dark : .light
+                    )
+            }
         }
     }
 }
