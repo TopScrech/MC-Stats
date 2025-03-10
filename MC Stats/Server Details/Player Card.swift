@@ -26,12 +26,7 @@ struct PlayerCard: View {
                     Color.secondary
                     
                 } else {
-                    ZStack {
-                        Color.secondary
-                        
-                        ProgressView()
-                            .opacity(0.3)
-                    }
+                    ProgressView()
                 }
             }
             .cornerRadius(3)
