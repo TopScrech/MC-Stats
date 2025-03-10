@@ -104,6 +104,12 @@
     "Bedrock/MCPE" : {
 
     },
+    "Can the widgets refresh more frequently?" : {
+
+    },
+    "Can you add push notification/server analytics to the app?" : {
+
+    },
     "Cancel" : {
       "localizations" : {
         "ru" : {
@@ -284,6 +290,9 @@
     "Got it!" : {
 
     },
+    "How do I report a bug/request a feature?" : {
+
+    },
     "How to Use Siri" : {
 
     },
@@ -410,6 +419,9 @@
     },
     "MOTD" : {
       "shouldTranslate" : false
+    },
+    "My Apple Watch isn't syncing" : {
+
     },
     "No players online" : {
 
@@ -757,6 +769,12 @@
 
     },
     "Which server would you like to check the status of?" : {
+
+    },
+    "Why do Minecraft servers display only 12 online players?" : {
+
+    },
+    "Why do some servers not display player lists?" : {
 
     },
     "Widget to show the status of Minecraft Server" : {
