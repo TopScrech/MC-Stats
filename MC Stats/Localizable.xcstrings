@@ -105,7 +105,14 @@
 
     },
     "Cancel" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отмена"
+          }
+        }
+      }
     },
     "check" : {
 
@@ -142,7 +149,14 @@
 
     },
     "Date" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дата"
+          }
+        }
+      }
     },
     "Debug" : {
       "localizations" : {
@@ -218,7 +232,14 @@
       }
     },
     "Error: Server not found" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ошибка: сервер не найден"
+          }
+        }
+      }
     },
     "FAQ" : {
       "localizations" : {
@@ -241,7 +262,14 @@
       }
     },
     "Full-screen only" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Только в полноэкранном режиме"
+          }
+        }
+      }
     },
     "General" : {
       "localizations" : {
@@ -260,7 +288,14 @@
 
     },
     "iCloud Sync" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iCloud синхронизация"
+          }
+        }
+      }
     },
     "If you love the app, consider leaving a review or leaving a small tip to help support development!" : {
 
@@ -278,7 +313,7 @@
     "Invalid Server Name" : {
 
     },
-    "Invalid Server URL/IP Address" : {
+    "Invalid Server URL / IP Address" : {
 
     },
     "Java" : {
@@ -398,10 +433,24 @@
 
     },
     "Player Count" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Количество игроков"
+          }
+        }
+      }
     },
     "Player list limited to %lld users by server" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Список игроков ограничен %lld пользователями сервером"
+          }
+        }
+      }
     },
     "Player Sample" : {
 
@@ -569,7 +618,14 @@
 
     },
     "Show players on server list" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Показать игроков в списке серверов"
+          }
+        }
+      }
     },
     "Show players sorted alphabetically instead of randomly" : {
 
@@ -581,7 +637,14 @@
 
     },
     "Sort players alphabetically" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сортировать игроков в алфавитном порядке"
+          }
+        }
+      }
     },
     "Source Code" : {
       "localizations" : {
