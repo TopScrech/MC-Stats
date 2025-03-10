@@ -8,7 +8,7 @@ struct FAQView: View {
     }
     
     var body: some View {
-        Form {
+        List {
             Section {
                 ForEach(faqs) { faq in
                     FAQRow(faq)
@@ -16,9 +16,6 @@ struct FAQView: View {
             }
         }
         .navigationTitle("FAQ")
-#if !os(tvOS) && !os(macOS)
-        .background(Color(.systemGroupedBackground))
-#endif
     }
 }
 

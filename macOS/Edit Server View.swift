@@ -83,7 +83,7 @@ struct EditServerView: View {
                     .headline()
                     .frame(width: 25, height: 25)
                 
-                TextField("Server Address/IP", text: $tempServerInput, prompt: Text("Server Address/IP"))
+                TextField("Server Address / IP", text: $tempServerInput, prompt: Text("Server Address / IP"))
                     .autocorrectionDisabled(true)
                     .submitLabel(.done)
                     .focused($focusedField, equals: .serverAddress)
@@ -119,6 +119,7 @@ struct EditServerView: View {
                 Button("Save") {
                     saveItem()
                 }
+                .bold()
                 .disabled(saveDisabled())
             }
         }
@@ -134,7 +135,7 @@ struct EditServerView: View {
             focusedField = .serverName
         }
         .interactiveDismissDisabled(inputHasChanged())
-        .alert("Invalid Server URL/IP Address", isPresented: $showingInvalidUrlAlert) {
+        .alert("Invalid Server URL / IP Address", isPresented: $showingInvalidUrlAlert) {
             Button("OK") {}
         } message: {
             Text("Minecraft Server domains/ip addresses must be the root domain, and not contain any '/' or ':'")

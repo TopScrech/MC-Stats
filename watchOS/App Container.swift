@@ -82,7 +82,7 @@ struct AppContainer: View {
             }
             .overlay {
                 if let servers, servers.isEmpty {
-                    ContentUnavailableView("Add a Server", systemImage: "server.rack", description: Text("Servers are synced with your phone. This may take some time"))
+                    ContentUnavailableView("Add Server", systemImage: "server.rack", description: Text("Servers are synced with your phone. This may take some time"))
                         .scrollDisabled(true)
                 }
             }

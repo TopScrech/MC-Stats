@@ -52,7 +52,7 @@ struct GeneralSettings: View {
             }
 #endif
         }
-        .navigationTitle("General Settings")
+        .navigationTitle("General")
     }
 }
 

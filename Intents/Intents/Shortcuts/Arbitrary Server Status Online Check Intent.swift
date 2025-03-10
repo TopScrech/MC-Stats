@@ -10,7 +10,7 @@ struct ArbitraryServerStatusOnlineCheckIntent: AppIntent {
     @Parameter(title: "Server Type")
     var serverType: ShortCutsServerType
     
-    @Parameter(title: "Server Address/IP")
+    @Parameter(title: "Server Address / IP")
     var serverAddress: String
     
     @Parameter(title: "Server Port (Optional)")

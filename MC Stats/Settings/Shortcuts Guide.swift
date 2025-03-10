@@ -44,8 +44,6 @@ struct ShortcutsGuide: View {
             }
         }
         .navigationTitle("Shortcuts")
-#if !os(tvOS) && !os(macOS)
-        .background(Color(.systemGroupedBackground))
-#endif
+        .scrollIndicators(.never)
     }
 }

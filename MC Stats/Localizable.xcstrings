@@ -27,16 +27,57 @@
       }
     },
     "%lld ms" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld мс"
+          }
+        }
+      }
     },
     "%lld ping" : {
 
     },
-    "Add a Server" : {
-
+    "1. **Long press** the widget" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1. **Удерживайте** виджет"
+          }
+        }
+      }
+    },
+    "2. Tap on **Edit Widget**" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2. Нажмите на **Изменить виджет**"
+          }
+        }
+      }
+    },
+    "3. **Choose a server** from the list" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3. **Выберите сервер** из списка"
+          }
+        }
+      }
     },
     "Add Server" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавить сервер"
+          }
+        }
+      }
     },
     "Add test servers" : {
       "localizations" : {
@@ -59,7 +100,14 @@
       }
     },
     "All bug reports and feature requests can be raised as an issue on the [GitHub repository](https://github.com/TopScrech/MC-Stats)" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отчёты об ошибках и запросы на новые фичи можно создать в разделе Issues на [GitHub](https://github.com/TopScrech/MC-Stats)"
+          }
+        }
+      }
     },
     "Arbitrary Minecraft Server Status Check" : {
 
@@ -86,8 +134,21 @@
     "Bedrock/MCPE" : {
 
     },
-    "Cancel" : {
+    "Can the widgets refresh more frequently?" : {
 
+    },
+    "Can you add push notification/server analytics to the app?" : {
+
+    },
+    "Cancel" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отмена"
+          }
+        }
+      }
     },
     "check" : {
 
@@ -111,47 +172,110 @@
 
     },
     "Copy Nickname" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Скопировать никнейм"
+          }
+        }
+      }
     },
     "Data is synced automatically, but may be delayed under certain conditions controlled by the OS\n    1. Make sure you have iCloud enabled on one of your devices\n    2. If your data hasn’t synced within a minute, try restarting your watch to force a resync" : {
 
     },
     "Date" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дата"
+          }
+        }
+      }
     },
     "Debug" : {
       "localizations" : {
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Дебаг"
+            "value" : "Отладка"
           }
         }
       }
     },
     "Delete" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Удалить"
+          }
+        }
+      }
     },
     "Delete all servers" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Удалить все серверы"
+          }
+        }
+      }
     },
     "Delete Server" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Удалить сервер"
+          }
+        }
+      }
     },
     "Delete Server?" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Удалить сервер?"
+          }
+        }
+      }
     },
     "Displays the max player count alongside the current number of players in the widgets" : {
 
     },
     "Edit" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Изменить"
+          }
+        }
+      }
     },
     "Edit Widget" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Изменить виджет"
+          }
+        }
+      }
     },
     "Error: Server not found" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ошибка: сервер не найден"
+          }
+        }
+      }
     },
     "FAQ" : {
       "localizations" : {
@@ -164,22 +288,53 @@
       }
     },
     "Features" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Фичи"
+          }
+        }
+      }
     },
     "Full-screen only" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Только в полноэкранном режиме"
+          }
+        }
+      }
     },
-    "General Settings" : {
-
+    "General" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Основные"
+          }
+        }
+      }
     },
     "Got it!" : {
+
+    },
+    "How do I report a bug/request a feature?" : {
 
     },
     "How to Use Siri" : {
 
     },
     "iCloud Sync" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iCloud синхронизация"
+          }
+        }
+      }
     },
     "If you love the app, consider leaving a review or leaving a small tip to help support development!" : {
 
@@ -197,7 +352,7 @@
     "Invalid Server Name" : {
 
     },
-    "Invalid Server URL/IP Address" : {
+    "Invalid Server URL / IP Address" : {
 
     },
     "Java" : {
@@ -237,7 +392,14 @@
       }
     },
     "Leave a review to help others discover the app and support its development" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Оставьте отзыв, чтобы помочь другим узнать об этом приложении и поддержать его развитие"
+          }
+        }
+      }
     },
     "Leave an App Review" : {
       "localizations" : {
@@ -270,6 +432,16 @@
     "MC" : {
       "shouldTranslate" : false
     },
+    "MC Stats" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Гойдакрафт"
+          }
+        }
+      }
+    },
     "MC Stats is used for checking the status an existing server. It will not create, setup, or host a new server" : {
 
     },
@@ -287,6 +459,9 @@
     },
     "MOTD" : {
       "shouldTranslate" : false
+    },
+    "My Apple Watch isn't syncing" : {
+
     },
     "No players online" : {
 
@@ -310,10 +485,24 @@
 
     },
     "Player Count" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Количество игроков"
+          }
+        }
+      }
     },
     "Player list limited to %lld users by server" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Список игроков ограничен %lld пользователями сервером"
+          }
+        }
+      }
     },
     "Player Sample" : {
 
@@ -389,8 +578,15 @@
         }
       }
     },
-    "Server Address/IP" : {
-
+    "Server Address / IP" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Адрес сервера / IP"
+          }
+        }
+      }
     },
     "Server Intent Type" : {
 
@@ -458,7 +654,14 @@
       }
     },
     "Shortcuts" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Быстрые команды"
+          }
+        }
+      }
     },
     "Show max player count" : {
 
@@ -467,7 +670,14 @@
 
     },
     "Show players on server list" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Показать игроков в списке серверов"
+          }
+        }
+      }
     },
     "Show players sorted alphabetically instead of randomly" : {
 
@@ -479,10 +689,24 @@
 
     },
     "Sort players alphabetically" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сортировать игроков в алфавитном порядке"
+          }
+        }
+      }
     },
     "Source Code" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Исходный код"
+          }
+        }
+      }
     },
     "Start monitoring a server" : {
       "localizations" : {
@@ -582,9 +806,22 @@
       }
     },
     "Use the button below or the \"+\" in the top right corner" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Используйте кнопку ниже или «+» в правом верхнем углу"
+          }
+        }
+      }
     },
     "Which server would you like to check the status of?" : {
+
+    },
+    "Why do Minecraft servers display only 12 online players?" : {
+
+    },
+    "Why do some servers not display player lists?" : {
 
     },
     "Widget to show the status of Minecraft Server" : {

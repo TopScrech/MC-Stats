@@ -10,15 +10,19 @@ struct MediumWidgetView: View {
     }
     
     var body: some View {
-        if entry.configuration.Theme == nil || entry.configuration.Theme?.id ?? "" == Theme.auto.rawValue {
-            InnerMediumWidget(entry)
+        if entry.vm.viewType == .Unconfigured {
+            ConfigureWidgetView()
         } else {
-            InnerMediumWidget(entry)
-                .environment(
-                    \.colorScheme,
-                     (entry.configuration.Theme?.id ?? "" == Theme.dark.rawValue)
-                     ? .dark : .light
-                )
+            if entry.configuration.Theme == nil || entry.configuration.Theme?.id ?? "" == Theme.auto.rawValue {
+                InnerMediumWidget(entry)
+            } else {
+                InnerMediumWidget(entry)
+                    .environment(
+                        \.colorScheme,
+                         (entry.configuration.Theme?.id ?? "" == Theme.dark.rawValue)
+                         ? .dark : .light
+                    )
+            }
         }
     }
 }

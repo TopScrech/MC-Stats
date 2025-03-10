@@ -59,13 +59,15 @@ struct BaseWidgetView: View {
                     if #available(iOSApplicationExtension 18, *) {
                         Image(uiImage: entry.vm.icon)
                             .resizable()
-                            .widgetAccentedRenderingMode(WidgetAccentedRenderingMode.accentedDesaturated)
-                            .scaledToFit().frame(width: 36, height: 36, alignment: .leading)
+                            .widgetAccentedRenderingMode(.accentedDesaturated)
+                            .scaledToFit()
+                            .frame(width: 36, height: 36, alignment: .leading)
                             .widgetAccentable()
                     } else {
                         Image(uiImage: entry.vm.icon)
                             .resizable()
-                            .scaledToFit().frame(width: 36, height: 36, alignment: .leading)
+                            .scaledToFit()
+                            .frame(width: 36, height: 36, alignment: .leading)
                     }
                     
                     if let statusIcon = entry.vm.statusIcon, !statusIcon.isEmpty {
@@ -128,19 +130,23 @@ struct SmallWidgetView: View {
     }
     
     var body: some View {
-        if entry.configuration.Theme == nil || entry.configuration.Theme?.id ?? "" == Theme.auto.rawValue {
-            BaseWidgetView(entry)
-                .padding()
-                .padding(.bottom, 3)
+        if entry.vm.viewType == .Unconfigured {
+            ConfigureWidgetView()
         } else {
-            BaseWidgetView(entry)
-                .padding()
-                .padding(.bottom, 3)
-                .environment(
-                    \.colorScheme,
-                     (entry.configuration.Theme?.id ?? "" == Theme.dark.rawValue)
-                     ? .dark : .light
-                )
+            if entry.configuration.Theme == nil || entry.configuration.Theme?.id ?? "" == Theme.auto.rawValue {
+                BaseWidgetView(entry)
+                    .padding()
+                    .padding(.bottom, 3)
+            } else {
+                BaseWidgetView(entry)
+                    .padding()
+                    .padding(.bottom, 3)
+                    .environment(
+                        \.colorScheme,
+                         (entry.configuration.Theme?.id ?? "" == Theme.dark.rawValue)
+                         ? .dark : .light
+                    )
+            }
         }
     }
 }

@@ -27,7 +27,7 @@ struct SettingsView: View {
             Section {
                 // General Settings
                 NavigationLink(value: SettingsPageDestinations.GeneralSettings) {
-                    Label("General Settings", systemImage: "gear")
+                    Label("General", systemImage: "gear")
                 }
                 
                 // FAQ
