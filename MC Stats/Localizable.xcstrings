@@ -40,13 +40,34 @@
 
     },
     "1. **Long press** the widget" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1. **Удерживайте** виджет"
+          }
+        }
+      }
     },
     "2. Tap on **Edit Widget**" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2. Нажмите на **Изменить виджет**"
+          }
+        }
+      }
     },
-    "3. **Choose your server** from the list" : {
-
+    "3. **Choose a server** from the list" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3. **Выберите сервер** из списка"
+          }
+        }
+      }
     },
     "Add Server" : {
       "localizations" : {
@@ -412,7 +433,14 @@
       "shouldTranslate" : false
     },
     "MC Stats" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Гойдакрафт"
+          }
+        }
+      }
     },
     "MC Stats is used for checking the status an existing server. It will not create, setup, or host a new server" : {
 
@@ -778,7 +806,14 @@
       }
     },
     "Use the button below or the \"+\" in the top right corner" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Используйте кнопку ниже или «+» в правом верхнем углу"
+          }
+        }
+      }
     },
     "Which server would you like to check the status of?" : {
 

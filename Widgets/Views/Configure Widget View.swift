@@ -18,6 +18,8 @@ struct ConfigureWidgetView: View {
             Label {
                 Text("MC Stats")
                     .bold()
+                    .minimumScaleFactor(0.5)
+                    .lineLimit(1)
             } icon: {
                 Image(.icon)
                     .resizable()
@@ -28,7 +30,7 @@ struct ConfigureWidgetView: View {
             VStack(alignment: .leading, spacing: 5) {
                 Text("1. **Long press** the widget")
                 Text("2. Tap on **Edit Widget**")
-                Text("3. **Choose your server** from the list")
+                Text("3. **Choose a server** from the list")
             }
             .fontSize(10)
         }

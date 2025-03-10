@@ -15,8 +15,10 @@ struct MinecraftServerStatusHSWidget: Widget {
             intent: SelectServerIntent.self,
             provider: HomescreenProvider()
         ) { entry in
+            let url = URL(string: entry.configuration.Server?.id ?? "")
+            
             ServerStatusHSWidgetEntryView(entry)
-                .widgetURL(URL(string: entry.configuration.Server?.id ?? ""))
+                .widgetURL(url)
                 .containerBackground(for: .widget) {
                     if entry.configuration.Theme == nil || entry.configuration.Theme?.id ?? "" == Theme.auto.rawValue {
                         entry.vm.bgColor
