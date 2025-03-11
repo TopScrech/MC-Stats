@@ -69,10 +69,16 @@ struct SettingsView: View {
             Section {
                 // Tip Developer
                 Button(action: tipDeveloper) {
-                    Label("Leave Developer a Tip", systemImage: "gift")
+                    Label {
+                        Text("Leave Developer a Tip")
+                    } icon: {
+                        Image(systemName: "gift")
+                            .foregroundStyle(.blue.gradient)
+                    }
                 }
+                .foregroundStyle(.foreground)
             } footer: {
-                Text("Help support the development of free, adless, open source apps")
+                Text("Help support the development of free and open source apps")
             }
             
             // Join TestFlight

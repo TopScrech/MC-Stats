@@ -57,10 +57,8 @@ struct TipView: View {
             }
             .padding(.horizontal)
         }
-        .onAppear {
-            Task {
-                await loadTipProducts()
-            }
+        .task {
+            await loadTipProducts()
         }
         .alert(alertTitle, isPresented: $showAlert) {
             Button("OK", role: .cancel) {}

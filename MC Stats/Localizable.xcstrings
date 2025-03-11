@@ -322,8 +322,15 @@
     "Got it!" : {
 
     },
-    "Help support the development of free, adless, open source apps" : {
-
+    "Help support the development of free and open source apps" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Помогите поддержать разработку бесплатных приложений с открытым исходным кодом"
+          }
+        }
+      }
     },
     "How do I report a bug/request a feature?" : {
 
@@ -743,7 +750,14 @@
       }
     },
     "Support the app!" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поддержите приложение!"
+          }
+        }
+      }
     },
     "Sync your server list across all devices" : {
       "localizations" : {
