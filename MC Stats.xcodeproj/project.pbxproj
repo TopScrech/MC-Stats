@@ -186,6 +186,7 @@
 		F325F8C62D80697300FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */ = {isa = PBXBuildFile; fileRef = F325F85D2D805FF300FDF4D9 /* MC Stats StoreKit Synced.storekit */; };
 		F325F8C72D80697300FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */ = {isa = PBXBuildFile; fileRef = F325F85D2D805FF300FDF4D9 /* MC Stats StoreKit Synced.storekit */; };
 		F325F8C82D80697700FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */ = {isa = PBXBuildFile; fileRef = F325F85D2D805FF300FDF4D9 /* MC Stats StoreKit Synced.storekit */; };
+		F325F93D2D80E84300FDF4D9 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F325F93C2D80E84300FDF4D9 /* StoreKit.framework */; };
 		F326DB582D6416E100BCCB69 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F326DB572D6416E100BCCB69 /* Localizable.xcstrings */; };
 		F326DB592D6416E100BCCB69 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F326DB572D6416E100BCCB69 /* Localizable.xcstrings */; };
 		F326DB5A2D6416E100BCCB69 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F326DB572D6416E100BCCB69 /* Localizable.xcstrings */; };
@@ -570,6 +571,7 @@
 		F31D45B22D6DC67B00981B1C /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		F31D45BA2D6DC6A800981B1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F325F85D2D805FF300FDF4D9 /* MC Stats StoreKit Synced.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = "MC Stats StoreKit Synced.storekit"; sourceTree = "<group>"; };
+		F325F93C2D80E84300FDF4D9 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		F326DB572D6416E100BCCB69 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		F3570D3C2D6E779500BDF069 /* iMessages.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = iMessages.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3570D402D6E779500BDF069 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = Library/Frameworks/Messages.framework; sourceTree = DEVELOPER_DIR; };
@@ -642,6 +644,7 @@
 			files = (
 				F1612CCA2CACC37300E602DC /* NukeUI in Frameworks */,
 				F33A5CAD2D640BEB0020D8A5 /* ScrechKit in Frameworks */,
+				F325F93D2D80E84300FDF4D9 /* StoreKit.framework in Frameworks */,
 				F3C1E4392D6C8CA400950F3D /* MCStatsDataLayer in Frameworks */,
 				F1612CC82CACC37300E602DC /* Nuke in Frameworks */,
 			);
@@ -724,6 +727,7 @@
 		F10C421B2AAE40BC000107D6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F325F93C2D80E84300FDF4D9 /* StoreKit.framework */,
 				F1EF76ED2CB7873F00EFFB20 /* WidgetKit.framework */,
 				F1EF76EF2CB7873F00EFFB20 /* SwiftUI.framework */,
 				F3570D402D6E779500BDF069 /* Messages.framework */,
