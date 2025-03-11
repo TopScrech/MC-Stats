@@ -1,4 +1,3 @@
-import Foundation
 import AppIntents
 
 // Converted for widget from previous intent
