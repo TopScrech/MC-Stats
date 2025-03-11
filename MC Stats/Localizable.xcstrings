@@ -39,6 +39,9 @@
     "%lld ping" : {
 
     },
+    "+" : {
+
+    },
     "1. **Long press** the widget" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -464,6 +467,9 @@
 
     },
     "MC Stats Widget" : {
+
+    },
+    "Might require a restart" : {
 
     },
     "Minecraft" : {
