@@ -48,7 +48,7 @@ struct TipView: View {
                         .disabled(isProcessing)
                     }
                 } else {
-                    ProgressView("Loading Tip Option...")
+                    ProgressView()
                 }
                 
                 Text("Thank you for your support!")
