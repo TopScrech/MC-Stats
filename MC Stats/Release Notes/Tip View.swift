@@ -46,6 +46,7 @@ struct TipView: View {
                         .padding(.horizontal)
                         .padding(.bottom, 3)
                         .disabled(isProcessing)
+                        .buttonStyle(.plain)
                     }
                 } else {
                     ProgressView()
