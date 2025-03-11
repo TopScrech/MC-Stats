@@ -83,9 +83,9 @@ struct TipView: View {
     private func loadTipProducts() async {
         do {
             let products = try await Product.products(for: [
-                "dev.topscrech.MinecraftServerStatus.199Tip",
-                "dev.topscrech.MinecraftServerStatus.499Tip",
-                "dev.topscrech.MinecraftServerStatus.999Tip"
+                "supporter",
+                "enthusiast",
+                "legend"
             ])
             
             tipProducts = Array(products).sorted { p1, p2 in
