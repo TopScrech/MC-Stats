@@ -1,11 +1,16 @@
 import Foundation
 
-// Class for calling 3rd party web API when direct connection fails
+// Class for calling MCStatus API when direct connection fails
 public class WebServerStatusChecker {
     static let API_URL = "https://api.mcstatus.io/v2/status"
     static let timeout = 4
     
-    public static func checkServer(url: String, port: Int, type: ServerType, config: ServerCheckerConfig?) async throws -> ServerStatus {
+    public static func checkServer(
+        url: String,
+        port: Int,
+        type: ServerType,
+        config: ServerCheckerConfig?
+    ) async throws -> ServerStatus {
         var urlString = WebServerStatusChecker.API_URL
         if type == .Java {
             urlString += "java/"

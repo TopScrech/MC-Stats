@@ -66,14 +66,14 @@ struct SettingsView: View {
                 Text("Leave a review to help others discover the app and support its development")
             }
 #warning("In-App Purchases")
-            //            Section {
-            //                // Tip Developer
-            //                Button(action: tipDeveloper) {
-            //                    Label("Leave Developer a Tip", systemImage: "gift")
-            //                }
-            //            } footer: {
-            //                Text("Help support the development of free, adless, open source apps")
-            //            }
+            Section {
+                // Tip Developer
+                Button(action: tipDeveloper) {
+                    Label("Leave Developer a Tip", systemImage: "gift")
+                }
+            } footer: {
+                Text("Help support the development of free, adless, open source apps")
+            }
             
             // Join TestFlight
             Section {

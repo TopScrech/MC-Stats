@@ -9,61 +9,77 @@
       }
     ]
   },
-  "identifier" : "7DF28B11",
+  "identifier" : "51D96B2A",
   "nonRenewingSubscriptions" : [
 
   ],
   "products" : [
     {
-      "displayPrice" : "1.99",
+      "displayPrice" : "14.0",
       "familyShareable" : false,
-      "internalID" : "1513032577",
+      "internalID" : "6743122034",
       "localizations" : [
         {
-          "description" : "Tip the developer of the app",
-          "displayName" : "Tip Developer $1.99",
+          "description" : "Your support keeps the app growing!",
+          "displayName" : "Enthusiast",
           "locale" : "en_US"
+        },
+        {
+          "description" : "Вы помогаете развитию приложения!",
+          "displayName" : "Энтузиаст",
+          "locale" : "ru"
         }
       ],
-      "productID" : "com.shemeshapps.MinecraftServerStatus.199Tip",
-      "referenceName" : "Tip Developer $1.99",
-      "type" : "Consumable"
+      "productID" : "enthusiast",
+      "referenceName" : "Enthusiast",
+      "type" : "NonConsumable"
     },
     {
-      "displayPrice" : "4.99",
+      "displayPrice" : "59.0",
       "familyShareable" : false,
-      "internalID" : "61429E5B",
+      "internalID" : "6743121970",
       "localizations" : [
         {
-          "description" : "Tip the developer of the app",
-          "displayName" : "Tip Developer $4.99",
+          "description" : "You’re a legend! Thanks a ton!",
+          "displayName" : "Legend",
           "locale" : "en_US"
+        },
+        {
+          "description" : "Вы легенда! Огромное спасибо!",
+          "displayName" : "Легенда",
+          "locale" : "ru"
         }
       ],
-      "productID" : "com.shemeshapps.MinecraftServerStatus.499Tip",
-      "referenceName" : "Tip Developer $4.99",
-      "type" : "Consumable"
+      "productID" : "legend",
+      "referenceName" : "Legend",
+      "type" : "NonConsumable"
     },
     {
-      "displayPrice" : "9.99",
+      "displayPrice" : "4.0",
       "familyShareable" : false,
-      "internalID" : "9782373A",
+      "internalID" : "6743121921",
       "localizations" : [
         {
-          "description" : "Tip the developer of the app",
-          "displayName" : "Tip Developer $9.99",
+          "description" : "Спасибо за поддержку!",
+          "displayName" : "Поддержка",
+          "locale" : "ru"
+        },
+        {
+          "description" : "Thanks for your support!",
+          "displayName" : "Supporter",
           "locale" : "en_US"
         }
       ],
-      "productID" : "com.shemeshapps.MinecraftServerStatus.999Tip",
-      "referenceName" : "Tip Developer $9.99",
-      "type" : "Consumable"
+      "productID" : "supporter",
+      "referenceName" : "Supporter",
+      "type" : "NonConsumable"
     }
   ],
   "settings" : {
+    "_applicationInternalID" : "6740754881",
+    "_developerTeamID" : "8FQUA2F388",
     "_failTransactionsEnabled" : false,
-    "_locale" : "en_US",
-    "_storefront" : "USA",
+    "_lastSynchronizedDate" : 763389259.90273499,
     "_storeKitErrors" : [
       {
         "current" : null,

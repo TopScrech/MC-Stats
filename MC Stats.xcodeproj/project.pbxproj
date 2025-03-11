@@ -180,6 +180,7 @@
 		F31D45E92D6DCA5000981B1C /* Saved Server Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304724F2D63E9D30055C007 /* Saved Server Entity.swift */; };
 		F31D45EA2D6DCA5E00981B1C /* Intent Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1406BA32AA2DD2C00815BE8 /* Intent Errors.swift */; };
 		F31D45EB2D6DCB1300981B1C /* Server Status Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30472502D63E9D30055C007 /* Server Status Entity.swift */; };
+		F325F8C32D80651B00FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */ = {isa = PBXBuildFile; fileRef = F325F85D2D805FF300FDF4D9 /* MC Stats StoreKit Synced.storekit */; };
 		F326DB582D6416E100BCCB69 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F326DB572D6416E100BCCB69 /* Localizable.xcstrings */; };
 		F326DB592D6416E100BCCB69 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F326DB572D6416E100BCCB69 /* Localizable.xcstrings */; };
 		F326DB5A2D6416E100BCCB69 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F326DB572D6416E100BCCB69 /* Localizable.xcstrings */; };
@@ -509,7 +510,6 @@
 		F17AE0EB2CC01E9E00DC7A80 /* FAQ View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FAQ View.swift"; sourceTree = "<group>"; };
 		F17AE0ED2CC0363F00DC7A80 /* MOTD View Generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MOTD View Generator.swift"; sourceTree = "<group>"; };
 		F17AE0F32CC0504200DC7A80 /* Review Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Review Helper.swift"; sourceTree = "<group>"; };
-		F17AE0F92CC05CA200DC7A80 /* MCStatusStoreKit Synced.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = "MCStatusStoreKit Synced.storekit"; sourceTree = "<group>"; };
 		F17AE0FB2CC05F9000DC7A80 /* Tip View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tip View.swift"; sourceTree = "<group>"; };
 		F1A43C812A8472B20081A24C /* Server Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Server Details.swift"; sourceTree = "<group>"; };
 		F1AE29152CA48577009D0D14 /* Server Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Server Row.swift"; sourceTree = "<group>"; };
@@ -517,7 +517,6 @@
 		F1C9A9AE2A879A4800C058C7 /* watchOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = watchOS.entitlements; sourceTree = "<group>"; };
 		F1C9A9AF2A879FBC00C058C7 /* watchOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = watchOS.plist; sourceTree = "<group>"; };
 		F1CFCD502CABB55B001A9E69 /* Custom Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Custom Extentions.swift"; sourceTree = "<group>"; };
-		F1DCB7B42CC4DE940005FFE0 /* MCStatusStoreKit Local.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = "MCStatusStoreKit Local.storekit"; sourceTree = "<group>"; };
 		F1E671752CA73A86002BDFC0 /* Custom Progress View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Custom Progress View.swift"; sourceTree = "<group>"; };
 		F1EF76BF2CB4204E00EFFB20 /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
 		F1EF76C02CB4204E00EFFB20 /* Server Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Server Row.swift"; sourceTree = "<group>"; };
@@ -565,6 +564,7 @@
 		F31D45A12D6DC62600981B1C /* MC Stats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MC Stats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F31D45B22D6DC67B00981B1C /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		F31D45BA2D6DC6A800981B1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F325F85D2D805FF300FDF4D9 /* MC Stats StoreKit Synced.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = "MC Stats StoreKit Synced.storekit"; sourceTree = "<group>"; };
 		F326DB572D6416E100BCCB69 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		F3570D3C2D6E779500BDF069 /* iMessages.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = iMessages.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3570D402D6E779500BDF069 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = Library/Frameworks/Messages.framework; sourceTree = DEVELOPER_DIR; };
@@ -837,8 +837,7 @@
 			children = (
 				F13E60082A4BD615005BE9B2 /* iOS.plist */,
 				F13E60042A4BD615005BE9B2 /* iOS.entitlements */,
-				F17AE0F92CC05CA200DC7A80 /* MCStatusStoreKit Synced.storekit */,
-				F1DCB7B42CC4DE940005FFE0 /* MCStatusStoreKit Local.storekit */,
+				F325F85D2D805FF300FDF4D9 /* MC Stats StoreKit Synced.storekit */,
 				F304725C2D63FBFC0055C007 /* Fonts */,
 			);
 			path = Other;
@@ -1411,6 +1410,7 @@
 			files = (
 				F35E1A782D64DC2700718CB7 /* Assets.xcassets in Resources */,
 				F3C8E54A2D7E24E900644E47 /* InfoPlist.xcstrings in Resources */,
+				F325F8C32D80651B00FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */,
 				F326DB582D6416E100BCCB69 /* Localizable.xcstrings in Resources */,
 				F304725D2D63FBFC0055C007 /* MinecraftBold.otf in Resources */,
 				F304725E2D63FBFC0055C007 /* MinecraftBoldItalic.otf in Resources */,

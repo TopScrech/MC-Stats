@@ -23,7 +23,7 @@ struct TipView: View {
                     .frame(width: 100, height: 100)
                     .padding()
                 
-                Text("This app is free, ad-less, and open-source. If you find it useful, consider tipping to help keep it going!")
+                Text("This app is free and open-source. If you find it useful, consider tipping to help keep it going!")
                     .lineLimit(nil)
                     .multilineTextAlignment(.center)
                     .padding()
@@ -44,7 +44,7 @@ struct TipView: View {
                                 .cornerRadius(10)
                         }
                         .padding(.horizontal)
-                        .padding(.bottom,3)
+                        .padding(.bottom, 3)
                         .disabled(isProcessing)
                     }
                 } else {

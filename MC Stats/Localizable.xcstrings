@@ -322,6 +322,9 @@
     "Got it!" : {
 
     },
+    "Help support the development of free, adless, open source apps" : {
+
+    },
     "How do I report a bug/request a feature?" : {
 
     },
@@ -406,6 +409,9 @@
         }
       }
     },
+    "Leave a Tip" : {
+
+    },
     "Leave an App Review" : {
       "localizations" : {
         "ru" : {
@@ -415,6 +421,9 @@
           }
         }
       }
+    },
+    "Leave Developer a Tip" : {
+
     },
     "Loading Tip Option..." : {
 
@@ -781,8 +790,15 @@
     "These features require a server component, and would need to be a paid subscription service. This may become an option in the future" : {
 
     },
-    "This app is free, ad-less, and open-source. If you find it useful, consider tipping to help keep it going!" : {
-
+    "This app is free and open-source. If you find it useful, consider tipping to help keep it going!" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Это приложение бесплатно и с открытым исходным кодом. Если оно вам пригодилось, вы можете поддержать его развитие с помощью пожертвования!"
+          }
+        }
+      }
     },
     "This server has disabled player lists" : {
       "localizations" : {

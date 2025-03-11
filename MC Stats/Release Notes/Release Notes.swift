@@ -113,17 +113,17 @@ struct ReleaseNotes: View {
                                 .cornerRadius(10)
                         }
 #warning("In-App Purchases")
-                        //                        Button {
-                        //                            showingTipSheet = true
-                        //                        } label: {
-                        //                            Label("Leave a Tip", systemImage: "gift.fill")
-                        //                                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                        //                                .callout()
-                        //                                .padding()
-                        //                                .background(.blue)
-                        //                                .foregroundColor(.white)
-                        //                                .cornerRadius(10)
-                        //                        }
+                        Button {
+                            showingTipSheet = true
+                        } label: {
+                            Label("Leave a Tip", systemImage: "gift.fill")
+                                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                .callout()
+                                .padding()
+                                .background(.blue)
+                                .foregroundColor(.white)
+                                .cornerRadius(10)
+                        }
                     }
                     .padding(.bottom, 20)
                     .frame(maxWidth: .infinity)
