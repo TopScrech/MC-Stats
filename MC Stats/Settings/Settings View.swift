@@ -65,7 +65,7 @@ struct SettingsView: View {
             } footer: {
                 Text("Leave a review to help others discover the app and support its development")
             }
-#warning("In-App Purchases")
+            
             Section {
                 // Tip Developer
                 Button(action: tipDeveloper) {

@@ -112,7 +112,7 @@ struct ReleaseNotes: View {
                                 .foregroundColor(.white)
                                 .cornerRadius(10)
                         }
-#warning("In-App Purchases")
+                        
                         Button {
                             showingTipSheet = true
                         } label: {
