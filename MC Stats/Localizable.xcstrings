@@ -40,7 +40,7 @@
 
     },
     "1. **Long press** the widget" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "ru" : {
           "stringUnit" : {
@@ -51,7 +51,7 @@
       }
     },
     "2. Tap on **Edit Widget**" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "ru" : {
           "stringUnit" : {
@@ -62,7 +62,6 @@
       }
     },
     "3. **Choose a server** from the list" : {
-      "extractionState" : "stale",
       "localizations" : {
         "ru" : {
           "stringUnit" : {
@@ -383,6 +382,9 @@
           }
         }
       }
+    },
+    "Key" : {
+      "extractionState" : "manual"
     },
     "Leave a Review" : {
       "localizations" : {

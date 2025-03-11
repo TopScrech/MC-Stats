@@ -74,7 +74,6 @@ struct MinecraftServerStatusLSWidgetEntryView: View {
     var entry: LockscreenProvider.Entry
     var widgetType: LSWidgetType = .ImageAndText
     
-    @ViewBuilder
     var body: some View {
         switch family {
 #if !os(macOS)
