@@ -20,7 +20,11 @@ struct InlineAccessoryWidgetView2: View {
                     Text("Edit Widget")
 #endif
                 } else {
-                    Text(entry.vm.progressString)
+                    if entry.configuration.showMaxPlayerCount {
+                        Text(entry.vm.progressString)
+                    } else {
+                        Text(entry.vm.playersOnline)
+                    }
                 }
             }
             .buttonStyle(.plain)
