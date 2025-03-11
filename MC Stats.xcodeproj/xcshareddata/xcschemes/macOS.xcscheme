@@ -68,6 +68,9 @@
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
+      <StoreKitConfigurationFileReference
+         identifier = "../../MC Stats/Other/MC Stats StoreKit Synced.storekit">
+      </StoreKitConfigurationFileReference>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"

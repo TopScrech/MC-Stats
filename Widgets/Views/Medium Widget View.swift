@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 import Intents
 import WidgetKit
 
@@ -11,7 +11,7 @@ struct MediumWidgetView: View {
     
     var body: some View {
         if entry.vm.viewType == .Unconfigured {
-            ConfigureWidgetView()
+            ConfigureWidgetView("MC Stats", image: Image(.icon), lastStep: "3. **Choose a server** from the list")
         } else {
             if entry.configuration.Theme == nil || entry.configuration.Theme?.id ?? "" == Theme.auto.rawValue {
                 InnerMediumWidget(entry)

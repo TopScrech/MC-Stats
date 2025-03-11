@@ -20,7 +20,11 @@ struct InlineAccessoryWidgetView2: View {
                     Text("Edit Widget")
 #endif
                 } else {
-                    Text(entry.vm.progressString)
+                    if entry.configuration.showMaxPlayerCount {
+                        Text(entry.vm.progressString)
+                    } else {
+                        Text(entry.vm.playersOnline)
+                    }
                 }
             }
             .buttonStyle(.plain)
@@ -31,12 +35,14 @@ struct InlineAccessoryWidgetView2: View {
                     .widgetAccentable()
                 
             } else if entry.vm.viewType != .Unconfigured {
-                // min(100, max(0, Int((entry.vm.progressValue * 100).rounded(.towardZero))))
-                let imageNumber = 50
+                // Due to the incompatibility of Gauge, ProgressView, and Shapes in inline widgets,
+                // we must rely on 101 assets, each representing a specific progress percentage
+                
+                let imageNumber = min(100, max(0, Int((entry.vm.progressValue * 100).rounded(.towardZero))))
                 let imageName = "ProgressBar\(imageNumber)"
                 
                 if let uiImage = UIImage(named: imageName) {
-                    Image(uiImage:  uiImage)
+                    Image(uiImage: uiImage)
                         .padding()
                         .widgetAccentable()
                 }

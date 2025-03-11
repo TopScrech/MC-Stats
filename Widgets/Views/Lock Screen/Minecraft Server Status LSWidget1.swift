@@ -21,12 +21,14 @@ struct MinecraftServerStatusLSWidget1: Widget {
             intent: ServerSelectNoThemeWidgetIntent.self,
             provider: LockscreenProvider(widgetType: .ImageAndText)
         ) { entry in
+            let url = URL(string: entry.configuration.Server?.id ?? "")
+            
             MinecraftServerStatusLSWidgetEntryView(
                 entry: entry,
                 widgetType: .ImageAndText
             )
             .containerBackground(for: .widget) {}
-            .widgetURL(URL(string: entry.configuration.Server?.id ?? ""))
+            .widgetURL(url)
         }
         .configurationDisplayName("Lockscreen Widget 1")
         .description("Widget to show the status of Minecraft Server")
@@ -74,7 +76,6 @@ struct MinecraftServerStatusLSWidgetEntryView: View {
     var entry: LockscreenProvider.Entry
     var widgetType: LSWidgetType = .ImageAndText
     
-    @ViewBuilder
     var body: some View {
         switch family {
 #if !os(macOS)

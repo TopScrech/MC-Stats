@@ -23,7 +23,7 @@ struct TipView: View {
                     .frame(width: 100, height: 100)
                     .padding()
                 
-                Text("This app is free, ad-less, and open-source. If you find it useful, consider tipping to help keep it going!")
+                Text("This app is free and open-source. If you find it useful, consider tipping to help keep it going!")
                     .lineLimit(nil)
                     .multilineTextAlignment(.center)
                     .padding()
@@ -44,11 +44,12 @@ struct TipView: View {
                                 .cornerRadius(10)
                         }
                         .padding(.horizontal)
-                        .padding(.bottom,3)
+                        .padding(.bottom, 3)
                         .disabled(isProcessing)
+                        .buttonStyle(.plain)
                     }
                 } else {
-                    ProgressView("Loading Tip Option...")
+                    ProgressView()
                 }
                 
                 Text("Thank you for your support!")
@@ -57,10 +58,8 @@ struct TipView: View {
             }
             .padding(.horizontal)
         }
-        .onAppear {
-            Task {
-                await loadTipProducts()
-            }
+        .task {
+            await loadTipProducts()
         }
         .alert(alertTitle, isPresented: $showAlert) {
             Button("OK", role: .cancel) {}
@@ -85,9 +84,9 @@ struct TipView: View {
     private func loadTipProducts() async {
         do {
             let products = try await Product.products(for: [
-                "dev.topscrech.MinecraftServerStatus.199Tip",
-                "dev.topscrech.MinecraftServerStatus.499Tip",
-                "dev.topscrech.MinecraftServerStatus.999Tip"
+                "supporter",
+                "enthusiast",
+                "legend"
             ])
             
             tipProducts = Array(products).sorted { p1, p2 in

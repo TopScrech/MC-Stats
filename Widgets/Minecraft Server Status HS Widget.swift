@@ -48,7 +48,6 @@ struct ServerStatusHSWidgetEntryView: View {
         self.entry = entry
     }
     
-    @ViewBuilder
     var body: some View {
         switch family {
         case .systemSmall:
