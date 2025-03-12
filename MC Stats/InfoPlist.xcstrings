@@ -47,6 +47,24 @@
         }
       }
     },
+    "NSLocalNetworkUsageDescription" : {
+      "comment" : "Privacy - Local Network Usage Description",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "This app requires local network access in order to check the status of servers on your local connection"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Это приложение требует доступ к локальной сети, чтобы проверить состояние LAN-серверов"
+          }
+        }
+      }
+    },
     "Server Status" : {
       "localizations" : {
         "en" : {
@@ -64,7 +82,6 @@
       }
     },
     "Status" : {
-      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
