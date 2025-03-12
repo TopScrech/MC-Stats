@@ -4,6 +4,7 @@ import StoreKit
 struct TipView: View {
     @Environment(\.dismiss) private var dismiss
     
+    @State private var isRestoring = false
     @State private var isProcessing = false
     @State private var tipProducts: [Product]?
     @State private var showAlert = false
@@ -52,9 +53,21 @@ struct TipView: View {
                     ProgressView()
                 }
                 
-                Text("Thank you for your support!")
-                    .footnote()
-                    .padding(.vertical)
+                Button {
+                    Task {
+                        await restorePurchases()
+                    }
+                } label: {
+                    if isRestoring {
+                        ProgressView()
+                    } else {
+                        Text("Restore Purchases")
+                            .footnote()
+                            .secondary()
+                    }
+                }
+                .foregroundStyle(.foreground)
+                .disabled(isRestoring)
             }
             .padding(.horizontal)
         }
@@ -79,6 +92,16 @@ struct TipView: View {
                 }
             }
         }
+    }
+    
+    private func restorePurchases() async {
+        isRestoring = true
+        
+        for await result in Transaction.updates {
+            _ = try? await result.payloadValue.finish()
+        }
+        
+        isRestoring = false
     }
     
     private func loadTipProducts() async {
@@ -150,7 +173,7 @@ struct TipView: View {
     
     // Handle successful purchase transaction
     private func handlePurchase(_ transaction: StoreKit.Transaction) async {
-        // Process the purchase (e.g., thank the user, unlock features, etc.)
+        // Process the purchase (e.g., thank the user, unlock features, etc)
         print("Purchase successful!")
         
         // Finish transaction

@@ -556,6 +556,16 @@
     "Refresh Widget" : {
 
     },
+    "Restore Purchases" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Восстановить покупки"
+          }
+        }
+      }
+    },
     "Save" : {
       "localizations" : {
         "ru" : {
