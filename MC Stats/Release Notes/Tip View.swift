@@ -67,7 +67,14 @@ struct TipView: View {
                     }
                 }
                 .foregroundStyle(.foreground)
+                .buttonStyle(.plain)
                 .disabled(isRestoring)
+#if os(macOS)
+                Button("Dismiss") {
+                    dismiss()
+                }
+                .padding(.bottom)
+#endif
             }
             .padding(.horizontal)
         }
@@ -79,19 +86,15 @@ struct TipView: View {
         } message: {
             Text(alertMessage)
         }
+#if !os(macOS)
         .toolbar {
-#warning("Check on macOS")
-#if os(macOS)
-            let placement: ToolbarItemPlacement = .primaryAction
-#else
-            let placement: ToolbarItemPlacement = .topBarLeading
-#endif
-            ToolbarItem(placement: placement) {
+            ToolbarItem(placement: .topBarLeading) {
                 Button("Cancel") {
                     dismiss()
                 }
             }
         }
+#endif
     }
     
     private func restorePurchases() async {

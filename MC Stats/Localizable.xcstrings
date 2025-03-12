@@ -249,6 +249,9 @@
         }
       }
     },
+    "Dismiss" : {
+
+    },
     "Displays the max player count alongside the current number of players in the widgets" : {
 
     },
