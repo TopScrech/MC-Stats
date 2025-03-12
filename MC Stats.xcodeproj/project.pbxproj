@@ -253,6 +253,16 @@
 		F383D1992D67D3DB00FE4239 /* Siri Guide Phrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E1A702D649D1300718CB7 /* Siri Guide Phrase.swift */; };
 		F383D19A2D67D3DB00FE4239 /* Siri Phrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30246C42D65E6F70030F71C /* Siri Phrase.swift */; };
 		F383D19B2D67E60400FE4239 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3C879CD2D65722200840745 /* Assets.xcassets */; };
+		F396F7FC2D81BDC600FCB648 /* Tip Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396F7FB2D81BDC600FCB648 /* Tip Card.swift */; };
+		F396F7FD2D81BDC600FCB648 /* Tip Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396F7FB2D81BDC600FCB648 /* Tip Card.swift */; };
+		F396F7FE2D81BDC600FCB648 /* Tip Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396F7FB2D81BDC600FCB648 /* Tip Card.swift */; };
+		F396F7FF2D81BDC600FCB648 /* Tip Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396F7FB2D81BDC600FCB648 /* Tip Card.swift */; };
+		F396F8002D81BDC600FCB648 /* Tip Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396F7FB2D81BDC600FCB648 /* Tip Card.swift */; };
+		F396F8022D81BE6A00FCB648 /* Tip VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396F8012D81BE6A00FCB648 /* Tip VM.swift */; };
+		F396F8032D81BE6A00FCB648 /* Tip VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396F8012D81BE6A00FCB648 /* Tip VM.swift */; };
+		F396F8042D81BE6A00FCB648 /* Tip VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396F8012D81BE6A00FCB648 /* Tip VM.swift */; };
+		F396F8052D81BE6A00FCB648 /* Tip VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396F8012D81BE6A00FCB648 /* Tip VM.swift */; };
+		F396F8062D81BE6A00FCB648 /* Tip VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396F8012D81BE6A00FCB648 /* Tip VM.swift */; };
 		F39EAF732D6C82B900072794 /* Page Destinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39EAF722D6C82B900072794 /* Page Destinations.swift */; };
 		F39EAF742D6C82B900072794 /* Page Destinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39EAF722D6C82B900072794 /* Page Destinations.swift */; };
 		F39EAF752D6C82B900072794 /* Page Destinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39EAF722D6C82B900072794 /* Page Destinations.swift */; };
@@ -593,6 +603,8 @@
 		F35E1ACB2D652C9000718CB7 /* visionOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = visionOS.entitlements; sourceTree = "<group>"; };
 		F360A8AE2D6C6BC3008E515E /* MCStatsDataLayer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = MCStatsDataLayer; sourceTree = "<group>"; };
 		F37883692D6AF86A00D38522 /* Debug Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Debug Settings.swift"; sourceTree = "<group>"; };
+		F396F7FB2D81BDC600FCB648 /* Tip Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tip Card.swift"; sourceTree = "<group>"; };
+		F396F8012D81BE6A00FCB648 /* Tip VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tip VM.swift"; sourceTree = "<group>"; };
 		F39EAF722D6C82B900072794 /* Page Destinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Page Destinations.swift"; sourceTree = "<group>"; };
 		F39EAF772D6C831000072794 /* Settings View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Settings View.swift"; sourceTree = "<group>"; };
 		F3B0740D2D76697000F24939 /* Expected Result Batch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expected Result Batch.swift"; sourceTree = "<group>"; };
@@ -796,6 +808,7 @@
 				F3C8E5492D7E24E900644E47 /* InfoPlist.xcstrings */,
 				F13E60022A4BD615005BE9B2 /* Assets.xcassets */,
 				F3DD08852D75253000A67D4B /* Release Notes */,
+				F396F8072D81BF0E00FCB648 /* Tipping */,
 				F1E671752CA73A86002BDFC0 /* Custom Progress View.swift */,
 				F17A16BC2A8956DE00F8FF2F /* Edit Server View.swift */,
 				F3B074282D77050900F24939 /* Edit Server View Helper.swift */,
@@ -1070,6 +1083,16 @@
 			path = "Lock Screen";
 			sourceTree = "<group>";
 		};
+		F396F8072D81BF0E00FCB648 /* Tipping */ = {
+			isa = PBXGroup;
+			children = (
+				F17AE0FB2CC05F9000DC7A80 /* Tip View.swift */,
+				F396F7FB2D81BDC600FCB648 /* Tip Card.swift */,
+				F396F8012D81BE6A00FCB648 /* Tip VM.swift */,
+			);
+			path = Tipping;
+			sourceTree = "<group>";
+		};
 		F3B074142D76E20800F24939 /* Server Details */ = {
 			isa = PBXGroup;
 			children = (
@@ -1105,7 +1128,6 @@
 				F150B43E2CC18C1100739646 /* Release Notes.swift */,
 				F35E1A6E2D649C6000718CB7 /* Feature Row.swift */,
 				F3C87A0E2D657A1500840745 /* Feature.swift */,
-				F17AE0FB2CC05F9000DC7A80 /* Tip View.swift */,
 			);
 			path = "Release Notes";
 			sourceTree = "<group>";
@@ -1574,6 +1596,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F396F8042D81BE6A00FCB648 /* Tip VM.swift in Sources */,
 				F150B4342CC15F6A00739646 /* Siri Guide.swift in Sources */,
 				F3C87A032D6574D200840745 /* FAQ Row.swift in Sources */,
 				F35E1A772D64D32D00718CB7 /* Refresh Widgets.swift in Sources */,
@@ -1590,6 +1613,7 @@
 				F30472552D63E9D30055C007 /* Server Status Entity.swift in Sources */,
 				F30246CB2D6661D60030F71C /* Player List.swift in Sources */,
 				F35E1A712D649D1300718CB7 /* Siri Guide Phrase.swift in Sources */,
+				F396F7FF2D81BDC600FCB648 /* Tip Card.swift in Sources */,
 				F174A2FC2A8F7FFA0051DA5B /* Watch Helper.swift in Sources */,
 				F17A16BD2A8956DE00F8FF2F /* Edit Server View.swift in Sources */,
 				F17AE0EC2CC01E9E00DC7A80 /* FAQ View.swift in Sources */,
@@ -1683,6 +1707,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F31D45B92D6DC68F00981B1C /* MC Stats.swift in Sources */,
+				F396F7FE2D81BDC600FCB648 /* Tip Card.swift in Sources */,
 				F31D45D82D6DC76200981B1C /* FAQ.swift in Sources */,
 				F31D45DA2D6DC76200981B1C /* Server Row.swift in Sources */,
 				F31D45EB2D6DCB1300981B1C /* Server Status Entity.swift in Sources */,
@@ -1699,6 +1724,7 @@
 				F31D45CA2D6DC74C00981B1C /* Feature.swift in Sources */,
 				F31D45C32D6DC74100981B1C /* App Container Helper.swift in Sources */,
 				F31D45C42D6DC74100981B1C /* App Container.swift in Sources */,
+				F396F8032D81BE6A00FCB648 /* Tip VM.swift in Sources */,
 				F3EFC1722D70877F00EE988A /* Edit Server View.swift in Sources */,
 				F31D45E52D6DC9C600981B1C /* Low Power Mode.swift in Sources */,
 				F31D45E62D6DC9C600981B1C /* Refresh Widgets.swift in Sources */,
@@ -1753,7 +1779,9 @@
 				F3DD08802D75246700A67D4B /* Watch Helper.swift in Sources */,
 				F3B0740C2D76567000F24939 /* Server Details.swift in Sources */,
 				F3DD087A2D7523BD00A67D4B /* Saved Server Entity.swift in Sources */,
+				F396F8052D81BE6A00FCB648 /* Tip VM.swift in Sources */,
 				F3B0742C2D77063B00F24939 /* Edit Server View Helper.swift in Sources */,
+				F396F8002D81BDC600FCB648 /* Tip Card.swift in Sources */,
 				F3DD08732D75236E00A67D4B /* Edit Server View.swift in Sources */,
 				F3B073F72D7655D500F24939 /* Siri Guide Phrase.swift in Sources */,
 				F3B073FA2D7655D900F24939 /* FAQ.swift in Sources */,
@@ -1785,6 +1813,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F35E1AA12D6522B300718CB7 /* Low Power Mode.swift in Sources */,
+				F396F7FC2D81BDC600FCB648 /* Tip Card.swift in Sources */,
 				F3BFB14E2D68055A00E16468 /* MOTD View.swift in Sources */,
 				F35E1AA22D6522B300718CB7 /* Refresh Widgets.swift in Sources */,
 				F35E1AA52D6522CB00718CB7 /* Siri Guide Phrase.swift in Sources */,
@@ -1801,6 +1830,7 @@
 				F30246D32D667ED50030F71C /* Server Ping.swift in Sources */,
 				F30246C62D65E6F70030F71C /* Siri Phrase.swift in Sources */,
 				F35E1AAA2D6522D100718CB7 /* FAQ View.swift in Sources */,
+				F396F8062D81BE6A00FCB648 /* Tip VM.swift in Sources */,
 				F30246C92D6661D60030F71C /* Player List.swift in Sources */,
 				F3C87A022D6574D200840745 /* FAQ Row.swift in Sources */,
 				F35E1AAC2D6522D600718CB7 /* Edit Server View.swift in Sources */,
@@ -1834,6 +1864,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3C879DF2D6572C400840745 /* Server Details.swift in Sources */,
+				F396F7FD2D81BDC600FCB648 /* Tip Card.swift in Sources */,
 				F3BFB14F2D68055A00E16468 /* MOTD View.swift in Sources */,
 				F3C879E02D6572C400840745 /* Player Card.swift in Sources */,
 				F3C87A0B2D6575B700840745 /* Intent Errors.swift in Sources */,
@@ -1850,6 +1881,7 @@
 				F30246CA2D6661D60030F71C /* Player List.swift in Sources */,
 				F383D1992D67D3DB00FE4239 /* Siri Guide Phrase.swift in Sources */,
 				F383D19A2D67D3DB00FE4239 /* Siri Phrase.swift in Sources */,
+				F396F8022D81BE6A00FCB648 /* Tip VM.swift in Sources */,
 				F3C879E42D6572C400840745 /* Custom Progress View.swift in Sources */,
 				F3C87A082D6574DD00840745 /* FAQ.swift in Sources */,
 				F3C879E52D6572C400840745 /* FAQ View.swift in Sources */,
