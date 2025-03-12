@@ -208,10 +208,8 @@ struct ServerDetails: View {
         }
         .toolbar {
 #if os(macOS)
-            let leadingPlacement: ToolbarItemPlacement = .navigation
             let trailingPlacement: ToolbarItemPlacement = .primaryAction
 #else
-            let leadingPlacement: ToolbarItemPlacement = .topBarLeading
             let trailingPlacement: ToolbarItemPlacement = .topBarTrailing
 #endif
             
