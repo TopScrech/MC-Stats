@@ -403,6 +403,9 @@
 		F3EFC1752D709C5700EE988A /* Ping Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EFC1732D709C5700EE988A /* Ping Error.swift */; };
 		F3EFC1762D709C5700EE988A /* Ping Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EFC1732D709C5700EE988A /* Ping Error.swift */; };
 		F3EFC1772D709C5700EE988A /* Ping Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EFC1732D709C5700EE988A /* Ping Error.swift */; };
+		F3F2E6422D8258AF0078EA89 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F2E6412D8258AF0078EA89 /* StoreKit.framework */; };
+		F3F2E6432D8258C50078EA89 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F325F93C2D80E84300FDF4D9 /* StoreKit.framework */; };
+		F3F2E6452D8258C90078EA89 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F2E6442D8258C90078EA89 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -617,6 +620,8 @@
 		F3DD08692D75226A00A67D4B /* Server List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Server List.swift"; sourceTree = "<group>"; };
 		F3EFC1712D70877F00EE988A /* Edit Server View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Edit Server View.swift"; sourceTree = "<group>"; };
 		F3EFC1732D709C5700EE988A /* Ping Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ping Error.swift"; sourceTree = "<group>"; };
+		F3F2E6412D8258AF0078EA89 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS18.4.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
+		F3F2E6442D8258C90078EA89 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS11.4.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -626,6 +631,7 @@
 			files = (
 				F1EF76C82CB4216F00EFFB20 /* NukeUI in Frameworks */,
 				F33A5CB32D640C440020D8A5 /* ScrechKit in Frameworks */,
+				F3F2E6452D8258C90078EA89 /* StoreKit.framework in Frameworks */,
 				F3C9235E2D6C6CD3004D31A9 /* MCStatsDataLayer in Frameworks */,
 				F1EF76C62CB4216F00EFFB20 /* Nuke in Frameworks */,
 			);
@@ -679,6 +685,7 @@
 			files = (
 				F31D45C02D6DC6C200981B1C /* Nuke in Frameworks */,
 				F31D45BC2D6DC6B700981B1C /* MCStatsDataLayer in Frameworks */,
+				F3F2E6432D8258C50078EA89 /* StoreKit.framework in Frameworks */,
 				F31D45BE2D6DC6BD00981B1C /* ScrechKit in Frameworks */,
 				F31D45C22D6DC6C600981B1C /* NukeUI in Frameworks */,
 			);
@@ -712,6 +719,7 @@
 			files = (
 				F3C879FD2D6572FD00840745 /* Nuke in Frameworks */,
 				F3C879FB2D6572F900840745 /* ScrechKit in Frameworks */,
+				F3F2E6422D8258AF0078EA89 /* StoreKit.framework in Frameworks */,
 				F3C923602D6C6CDC004D31A9 /* MCStatsDataLayer in Frameworks */,
 				F3C879FF2D65730000840745 /* NukeUI in Frameworks */,
 			);
@@ -731,6 +739,8 @@
 		F10C421B2AAE40BC000107D6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F3F2E6442D8258C90078EA89 /* StoreKit.framework */,
+				F3F2E6412D8258AF0078EA89 /* StoreKit.framework */,
 				F325F93C2D80E84300FDF4D9 /* StoreKit.framework */,
 				F1EF76ED2CB7873F00EFFB20 /* WidgetKit.framework */,
 				F1EF76EF2CB7873F00EFFB20 /* SwiftUI.framework */,
