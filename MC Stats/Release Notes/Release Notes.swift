@@ -127,6 +127,7 @@ struct ReleaseNotes: View {
                     }
                     .padding(.bottom, 20)
                     .frame(maxWidth: .infinity)
+                    .buttonStyle(.plain)
                 }
             }
             .padding([.leading, .trailing, .bottom], 30)
