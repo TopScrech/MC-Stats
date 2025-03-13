@@ -51,9 +51,9 @@ struct TipCard: View {
             vm.isProcessing = false
         }
         
-        for await purchaseIntent in PurchaseIntent.intents {
-            do {
-                let result = try await purchaseIntent.product.purchase()
+        do {
+            if #available(macOS 15.2, *) {
+                let result = try await product.purchase(confirmIn: scene, options: [])
                 
                 switch result {
                 case .success(let verification):
@@ -66,21 +66,27 @@ struct TipCard: View {
                         vm.alertMessage = "Transaction verification failed: \(error.localizedDescription)"
                         vm.showAlert = true
                     }
+                    
                 default:
                     break
                 }
-            } catch {
-                vm.alertTitle = "Purchase Failed"
-                vm.alertMessage = "There was an error processing your purchase: \(error.localizedDescription)"
-                vm.showAlert = true
+            } else {
+                throw(SKError(.paymentNotAllowed))
             }
+        } catch {
+            vm.alertTitle = "Purchase Failed"
+            vm.alertMessage = "There was an error processing your purchase: \(error.localizedDescription)"
+            vm.showAlert = true
         }
 #endif
     }
     
+    // Handle successful purchase transaction
     private func handlePurchase(_ transaction: StoreKit.Transaction) async {
+        // Process the purchase (e.g., thank the user, unlock features, etc)
         print("Purchase successful!")
         
+        // Finish transaction
         await transaction.finish()
         
         vm.alertTitle = "Thank You"
@@ -88,3 +94,7 @@ struct TipCard: View {
         vm.showAlert = true
     }
 }
+
+//#Preview {
+//    TipCard()
+//}
