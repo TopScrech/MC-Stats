@@ -73,7 +73,7 @@ public class FormattedMOTDSection: Codable {
     
     public var text = ""
     public var color = ""
-    public var formatters:Set<MOTDFormatter> = []
+    public var formatters: Set<MOTDFormatter> = []
 }
 
 public enum MOTDFormatter: Codable {
