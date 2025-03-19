@@ -31,10 +31,10 @@ public enum PingError: Error, Equatable {
          /// Address lookup failed
          addressLookupError,
          
-         /// Host was not found
+         /// Host not found
          hostNotFound,
          
-         /// Address data could not be converted to `sockaddr`
+         /// Address data couldn't be converted to `sockaddr`
          addressMemoryError,
          
          // Request errors
@@ -59,7 +59,7 @@ public enum PingError: Error, Equatable {
          packageCreationFailed,
          
          /// For some reason, the socket is `nil`
-         /// This shouldn't ever happen, but just in case...
+         /// This shouldn't ever happen, just in case...
          socketNil,
          
          /// The ICMP header offset couldn't be calculated
