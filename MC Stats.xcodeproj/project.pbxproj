@@ -572,7 +572,7 @@
 		F304725B2D63FBFC0055C007 /* MinecraftRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MinecraftRegular.otf; sourceTree = "<group>"; };
 		F31D45A12D6DC62600981B1C /* MC Stats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MC Stats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F31D45B22D6DC67B00981B1C /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		F31D45BA2D6DC6A800981B1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F31D45BA2D6DC6A800981B1C /* macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = macOS.plist; sourceTree = "<group>"; };
 		F325F85D2D805FF300FDF4D9 /* MC Stats StoreKit Synced.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = "MC Stats StoreKit Synced.storekit"; sourceTree = "<group>"; };
 		F325F93C2D80E84300FDF4D9 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		F326DB572D6416E100BCCB69 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
@@ -991,7 +991,7 @@
 		F31D45B42D6DC67B00981B1C /* macOS */ = {
 			isa = PBXGroup;
 			children = (
-				F31D45BA2D6DC6A800981B1C /* Info.plist */,
+				F31D45BA2D6DC6A800981B1C /* macOS.plist */,
 				F31D45B22D6DC67B00981B1C /* macOS.entitlements */,
 				F3EFC1712D70877F00EE988A /* Edit Server View.swift */,
 			);
@@ -2335,7 +2335,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = macOS/Info.plist;
+				INFOPLIST_FILE = macOS/macOS.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "MC Stats";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -2365,7 +2365,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = macOS/Info.plist;
+				INFOPLIST_FILE = macOS/macOS.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "MC Stats";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
