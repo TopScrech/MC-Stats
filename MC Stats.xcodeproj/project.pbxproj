@@ -370,6 +370,12 @@
 		F3C923642D6C6CE7004D31A9 /* MCStatsDataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = F3C923632D6C6CE7004D31A9 /* MCStatsDataLayer */; };
 		F3C923662D6C6CF2004D31A9 /* MCStatsDataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = F3C923652D6C6CF2004D31A9 /* MCStatsDataLayer */; };
 		F3C923682D6C6CF6004D31A9 /* MCStatsDataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = F3C923672D6C6CF6004D31A9 /* MCStatsDataLayer */; };
+		F3D6775F2DD78C5300721DE8 /* Tutorial.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D6775E2DD78C5300721DE8 /* Tutorial.xcassets */; };
+		F3D677602DD78C5300721DE8 /* Tutorial.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D6775E2DD78C5300721DE8 /* Tutorial.xcassets */; };
+		F3D677612DD78C5300721DE8 /* Tutorial.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D6775E2DD78C5300721DE8 /* Tutorial.xcassets */; };
+		F3D677622DD78C5300721DE8 /* Tutorial.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D6775E2DD78C5300721DE8 /* Tutorial.xcassets */; };
+		F3D677632DD78C5300721DE8 /* Tutorial.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D6775E2DD78C5300721DE8 /* Tutorial.xcassets */; };
+		F3D677642DD78C5300721DE8 /* Tutorial.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D6775E2DD78C5300721DE8 /* Tutorial.xcassets */; };
 		F3D9AE622D6C68EB00069BDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F13E60022A4BD615005BE9B2 /* Assets.xcassets */; };
 		F3DD086A2D75226A00A67D4B /* Server List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DD08692D75226A00A67D4B /* Server List.swift */; };
 		F3DD086B2D75232500A67D4B /* Server Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AE29152CA48577009D0D14 /* Server Row.swift */; };
@@ -609,6 +615,7 @@
 		F3C87A052D6574DD00840745 /* FAQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQ.swift; sourceTree = "<group>"; };
 		F3C87A0E2D657A1500840745 /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
 		F3C8E5492D7E24E900644E47 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		F3D6775E2DD78C5300721DE8 /* Tutorial.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Tutorial.xcassets; sourceTree = "<group>"; };
 		F3DD08692D75226A00A67D4B /* Server List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Server List.swift"; sourceTree = "<group>"; };
 		F3EFC1712D70877F00EE988A /* Edit Server View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Edit Server View.swift"; sourceTree = "<group>"; };
 		F3EFC1732D709C5700EE988A /* Ping Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ping Error.swift"; sourceTree = "<group>"; };
@@ -783,6 +790,7 @@
 				F326DB572D6416E100BCCB69 /* Localizable.xcstrings */,
 				F3C8E5492D7E24E900644E47 /* InfoPlist.xcstrings */,
 				F13E60022A4BD615005BE9B2 /* Assets.xcassets */,
+				F3D6775E2DD78C5300721DE8 /* Tutorial.xcassets */,
 				F3DD08852D75253000A67D4B /* Release Notes */,
 				F396F8072D81BF0E00FCB648 /* Tipping */,
 				F1E671752CA73A86002BDFC0 /* Custom Progress View.swift */,
@@ -1381,6 +1389,7 @@
 			isa = PBXResourcesBuildPhase;
 			files = (
 				F38218852D671BAB005025E7 /* Assets.xcassets in Resources */,
+				F3D677602DD78C5300721DE8 /* Tutorial.xcassets in Resources */,
 				F325F8C42D80697300FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */,
 				F326DB592D6416E100BCCB69 /* Localizable.xcstrings in Resources */,
 			);
@@ -1396,6 +1405,7 @@
 			isa = PBXResourcesBuildPhase;
 			files = (
 				F35E1A782D64DC2700718CB7 /* Assets.xcassets in Resources */,
+				F3D6775F2DD78C5300721DE8 /* Tutorial.xcassets in Resources */,
 				F3C8E54A2D7E24E900644E47 /* InfoPlist.xcstrings in Resources */,
 				F325F8C32D80651B00FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */,
 				F326DB582D6416E100BCCB69 /* Localizable.xcstrings in Resources */,
@@ -1422,6 +1432,7 @@
 			isa = PBXResourcesBuildPhase;
 			files = (
 				F31D45E42D6DC7A800981B1C /* Assets.xcassets in Resources */,
+				F3D677632DD78C5300721DE8 /* Tutorial.xcassets in Resources */,
 				F325F8C52D80697300FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */,
 				F3C8E5532D7E2ADF00644E47 /* Localizable.xcstrings in Resources */,
 			);
@@ -1433,12 +1444,14 @@
 				F3DD08892D7527BF00A67D4B /* iMessage Icon.xcassets in Resources */,
 				F3DD08812D7524CF00A67D4B /* Localizable.xcstrings in Resources */,
 				F3DD08822D7524DA00A67D4B /* Assets.xcassets in Resources */,
+				F3D677642DD78C5300721DE8 /* Tutorial.xcassets in Resources */,
 			);
 		};
 		F35E1A7B2D6501A500718CB7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
 				F35E1AC12D65237200718CB7 /* MinecraftRegular.otf in Resources */,
+				F3D677612DD78C5300721DE8 /* Tutorial.xcassets in Resources */,
 				F325F8C72D80697300FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */,
 				F3C879D82D6572AA00840745 /* Localizable.xcstrings in Resources */,
 				F35E1AC22D65237200718CB7 /* MinecraftBold.otf in Resources */,
@@ -1452,6 +1465,7 @@
 			isa = PBXResourcesBuildPhase;
 			files = (
 				F383D19B2D67E60400FE4239 /* Assets.xcassets in Resources */,
+				F3D677622DD78C5300721DE8 /* Tutorial.xcassets in Resources */,
 				F325F8C62D80697300FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */,
 				F3C879D72D6572AA00840745 /* Localizable.xcstrings in Resources */,
 				F3C879F42D6572DF00840745 /* MinecraftRegular.otf in Resources */,
