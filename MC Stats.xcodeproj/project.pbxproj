@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F10C42172AAD55BF000107D6 /* Shortcuts Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C42162AAD55BF000107D6 /* Shortcuts Provider.swift */; };
-		F10C421C2AAE40BC000107D6 /* Intents.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = F1406BA92AA391B800815BE8 /* Intents.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F10E94B12A8C61B60039DD2B /* Connectivity Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10E94B02A8C61B60039DD2B /* Connectivity Provider.swift */; };
 		F11F63582A81E51000D47187 /* watchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F11F634B2A81E50E00D47187 /* watchOS.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F13095262CBC997200C4C7BA /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EF76ED2CB7873F00EFFB20 /* WidgetKit.framework */; };
@@ -376,6 +375,7 @@
 		F3D677622DD78C5300721DE8 /* Tutorial.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D6775E2DD78C5300721DE8 /* Tutorial.xcassets */; };
 		F3D677632DD78C5300721DE8 /* Tutorial.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D6775E2DD78C5300721DE8 /* Tutorial.xcassets */; };
 		F3D677642DD78C5300721DE8 /* Tutorial.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D6775E2DD78C5300721DE8 /* Tutorial.xcassets */; };
+		F3D677652DD7E81700721DE8 /* Intents.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = F1406BA92AA391B800815BE8 /* Intents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F3D9AE622D6C68EB00069BDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F13E60022A4BD615005BE9B2 /* Assets.xcassets */; };
 		F3DD086A2D75226A00A67D4B /* Server List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DD08692D75226A00A67D4B /* Server List.swift */; };
 		F3DD086B2D75232500A67D4B /* Server Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AE29152CA48577009D0D14 /* Server Row.swift */; };
@@ -415,13 +415,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F10C421D2AAE40BC000107D6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F13E5FF12A4BD614005BE9B2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F1406BA82AA391B800815BE8;
-			remoteInfo = MCStatusIntentsFramework;
-		};
 		F11F63562A81E51000D47187 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F13E5FF12A4BD614005BE9B2 /* Project object */;
@@ -450,18 +443,16 @@
 			remoteGlobalIDString = F1EF76EB2CB7873F00EFFB20;
 			remoteInfo = MCStatusWidgetExtensionExtension;
 		};
+		F3D677662DD7E81700721DE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F13E5FF12A4BD614005BE9B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1406BA82AA391B800815BE8;
+			remoteInfo = Intents;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		F10C421F2AAE40BC000107D6 /* Embed ExtensionKit Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
-			dstSubfolder = Product;
-			files = (
-				F10C421C2AAE40BC000107D6 /* Intents.appex in Embed ExtensionKit Extensions */,
-			);
-			name = "Embed ExtensionKit Extensions";
-		};
 		F11F635C2A81E51000D47187 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
@@ -488,6 +479,15 @@
 				F1EF76FF2CB7874000EFFB20 /* Widgets.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
+		};
+		F3D677682DD7E81700721DE8 /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolder = Product;
+			files = (
+				F3D677652DD7E81700721DE8 /* Intents.appex in Embed ExtensionKit Extensions */,
+			);
+			name = "Embed ExtensionKit Extensions";
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -1172,15 +1172,15 @@
 				F13E5FF62A4BD614005BE9B2 /* Frameworks */,
 				F13E5FF72A4BD614005BE9B2 /* Resources */,
 				F11F635C2A81E51000D47187 /* Embed Watch Content */,
-				F10C421F2AAE40BC000107D6 /* Embed ExtensionKit Extensions */,
 				F1EF77052CB7874100EFFB20 /* Embed Foundation Extensions */,
+				F3D677682DD7E81700721DE8 /* Embed ExtensionKit Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				F11F63572A81E51000D47187 /* PBXTargetDependency */,
-				F10C421E2AAE40BC000107D6 /* PBXTargetDependency */,
 				F1EF76FE2CB7874000EFFB20 /* PBXTargetDependency */,
+				F3D677672DD7E81700721DE8 /* PBXTargetDependency */,
 			);
 			name = "MC Stats";
 			packageProductDependencies = (
@@ -1845,12 +1845,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F10C421E2AAE40BC000107D6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			platformFilter = ios;
-			target = F1406BA82AA391B800815BE8 /* Intents */;
-			targetProxy = F10C421D2AAE40BC000107D6 /* PBXContainerItemProxy */;
-		};
 		F11F63572A81E51000D47187 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			platformFilter = ios;
@@ -1871,6 +1865,11 @@
 			isa = PBXTargetDependency;
 			target = F1EF76EB2CB7873F00EFFB20 /* Widgets */;
 			targetProxy = F1EF76FD2CB7874000EFFB20 /* PBXContainerItemProxy */;
+		};
+		F3D677672DD7E81700721DE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1406BA82AA391B800815BE8 /* Intents */;
+			targetProxy = F3D677662DD7E81700721DE8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
