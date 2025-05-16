@@ -19,6 +19,17 @@ public class ServerStatus: Identifiable, Codable {
     public var version = ""
     public var favIcon = ""
     
+    private enum CodingKeys: String, CodingKey {
+        case _source = "source",
+             _description = "description",
+             _status = "status",
+             _maxPlayerCount = "maxPlayerCount",
+             _onlinePlayerCount = "onlinePlayerCount",
+             _playerSample = "playerSample",
+             _version = "version",
+             _favIcon = "favIcon"
+    }
+    
     public func getDisplayText() -> String {
         status.rawValue + " - " + String(onlinePlayerCount) + "/" + String(maxPlayerCount)
     }
