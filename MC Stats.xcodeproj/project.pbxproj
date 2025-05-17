@@ -2509,7 +2509,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = tvOS/tvOS.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "MC Stats";
+				INFOPLIST_KEY_GCSupportsControllerUserInteraction = YES;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "2025 Sergei Saliukov";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2538,7 +2541,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = tvOS/tvOS.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "MC Stats";
+				INFOPLIST_KEY_GCSupportsControllerUserInteraction = YES;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "2025 Sergei Saliukov";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
