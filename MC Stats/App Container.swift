@@ -20,11 +20,11 @@ struct AppContainer: View {
     
     // Struggle to find a more efficient method without regenerating the VM each time
     @State var serverVMCache: [UUID: ServerStatusVM] = [:]
+    @State var pendingDeepLink: String?
+    @State var lastRefreshTime = Date()
     @State private var sheetAdd = false
     @State private var showReleaseNotes = false
-    @State var pendingDeepLink: String?
     @State private var showAlert = false
-    @State var lastRefreshTime = Date()
     
     @State private var newServer = SavedMinecraftServer.initialize(
         id: UUID(),

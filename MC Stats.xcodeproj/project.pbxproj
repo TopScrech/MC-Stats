@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 90;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		F10C42172AAD55BF000107D6 /* Shortcuts Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C42162AAD55BF000107D6 /* Shortcuts Provider.swift */; };
-		F10C421C2AAE40BC000107D6 /* Intents.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = F1406BA92AA391B800815BE8 /* Intents.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F10E94B12A8C61B60039DD2B /* Connectivity Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10E94B02A8C61B60039DD2B /* Connectivity Provider.swift */; };
 		F11F63582A81E51000D47187 /* watchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F11F634B2A81E50E00D47187 /* watchOS.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F13095262CBC997200C4C7BA /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EF76ED2CB7873F00EFFB20 /* WidgetKit.framework */; };
@@ -253,6 +252,16 @@
 		F383D1992D67D3DB00FE4239 /* Siri Guide Phrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E1A702D649D1300718CB7 /* Siri Guide Phrase.swift */; };
 		F383D19A2D67D3DB00FE4239 /* Siri Phrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30246C42D65E6F70030F71C /* Siri Phrase.swift */; };
 		F383D19B2D67E60400FE4239 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3C879CD2D65722200840745 /* Assets.xcassets */; };
+		F396F7FC2D81BDC600FCB648 /* Tip Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396F7FB2D81BDC600FCB648 /* Tip Card.swift */; };
+		F396F7FD2D81BDC600FCB648 /* Tip Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396F7FB2D81BDC600FCB648 /* Tip Card.swift */; };
+		F396F7FE2D81BDC600FCB648 /* Tip Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396F7FB2D81BDC600FCB648 /* Tip Card.swift */; };
+		F396F7FF2D81BDC600FCB648 /* Tip Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396F7FB2D81BDC600FCB648 /* Tip Card.swift */; };
+		F396F8002D81BDC600FCB648 /* Tip Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396F7FB2D81BDC600FCB648 /* Tip Card.swift */; };
+		F396F8022D81BE6A00FCB648 /* Tip VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396F8012D81BE6A00FCB648 /* Tip VM.swift */; };
+		F396F8032D81BE6A00FCB648 /* Tip VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396F8012D81BE6A00FCB648 /* Tip VM.swift */; };
+		F396F8042D81BE6A00FCB648 /* Tip VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396F8012D81BE6A00FCB648 /* Tip VM.swift */; };
+		F396F8052D81BE6A00FCB648 /* Tip VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396F8012D81BE6A00FCB648 /* Tip VM.swift */; };
+		F396F8062D81BE6A00FCB648 /* Tip VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396F8012D81BE6A00FCB648 /* Tip VM.swift */; };
 		F39EAF732D6C82B900072794 /* Page Destinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39EAF722D6C82B900072794 /* Page Destinations.swift */; };
 		F39EAF742D6C82B900072794 /* Page Destinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39EAF722D6C82B900072794 /* Page Destinations.swift */; };
 		F39EAF752D6C82B900072794 /* Page Destinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39EAF722D6C82B900072794 /* Page Destinations.swift */; };
@@ -353,14 +362,6 @@
 		F3C87A102D657A1500840745 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C87A0E2D657A1500840745 /* Feature.swift */; };
 		F3C87A112D657A1500840745 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C87A0E2D657A1500840745 /* Feature.swift */; };
 		F3C8E54A2D7E24E900644E47 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3C8E5492D7E24E900644E47 /* InfoPlist.xcstrings */; };
-		F3C8E54B2D7E24E900644E47 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3C8E5492D7E24E900644E47 /* InfoPlist.xcstrings */; };
-		F3C8E54C2D7E24E900644E47 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3C8E5492D7E24E900644E47 /* InfoPlist.xcstrings */; };
-		F3C8E54D2D7E24E900644E47 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3C8E5492D7E24E900644E47 /* InfoPlist.xcstrings */; };
-		F3C8E54E2D7E24E900644E47 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3C8E5492D7E24E900644E47 /* InfoPlist.xcstrings */; };
-		F3C8E54F2D7E24E900644E47 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3C8E5492D7E24E900644E47 /* InfoPlist.xcstrings */; };
-		F3C8E5502D7E2AD000644E47 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3C8E5492D7E24E900644E47 /* InfoPlist.xcstrings */; };
-		F3C8E5512D7E2AD000644E47 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3C8E5492D7E24E900644E47 /* InfoPlist.xcstrings */; };
-		F3C8E5522D7E2AD000644E47 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3C8E5492D7E24E900644E47 /* InfoPlist.xcstrings */; };
 		F3C8E5532D7E2ADF00644E47 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F326DB572D6416E100BCCB69 /* Localizable.xcstrings */; };
 		F3C9235E2D6C6CD3004D31A9 /* MCStatsDataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = F3C9235D2D6C6CD3004D31A9 /* MCStatsDataLayer */; };
 		F3C923602D6C6CDC004D31A9 /* MCStatsDataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = F3C9235F2D6C6CDC004D31A9 /* MCStatsDataLayer */; };
@@ -368,6 +369,13 @@
 		F3C923642D6C6CE7004D31A9 /* MCStatsDataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = F3C923632D6C6CE7004D31A9 /* MCStatsDataLayer */; };
 		F3C923662D6C6CF2004D31A9 /* MCStatsDataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = F3C923652D6C6CF2004D31A9 /* MCStatsDataLayer */; };
 		F3C923682D6C6CF6004D31A9 /* MCStatsDataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = F3C923672D6C6CF6004D31A9 /* MCStatsDataLayer */; };
+		F3D6775F2DD78C5300721DE8 /* Tutorial.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D6775E2DD78C5300721DE8 /* Tutorial.xcassets */; };
+		F3D677602DD78C5300721DE8 /* Tutorial.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D6775E2DD78C5300721DE8 /* Tutorial.xcassets */; };
+		F3D677612DD78C5300721DE8 /* Tutorial.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D6775E2DD78C5300721DE8 /* Tutorial.xcassets */; };
+		F3D677622DD78C5300721DE8 /* Tutorial.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D6775E2DD78C5300721DE8 /* Tutorial.xcassets */; };
+		F3D677632DD78C5300721DE8 /* Tutorial.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D6775E2DD78C5300721DE8 /* Tutorial.xcassets */; };
+		F3D677642DD78C5300721DE8 /* Tutorial.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D6775E2DD78C5300721DE8 /* Tutorial.xcassets */; };
+		F3D677652DD7E81700721DE8 /* Intents.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = F1406BA92AA391B800815BE8 /* Intents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F3D9AE622D6C68EB00069BDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F13E60022A4BD615005BE9B2 /* Assets.xcassets */; };
 		F3DD086A2D75226A00A67D4B /* Server List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DD08692D75226A00A67D4B /* Server List.swift */; };
 		F3DD086B2D75232500A67D4B /* Server Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AE29152CA48577009D0D14 /* Server Row.swift */; };
@@ -401,16 +409,12 @@
 		F3EFC1752D709C5700EE988A /* Ping Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EFC1732D709C5700EE988A /* Ping Error.swift */; };
 		F3EFC1762D709C5700EE988A /* Ping Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EFC1732D709C5700EE988A /* Ping Error.swift */; };
 		F3EFC1772D709C5700EE988A /* Ping Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EFC1732D709C5700EE988A /* Ping Error.swift */; };
+		F3F2E6422D8258AF0078EA89 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F2E6412D8258AF0078EA89 /* StoreKit.framework */; };
+		F3F2E6432D8258C50078EA89 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F325F93C2D80E84300FDF4D9 /* StoreKit.framework */; };
+		F3F2E6452D8258C90078EA89 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F2E6442D8258C90078EA89 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F10C421D2AAE40BC000107D6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F13E5FF12A4BD614005BE9B2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F1406BA82AA391B800815BE8;
-			remoteInfo = MCStatusIntentsFramework;
-		};
 		F11F63562A81E51000D47187 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F13E5FF12A4BD614005BE9B2 /* Project object */;
@@ -439,52 +443,51 @@
 			remoteGlobalIDString = F1EF76EB2CB7873F00EFFB20;
 			remoteInfo = MCStatusWidgetExtensionExtension;
 		};
+		F3D677662DD7E81700721DE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F13E5FF12A4BD614005BE9B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1406BA82AA391B800815BE8;
+			remoteInfo = Intents;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		F10C421F2AAE40BC000107D6 /* Embed ExtensionKit Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
-			dstSubfolderSpec = 16;
-			files = (
-				F10C421C2AAE40BC000107D6 /* Intents.appex in Embed ExtensionKit Extensions */,
-			);
-			name = "Embed ExtensionKit Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F11F635C2A81E51000D47187 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
-			dstSubfolderSpec = 16;
+			dstSubfolder = Product;
 			files = (
 				F11F63582A81E51000D47187 /* watchOS.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F19528E92CBAB86800B56E5D /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
 			dstPath = "";
-			dstSubfolderSpec = 13;
+			dstSubfolder = PlugIns;
 			files = (
 				F13095302CBC997300C4C7BA /* Watch Widgets.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F1EF77052CB7874100EFFB20 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
 			dstPath = "";
-			dstSubfolderSpec = 13;
+			dstSubfolder = PlugIns;
 			files = (
 				F1EF76FF2CB7874000EFFB20 /* Widgets.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3D677682DD7E81700721DE8 /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolder = Product;
+			files = (
+				F3D677652DD7E81700721DE8 /* Intents.appex in Embed ExtensionKit Extensions */,
+			);
+			name = "Embed ExtensionKit Extensions";
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -569,14 +572,14 @@
 		F304725B2D63FBFC0055C007 /* MinecraftRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MinecraftRegular.otf; sourceTree = "<group>"; };
 		F31D45A12D6DC62600981B1C /* MC Stats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MC Stats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F31D45B22D6DC67B00981B1C /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		F31D45BA2D6DC6A800981B1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F31D45BA2D6DC6A800981B1C /* macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = macOS.plist; sourceTree = "<group>"; };
 		F325F85D2D805FF300FDF4D9 /* MC Stats StoreKit Synced.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = "MC Stats StoreKit Synced.storekit"; sourceTree = "<group>"; };
 		F325F93C2D80E84300FDF4D9 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		F326DB572D6416E100BCCB69 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		F3570D3C2D6E779500BDF069 /* iMessages.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = iMessages.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3570D402D6E779500BDF069 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = Library/Frameworks/Messages.framework; sourceTree = DEVELOPER_DIR; };
 		F3570D532D6E77C000BDF069 /* iMessage Icon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "iMessage Icon.xcassets"; sourceTree = "<group>"; };
-		F3570D542D6E77C000BDF069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3570D542D6E77C000BDF069 /* iMessage.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = iMessage.plist; sourceTree = "<group>"; };
 		F3570D572D6E77C000BDF069 /* Messages VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Messages VC.swift"; sourceTree = "<group>"; };
 		F3570D5D2D6E7D5900BDF069 /* iMessages.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iMessages.entitlements; sourceTree = "<group>"; };
 		F3570D612D6E8C4F00BDF069 /* Nav Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav Container.swift"; sourceTree = "<group>"; };
@@ -593,6 +596,8 @@
 		F35E1ACB2D652C9000718CB7 /* visionOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = visionOS.entitlements; sourceTree = "<group>"; };
 		F360A8AE2D6C6BC3008E515E /* MCStatsDataLayer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = MCStatsDataLayer; sourceTree = "<group>"; };
 		F37883692D6AF86A00D38522 /* Debug Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Debug Settings.swift"; sourceTree = "<group>"; };
+		F396F7FB2D81BDC600FCB648 /* Tip Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tip Card.swift"; sourceTree = "<group>"; };
+		F396F8012D81BE6A00FCB648 /* Tip VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tip VM.swift"; sourceTree = "<group>"; };
 		F39EAF722D6C82B900072794 /* Page Destinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Page Destinations.swift"; sourceTree = "<group>"; };
 		F39EAF772D6C831000072794 /* Settings View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Settings View.swift"; sourceTree = "<group>"; };
 		F3B0740D2D76697000F24939 /* Expected Result Batch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expected Result Batch.swift"; sourceTree = "<group>"; };
@@ -610,37 +615,36 @@
 		F3C87A052D6574DD00840745 /* FAQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQ.swift; sourceTree = "<group>"; };
 		F3C87A0E2D657A1500840745 /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
 		F3C8E5492D7E24E900644E47 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		F3D6775E2DD78C5300721DE8 /* Tutorial.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Tutorial.xcassets; sourceTree = "<group>"; };
 		F3DD08692D75226A00A67D4B /* Server List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Server List.swift"; sourceTree = "<group>"; };
 		F3EFC1712D70877F00EE988A /* Edit Server View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Edit Server View.swift"; sourceTree = "<group>"; };
 		F3EFC1732D709C5700EE988A /* Ping Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ping Error.swift"; sourceTree = "<group>"; };
+		F3F2E6412D8258AF0078EA89 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS18.4.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
+		F3F2E6442D8258C90078EA89 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS11.4.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F11F63482A81E50E00D47187 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F1EF76C82CB4216F00EFFB20 /* NukeUI in Frameworks */,
 				F33A5CB32D640C440020D8A5 /* ScrechKit in Frameworks */,
+				F3F2E6452D8258C90078EA89 /* StoreKit.framework in Frameworks */,
 				F3C9235E2D6C6CD3004D31A9 /* MCStatsDataLayer in Frameworks */,
 				F1EF76C62CB4216F00EFFB20 /* Nuke in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F13095222CBC997200C4C7BA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F13095272CBC997200C4C7BA /* SwiftUI.framework in Frameworks */,
 				F33A5CB12D640C3B0020D8A5 /* ScrechKit in Frameworks */,
 				F3C923682D6C6CF6004D31A9 /* MCStatsDataLayer in Frameworks */,
 				F13095262CBC997200C4C7BA /* WidgetKit.framework in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F13E5FF62A4BD614005BE9B2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F1612CCA2CACC37300E602DC /* NukeUI in Frameworks */,
 				F33A5CAD2D640BEB0020D8A5 /* ScrechKit in Frameworks */,
@@ -648,41 +652,34 @@
 				F3C1E4392D6C8CA400950F3D /* MCStatsDataLayer in Frameworks */,
 				F1612CC82CACC37300E602DC /* Nuke in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F1406BA62AA391B800815BE8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F3C923642D6C6CE7004D31A9 /* MCStatsDataLayer in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F1EF76E92CB7873F00EFFB20 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F1EF76F02CB7873F00EFFB20 /* SwiftUI.framework in Frameworks */,
 				F33A5CAF2D640C370020D8A5 /* ScrechKit in Frameworks */,
 				F3C923662D6C6CF2004D31A9 /* MCStatsDataLayer in Frameworks */,
 				F1EF76EE2CB7873F00EFFB20 /* WidgetKit.framework in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F31D459E2D6DC62600981B1C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F31D45C02D6DC6C200981B1C /* Nuke in Frameworks */,
 				F31D45BC2D6DC6B700981B1C /* MCStatsDataLayer in Frameworks */,
+				F3F2E6432D8258C50078EA89 /* StoreKit.framework in Frameworks */,
 				F31D45BE2D6DC6BD00981B1C /* ScrechKit in Frameworks */,
 				F31D45C22D6DC6C600981B1C /* NukeUI in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3570D392D6E779500BDF069 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F3DD086D2D75233000A67D4B /* ScrechKit in Frameworks */,
 				F3BC6B202D6F56950016A68D /* MCStatsDataLayer in Frameworks */,
@@ -690,28 +687,24 @@
 				F3DD086F2D75233300A67D4B /* NukeUI in Frameworks */,
 				F3DD08712D75233600A67D4B /* Nuke in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F35E1A7A2D6501A500718CB7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F3C923622D6C6CE2004D31A9 /* MCStatsDataLayer in Frameworks */,
 				F35E1AB62D65230400718CB7 /* ScrechKit in Frameworks */,
 				F35E1AB42D6522F400718CB7 /* NukeUI in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3C879BA2D65720500840745 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F3C879FD2D6572FD00840745 /* Nuke in Frameworks */,
 				F3C879FB2D6572F900840745 /* ScrechKit in Frameworks */,
+				F3F2E6422D8258AF0078EA89 /* StoreKit.framework in Frameworks */,
 				F3C923602D6C6CDC004D31A9 /* MCStatsDataLayer in Frameworks */,
 				F3C879FF2D65730000840745 /* NukeUI in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
@@ -727,6 +720,8 @@
 		F10C421B2AAE40BC000107D6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F3F2E6442D8258C90078EA89 /* StoreKit.framework */,
+				F3F2E6412D8258AF0078EA89 /* StoreKit.framework */,
 				F325F93C2D80E84300FDF4D9 /* StoreKit.framework */,
 				F1EF76ED2CB7873F00EFFB20 /* WidgetKit.framework */,
 				F1EF76EF2CB7873F00EFFB20 /* SwiftUI.framework */,
@@ -795,7 +790,9 @@
 				F326DB572D6416E100BCCB69 /* Localizable.xcstrings */,
 				F3C8E5492D7E24E900644E47 /* InfoPlist.xcstrings */,
 				F13E60022A4BD615005BE9B2 /* Assets.xcassets */,
+				F3D6775E2DD78C5300721DE8 /* Tutorial.xcassets */,
 				F3DD08852D75253000A67D4B /* Release Notes */,
+				F396F8072D81BF0E00FCB648 /* Tipping */,
 				F1E671752CA73A86002BDFC0 /* Custom Progress View.swift */,
 				F17A16BC2A8956DE00F8FF2F /* Edit Server View.swift */,
 				F3B074282D77050900F24939 /* Edit Server View Helper.swift */,
@@ -994,7 +991,7 @@
 		F31D45B42D6DC67B00981B1C /* macOS */ = {
 			isa = PBXGroup;
 			children = (
-				F31D45BA2D6DC6A800981B1C /* Info.plist */,
+				F31D45BA2D6DC6A800981B1C /* macOS.plist */,
 				F31D45B22D6DC67B00981B1C /* macOS.entitlements */,
 				F3EFC1712D70877F00EE988A /* Edit Server View.swift */,
 			);
@@ -1014,7 +1011,7 @@
 			isa = PBXGroup;
 			children = (
 				F3570D572D6E77C000BDF069 /* Messages VC.swift */,
-				F3570D542D6E77C000BDF069 /* Info.plist */,
+				F3570D542D6E77C000BDF069 /* iMessage.plist */,
 				F3570D5D2D6E7D5900BDF069 /* iMessages.entitlements */,
 				F3570D532D6E77C000BDF069 /* iMessage Icon.xcassets */,
 				F3570D612D6E8C4F00BDF069 /* Nav Container.swift */,
@@ -1070,6 +1067,16 @@
 			path = "Lock Screen";
 			sourceTree = "<group>";
 		};
+		F396F8072D81BF0E00FCB648 /* Tipping */ = {
+			isa = PBXGroup;
+			children = (
+				F17AE0FB2CC05F9000DC7A80 /* Tip View.swift */,
+				F396F7FB2D81BDC600FCB648 /* Tip Card.swift */,
+				F396F8012D81BE6A00FCB648 /* Tip VM.swift */,
+			);
+			path = Tipping;
+			sourceTree = "<group>";
+		};
 		F3B074142D76E20800F24939 /* Server Details */ = {
 			isa = PBXGroup;
 			children = (
@@ -1105,7 +1112,6 @@
 				F150B43E2CC18C1100739646 /* Release Notes.swift */,
 				F35E1A6E2D649C6000718CB7 /* Feature Row.swift */,
 				F3C87A0E2D657A1500840745 /* Feature.swift */,
-				F17AE0FB2CC05F9000DC7A80 /* Tip View.swift */,
 			);
 			path = "Release Notes";
 			sourceTree = "<group>";
@@ -1149,8 +1155,6 @@
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			name = "Watch Widgets";
 			packageProductDependencies = (
 				F33A5CB02D640C3B0020D8A5 /* ScrechKit */,
@@ -1168,15 +1172,15 @@
 				F13E5FF62A4BD614005BE9B2 /* Frameworks */,
 				F13E5FF72A4BD614005BE9B2 /* Resources */,
 				F11F635C2A81E51000D47187 /* Embed Watch Content */,
-				F10C421F2AAE40BC000107D6 /* Embed ExtensionKit Extensions */,
 				F1EF77052CB7874100EFFB20 /* Embed Foundation Extensions */,
+				F3D677682DD7E81700721DE8 /* Embed ExtensionKit Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				F11F63572A81E51000D47187 /* PBXTargetDependency */,
-				F10C421E2AAE40BC000107D6 /* PBXTargetDependency */,
 				F1EF76FE2CB7874000EFFB20 /* PBXTargetDependency */,
+				F3D677672DD7E81700721DE8 /* PBXTargetDependency */,
 			);
 			name = "MC Stats";
 			packageProductDependencies = (
@@ -1199,8 +1203,6 @@
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			name = Intents;
 			packageProductDependencies = (
 				F3C923632D6C6CE7004D31A9 /* MCStatsDataLayer */,
@@ -1218,8 +1220,6 @@
 				F1EF76EA2CB7873F00EFFB20 /* Resources */,
 			);
 			buildRules = (
-			);
-			dependencies = (
 			);
 			name = Widgets;
 			packageProductDependencies = (
@@ -1239,8 +1239,6 @@
 				F31D459F2D6DC62600981B1C /* Resources */,
 			);
 			buildRules = (
-			);
-			dependencies = (
 			);
 			name = macOS;
 			packageProductDependencies = (
@@ -1263,8 +1261,6 @@
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			name = iMessages;
 			packageProductDependencies = (
 				F3BC6B1F2D6F56950016A68D /* MCStatsDataLayer */,
@@ -1286,8 +1282,6 @@
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			name = visionOS;
 			packageProductDependencies = (
 				F35E1AB32D6522F400718CB7 /* NukeUI */,
@@ -1307,8 +1301,6 @@
 				F3C879BB2D65720500840745 /* Resources */,
 			);
 			buildRules = (
-			);
-			dependencies = (
 			);
 			name = tvOS;
 			packageProductDependencies = (
@@ -1374,7 +1366,7 @@
 				F33A5CAB2D640BEB0020D8A5 /* XCRemoteSwiftPackageReference "ScrechKit" */,
 				F394B82A2D6C6F9D0040EBD7 /* XCLocalSwiftPackageReference "MCStatsDataLayer" */,
 			);
-			preferredProjectObjectVersion = 77;
+			preferredProjectObjectVersion = 90;
 			productRefGroup = F13E5FFA2A4BD614005BE9B2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1395,30 +1387,25 @@
 /* Begin PBXResourcesBuildPhase section */
 		F11F63492A81E50E00D47187 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
-				F3C8E54C2D7E24E900644E47 /* InfoPlist.xcstrings in Resources */,
 				F38218852D671BAB005025E7 /* Assets.xcassets in Resources */,
+				F3D677602DD78C5300721DE8 /* Tutorial.xcassets in Resources */,
 				F325F8C42D80697300FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */,
 				F326DB592D6416E100BCCB69 /* Localizable.xcstrings in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F13095232CBC997200C4C7BA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
-				F3C8E5522D7E2AD000644E47 /* InfoPlist.xcstrings in Resources */,
 				F326DB5C2D6416E100BCCB69 /* Localizable.xcstrings in Resources */,
 				F30472282D63E9C20055C007 /* Assets.xcassets in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F13E5FF72A4BD614005BE9B2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F35E1A782D64DC2700718CB7 /* Assets.xcassets in Resources */,
+				F3D6775F2DD78C5300721DE8 /* Tutorial.xcassets in Resources */,
 				F3C8E54A2D7E24E900644E47 /* InfoPlist.xcstrings in Resources */,
 				F325F8C32D80651B00FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */,
 				F326DB582D6416E100BCCB69 /* Localizable.xcstrings in Resources */,
@@ -1427,72 +1414,58 @@
 				F304725F2D63FBFC0055C007 /* MinecraftItalic.otf in Resources */,
 				F30472602D63FBFC0055C007 /* MinecraftRegular.otf in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F1406BA72AA391B800815BE8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
-				F3C8E5502D7E2AD000644E47 /* InfoPlist.xcstrings in Resources */,
 				F326DB5A2D6416E100BCCB69 /* Localizable.xcstrings in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F1EF76EA2CB7873F00EFFB20 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
-				F3C8E5512D7E2AD000644E47 /* InfoPlist.xcstrings in Resources */,
 				F326DB5B2D6416E100BCCB69 /* Localizable.xcstrings in Resources */,
 				F30472092D63E9C00055C007 /* Assets.xcassets in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F31D459F2D6DC62600981B1C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
-				F3C8E54F2D7E24E900644E47 /* InfoPlist.xcstrings in Resources */,
 				F31D45E42D6DC7A800981B1C /* Assets.xcassets in Resources */,
+				F3D677632DD78C5300721DE8 /* Tutorial.xcassets in Resources */,
 				F325F8C52D80697300FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */,
 				F3C8E5532D7E2ADF00644E47 /* Localizable.xcstrings in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3570D3A2D6E779500BDF069 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F325F8C82D80697700FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */,
 				F3DD08892D7527BF00A67D4B /* iMessage Icon.xcassets in Resources */,
 				F3DD08812D7524CF00A67D4B /* Localizable.xcstrings in Resources */,
-				F3C8E54B2D7E24E900644E47 /* InfoPlist.xcstrings in Resources */,
 				F3DD08822D7524DA00A67D4B /* Assets.xcassets in Resources */,
+				F3D677642DD78C5300721DE8 /* Tutorial.xcassets in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F35E1A7B2D6501A500718CB7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F35E1AC12D65237200718CB7 /* MinecraftRegular.otf in Resources */,
+				F3D677612DD78C5300721DE8 /* Tutorial.xcassets in Resources */,
 				F325F8C72D80697300FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */,
 				F3C879D82D6572AA00840745 /* Localizable.xcstrings in Resources */,
 				F35E1AC22D65237200718CB7 /* MinecraftBold.otf in Resources */,
 				F360A8AC2D6C6942008E515E /* visionOS Icon.xcassets in Resources */,
 				F3D9AE622D6C68EB00069BDF /* Assets.xcassets in Resources */,
 				F35E1AC32D65237200718CB7 /* MinecraftBoldItalic.otf in Resources */,
-				F3C8E54E2D7E24E900644E47 /* InfoPlist.xcstrings in Resources */,
 				F35E1AC42D65237200718CB7 /* MinecraftItalic.otf in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3C879BB2D65720500840745 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F383D19B2D67E60400FE4239 /* Assets.xcassets in Resources */,
-				F3C8E54D2D7E24E900644E47 /* InfoPlist.xcstrings in Resources */,
+				F3D677622DD78C5300721DE8 /* Tutorial.xcassets in Resources */,
 				F325F8C62D80697300FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */,
 				F3C879D72D6572AA00840745 /* Localizable.xcstrings in Resources */,
 				F3C879F42D6572DF00840745 /* MinecraftRegular.otf in Resources */,
@@ -1500,14 +1473,12 @@
 				F3C879F62D6572DF00840745 /* MinecraftBold.otf in Resources */,
 				F3C879F72D6572DF00840745 /* MinecraftBoldItalic.otf in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F11F63472A81E50E00D47187 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F1EF76CA2CB422D400EFFB20 /* Server Details.swift in Sources */,
 				F174A3012A915E450051DA5B /* Watch Server Status Checker.swift in Sources */,
@@ -1539,11 +1510,9 @@
 				F30472572D63E9D30055C007 /* Server Status Entity.swift in Sources */,
 				F10E94B12A8C61B60039DD2B /* Connectivity Provider.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F13095212CBC997200C4C7BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F13095572CBD48ED00C4C7BA /* Watch Server Status Checker.swift in Sources */,
 				F13095582CBD494300C4C7BA /* Connectivity Provider.swift in Sources */,
@@ -1568,12 +1537,11 @@
 				F17AE0F02CC0363F00DC7A80 /* MOTD View Generator.swift in Sources */,
 				F130954C2CBC9C5D00C4C7BA /* Custom Extentions.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F13E5FF52A4BD614005BE9B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
+				F396F8042D81BE6A00FCB648 /* Tip VM.swift in Sources */,
 				F150B4342CC15F6A00739646 /* Siri Guide.swift in Sources */,
 				F3C87A032D6574D200840745 /* FAQ Row.swift in Sources */,
 				F35E1A772D64D32D00718CB7 /* Refresh Widgets.swift in Sources */,
@@ -1590,6 +1558,7 @@
 				F30472552D63E9D30055C007 /* Server Status Entity.swift in Sources */,
 				F30246CB2D6661D60030F71C /* Player List.swift in Sources */,
 				F35E1A712D649D1300718CB7 /* Siri Guide Phrase.swift in Sources */,
+				F396F7FF2D81BDC600FCB648 /* Tip Card.swift in Sources */,
 				F174A2FC2A8F7FFA0051DA5B /* Watch Helper.swift in Sources */,
 				F17A16BD2A8956DE00F8FF2F /* Edit Server View.swift in Sources */,
 				F17AE0EC2CC01E9E00DC7A80 /* FAQ View.swift in Sources */,
@@ -1619,11 +1588,9 @@
 				F150B43F2CC18C1100739646 /* Release Notes.swift in Sources */,
 				F130954F2CBC9D5600C4C7BA /* Config Helper.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F1406BA52AA391B800815BE8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F30472522D63E9D30055C007 /* Saved Server Entity.swift in Sources */,
 				F3B0740F2D76697000F24939 /* Expected Result Batch.swift in Sources */,
@@ -1645,11 +1612,9 @@
 				F13095512CBC9D5600C4C7BA /* Config Helper.swift in Sources */,
 				F17AE0F22CC0363F00DC7A80 /* MOTD View Generator.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F1EF76E82CB7873F00EFFB20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F304720B2D63E9C00055C007 /* Homescreen Provider.swift in Sources */,
 				F304720C2D63E9C00055C007 /* Lockscreen Provider.swift in Sources */,
@@ -1676,13 +1641,12 @@
 				F1EF77622CB8C62D00EFFB20 /* Custom Progress View.swift in Sources */,
 				F13095502CBC9D5600C4C7BA /* Config Helper.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F31D459D2D6DC62600981B1C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F31D45B92D6DC68F00981B1C /* MC Stats.swift in Sources */,
+				F396F7FE2D81BDC600FCB648 /* Tip Card.swift in Sources */,
 				F31D45D82D6DC76200981B1C /* FAQ.swift in Sources */,
 				F31D45DA2D6DC76200981B1C /* Server Row.swift in Sources */,
 				F31D45EB2D6DCB1300981B1C /* Server Status Entity.swift in Sources */,
@@ -1699,6 +1663,7 @@
 				F31D45CA2D6DC74C00981B1C /* Feature.swift in Sources */,
 				F31D45C32D6DC74100981B1C /* App Container Helper.swift in Sources */,
 				F31D45C42D6DC74100981B1C /* App Container.swift in Sources */,
+				F396F8032D81BE6A00FCB648 /* Tip VM.swift in Sources */,
 				F3EFC1722D70877F00EE988A /* Edit Server View.swift in Sources */,
 				F31D45E52D6DC9C600981B1C /* Low Power Mode.swift in Sources */,
 				F31D45E62D6DC9C600981B1C /* Refresh Widgets.swift in Sources */,
@@ -1725,11 +1690,9 @@
 				F31D45CF2D6DC75200981B1C /* Ping Graph.swift in Sources */,
 				F31D45D02D6DC75200981B1C /* MOTD View.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3570D382D6E779500BDF069 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F3B0740A2D76566200F24939 /* MOTD View Generator.swift in Sources */,
 				F3DD08762D75238B00A67D4B /* Config Helper.swift in Sources */,
@@ -1753,7 +1716,9 @@
 				F3DD08802D75246700A67D4B /* Watch Helper.swift in Sources */,
 				F3B0740C2D76567000F24939 /* Server Details.swift in Sources */,
 				F3DD087A2D7523BD00A67D4B /* Saved Server Entity.swift in Sources */,
+				F396F8052D81BE6A00FCB648 /* Tip VM.swift in Sources */,
 				F3B0742C2D77063B00F24939 /* Edit Server View Helper.swift in Sources */,
+				F396F8002D81BDC600FCB648 /* Tip Card.swift in Sources */,
 				F3DD08732D75236E00A67D4B /* Edit Server View.swift in Sources */,
 				F3B073F72D7655D500F24939 /* Siri Guide Phrase.swift in Sources */,
 				F3B073FA2D7655D900F24939 /* FAQ.swift in Sources */,
@@ -1778,13 +1743,12 @@
 				F3DD08782D7523AC00A67D4B /* Saved Server Status Online Check Intent.swift in Sources */,
 				F3DD08842D75252400A67D4B /* Release Notes.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F35E1A792D6501A500718CB7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F35E1AA12D6522B300718CB7 /* Low Power Mode.swift in Sources */,
+				F396F7FC2D81BDC600FCB648 /* Tip Card.swift in Sources */,
 				F3BFB14E2D68055A00E16468 /* MOTD View.swift in Sources */,
 				F35E1AA22D6522B300718CB7 /* Refresh Widgets.swift in Sources */,
 				F35E1AA52D6522CB00718CB7 /* Siri Guide Phrase.swift in Sources */,
@@ -1801,6 +1765,7 @@
 				F30246D32D667ED50030F71C /* Server Ping.swift in Sources */,
 				F30246C62D65E6F70030F71C /* Siri Phrase.swift in Sources */,
 				F35E1AAA2D6522D100718CB7 /* FAQ View.swift in Sources */,
+				F396F8062D81BE6A00FCB648 /* Tip VM.swift in Sources */,
 				F30246C92D6661D60030F71C /* Player List.swift in Sources */,
 				F3C87A022D6574D200840745 /* FAQ Row.swift in Sources */,
 				F35E1AAC2D6522D600718CB7 /* Edit Server View.swift in Sources */,
@@ -1827,13 +1792,12 @@
 				F35E1AC92D652C5B00718CB7 /* Saved Server Entity.swift in Sources */,
 				F35E1AA42D6522C600718CB7 /* Release Notes.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3C879B92D65720500840745 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F3C879DF2D6572C400840745 /* Server Details.swift in Sources */,
+				F396F7FD2D81BDC600FCB648 /* Tip Card.swift in Sources */,
 				F3BFB14F2D68055A00E16468 /* MOTD View.swift in Sources */,
 				F3C879E02D6572C400840745 /* Player Card.swift in Sources */,
 				F3C87A0B2D6575B700840745 /* Intent Errors.swift in Sources */,
@@ -1850,6 +1814,7 @@
 				F30246CA2D6661D60030F71C /* Player List.swift in Sources */,
 				F383D1992D67D3DB00FE4239 /* Siri Guide Phrase.swift in Sources */,
 				F383D19A2D67D3DB00FE4239 /* Siri Phrase.swift in Sources */,
+				F396F8022D81BE6A00FCB648 /* Tip VM.swift in Sources */,
 				F3C879E42D6572C400840745 /* Custom Progress View.swift in Sources */,
 				F3C87A082D6574DD00840745 /* FAQ.swift in Sources */,
 				F3C879E52D6572C400840745 /* FAQ View.swift in Sources */,
@@ -1876,17 +1841,10 @@
 				F3C879EA2D6572CA00840745 /* General Settings.swift in Sources */,
 				F3C879DA2D6572B000840745 /* App Container.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F10C421E2AAE40BC000107D6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			platformFilter = ios;
-			target = F1406BA82AA391B800815BE8 /* Intents */;
-			targetProxy = F10C421D2AAE40BC000107D6 /* PBXContainerItemProxy */;
-		};
 		F11F63572A81E51000D47187 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			platformFilter = ios;
@@ -1908,10 +1866,15 @@
 			target = F1EF76EB2CB7873F00EFFB20 /* Widgets */;
 			targetProxy = F1EF76FD2CB7874000EFFB20 /* PBXContainerItemProxy */;
 		};
+		F3D677672DD7E81700721DE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1406BA82AA391B800815BE8 /* Intents */;
+			targetProxy = F3D677662DD7E81700721DE8 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		F11F635A2A81E51000D47187 /* Debug */ = {
+		F11F635A2A81E51000D47187 /* Debug configuration for PBXNativeTarget "watchOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1919,7 +1882,6 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = watchOS/watchOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = watchOS/watchOS.plist;
@@ -1931,7 +1893,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.MC-Stats.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -1943,7 +1904,7 @@
 			};
 			name = Debug;
 		};
-		F11F635B2A81E51000D47187 /* Release */ = {
+		F11F635B2A81E51000D47187 /* Release configuration for PBXNativeTarget "watchOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1951,7 +1912,6 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = watchOS/watchOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = watchOS/watchOS.plist;
@@ -1963,7 +1923,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.MC-Stats.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -1976,14 +1935,13 @@
 			};
 			name = Release;
 		};
-		F13095322CBC997300C4C7BA /* Debug */ = {
+		F13095322CBC997300C4C7BA /* Debug configuration for PBXNativeTarget "Watch Widgets" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = "Widgets watchOS/Widgets watchOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Widgets watchOS/Widgets watchOS.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "MC Stats";
@@ -1994,7 +1952,6 @@
 					"@executable_path/../../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.MC-Stats.watchkitapp.WatchWidgets";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -2006,14 +1963,13 @@
 			};
 			name = Debug;
 		};
-		F13095332CBC997300C4C7BA /* Release */ = {
+		F13095332CBC997300C4C7BA /* Release configuration for PBXNativeTarget "Watch Widgets" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = "Widgets watchOS/Widgets watchOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Widgets watchOS/Widgets watchOS.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "MC Stats";
@@ -2024,7 +1980,6 @@
 					"@executable_path/../../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.MC-Stats.watchkitapp.WatchWidgets";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -2037,7 +1992,7 @@
 			};
 			name = Release;
 		};
-		F13E60092A4BD615005BE9B2 /* Debug */ = {
+		F13E60092A4BD615005BE9B2 /* Debug configuration for PBXProject "MC Stats" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -2072,6 +2027,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 8FQUA2F388;
@@ -2092,7 +2048,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "2025 Sergei Saliukov";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0.9;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -2102,7 +2060,7 @@
 			};
 			name = Debug;
 		};
-		F13E600A2A4BD615005BE9B2 /* Release */ = {
+		F13E600A2A4BD615005BE9B2 /* Release configuration for PBXProject "MC Stats" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -2137,6 +2095,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 8FQUA2F388;
@@ -2151,7 +2110,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "2025 Sergei Saliukov";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -2159,7 +2120,7 @@
 			};
 			name = Release;
 		};
-		F13E600C2A4BD615005BE9B2 /* Debug */ = {
+		F13E600C2A4BD615005BE9B2 /* Debug configuration for PBXNativeTarget "MC Stats" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -2167,9 +2128,8 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = "MC Stats/Other/iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"MC Stats/Other\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -2190,7 +2150,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.MC-Stats";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -2205,7 +2164,7 @@
 			};
 			name = Debug;
 		};
-		F13E600D2A4BD615005BE9B2 /* Release */ = {
+		F13E600D2A4BD615005BE9B2 /* Release configuration for PBXNativeTarget "MC Stats" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -2213,9 +2172,8 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = "MC Stats/Other/iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"MC Stats/Other\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -2236,7 +2194,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.MC-Stats";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -2251,12 +2208,11 @@
 			};
 			name = Release;
 		};
-		F1406BB42AA391B800815BE8 /* Debug */ = {
+		F1406BB42AA391B800815BE8 /* Debug configuration for PBXNativeTarget "Intents" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Intents/Intents.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Intents/Intents.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "MC Stats";
@@ -2267,7 +2223,6 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.MC-Stats.Intents";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -2281,12 +2236,11 @@
 			};
 			name = Debug;
 		};
-		F1406BB52AA391B800815BE8 /* Release */ = {
+		F1406BB52AA391B800815BE8 /* Release configuration for PBXNativeTarget "Intents" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Intents/Intents.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Intents/Intents.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "MC Stats";
@@ -2297,7 +2251,6 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.MC-Stats.Intents";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -2312,14 +2265,13 @@
 			};
 			name = Release;
 		};
-		F1EF77032CB7874100EFFB20 /* Debug */ = {
+		F1EF77032CB7874100EFFB20 /* Debug configuration for PBXNativeTarget "Widgets" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = Widgets/Widgets.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Widgets/Widgets.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "MC Stats";
@@ -2330,7 +2282,6 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.MC-Stats.Widgets";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -2342,14 +2293,13 @@
 			};
 			name = Debug;
 		};
-		F1EF77042CB7874100EFFB20 /* Release */ = {
+		F1EF77042CB7874100EFFB20 /* Release configuration for PBXNativeTarget "Widgets" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = Widgets/Widgets.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Widgets/Widgets.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "MC Stats";
@@ -2360,7 +2310,6 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.MC-Stats.Widgets";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -2373,7 +2322,7 @@
 			};
 			name = Release;
 		};
-		F31D45AC2D6DC62700981B1C /* Debug */ = {
+		F31D45AC2D6DC62700981B1C /* Debug configuration for PBXNativeTarget "macOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -2381,12 +2330,11 @@
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = macOS/Info.plist;
+				INFOPLIST_FILE = macOS/macOS.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "MC Stats";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -2395,7 +2343,6 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.MC-Stats";
 				PRODUCT_NAME = "MC Stats";
 				REGISTER_APP_GROUPS = YES;
@@ -2405,7 +2352,7 @@
 			};
 			name = Debug;
 		};
-		F31D45AD2D6DC62700981B1C /* Release */ = {
+		F31D45AD2D6DC62700981B1C /* Release configuration for PBXNativeTarget "macOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -2413,12 +2360,11 @@
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = macOS/Info.plist;
+				INFOPLIST_FILE = macOS/macOS.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "MC Stats";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -2427,7 +2373,6 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.MC-Stats";
 				PRODUCT_NAME = "MC Stats";
 				REGISTER_APP_GROUPS = YES;
@@ -2437,16 +2382,15 @@
 			};
 			name = Release;
 		};
-		F3570D4D2D6E779600BDF069 /* Debug */ = {
+		F3570D4D2D6E779600BDF069 /* Debug configuration for PBXNativeTarget "iMessages" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
 				CODE_SIGN_ENTITLEMENTS = iMessage/iMessages.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = 8FQUA2F388;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = iMessage/Info.plist;
+				INFOPLIST_FILE = iMessage/iMessage.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "MC Stats";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -2455,7 +2399,6 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.8;
 				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.MC-Stats.MessagesExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2468,16 +2411,15 @@
 			};
 			name = Debug;
 		};
-		F3570D4E2D6E779600BDF069 /* Release */ = {
+		F3570D4E2D6E779600BDF069 /* Release configuration for PBXNativeTarget "iMessages" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
 				CODE_SIGN_ENTITLEMENTS = iMessage/iMessages.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = 8FQUA2F388;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = iMessage/Info.plist;
+				INFOPLIST_FILE = iMessage/iMessage.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "MC Stats";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -2486,7 +2428,6 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.8;
 				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.MC-Stats.MessagesExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2500,14 +2441,13 @@
 			};
 			name = Release;
 		};
-		F35E1A8F2D6501A600718CB7 /* Debug */ = {
+		F35E1A8F2D6501A600718CB7 /* Debug configuration for PBXNativeTarget "visionOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = visionOS/visionOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -2517,7 +2457,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.MC-Stats";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = xros;
@@ -2529,14 +2468,13 @@
 			};
 			name = Debug;
 		};
-		F35E1A902D6501A600718CB7 /* Release */ = {
+		F35E1A902D6501A600718CB7 /* Release configuration for PBXNativeTarget "visionOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = visionOS/visionOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -2546,7 +2484,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.MC-Stats";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = xros;
@@ -2559,7 +2496,7 @@
 			};
 			name = Release;
 		};
-		F3C879C92D65720600840745 /* Debug */ = {
+		F3C879C92D65720600840745 /* Debug configuration for PBXNativeTarget "tvOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
@@ -2567,19 +2504,20 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = tvOS/tvOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = tvOS/tvOS.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "MC Stats";
+				INFOPLIST_KEY_GCSupportsControllerUserInteraction = YES;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "2025 Sergei Saliukov";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.MC-Stats";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
@@ -2590,7 +2528,7 @@
 			};
 			name = Debug;
 		};
-		F3C879CA2D65720600840745 /* Release */ = {
+		F3C879CA2D65720600840745 /* Release configuration for PBXNativeTarget "tvOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
@@ -2598,19 +2536,20 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = tvOS/tvOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = tvOS/tvOS.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "MC Stats";
+				INFOPLIST_KEY_GCSupportsControllerUserInteraction = YES;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "2025 Sergei Saliukov";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.MC-Stats";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
@@ -2628,91 +2567,81 @@
 		F11F63592A81E51000D47187 /* Build configuration list for PBXNativeTarget "watchOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F11F635A2A81E51000D47187 /* Debug */,
-				F11F635B2A81E51000D47187 /* Release */,
+				F11F635A2A81E51000D47187 /* Debug configuration for PBXNativeTarget "watchOS" */,
+				F11F635B2A81E51000D47187 /* Release configuration for PBXNativeTarget "watchOS" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		F13095312CBC997300C4C7BA /* Build configuration list for PBXNativeTarget "Watch Widgets" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F13095322CBC997300C4C7BA /* Debug */,
-				F13095332CBC997300C4C7BA /* Release */,
+				F13095322CBC997300C4C7BA /* Debug configuration for PBXNativeTarget "Watch Widgets" */,
+				F13095332CBC997300C4C7BA /* Release configuration for PBXNativeTarget "Watch Widgets" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		F13E5FF42A4BD614005BE9B2 /* Build configuration list for PBXProject "MC Stats" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F13E60092A4BD615005BE9B2 /* Debug */,
-				F13E600A2A4BD615005BE9B2 /* Release */,
+				F13E60092A4BD615005BE9B2 /* Debug configuration for PBXProject "MC Stats" */,
+				F13E600A2A4BD615005BE9B2 /* Release configuration for PBXProject "MC Stats" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		F13E600B2A4BD615005BE9B2 /* Build configuration list for PBXNativeTarget "MC Stats" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F13E600C2A4BD615005BE9B2 /* Debug */,
-				F13E600D2A4BD615005BE9B2 /* Release */,
+				F13E600C2A4BD615005BE9B2 /* Debug configuration for PBXNativeTarget "MC Stats" */,
+				F13E600D2A4BD615005BE9B2 /* Release configuration for PBXNativeTarget "MC Stats" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		F1406BB32AA391B800815BE8 /* Build configuration list for PBXNativeTarget "Intents" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F1406BB42AA391B800815BE8 /* Debug */,
-				F1406BB52AA391B800815BE8 /* Release */,
+				F1406BB42AA391B800815BE8 /* Debug configuration for PBXNativeTarget "Intents" */,
+				F1406BB52AA391B800815BE8 /* Release configuration for PBXNativeTarget "Intents" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		F1EF77022CB7874100EFFB20 /* Build configuration list for PBXNativeTarget "Widgets" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F1EF77032CB7874100EFFB20 /* Debug */,
-				F1EF77042CB7874100EFFB20 /* Release */,
+				F1EF77032CB7874100EFFB20 /* Debug configuration for PBXNativeTarget "Widgets" */,
+				F1EF77042CB7874100EFFB20 /* Release configuration for PBXNativeTarget "Widgets" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		F31D45AE2D6DC62700981B1C /* Build configuration list for PBXNativeTarget "macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F31D45AC2D6DC62700981B1C /* Debug */,
-				F31D45AD2D6DC62700981B1C /* Release */,
+				F31D45AC2D6DC62700981B1C /* Debug configuration for PBXNativeTarget "macOS" */,
+				F31D45AD2D6DC62700981B1C /* Release configuration for PBXNativeTarget "macOS" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		F3570D4C2D6E779600BDF069 /* Build configuration list for PBXNativeTarget "iMessages" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3570D4D2D6E779600BDF069 /* Debug */,
-				F3570D4E2D6E779600BDF069 /* Release */,
+				F3570D4D2D6E779600BDF069 /* Debug configuration for PBXNativeTarget "iMessages" */,
+				F3570D4E2D6E779600BDF069 /* Release configuration for PBXNativeTarget "iMessages" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		F35E1A8E2D6501A600718CB7 /* Build configuration list for PBXNativeTarget "visionOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F35E1A8F2D6501A600718CB7 /* Debug */,
-				F35E1A902D6501A600718CB7 /* Release */,
+				F35E1A8F2D6501A600718CB7 /* Debug configuration for PBXNativeTarget "visionOS" */,
+				F35E1A902D6501A600718CB7 /* Release configuration for PBXNativeTarget "visionOS" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		F3C879C82D65720600840745 /* Build configuration list for PBXNativeTarget "tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3C879C92D65720600840745 /* Debug */,
-				F3C879CA2D65720600840745 /* Release */,
+				F3C879C92D65720600840745 /* Debug configuration for PBXNativeTarget "tvOS" */,
+				F3C879CA2D65720600840745 /* Release configuration for PBXNativeTarget "tvOS" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */

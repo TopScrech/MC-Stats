@@ -17,7 +17,7 @@ public class ServerStatusChecker {
         // first check if we need to refresh the srv
         if forceRefeshSrv {
             if let srvRecord = await SRVResolver.lookupMinecraftSRVRecord(server.serverUrl),
-               (srvRecord.0 != server.srvServerUrl || srvRecord.1 != server.srvServerPort) {
+               srvRecord.0 != server.srvServerUrl || srvRecord.1 != server.srvServerPort {
                 // got updated SRV info, updated it and try to connect
                 server.srvServerUrl = srvRecord.0
                 server.srvServerPort = srvRecord.1
@@ -168,7 +168,7 @@ public struct ServerCheckerConfig {
 //    "plateousmp.net",
 //    "buzz.semisurvivalcraft.com",
 //    "Play.MinePower.Org",
-//    "play.vanillarealms.com",
+//    "play.vanillarealms.com"
 //]
 
 let servers = [

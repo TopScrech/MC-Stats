@@ -21,7 +21,7 @@ struct NavContainer: View {
                 fullScreen = true
             }
         }
-        .fullScreenCover(isPresented: $fullScreen) {
+        .fullScreenCover($fullScreen) {
             ServerList()
                 .modelContainer(SwiftDataHelper.getModelContainter())
         }

@@ -7,7 +7,12 @@ struct Feature: Identifiable {
     let icon: String
     let iconColor: Color
     
-    init(_ title: String, description: String, icon: String, iconColor: Color) {
+    init(
+        _ title: String,
+        description: String,
+        icon: String,
+        iconColor: Color
+    ) {
         self.title = title
         self.description = description
         self.icon = icon

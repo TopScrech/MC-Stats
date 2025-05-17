@@ -12,6 +12,7 @@ public class WebServerStatusChecker {
         config: ServerCheckerConfig?
     ) async throws -> ServerStatus {
         var urlString = WebServerStatusChecker.API_URL
+        
         if type == .Java {
             urlString += "java/"
         } else {
