@@ -191,7 +191,6 @@
 		F326DB5A2D6416E100BCCB69 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F326DB572D6416E100BCCB69 /* Localizable.xcstrings */; };
 		F326DB5B2D6416E100BCCB69 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F326DB572D6416E100BCCB69 /* Localizable.xcstrings */; };
 		F326DB5C2D6416E100BCCB69 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F326DB572D6416E100BCCB69 /* Localizable.xcstrings */; };
-		F33A5CAD2D640BEB0020D8A5 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F33A5CAC2D640BEB0020D8A5 /* ScrechKit */; };
 		F33A5CAF2D640C370020D8A5 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F33A5CAE2D640C370020D8A5 /* ScrechKit */; };
 		F33A5CB12D640C3B0020D8A5 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F33A5CB02D640C3B0020D8A5 /* ScrechKit */; };
 		F33A5CB32D640C440020D8A5 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F33A5CB22D640C440020D8A5 /* ScrechKit */; };
@@ -243,6 +242,11 @@
 		F35E1ACA2D652C6D00718CB7 /* Server Status Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30472502D63E9D30055C007 /* Server Status Entity.swift */; };
 		F360A8AC2D6C6942008E515E /* visionOS Icon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F35E1A932D6501CC00718CB7 /* visionOS Icon.xcassets */; };
 		F360A8AD2D6C6B5C008E515E /* MC Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13E5FFC2A4BD614005BE9B2 /* MC Stats.swift */; };
+		F376E1572DD9F76300D98252 /* ScrechKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = F31D45BD2D6DC6BD00981B1C /* ScrechKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		F376E1592DD9F76700D98252 /* ScrechKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = F3C879FA2D6572F900840745 /* ScrechKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		F376E15B2DD9F77000D98252 /* ScrechKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = F35E1AB52D65230400718CB7 /* ScrechKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		F376E15E2DD9F7E200D98252 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F376E15D2DD9F7E200D98252 /* ScrechKit */; };
+		F376E15F2DD9F7E200D98252 /* ScrechKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = F376E15D2DD9F7E200D98252 /* ScrechKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		F378836A2D6AF86A00D38522 /* Debug Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37883692D6AF86A00D38522 /* Debug Settings.swift */; };
 		F378836B2D6AF86A00D38522 /* Debug Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37883692D6AF86A00D38522 /* Debug Settings.swift */; };
 		F378836C2D6AF86A00D38522 /* Debug Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37883692D6AF86A00D38522 /* Debug Settings.swift */; };
@@ -480,6 +484,42 @@
 			);
 			name = "Embed Foundation Extensions";
 		};
+		F376E1582DD9F76300D98252 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = Frameworks;
+			files = (
+				F376E1572DD9F76300D98252 /* ScrechKit in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+		};
+		F376E15A2DD9F76700D98252 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = Frameworks;
+			files = (
+				F376E1592DD9F76700D98252 /* ScrechKit in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+		};
+		F376E15C2DD9F77000D98252 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = Frameworks;
+			files = (
+				F376E15B2DD9F77000D98252 /* ScrechKit in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+		};
+		F376E1602DD9F7E200D98252 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = Frameworks;
+			files = (
+				F376E15F2DD9F7E200D98252 /* ScrechKit in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+		};
 		F3D677682DD7E81700721DE8 /* Embed ExtensionKit Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
@@ -647,7 +687,7 @@
 			isa = PBXFrameworksBuildPhase;
 			files = (
 				F1612CCA2CACC37300E602DC /* NukeUI in Frameworks */,
-				F33A5CAD2D640BEB0020D8A5 /* ScrechKit in Frameworks */,
+				F376E15E2DD9F7E200D98252 /* ScrechKit in Frameworks */,
 				F325F93D2D80E84300FDF4D9 /* StoreKit.framework in Frameworks */,
 				F3C1E4392D6C8CA400950F3D /* MCStatsDataLayer in Frameworks */,
 				F1612CC82CACC37300E602DC /* Nuke in Frameworks */,
@@ -1174,6 +1214,7 @@
 				F11F635C2A81E51000D47187 /* Embed Watch Content */,
 				F1EF77052CB7874100EFFB20 /* Embed Foundation Extensions */,
 				F3D677682DD7E81700721DE8 /* Embed ExtensionKit Extensions */,
+				F376E1602DD9F7E200D98252 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1186,8 +1227,8 @@
 			packageProductDependencies = (
 				F1612CC72CACC37300E602DC /* Nuke */,
 				F1612CC92CACC37300E602DC /* NukeUI */,
-				F33A5CAC2D640BEB0020D8A5 /* ScrechKit */,
 				F3C1E4382D6C8CA400950F3D /* MCStatsDataLayer */,
+				F376E15D2DD9F7E200D98252 /* ScrechKit */,
 			);
 			productName = MinecraftServerStatus;
 			productReference = F13E5FF92A4BD614005BE9B2 /* MC Stats.app */;
@@ -1237,6 +1278,7 @@
 				F31D459D2D6DC62600981B1C /* Sources */,
 				F31D459E2D6DC62600981B1C /* Frameworks */,
 				F31D459F2D6DC62600981B1C /* Resources */,
+				F376E1582DD9F76300D98252 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1279,6 +1321,7 @@
 				F35E1A792D6501A500718CB7 /* Sources */,
 				F35E1A7A2D6501A500718CB7 /* Frameworks */,
 				F35E1A7B2D6501A500718CB7 /* Resources */,
+				F376E15C2DD9F77000D98252 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1299,6 +1342,7 @@
 				F3C879B92D65720500840745 /* Sources */,
 				F3C879BA2D65720500840745 /* Frameworks */,
 				F3C879BB2D65720500840745 /* Resources */,
+				F376E15A2DD9F76700D98252 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2712,11 +2756,6 @@
 			package = F1612CC62CACC37300E602DC /* XCRemoteSwiftPackageReference "Nuke" */;
 			productName = NukeUI;
 		};
-		F33A5CAC2D640BEB0020D8A5 /* ScrechKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F33A5CAB2D640BEB0020D8A5 /* XCRemoteSwiftPackageReference "ScrechKit" */;
-			productName = ScrechKit;
-		};
 		F33A5CAE2D640C370020D8A5 /* ScrechKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F33A5CAB2D640BEB0020D8A5 /* XCRemoteSwiftPackageReference "ScrechKit" */;
@@ -2738,6 +2777,11 @@
 			productName = NukeUI;
 		};
 		F35E1AB52D65230400718CB7 /* ScrechKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F33A5CAB2D640BEB0020D8A5 /* XCRemoteSwiftPackageReference "ScrechKit" */;
+			productName = ScrechKit;
+		};
+		F376E15D2DD9F7E200D98252 /* ScrechKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F33A5CAB2D640BEB0020D8A5 /* XCRemoteSwiftPackageReference "ScrechKit" */;
 			productName = ScrechKit;
