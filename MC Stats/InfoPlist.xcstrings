@@ -44,6 +44,12 @@
             "state" : "new",
             "value" : "2025 Sergei Saliukov"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2025 Сергей Салюков"
+          }
         }
       }
     },
