@@ -2,19 +2,35 @@
   "sourceLanguage" : "en",
   "strings" : {
     "" : {
-
+      "shouldTranslate" : false
     },
     "..." : {
-
+      "shouldTranslate" : false
     },
     "\"%@\"" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\"%@\""
+          }
+        }
+      },
+      "shouldTranslate" : false
     },
     "**Hold and drag** over the chart to view and move the lollipop" : {
 
     },
     "%@" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
+        }
+      },
+      "shouldTranslate" : false
     },
     "%@ is %@ with %lld players." : {
       "localizations" : {
@@ -28,6 +44,12 @@
     },
     "%lld ms" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld ms"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -37,10 +59,17 @@
       }
     },
     "%lld ping" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld ping"
+          }
+        }
+      }
     },
     "+" : {
-
+      "shouldTranslate" : false
     },
     "1. **Long press** the widget" : {
       "extractionState" : "manual",
@@ -76,6 +105,12 @@
     },
     "Add Server" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Server Toevoegen"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -86,6 +121,12 @@
     },
     "Add test servers" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Test servers toevoegen"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -137,7 +178,14 @@
       }
     },
     "Bedrock/MCPE" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bedrock/MCPE"
+          }
+        }
+      }
     },
     "Can the widgets refresh more frequently?" : {
 
@@ -191,6 +239,12 @@
     },
     "Date" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Datum"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -201,6 +255,12 @@
     },
     "Debug" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Debug"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -287,6 +347,12 @@
     },
     "FAQ" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "FAQ"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -500,16 +566,49 @@
 
     },
     "OK" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ОК"
+          }
+        }
+      }
     },
     "Online Status" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Онлайн Статус"
+          }
+        }
+      }
     },
     "Open in full screen" : {
 
     },
     "Ping" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ping"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пинг"
+          }
+        }
+      }
     },
     "Player Count" : {
       "localizations" : {
@@ -551,7 +650,20 @@
 
     },
     "Refresh" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verversen"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Обновить"
+          }
+        }
+      }
     },
     "Refresh Servers" : {
 
@@ -571,6 +683,12 @@
     },
     "Save" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opslaan"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -597,6 +715,12 @@
     },
     "server" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "server"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -607,6 +731,12 @@
     },
     "Server" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Server"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -640,6 +770,12 @@
     },
     "Server Name" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Server Naam"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -659,6 +795,12 @@
     },
     "Server Type" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Server Type"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -669,6 +811,12 @@
     },
     "Servers" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Servers"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -682,6 +830,12 @@
     },
     "Settings" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instellingen"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -692,6 +846,12 @@
     },
     "Shortcuts" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shortcuts"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -737,6 +897,12 @@
     },
     "Source Code" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Source Code"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -757,6 +923,12 @@
     },
     "status" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "status"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -844,7 +1016,14 @@
 
     },
     "Title" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Titel"
+          }
+        }
+      }
     },
     "Unknown error" : {
       "localizations" : {
@@ -880,6 +1059,12 @@
     },
     "Widgets" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widgets"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
