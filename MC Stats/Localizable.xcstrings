@@ -137,6 +137,12 @@
     },
     "Add Your First Server" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voeg je eerste server toe"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -159,16 +165,43 @@
 
     },
     "Are you sure?" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weet je het zeker?"
+          }
+        }
+      }
     },
     "Average: %lld ms" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gemiddeld: %lld ms"
+          }
+        }
+      }
     },
     "Avg." : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gem."
+          }
+        }
+      }
     },
     "Bedrock servers do not support player lists" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bedrock-servers ondersteunen geen spelerslijsten"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -188,13 +221,33 @@
       }
     },
     "Can the widgets refresh more frequently?" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kunnen de widgets vaker worden vernieuwd?"
+          }
+        }
+      }
     },
     "Can you add push notification/server analytics to the app?" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kun je pushmeldingen/serveranalyses toevoegen aan de app?"
+          }
+        }
+      }
     },
     "Cancel" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annuleren"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -271,6 +324,12 @@
     },
     "Delete" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verwijderen"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -281,6 +340,12 @@
     },
     "Delete all servers" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verwijder alle servers"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -408,7 +473,14 @@
 
     },
     "How to Use Siri" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hoe Siri te gebruiken"
+          }
+        }
+      }
     },
     "iCloud Sync" : {
       "localizations" : {
@@ -466,7 +538,15 @@
       }
     },
     "Key" : {
-      "extractionState" : "manual"
+      "extractionState" : "manual",
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sleutel"
+          }
+        }
+      }
     },
     "Leave a Review" : {
       "localizations" : {
@@ -524,6 +604,12 @@
     },
     "MC Stats" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "M Stats"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -536,7 +622,14 @@
 
     },
     "MC Stats Widget" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MC Stats Widget"
+          }
+        }
+      }
     },
     "Might require a restart" : {
 
@@ -563,7 +656,14 @@
 
     },
     "Not implemented" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Niet geïmplementeerd"
+          }
+        }
+      }
     },
     "OK" : {
       "localizations" : {
