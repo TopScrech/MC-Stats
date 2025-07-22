@@ -632,6 +632,8 @@
 		F396F8012D81BE6A00FCB648 /* Tip VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tip VM.swift"; sourceTree = "<group>"; };
 		F39EAF722D6C82B900072794 /* Page Destinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Page Destinations.swift"; sourceTree = "<group>"; };
 		F39EAF772D6C831000072794 /* Settings View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Settings View.swift"; sourceTree = "<group>"; };
+		F3AE99DC2E2F884A00D70249 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F3AE99DD2E2F884A00D70249 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F3B0740D2D76697000F24939 /* Expected Result Batch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expected Result Batch.swift"; sourceTree = "<group>"; };
 		F3B074122D766AC200F24939 /* Edit Server View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Edit Server View.swift"; sourceTree = "<group>"; };
 		F3B074172D76E2E100F24939 /* Player Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Player Card.swift"; sourceTree = "<group>"; };
@@ -781,6 +783,8 @@
 		F13E5FF02A4BD614005BE9B2 = {
 			isa = PBXGroup;
 			children = (
+				F3AE99DC2E2F884A00D70249 /* LICENSE */,
+				F3AE99DD2E2F884A00D70249 /* README.md */,
 				F13E5FFB2A4BD614005BE9B2 /* MC Stats */,
 				F11F634C2A81E50E00D47187 /* watchOS */,
 				F31D45B42D6DC67B00981B1C /* macOS */,
