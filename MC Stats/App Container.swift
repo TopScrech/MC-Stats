@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 import SwiftData
 import CoreData
 import MCStatsDataLayer
@@ -95,16 +95,12 @@ struct AppContainer: View {
             .toolbar {
 #if os(macOS)
                 ToolbarItemGroup {
-                    Button {
+                    Button("Refresh Servers", systemImage: "arrow.clockwise") {
                         reloadData(forceRefresh: true)
-                    } label: {
-                        Label("Refresh Servers", systemImage: "arrow.clockwise")
                     }
                     
-                    Button {
+                    SFButton("plus") {
                         sheetAdd = true
-                    } label: {
-                        Image(systemName: "plus")
                     }
                 }
 #else // not macOS
