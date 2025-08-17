@@ -413,6 +413,14 @@
 		F3F2E6452D8258C90078EA89 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F2E6442D8258C90078EA89 /* StoreKit.framework */; };
 		F3FCD1F72E527A7D003BDE5E /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3FCD1F62E527A7D003BDE5E /* ScrechKit */; };
 		F3FCD1F92E527A8D003BDE5E /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3FCD1F82E527A8D003BDE5E /* ScrechKit */; };
+		F3FCD1FB2E528256003BDE5E /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1FA2E528256003BDE5E /* ColorTheme.swift */; };
+		F3FCD1FC2E528256003BDE5E /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1FA2E528256003BDE5E /* ColorTheme.swift */; };
+		F3FCD1FD2E528256003BDE5E /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1FA2E528256003BDE5E /* ColorTheme.swift */; };
+		F3FCD1FE2E528256003BDE5E /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1FA2E528256003BDE5E /* ColorTheme.swift */; };
+		F3FCD1FF2E528256003BDE5E /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1FA2E528256003BDE5E /* ColorTheme.swift */; };
+		F3FCD2022E5282D3003BDE5E /* ValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD2002E5282D3003BDE5E /* ValueStore.swift */; };
+		F3FCD2032E5282D3003BDE5E /* ValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD2002E5282D3003BDE5E /* ValueStore.swift */; };
+		F3FCD2042E5282D3003BDE5E /* ValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD2002E5282D3003BDE5E /* ValueStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -656,6 +664,8 @@
 		F3EFC1732D709C5700EE988A /* Ping Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ping Error.swift"; sourceTree = "<group>"; };
 		F3F2E6412D8258AF0078EA89 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS18.4.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
 		F3F2E6442D8258C90078EA89 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS11.4.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
+		F3FCD1FA2E528256003BDE5E /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
+		F3FCD2002E5282D3003BDE5E /* ValueStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -823,6 +833,7 @@
 			children = (
 				F13E5FFC2A4BD614005BE9B2 /* MC Stats.swift */,
 				F13E60002A4BD614005BE9B2 /* App Container.swift */,
+				F3FCD2002E5282D3003BDE5E /* ValueStore.swift */,
 				F3C1E43A2D6C949900950F3D /* App Container Helper.swift */,
 				F39EAF722D6C82B900072794 /* Page Destinations.swift */,
 				F326DB572D6416E100BCCB69 /* Localizable.xcstrings */,
@@ -1064,6 +1075,7 @@
 			children = (
 				F17A16BA2A893DD700F8FF2F /* Settings View.swift */,
 				F35E1A6C2D6489FD00718CB7 /* General Settings.swift */,
+				F3FCD1FA2E528256003BDE5E /* ColorTheme.swift */,
 				F150B4352CC1709700739646 /* Shortcuts Guide.swift */,
 				F37883692D6AF86A00D38522 /* Debug Settings.swift */,
 				F35E1A722D649D1700718CB7 /* Siri */,
@@ -1588,6 +1600,7 @@
 				F396F8042D81BE6A00FCB648 /* Tip VM.swift in Sources */,
 				F150B4342CC15F6A00739646 /* Siri Guide.swift in Sources */,
 				F3C87A032D6574D200840745 /* FAQ Row.swift in Sources */,
+				F3FCD1FC2E528256003BDE5E /* ColorTheme.swift in Sources */,
 				F35E1A772D64D32D00718CB7 /* Refresh Widgets.swift in Sources */,
 				F17AE0FC2CC05F9000DC7A80 /* Tip View.swift in Sources */,
 				F1A43C822A8472B20081A24C /* Server Details.swift in Sources */,
@@ -1621,6 +1634,7 @@
 				F16990822CA5DDE500F41232 /* Intent Errors.swift in Sources */,
 				F30246D82D66816E0030F71C /* Ping Graph.swift in Sources */,
 				F1CFCD512CABB567001A9E69 /* Custom Extentions.swift in Sources */,
+				F3FCD2022E5282D3003BDE5E /* ValueStore.swift in Sources */,
 				F35E1A9E2D65209500718CB7 /* Player Card.swift in Sources */,
 				F16990872CA5DDE500F41232 /* Shortcuts Provider.swift in Sources */,
 				F17A16BB2A893DD700F8FF2F /* Settings View.swift in Sources */,
@@ -1706,6 +1720,7 @@
 				F31D45C92D6DC74C00981B1C /* Feature Row.swift in Sources */,
 				F31D45CA2D6DC74C00981B1C /* Feature.swift in Sources */,
 				F31D45C32D6DC74100981B1C /* App Container Helper.swift in Sources */,
+				F3FCD2032E5282D3003BDE5E /* ValueStore.swift in Sources */,
 				F31D45C42D6DC74100981B1C /* App Container.swift in Sources */,
 				F396F8032D81BE6A00FCB648 /* Tip VM.swift in Sources */,
 				F3EFC1722D70877F00EE988A /* Edit Server View.swift in Sources */,
@@ -1725,6 +1740,7 @@
 				F31D45E22D6DC76800981B1C /* Custom Extentions.swift in Sources */,
 				F31D45D42D6DC75700981B1C /* Shortcuts Guide.swift in Sources */,
 				F31D45CC2D6DC75200981B1C /* Player Card.swift in Sources */,
+				F3FCD1FF2E528256003BDE5E /* ColorTheme.swift in Sources */,
 				F31D45D52D6DC75D00981B1C /* Siri Phrase.swift in Sources */,
 				F31D45D62D6DC75D00981B1C /* Siri Guide.swift in Sources */,
 				F3EFC1752D709C5700EE988A /* Ping Error.swift in Sources */,
@@ -1759,6 +1775,7 @@
 				F3B074072D76564B00F24939 /* Player Card.swift in Sources */,
 				F3DD08802D75246700A67D4B /* Watch Helper.swift in Sources */,
 				F3B0740C2D76567000F24939 /* Server Details.swift in Sources */,
+				F3FCD2042E5282D3003BDE5E /* ValueStore.swift in Sources */,
 				F3DD087A2D7523BD00A67D4B /* Saved Server Entity.swift in Sources */,
 				F396F8052D81BE6A00FCB648 /* Tip VM.swift in Sources */,
 				F3B0742C2D77063B00F24939 /* Edit Server View Helper.swift in Sources */,
@@ -1775,6 +1792,7 @@
 				F3DD086B2D75232500A67D4B /* Server Row.swift in Sources */,
 				F3DD08882D75263100A67D4B /* Tip View.swift in Sources */,
 				F3DD086A2D75226A00A67D4B /* Server List.swift in Sources */,
+				F3FCD1FD2E528256003BDE5E /* ColorTheme.swift in Sources */,
 				F3DD08862D75253600A67D4B /* Feature.swift in Sources */,
 				F3B074032D76560700F24939 /* Ping Error.swift in Sources */,
 				F3B074042D76560700F24939 /* Swifty Ping.swift in Sources */,
@@ -1827,6 +1845,7 @@
 				F3C87A102D657A1500840745 /* Feature.swift in Sources */,
 				F378836C2D6AF86A00D38522 /* Debug Settings.swift in Sources */,
 				F3C87A072D6574DD00840745 /* FAQ.swift in Sources */,
+				F3FCD1FE2E528256003BDE5E /* ColorTheme.swift in Sources */,
 				F35E1AB92D65236300718CB7 /* Custom Extentions.swift in Sources */,
 				F35E1ABA2D65236300718CB7 /* Review Helper.swift in Sources */,
 				F3EFC1762D709C5700EE988A /* Ping Error.swift in Sources */,
@@ -1876,6 +1895,7 @@
 				F3C879DE2D6572BE00840745 /* Release Notes.swift in Sources */,
 				F3C879D92D6572B000840745 /* MC Stats.swift in Sources */,
 				F3C879DB2D6572BA00840745 /* Low Power Mode.swift in Sources */,
+				F3FCD1FB2E528256003BDE5E /* ColorTheme.swift in Sources */,
 				F3C879DC2D6572BA00840745 /* Refresh Widgets.swift in Sources */,
 				F3C879E62D6572CA00840745 /* Server Row.swift in Sources */,
 				F3EFC1772D709C5700EE988A /* Ping Error.swift in Sources */,
@@ -2530,7 +2550,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 7;
-				XROS_DEPLOYMENT_TARGET = 1.0;
+				XROS_DEPLOYMENT_TARGET = 26.0;
 			};
 			name = Debug;
 		};
@@ -2558,7 +2578,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 7;
 				VALIDATE_PRODUCT = YES;
-				XROS_DEPLOYMENT_TARGET = 1.0;
+				XROS_DEPLOYMENT_TARGET = 26.0;
 			};
 			name = Release;
 		};

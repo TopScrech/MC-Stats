@@ -7,6 +7,7 @@ struct AppContainer: View {
     @State var nav = NavigationPath()
     var reviewHelper = ReviewHelper()
 #if os(iOS)
+    @EnvironmentObject private var store: ValueStore
     private let watchHelper = WatchHelper()
 #endif
     
@@ -134,6 +135,9 @@ struct AppContainer: View {
 #endif
             }
         }
+#if os(iOS)
+        .preferredColorScheme(store.appearance.scheme)
+#endif
         .onOpenURL(perform: processDeeplink)
         .onChange(of: scenePhase, initial: true) { _, newPhase in
             // Some code to investigate an Apple Watch bug

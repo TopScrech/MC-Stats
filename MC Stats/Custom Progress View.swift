@@ -7,9 +7,9 @@ struct CustomProgressView: View {
     var filledColor = Color.green
     
     var body: some View {
-        GeometryReader { geo in
-            let height = geo.size.height
-            let width = geo.size.width
+        GeometryReader {
+            let height = $0.size.height
+            let width = $0.size.width
             let percentage = progress > 1 ? 1 : progress
             
             ZStack(alignment: .leading) {

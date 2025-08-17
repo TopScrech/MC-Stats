@@ -2,6 +2,9 @@ import SwiftUI
 import MCStatsDataLayer
 
 struct GeneralSettings: View {
+#if os(iOS)
+    @EnvironmentObject private var store: ValueStore
+#endif
     @AppStorage(UserDefaultsHelper.Key.iCloudEnabled.rawValue)        private var icloudSync = true
     @AppStorage(UserDefaultsHelper.Key.showUsersOnHomesreen.rawValue) private var playersInServerList = true
     @AppStorage(UserDefaultsHelper.Key.sortUsersByName.rawValue)      private var sortPlayersByName = true
@@ -9,6 +12,16 @@ struct GeneralSettings: View {
     
     var body: some View {
         Form {
+#if os(iOS)
+            Section {
+                Picker("Appearance", selection: $store.appearance) {
+                    ForEach(ColorTheme.allCases) { theme in
+                        Text(theme.loc)
+                            .tag(theme)
+                    }
+                }
+            }
+#endif
             Toggle(isOn: $icloudSync) {
                 VStack(alignment: .leading, spacing: 2) {
                     Text("iCloud Sync")
@@ -57,5 +70,11 @@ struct GeneralSettings: View {
 }
 
 #Preview {
-    GeneralSettings()
+    NavigationStack {
+        GeneralSettings()
+    }
+    .darkSchemePreferred()
+#if os(iOS)
+    .environmentObject(ValueStore())
+#endif
 }
