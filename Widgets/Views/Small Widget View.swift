@@ -35,7 +35,7 @@ struct BaseWidgetView: View {
                     HStack(spacing: 3) {
                         Image(systemName: "arrow.clockwise")
                             .imageScale(.medium)
-                            .frame(width: 16, height: 16)
+                            .frame(16)
                             .scaleEffect(0.65)
                             .foregroundColor(.veryTransparentText)
                             .invalidatableContent() // Adjust the size as needed

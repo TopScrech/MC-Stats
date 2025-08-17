@@ -42,7 +42,7 @@ struct EditServerView: View {
                         Image(systemName: "list.bullet")
                             .foregroundColor(.gray)
                             .headline()
-                            .frame(width: 25, height: 25)
+                            .frame(25)
                         
                         Text("Server Type")
                     }
@@ -68,7 +68,7 @@ struct EditServerView: View {
                     Image(systemName: "tag.fill")
                         .foregroundColor(.gray)
                         .headline()
-                        .frame(width: 25, height: 25)
+                        .frame(25)
                     
                     TextField("Server Name", text: $tempNameInput, prompt: Text("Server Name"))
                         .textInputAutocapitalization(.words)
@@ -83,7 +83,7 @@ struct EditServerView: View {
                     Image(systemName: "rectangle.connected.to.line.below")
                         .foregroundColor(.gray)
                         .headline()
-                        .frame(width: 25, height: 25)
+                        .frame(25)
                     
                     TextField("Server Address / IP", text: $tempServerInput, prompt: Text("Server Address / IP"))
                         .autocapitalization(.none)
@@ -100,7 +100,7 @@ struct EditServerView: View {
                     Image(systemName: "number")
                         .foregroundColor(.gray)
                         .headline()
-                        .frame(width: 25, height: 25)
+                        .frame(25)
                     
                     TextField(portLabelPromptText, value: $tempPortInput, formatter: NumberFormatter(), prompt: Text(portLabelPromptText))
                         .monospacedDigit()

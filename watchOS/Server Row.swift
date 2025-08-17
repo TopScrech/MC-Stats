@@ -15,7 +15,7 @@ struct ServerRow: View {
             Image(uiImage: vm.serverIcon)
                 .resizable()
                 .scaledToFit()
-                .frame(width: 40, height: 40)
+                .frame(40)
                 .cornerRadius(5)
                 .clipShape(.rect(cornerRadius: 5))
                 .padding(.trailing, 5)
@@ -34,7 +34,7 @@ struct ServerRow: View {
                         
                         if vm.loadingStatus == .Loading {
                             ProgressView()
-                                .frame(width: 15, height: 15)
+                                .frame(15)
                                 .scaleEffect(0.65)
                         }
                     }
@@ -46,7 +46,7 @@ struct ServerRow: View {
                             .lineLimit(1)
                         
                         ProgressView()
-                            .frame(width: 20, height: 20)
+                            .frame(20)
                             .scaleEffect(0.8)
                     }
                 }

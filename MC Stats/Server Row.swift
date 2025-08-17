@@ -138,7 +138,7 @@ fileprivate extension Image {
         self
             .resizable()
             .scaledToFit()
-            .frame(width: 65, height: 65)
+            .frame(65)
             .cornerRadius(8)
             .clipShape(.rect(cornerRadius: 8))
             .padding(.trailing, 5)

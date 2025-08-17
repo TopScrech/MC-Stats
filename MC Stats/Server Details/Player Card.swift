@@ -30,7 +30,7 @@ struct PlayerCard: View {
                 }
             }
             .cornerRadius(3)
-            .frame(width: 30, height: 30)
+            .frame(30)
             .padding(.trailing, 16)
             
             Text(player.name)

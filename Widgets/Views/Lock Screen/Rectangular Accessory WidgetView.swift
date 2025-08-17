@@ -27,14 +27,14 @@ struct RectangularAccessoryWidgetView: View {
                                 .resizable()
                                 .widgetAccentedRenderingMode(.accentedDesaturated)
                                 .scaledToFit()
-                                .frame(width: iconSize, height: iconSize)
+                                .frame(iconSize)
                                 .padding(0)
                                 .widgetAccentable()
                         } else {
                             Image(uiImage: entry.vm.icon)
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: iconSize, height: iconSize)
+                                .frame(iconSize)
                                 .padding(0)
                                 .widgetAccentable()
                         }
@@ -50,7 +50,7 @@ struct RectangularAccessoryWidgetView: View {
                         HStack(spacing: 4) { // Adjust spacing & size as needed
                             Image(systemName: "arrow.clockwise")
                                 .imageScale(.medium)
-                                .frame(width: 5, height: 5)
+                                .frame(5)
                                 .scaleEffect(0.7)
                                 .foregroundColor(.veryTransparentText)
                         }
