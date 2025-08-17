@@ -298,7 +298,7 @@ public class SwiftyPing: NSObject {
             )
             
             // ...and a socket...
-            socket = CFSocketCreate(kCFAllocatorDefault, AF_INET, SOCK_DGRAM, IPPROTO_ICMP, CFSocketCallBackType.dataCallBack.rawValue, { socket, type, address, data, info in
+            socket = CFSocketCreate(kCFAllocatorDefault, AF_INET, SOCK_DGRAM, IPPROTO_ICMP, CFSocketCallBackType.dataCallBack.rawValue, { socket, type, _, data, info in
                 // Socket callback closure
                 guard let socket, let info, let data else {
                     return
@@ -312,7 +312,10 @@ public class SwiftyPing: NSObject {
                         .fromOpaque(data)
                         .takeUnretainedValue()
                     
-                    ping?.socket(socket: socket, didReadData: cfdata as Data)
+                    ping?.socket(
+                        socket: socket,
+                        didReadData: cfdata as Data
+                    )
                 }
             }, &context)
             
@@ -369,11 +372,11 @@ public class SwiftyPing: NSObject {
     private var isPinging: Bool {
         get {
             _serial_property.sync {
-                self._isPinging
+                _isPinging
             }
         } set {
             _serial_property.sync {
-                self._isPinging = newValue
+                _isPinging = newValue
             }
         }
     }
@@ -383,11 +386,11 @@ public class SwiftyPing: NSObject {
     private var timeoutTimer: Timer? {
         get {
             _serial_property.sync {
-                self._timeoutTimer
+                _timeoutTimer
             }
         } set {
             _serial_property.sync {
-                self._timeoutTimer = newValue
+                _timeoutTimer = newValue
             }
         }
     }
@@ -400,9 +403,17 @@ public class SwiftyPing: NSObject {
         isPinging = true
         sequenceStart = Date()
         
-        let timer = Timer(timeInterval: self.configuration.timeoutInterval, target: self, selector: #selector(self.timeout), userInfo: nil, repeats: false)
+        let timer = Timer(
+            timeInterval: configuration.timeoutInterval,
+            target: self,
+            selector: #selector(timeout),
+            userInfo: nil,
+            repeats: false
+        )
+        
         RunLoop.main.add(timer, forMode: .common)
-        self.timeoutTimer = timer
+        
+        timeoutTimer = timer
         
         _serial.async {
             let address = self.destination.ipv4Address
@@ -488,10 +499,10 @@ public class SwiftyPing: NSObject {
         let error = PingError.responseTimeout
         
         let response = PingResponse(
-            identifier: self.identifier,
-            ipAddress: self.destination.ip,
-            sequenceNumber: self.sequenceIndex,
-            trueSequenceNumber: self.trueSequenceIndex,
+            identifier: identifier,
+            ipAddress: destination.ip,
+            sequenceNumber: sequenceIndex,
+            trueSequenceNumber: trueSequenceIndex,
             duration: timeIntervalSinceStart,
             error: error,
             byteCount: nil,
@@ -499,7 +510,7 @@ public class SwiftyPing: NSObject {
         )
         
         erroredIndices.append(Int(sequenceIndex))
-        self.isPinging = false
+        isPinging = false
         informObserver(of: response)
         
         incrementSequenceIndex()
