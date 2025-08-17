@@ -19,12 +19,12 @@ struct AppContainer: View {
     @State var servers: [ServerStatusVM]?
     
     // Struggle to find a more efficient method without regenerating the VM each time
-    @State var serverVMCache: [UUID: ServerStatusVM] = [:]
-    @State var pendingDeepLink: String?
-    @State var lastRefreshTime = Date()
+    @State private(set) var serverVMCache: [UUID: ServerStatusVM] = [:]
+    @State private(set) var lastRefreshTime = Date()
     @State private var sheetAdd = false
     @State private var showReleaseNotes = false
     @State private var showAlert = false
+    @State var pendingDeepLink: String?
     
     @State private var newServer = SavedMinecraftServer.initialize(
         id: UUID(),
@@ -253,13 +253,13 @@ struct AppContainer: View {
         )
         
         guard let results = try? modelContext.fetch(fetch) else {
-            self.servers = []
+            servers = []
             return
         }
         
         var config = ConfigHelper.getServerCheckerConfig()
         
-        self.servers = results.map {
+        servers = results.map {
             if let cachedVm = serverVMCache[$0.id] {
                 return cachedVm
             }
@@ -283,9 +283,9 @@ struct AppContainer: View {
         }
         
         if forceRefresh {
-            self.lastRefreshTime = Date()
+            lastRefreshTime = Date()
             
-            self.servers?.forEach { vm in
+            servers?.forEach { vm in
                 vm.reloadData(config)
             }
         }
