@@ -141,6 +141,12 @@
 		F31AC0C82E72F64B003C4A84 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = F31AC0C42E72F64B003C4A84 /* AppIcon.icon */; };
 		F31AC0D02E72F6B3003C4A84 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = F31AC0C42E72F64B003C4A84 /* AppIcon.icon */; };
 		F31AC0D12E72F6B3003C4A84 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = F31AC0C42E72F64B003C4A84 /* AppIcon.icon */; };
+		F31AC0D32E72FE17003C4A84 /* Default Icon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31AC0D22E72FE17003C4A84 /* Default Icon.xcassets */; };
+		F31AC0D42E72FE17003C4A84 /* Default Icon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31AC0D22E72FE17003C4A84 /* Default Icon.xcassets */; };
+		F31AC0D52E72FE17003C4A84 /* Default Icon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31AC0D22E72FE17003C4A84 /* Default Icon.xcassets */; };
+		F31AC0D62E72FE17003C4A84 /* Default Icon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31AC0D22E72FE17003C4A84 /* Default Icon.xcassets */; };
+		F31AC0D72E72FE17003C4A84 /* Default Icon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31AC0D22E72FE17003C4A84 /* Default Icon.xcassets */; };
+		F31AC0D82E72FE17003C4A84 /* Default Icon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31AC0D22E72FE17003C4A84 /* Default Icon.xcassets */; };
 		F31D45B92D6DC68F00981B1C /* MC Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13E5FFC2A4BD614005BE9B2 /* MC Stats.swift */; };
 		F31D45BC2D6DC6B700981B1C /* MCStatsDataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = F31D45BB2D6DC6B700981B1C /* MCStatsDataLayer */; };
 		F31D45C02D6DC6C200981B1C /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = F31D45BF2D6DC6C200981B1C /* Nuke */; };
@@ -381,7 +387,6 @@
 		F3D677632DD78C5300721DE8 /* Tutorial.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D6775E2DD78C5300721DE8 /* Tutorial.xcassets */; };
 		F3D677642DD78C5300721DE8 /* Tutorial.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D6775E2DD78C5300721DE8 /* Tutorial.xcassets */; };
 		F3D677652DD7E81700721DE8 /* Intents.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = F1406BA92AA391B800815BE8 /* Intents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		F3D9AE622D6C68EB00069BDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F13E60022A4BD615005BE9B2 /* Assets.xcassets */; };
 		F3DD086A2D75226A00A67D4B /* Server List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DD08692D75226A00A67D4B /* Server List.swift */; };
 		F3DD086B2D75232500A67D4B /* Server Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AE29152CA48577009D0D14 /* Server Row.swift */; };
 		F3DD086F2D75233300A67D4B /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = F3DD086E2D75233300A67D4B /* NukeUI */; };
@@ -617,6 +622,7 @@
 		F304725A2D63FBFC0055C007 /* MinecraftItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MinecraftItalic.otf; sourceTree = "<group>"; };
 		F304725B2D63FBFC0055C007 /* MinecraftRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MinecraftRegular.otf; sourceTree = "<group>"; };
 		F31AC0C42E72F64B003C4A84 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
+		F31AC0D22E72FE17003C4A84 /* Default Icon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Default Icon.xcassets"; sourceTree = "<group>"; };
 		F31D45A12D6DC62600981B1C /* MC Stats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MC Stats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F31D45B22D6DC67B00981B1C /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		F31D45BA2D6DC6A800981B1C /* macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = macOS.plist; sourceTree = "<group>"; };
@@ -846,6 +852,7 @@
 				F3C8E5492D7E24E900644E47 /* InfoPlist.xcstrings */,
 				F13E60022A4BD615005BE9B2 /* Assets.xcassets */,
 				F3D6775E2DD78C5300721DE8 /* Tutorial.xcassets */,
+				F31AC0D22E72FE17003C4A84 /* Default Icon.xcassets */,
 				F31AC0C42E72F64B003C4A84 /* AppIcon.icon */,
 				F3DD08852D75253000A67D4B /* Release Notes */,
 				F396F8072D81BF0E00FCB648 /* Tipping */,
@@ -1456,6 +1463,7 @@
 				F325F8C42D80697300FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */,
 				F326DB592D6416E100BCCB69 /* Localizable.xcstrings in Resources */,
 				F31AC0C62E72F64B003C4A84 /* AppIcon.icon in Resources */,
+				F31AC0D52E72FE17003C4A84 /* Default Icon.xcassets in Resources */,
 			);
 		};
 		F13095232CBC997200C4C7BA /* Resources */ = {
@@ -1473,6 +1481,7 @@
 				F3D6775F2DD78C5300721DE8 /* Tutorial.xcassets in Resources */,
 				F3C8E54A2D7E24E900644E47 /* InfoPlist.xcstrings in Resources */,
 				F325F8C32D80651B00FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */,
+				F31AC0D62E72FE17003C4A84 /* Default Icon.xcassets in Resources */,
 				F326DB582D6416E100BCCB69 /* Localizable.xcstrings in Resources */,
 				F304725D2D63FBFC0055C007 /* MinecraftBold.otf in Resources */,
 				F304725E2D63FBFC0055C007 /* MinecraftBoldItalic.otf in Resources */,
@@ -1503,6 +1512,7 @@
 				F325F8C52D80697300FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */,
 				F3C8E5532D7E2ADF00644E47 /* Localizable.xcstrings in Resources */,
 				F31AC0C52E72F64B003C4A84 /* AppIcon.icon in Resources */,
+				F31AC0D82E72FE17003C4A84 /* Default Icon.xcassets in Resources */,
 			);
 		};
 		F3570D3A2D6E779500BDF069 /* Resources */ = {
@@ -1513,6 +1523,7 @@
 				F3DD08812D7524CF00A67D4B /* Localizable.xcstrings in Resources */,
 				F3DD08822D7524DA00A67D4B /* Assets.xcassets in Resources */,
 				F3D677642DD78C5300721DE8 /* Tutorial.xcassets in Resources */,
+				F31AC0D32E72FE17003C4A84 /* Default Icon.xcassets in Resources */,
 			);
 		};
 		F35E1A7B2D6501A500718CB7 /* Resources */ = {
@@ -1521,10 +1532,10 @@
 				F35E1AC12D65237200718CB7 /* MinecraftRegular.otf in Resources */,
 				F3D677612DD78C5300721DE8 /* Tutorial.xcassets in Resources */,
 				F325F8C72D80697300FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */,
+				F31AC0D72E72FE17003C4A84 /* Default Icon.xcassets in Resources */,
 				F3C879D82D6572AA00840745 /* Localizable.xcstrings in Resources */,
 				F35E1AC22D65237200718CB7 /* MinecraftBold.otf in Resources */,
 				F360A8AC2D6C6942008E515E /* visionOS Icon.xcassets in Resources */,
-				F3D9AE622D6C68EB00069BDF /* Assets.xcassets in Resources */,
 				F35E1AC32D65237200718CB7 /* MinecraftBoldItalic.otf in Resources */,
 				F35E1AC42D65237200718CB7 /* MinecraftItalic.otf in Resources */,
 			);
@@ -1534,6 +1545,7 @@
 			files = (
 				F383D19B2D67E60400FE4239 /* Assets.xcassets in Resources */,
 				F3D677622DD78C5300721DE8 /* Tutorial.xcassets in Resources */,
+				F31AC0D42E72FE17003C4A84 /* Default Icon.xcassets in Resources */,
 				F325F8C62D80697300FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */,
 				F3C879D72D6572AA00840745 /* Localizable.xcstrings in Resources */,
 				F3C879F42D6572DF00840745 /* MinecraftRegular.otf in Resources */,
