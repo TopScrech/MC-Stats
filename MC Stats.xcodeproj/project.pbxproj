@@ -141,12 +141,12 @@
 		F31AC0C82E72F64B003C4A84 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = F31AC0C42E72F64B003C4A84 /* AppIcon.icon */; };
 		F31AC0D02E72F6B3003C4A84 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = F31AC0C42E72F64B003C4A84 /* AppIcon.icon */; };
 		F31AC0D12E72F6B3003C4A84 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = F31AC0C42E72F64B003C4A84 /* AppIcon.icon */; };
-		F31AC0D32E72FE17003C4A84 /* Default Icon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31AC0D22E72FE17003C4A84 /* Default Icon.xcassets */; };
-		F31AC0D42E72FE17003C4A84 /* Default Icon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31AC0D22E72FE17003C4A84 /* Default Icon.xcassets */; };
-		F31AC0D52E72FE17003C4A84 /* Default Icon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31AC0D22E72FE17003C4A84 /* Default Icon.xcassets */; };
-		F31AC0D62E72FE17003C4A84 /* Default Icon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31AC0D22E72FE17003C4A84 /* Default Icon.xcassets */; };
-		F31AC0D72E72FE17003C4A84 /* Default Icon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31AC0D22E72FE17003C4A84 /* Default Icon.xcassets */; };
-		F31AC0D82E72FE17003C4A84 /* Default Icon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31AC0D22E72FE17003C4A84 /* Default Icon.xcassets */; };
+		F31AC0D32E72FE17003C4A84 /* Shared Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31AC0D22E72FE17003C4A84 /* Shared Assets.xcassets */; };
+		F31AC0D42E72FE17003C4A84 /* Shared Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31AC0D22E72FE17003C4A84 /* Shared Assets.xcassets */; };
+		F31AC0D52E72FE17003C4A84 /* Shared Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31AC0D22E72FE17003C4A84 /* Shared Assets.xcassets */; };
+		F31AC0D62E72FE17003C4A84 /* Shared Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31AC0D22E72FE17003C4A84 /* Shared Assets.xcassets */; };
+		F31AC0D72E72FE17003C4A84 /* Shared Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31AC0D22E72FE17003C4A84 /* Shared Assets.xcassets */; };
+		F31AC0D82E72FE17003C4A84 /* Shared Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31AC0D22E72FE17003C4A84 /* Shared Assets.xcassets */; };
 		F31D45B92D6DC68F00981B1C /* MC Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13E5FFC2A4BD614005BE9B2 /* MC Stats.swift */; };
 		F31D45BC2D6DC6B700981B1C /* MCStatsDataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = F31D45BB2D6DC6B700981B1C /* MCStatsDataLayer */; };
 		F31D45C02D6DC6C200981B1C /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = F31D45BF2D6DC6C200981B1C /* Nuke */; };
@@ -201,6 +201,15 @@
 		F326DB5A2D6416E100BCCB69 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F326DB572D6416E100BCCB69 /* Localizable.xcstrings */; };
 		F326DB5B2D6416E100BCCB69 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F326DB572D6416E100BCCB69 /* Localizable.xcstrings */; };
 		F326DB5C2D6416E100BCCB69 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F326DB572D6416E100BCCB69 /* Localizable.xcstrings */; };
+		F33661402E745162008E73C9 /* Enthusiast.icon in Resources */ = {isa = PBXBuildFile; fileRef = F336613F2E745162008E73C9 /* Enthusiast.icon */; };
+		F33661412E745162008E73C9 /* Enthusiast.icon in Resources */ = {isa = PBXBuildFile; fileRef = F336613F2E745162008E73C9 /* Enthusiast.icon */; };
+		F33661422E745162008E73C9 /* Enthusiast.icon in Resources */ = {isa = PBXBuildFile; fileRef = F336613F2E745162008E73C9 /* Enthusiast.icon */; };
+		F33661462E745164008E73C9 /* Legend.icon in Resources */ = {isa = PBXBuildFile; fileRef = F33661452E745164008E73C9 /* Legend.icon */; };
+		F33661472E745164008E73C9 /* Legend.icon in Resources */ = {isa = PBXBuildFile; fileRef = F33661452E745164008E73C9 /* Legend.icon */; };
+		F33661482E745164008E73C9 /* Legend.icon in Resources */ = {isa = PBXBuildFile; fileRef = F33661452E745164008E73C9 /* Legend.icon */; };
+		F336614C2E745167008E73C9 /* Supporter.icon in Resources */ = {isa = PBXBuildFile; fileRef = F336614B2E745167008E73C9 /* Supporter.icon */; };
+		F336614D2E745167008E73C9 /* Supporter.icon in Resources */ = {isa = PBXBuildFile; fileRef = F336614B2E745167008E73C9 /* Supporter.icon */; };
+		F336614E2E745167008E73C9 /* Supporter.icon in Resources */ = {isa = PBXBuildFile; fileRef = F336614B2E745167008E73C9 /* Supporter.icon */; };
 		F3570D412D6E779500BDF069 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3570D402D6E779500BDF069 /* Messages.framework */; };
 		F3570D5C2D6E77C000BDF069 /* Messages VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3570D572D6E77C000BDF069 /* Messages VC.swift */; };
 		F3570D622D6E8C4F00BDF069 /* Nav Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3570D612D6E8C4F00BDF069 /* Nav Container.swift */; };
@@ -380,12 +389,6 @@
 		F3C923642D6C6CE7004D31A9 /* MCStatsDataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = F3C923632D6C6CE7004D31A9 /* MCStatsDataLayer */; };
 		F3C923662D6C6CF2004D31A9 /* MCStatsDataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = F3C923652D6C6CF2004D31A9 /* MCStatsDataLayer */; };
 		F3C923682D6C6CF6004D31A9 /* MCStatsDataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = F3C923672D6C6CF6004D31A9 /* MCStatsDataLayer */; };
-		F3D6775F2DD78C5300721DE8 /* Tutorial.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D6775E2DD78C5300721DE8 /* Tutorial.xcassets */; };
-		F3D677602DD78C5300721DE8 /* Tutorial.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D6775E2DD78C5300721DE8 /* Tutorial.xcassets */; };
-		F3D677612DD78C5300721DE8 /* Tutorial.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D6775E2DD78C5300721DE8 /* Tutorial.xcassets */; };
-		F3D677622DD78C5300721DE8 /* Tutorial.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D6775E2DD78C5300721DE8 /* Tutorial.xcassets */; };
-		F3D677632DD78C5300721DE8 /* Tutorial.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D6775E2DD78C5300721DE8 /* Tutorial.xcassets */; };
-		F3D677642DD78C5300721DE8 /* Tutorial.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D6775E2DD78C5300721DE8 /* Tutorial.xcassets */; };
 		F3D677652DD7E81700721DE8 /* Intents.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = F1406BA92AA391B800815BE8 /* Intents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F3DD086A2D75226A00A67D4B /* Server List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DD08692D75226A00A67D4B /* Server List.swift */; };
 		F3DD086B2D75232500A67D4B /* Server Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AE29152CA48577009D0D14 /* Server Row.swift */; };
@@ -622,13 +625,16 @@
 		F304725A2D63FBFC0055C007 /* MinecraftItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MinecraftItalic.otf; sourceTree = "<group>"; };
 		F304725B2D63FBFC0055C007 /* MinecraftRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MinecraftRegular.otf; sourceTree = "<group>"; };
 		F31AC0C42E72F64B003C4A84 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
-		F31AC0D22E72FE17003C4A84 /* Default Icon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Default Icon.xcassets"; sourceTree = "<group>"; };
+		F31AC0D22E72FE17003C4A84 /* Shared Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Shared Assets.xcassets"; sourceTree = "<group>"; };
 		F31D45A12D6DC62600981B1C /* MC Stats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MC Stats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F31D45B22D6DC67B00981B1C /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		F31D45BA2D6DC6A800981B1C /* macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = macOS.plist; sourceTree = "<group>"; };
 		F325F85D2D805FF300FDF4D9 /* MC Stats StoreKit Synced.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = "MC Stats StoreKit Synced.storekit"; sourceTree = "<group>"; };
 		F325F93C2D80E84300FDF4D9 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		F326DB572D6416E100BCCB69 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		F336613F2E745162008E73C9 /* Enthusiast.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = Enthusiast.icon; sourceTree = "<group>"; };
+		F33661452E745164008E73C9 /* Legend.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = Legend.icon; sourceTree = "<group>"; };
+		F336614B2E745167008E73C9 /* Supporter.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = Supporter.icon; sourceTree = "<group>"; };
 		F3570D3C2D6E779500BDF069 /* iMessages.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = iMessages.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3570D402D6E779500BDF069 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = Library/Frameworks/Messages.framework; sourceTree = DEVELOPER_DIR; };
 		F3570D532D6E77C000BDF069 /* iMessage Icon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "iMessage Icon.xcassets"; sourceTree = "<group>"; };
@@ -670,7 +676,6 @@
 		F3C87A052D6574DD00840745 /* FAQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQ.swift; sourceTree = "<group>"; };
 		F3C87A0E2D657A1500840745 /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
 		F3C8E5492D7E24E900644E47 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
-		F3D6775E2DD78C5300721DE8 /* Tutorial.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Tutorial.xcassets; sourceTree = "<group>"; };
 		F3DD08692D75226A00A67D4B /* Server List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Server List.swift"; sourceTree = "<group>"; };
 		F3EFC1712D70877F00EE988A /* Edit Server View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Edit Server View.swift"; sourceTree = "<group>"; };
 		F3EFC1732D709C5700EE988A /* Ping Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ping Error.swift"; sourceTree = "<group>"; };
@@ -851,9 +856,11 @@
 				F326DB572D6416E100BCCB69 /* Localizable.xcstrings */,
 				F3C8E5492D7E24E900644E47 /* InfoPlist.xcstrings */,
 				F13E60022A4BD615005BE9B2 /* Assets.xcassets */,
-				F3D6775E2DD78C5300721DE8 /* Tutorial.xcassets */,
-				F31AC0D22E72FE17003C4A84 /* Default Icon.xcassets */,
+				F31AC0D22E72FE17003C4A84 /* Shared Assets.xcassets */,
 				F31AC0C42E72F64B003C4A84 /* AppIcon.icon */,
+				F336614B2E745167008E73C9 /* Supporter.icon */,
+				F336613F2E745162008E73C9 /* Enthusiast.icon */,
+				F33661452E745164008E73C9 /* Legend.icon */,
 				F3DD08852D75253000A67D4B /* Release Notes */,
 				F396F8072D81BF0E00FCB648 /* Tipping */,
 				F1E671752CA73A86002BDFC0 /* Custom Progress View.swift */,
@@ -1459,11 +1466,13 @@
 			isa = PBXResourcesBuildPhase;
 			files = (
 				F38218852D671BAB005025E7 /* Assets.xcassets in Resources */,
-				F3D677602DD78C5300721DE8 /* Tutorial.xcassets in Resources */,
+				F33661472E745164008E73C9 /* Legend.icon in Resources */,
 				F325F8C42D80697300FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */,
+				F336614D2E745167008E73C9 /* Supporter.icon in Resources */,
+				F33661412E745162008E73C9 /* Enthusiast.icon in Resources */,
 				F326DB592D6416E100BCCB69 /* Localizable.xcstrings in Resources */,
 				F31AC0C62E72F64B003C4A84 /* AppIcon.icon in Resources */,
-				F31AC0D52E72FE17003C4A84 /* Default Icon.xcassets in Resources */,
+				F31AC0D52E72FE17003C4A84 /* Shared Assets.xcassets in Resources */,
 			);
 		};
 		F13095232CBC997200C4C7BA /* Resources */ = {
@@ -1478,16 +1487,18 @@
 			isa = PBXResourcesBuildPhase;
 			files = (
 				F35E1A782D64DC2700718CB7 /* Assets.xcassets in Resources */,
-				F3D6775F2DD78C5300721DE8 /* Tutorial.xcassets in Resources */,
+				F336614C2E745167008E73C9 /* Supporter.icon in Resources */,
 				F3C8E54A2D7E24E900644E47 /* InfoPlist.xcstrings in Resources */,
 				F325F8C32D80651B00FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */,
-				F31AC0D62E72FE17003C4A84 /* Default Icon.xcassets in Resources */,
+				F31AC0D62E72FE17003C4A84 /* Shared Assets.xcassets in Resources */,
 				F326DB582D6416E100BCCB69 /* Localizable.xcstrings in Resources */,
 				F304725D2D63FBFC0055C007 /* MinecraftBold.otf in Resources */,
 				F304725E2D63FBFC0055C007 /* MinecraftBoldItalic.otf in Resources */,
 				F304725F2D63FBFC0055C007 /* MinecraftItalic.otf in Resources */,
+				F33661402E745162008E73C9 /* Enthusiast.icon in Resources */,
 				F30472602D63FBFC0055C007 /* MinecraftRegular.otf in Resources */,
 				F31AC0C82E72F64B003C4A84 /* AppIcon.icon in Resources */,
+				F33661462E745164008E73C9 /* Legend.icon in Resources */,
 			);
 		};
 		F1406BA72AA391B800815BE8 /* Resources */ = {
@@ -1508,11 +1519,13 @@
 			isa = PBXResourcesBuildPhase;
 			files = (
 				F31D45E42D6DC7A800981B1C /* Assets.xcassets in Resources */,
-				F3D677632DD78C5300721DE8 /* Tutorial.xcassets in Resources */,
+				F33661482E745164008E73C9 /* Legend.icon in Resources */,
 				F325F8C52D80697300FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */,
+				F336614E2E745167008E73C9 /* Supporter.icon in Resources */,
+				F33661422E745162008E73C9 /* Enthusiast.icon in Resources */,
 				F3C8E5532D7E2ADF00644E47 /* Localizable.xcstrings in Resources */,
 				F31AC0C52E72F64B003C4A84 /* AppIcon.icon in Resources */,
-				F31AC0D82E72FE17003C4A84 /* Default Icon.xcassets in Resources */,
+				F31AC0D82E72FE17003C4A84 /* Shared Assets.xcassets in Resources */,
 			);
 		};
 		F3570D3A2D6E779500BDF069 /* Resources */ = {
@@ -1522,17 +1535,15 @@
 				F3DD08892D7527BF00A67D4B /* iMessage Icon.xcassets in Resources */,
 				F3DD08812D7524CF00A67D4B /* Localizable.xcstrings in Resources */,
 				F3DD08822D7524DA00A67D4B /* Assets.xcassets in Resources */,
-				F3D677642DD78C5300721DE8 /* Tutorial.xcassets in Resources */,
-				F31AC0D32E72FE17003C4A84 /* Default Icon.xcassets in Resources */,
+				F31AC0D32E72FE17003C4A84 /* Shared Assets.xcassets in Resources */,
 			);
 		};
 		F35E1A7B2D6501A500718CB7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
 				F35E1AC12D65237200718CB7 /* MinecraftRegular.otf in Resources */,
-				F3D677612DD78C5300721DE8 /* Tutorial.xcassets in Resources */,
 				F325F8C72D80697300FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */,
-				F31AC0D72E72FE17003C4A84 /* Default Icon.xcassets in Resources */,
+				F31AC0D72E72FE17003C4A84 /* Shared Assets.xcassets in Resources */,
 				F3C879D82D6572AA00840745 /* Localizable.xcstrings in Resources */,
 				F35E1AC22D65237200718CB7 /* MinecraftBold.otf in Resources */,
 				F360A8AC2D6C6942008E515E /* visionOS Icon.xcassets in Resources */,
@@ -1544,8 +1555,7 @@
 			isa = PBXResourcesBuildPhase;
 			files = (
 				F383D19B2D67E60400FE4239 /* Assets.xcassets in Resources */,
-				F3D677622DD78C5300721DE8 /* Tutorial.xcassets in Resources */,
-				F31AC0D42E72FE17003C4A84 /* Default Icon.xcassets in Resources */,
+				F31AC0D42E72FE17003C4A84 /* Shared Assets.xcassets in Resources */,
 				F325F8C62D80697300FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */,
 				F3C879D72D6572AA00840745 /* Localizable.xcstrings in Resources */,
 				F3C879F42D6572DF00840745 /* MinecraftRegular.otf in Resources */,
