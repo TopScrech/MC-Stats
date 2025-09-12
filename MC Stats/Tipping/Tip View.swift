@@ -20,7 +20,7 @@ struct TipView: View {
                 Image(systemName: "party.popper.fill")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 100, height: 100)
+                    .frame(100)
                     .padding()
                 
                 Text("This app is free and open-source. If you find it useful, consider tipping to help keep it going!")

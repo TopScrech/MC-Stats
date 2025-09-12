@@ -14,7 +14,7 @@ struct FeatureRow: View {
                 .foregroundColor(feature.iconColor)
                 .imageScale(.large)
                 .scaledToFit()
-                .frame(width: 25, height: 25)
+                .frame(25)
             
             VStack(alignment: .leading) {
                 Text(feature.title)

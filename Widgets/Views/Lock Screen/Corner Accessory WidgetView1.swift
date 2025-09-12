@@ -27,13 +27,17 @@ struct CornerAccessoryWidgetView1: View {
                     Image(uiImage: entry.vm.icon)
                         .resizable()
                         .widgetAccentedRenderingMode(.accentedDesaturated)
-                        .scaledToFit().frame(width: iconSize, height: iconSize).padding(0)
+                        .scaledToFit()
+                        .frame(iconSize)
+                        .padding(0)
                         .widgetAccentable()
                     
                 } else {
                     Image(uiImage: entry.vm.icon)
                         .resizable()
-                        .scaledToFit().frame(width: iconSize, height: iconSize).padding(0)
+                        .scaledToFit()
+                        .frame(iconSize)
+                        .padding(0)
                         .widgetAccentable()
                 }
             }
@@ -57,7 +61,8 @@ struct CornerAccessoryWidgetView1: View {
                 Text(String(entry.vm.playersMax))
             }
             .tint(Color(hex: "#2159ad"))
-            .gaugeStyle(.accessoryLinearCapacity).widgetAccentable()
+            .gaugeStyle(.accessoryLinearCapacity)
+            .widgetAccentable()
         }
 #endif
     }

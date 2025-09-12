@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 import MCStatsDataLayer
 import NukeUI
 
@@ -30,7 +30,7 @@ struct PlayerCard: View {
                 }
             }
             .cornerRadius(3)
-            .frame(width: 30, height: 30)
+            .frame(30)
             .padding(.trailing, 16)
             
             Text(player.name)
@@ -40,11 +40,7 @@ struct PlayerCard: View {
 #if !os(tvOS)
         .contextMenu {
             Button {
-#if os(macOS)
-                NSPasteboard.general.setString(player.name, forType: .string)
-#else
-                UIPasteboard.general.string = player.name
-#endif
+                Pasteboard.copy(player.name)
             } label: {
                 Label("Copy Nickname", systemImage: "document.on.document")
             }

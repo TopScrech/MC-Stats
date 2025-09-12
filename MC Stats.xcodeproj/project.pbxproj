@@ -136,6 +136,17 @@
 		F304725E2D63FBFC0055C007 /* MinecraftBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = F30472592D63FBFC0055C007 /* MinecraftBoldItalic.otf */; };
 		F304725F2D63FBFC0055C007 /* MinecraftItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = F304725A2D63FBFC0055C007 /* MinecraftItalic.otf */; };
 		F30472602D63FBFC0055C007 /* MinecraftRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F304725B2D63FBFC0055C007 /* MinecraftRegular.otf */; };
+		F31AC0C52E72F64B003C4A84 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = F31AC0C42E72F64B003C4A84 /* AppIcon.icon */; };
+		F31AC0C62E72F64B003C4A84 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = F31AC0C42E72F64B003C4A84 /* AppIcon.icon */; };
+		F31AC0C82E72F64B003C4A84 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = F31AC0C42E72F64B003C4A84 /* AppIcon.icon */; };
+		F31AC0D02E72F6B3003C4A84 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = F31AC0C42E72F64B003C4A84 /* AppIcon.icon */; };
+		F31AC0D12E72F6B3003C4A84 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = F31AC0C42E72F64B003C4A84 /* AppIcon.icon */; };
+		F31AC0D32E72FE17003C4A84 /* Shared Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31AC0D22E72FE17003C4A84 /* Shared Assets.xcassets */; };
+		F31AC0D42E72FE17003C4A84 /* Shared Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31AC0D22E72FE17003C4A84 /* Shared Assets.xcassets */; };
+		F31AC0D52E72FE17003C4A84 /* Shared Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31AC0D22E72FE17003C4A84 /* Shared Assets.xcassets */; };
+		F31AC0D62E72FE17003C4A84 /* Shared Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31AC0D22E72FE17003C4A84 /* Shared Assets.xcassets */; };
+		F31AC0D72E72FE17003C4A84 /* Shared Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31AC0D22E72FE17003C4A84 /* Shared Assets.xcassets */; };
+		F31AC0D82E72FE17003C4A84 /* Shared Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31AC0D22E72FE17003C4A84 /* Shared Assets.xcassets */; };
 		F31D45B92D6DC68F00981B1C /* MC Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13E5FFC2A4BD614005BE9B2 /* MC Stats.swift */; };
 		F31D45BC2D6DC6B700981B1C /* MCStatsDataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = F31D45BB2D6DC6B700981B1C /* MCStatsDataLayer */; };
 		F31D45C02D6DC6C200981B1C /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = F31D45BF2D6DC6C200981B1C /* Nuke */; };
@@ -190,6 +201,15 @@
 		F326DB5A2D6416E100BCCB69 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F326DB572D6416E100BCCB69 /* Localizable.xcstrings */; };
 		F326DB5B2D6416E100BCCB69 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F326DB572D6416E100BCCB69 /* Localizable.xcstrings */; };
 		F326DB5C2D6416E100BCCB69 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F326DB572D6416E100BCCB69 /* Localizable.xcstrings */; };
+		F33661402E745162008E73C9 /* Enthusiast.icon in Resources */ = {isa = PBXBuildFile; fileRef = F336613F2E745162008E73C9 /* Enthusiast.icon */; };
+		F33661412E745162008E73C9 /* Enthusiast.icon in Resources */ = {isa = PBXBuildFile; fileRef = F336613F2E745162008E73C9 /* Enthusiast.icon */; };
+		F33661422E745162008E73C9 /* Enthusiast.icon in Resources */ = {isa = PBXBuildFile; fileRef = F336613F2E745162008E73C9 /* Enthusiast.icon */; };
+		F33661462E745164008E73C9 /* Legend.icon in Resources */ = {isa = PBXBuildFile; fileRef = F33661452E745164008E73C9 /* Legend.icon */; };
+		F33661472E745164008E73C9 /* Legend.icon in Resources */ = {isa = PBXBuildFile; fileRef = F33661452E745164008E73C9 /* Legend.icon */; };
+		F33661482E745164008E73C9 /* Legend.icon in Resources */ = {isa = PBXBuildFile; fileRef = F33661452E745164008E73C9 /* Legend.icon */; };
+		F336614C2E745167008E73C9 /* Supporter.icon in Resources */ = {isa = PBXBuildFile; fileRef = F336614B2E745167008E73C9 /* Supporter.icon */; };
+		F336614D2E745167008E73C9 /* Supporter.icon in Resources */ = {isa = PBXBuildFile; fileRef = F336614B2E745167008E73C9 /* Supporter.icon */; };
+		F336614E2E745167008E73C9 /* Supporter.icon in Resources */ = {isa = PBXBuildFile; fileRef = F336614B2E745167008E73C9 /* Supporter.icon */; };
 		F3570D412D6E779500BDF069 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3570D402D6E779500BDF069 /* Messages.framework */; };
 		F3570D5C2D6E77C000BDF069 /* Messages VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3570D572D6E77C000BDF069 /* Messages VC.swift */; };
 		F3570D622D6E8C4F00BDF069 /* Nav Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3570D612D6E8C4F00BDF069 /* Nav Container.swift */; };
@@ -237,7 +257,6 @@
 		F35E1ACA2D652C6D00718CB7 /* Server Status Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30472502D63E9D30055C007 /* Server Status Entity.swift */; };
 		F360A8AC2D6C6942008E515E /* visionOS Icon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F35E1A932D6501CC00718CB7 /* visionOS Icon.xcassets */; };
 		F360A8AD2D6C6B5C008E515E /* MC Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13E5FFC2A4BD614005BE9B2 /* MC Stats.swift */; };
-		F376E1802DDA3C1100D98252 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F376E17F2DDA3C1100D98252 /* ScrechKit */; };
 		F376E1822DDA3C3700D98252 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F376E1812DDA3C3700D98252 /* ScrechKit */; };
 		F376E1842DDA3C5000D98252 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F376E1832DDA3C5000D98252 /* ScrechKit */; };
 		F376E1862DDA3C5600D98252 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F376E1852DDA3C5600D98252 /* ScrechKit */; };
@@ -370,14 +389,7 @@
 		F3C923642D6C6CE7004D31A9 /* MCStatsDataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = F3C923632D6C6CE7004D31A9 /* MCStatsDataLayer */; };
 		F3C923662D6C6CF2004D31A9 /* MCStatsDataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = F3C923652D6C6CF2004D31A9 /* MCStatsDataLayer */; };
 		F3C923682D6C6CF6004D31A9 /* MCStatsDataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = F3C923672D6C6CF6004D31A9 /* MCStatsDataLayer */; };
-		F3D6775F2DD78C5300721DE8 /* Tutorial.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D6775E2DD78C5300721DE8 /* Tutorial.xcassets */; };
-		F3D677602DD78C5300721DE8 /* Tutorial.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D6775E2DD78C5300721DE8 /* Tutorial.xcassets */; };
-		F3D677612DD78C5300721DE8 /* Tutorial.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D6775E2DD78C5300721DE8 /* Tutorial.xcassets */; };
-		F3D677622DD78C5300721DE8 /* Tutorial.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D6775E2DD78C5300721DE8 /* Tutorial.xcassets */; };
-		F3D677632DD78C5300721DE8 /* Tutorial.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D6775E2DD78C5300721DE8 /* Tutorial.xcassets */; };
-		F3D677642DD78C5300721DE8 /* Tutorial.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D6775E2DD78C5300721DE8 /* Tutorial.xcassets */; };
 		F3D677652DD7E81700721DE8 /* Intents.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = F1406BA92AA391B800815BE8 /* Intents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		F3D9AE622D6C68EB00069BDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F13E60022A4BD615005BE9B2 /* Assets.xcassets */; };
 		F3DD086A2D75226A00A67D4B /* Server List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DD08692D75226A00A67D4B /* Server List.swift */; };
 		F3DD086B2D75232500A67D4B /* Server Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AE29152CA48577009D0D14 /* Server Row.swift */; };
 		F3DD086F2D75233300A67D4B /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = F3DD086E2D75233300A67D4B /* NukeUI */; };
@@ -412,6 +424,16 @@
 		F3F2E6422D8258AF0078EA89 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F2E6412D8258AF0078EA89 /* StoreKit.framework */; };
 		F3F2E6432D8258C50078EA89 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F325F93C2D80E84300FDF4D9 /* StoreKit.framework */; };
 		F3F2E6452D8258C90078EA89 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F2E6442D8258C90078EA89 /* StoreKit.framework */; };
+		F3FCD1F72E527A7D003BDE5E /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3FCD1F62E527A7D003BDE5E /* ScrechKit */; };
+		F3FCD1F92E527A8D003BDE5E /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3FCD1F82E527A8D003BDE5E /* ScrechKit */; };
+		F3FCD1FB2E528256003BDE5E /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1FA2E528256003BDE5E /* ColorTheme.swift */; };
+		F3FCD1FC2E528256003BDE5E /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1FA2E528256003BDE5E /* ColorTheme.swift */; };
+		F3FCD1FD2E528256003BDE5E /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1FA2E528256003BDE5E /* ColorTheme.swift */; };
+		F3FCD1FE2E528256003BDE5E /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1FA2E528256003BDE5E /* ColorTheme.swift */; };
+		F3FCD1FF2E528256003BDE5E /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1FA2E528256003BDE5E /* ColorTheme.swift */; };
+		F3FCD2022E5282D3003BDE5E /* ValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD2002E5282D3003BDE5E /* ValueStore.swift */; };
+		F3FCD2032E5282D3003BDE5E /* ValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD2002E5282D3003BDE5E /* ValueStore.swift */; };
+		F3FCD2042E5282D3003BDE5E /* ValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD2002E5282D3003BDE5E /* ValueStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -602,12 +624,17 @@
 		F30472592D63FBFC0055C007 /* MinecraftBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MinecraftBoldItalic.otf; sourceTree = "<group>"; };
 		F304725A2D63FBFC0055C007 /* MinecraftItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MinecraftItalic.otf; sourceTree = "<group>"; };
 		F304725B2D63FBFC0055C007 /* MinecraftRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MinecraftRegular.otf; sourceTree = "<group>"; };
+		F31AC0C42E72F64B003C4A84 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
+		F31AC0D22E72FE17003C4A84 /* Shared Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Shared Assets.xcassets"; sourceTree = "<group>"; };
 		F31D45A12D6DC62600981B1C /* MC Stats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MC Stats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F31D45B22D6DC67B00981B1C /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		F31D45BA2D6DC6A800981B1C /* macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = macOS.plist; sourceTree = "<group>"; };
 		F325F85D2D805FF300FDF4D9 /* MC Stats StoreKit Synced.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = "MC Stats StoreKit Synced.storekit"; sourceTree = "<group>"; };
 		F325F93C2D80E84300FDF4D9 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		F326DB572D6416E100BCCB69 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		F336613F2E745162008E73C9 /* Enthusiast.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = Enthusiast.icon; sourceTree = "<group>"; };
+		F33661452E745164008E73C9 /* Legend.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = Legend.icon; sourceTree = "<group>"; };
+		F336614B2E745167008E73C9 /* Supporter.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = Supporter.icon; sourceTree = "<group>"; };
 		F3570D3C2D6E779500BDF069 /* iMessages.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = iMessages.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3570D402D6E779500BDF069 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = Library/Frameworks/Messages.framework; sourceTree = DEVELOPER_DIR; };
 		F3570D532D6E77C000BDF069 /* iMessage Icon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "iMessage Icon.xcassets"; sourceTree = "<group>"; };
@@ -632,6 +659,8 @@
 		F396F8012D81BE6A00FCB648 /* Tip VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tip VM.swift"; sourceTree = "<group>"; };
 		F39EAF722D6C82B900072794 /* Page Destinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Page Destinations.swift"; sourceTree = "<group>"; };
 		F39EAF772D6C831000072794 /* Settings View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Settings View.swift"; sourceTree = "<group>"; };
+		F3AE99DC2E2F884A00D70249 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F3AE99DD2E2F884A00D70249 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F3B0740D2D76697000F24939 /* Expected Result Batch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expected Result Batch.swift"; sourceTree = "<group>"; };
 		F3B074122D766AC200F24939 /* Edit Server View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Edit Server View.swift"; sourceTree = "<group>"; };
 		F3B074172D76E2E100F24939 /* Player Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Player Card.swift"; sourceTree = "<group>"; };
@@ -647,12 +676,13 @@
 		F3C87A052D6574DD00840745 /* FAQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQ.swift; sourceTree = "<group>"; };
 		F3C87A0E2D657A1500840745 /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
 		F3C8E5492D7E24E900644E47 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
-		F3D6775E2DD78C5300721DE8 /* Tutorial.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Tutorial.xcassets; sourceTree = "<group>"; };
 		F3DD08692D75226A00A67D4B /* Server List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Server List.swift"; sourceTree = "<group>"; };
 		F3EFC1712D70877F00EE988A /* Edit Server View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Edit Server View.swift"; sourceTree = "<group>"; };
 		F3EFC1732D709C5700EE988A /* Ping Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ping Error.swift"; sourceTree = "<group>"; };
 		F3F2E6412D8258AF0078EA89 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS18.4.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
 		F3F2E6442D8258C90078EA89 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS11.4.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
+		F3FCD1FA2E528256003BDE5E /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
+		F3FCD2002E5282D3003BDE5E /* ValueStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -679,7 +709,7 @@
 			isa = PBXFrameworksBuildPhase;
 			files = (
 				F1612CCA2CACC37300E602DC /* NukeUI in Frameworks */,
-				F376E1802DDA3C1100D98252 /* ScrechKit in Frameworks */,
+				F3FCD1F92E527A8D003BDE5E /* ScrechKit in Frameworks */,
 				F325F93D2D80E84300FDF4D9 /* StoreKit.framework in Frameworks */,
 				F3C1E4392D6C8CA400950F3D /* MCStatsDataLayer in Frameworks */,
 				F1612CC82CACC37300E602DC /* Nuke in Frameworks */,
@@ -689,6 +719,7 @@
 			isa = PBXFrameworksBuildPhase;
 			files = (
 				F3C923642D6C6CE7004D31A9 /* MCStatsDataLayer in Frameworks */,
+				F3FCD1F72E527A7D003BDE5E /* ScrechKit in Frameworks */,
 			);
 		};
 		F1EF76E92CB7873F00EFFB20 /* Frameworks */ = {
@@ -781,6 +812,8 @@
 		F13E5FF02A4BD614005BE9B2 = {
 			isa = PBXGroup;
 			children = (
+				F3AE99DC2E2F884A00D70249 /* LICENSE */,
+				F3AE99DD2E2F884A00D70249 /* README.md */,
 				F13E5FFB2A4BD614005BE9B2 /* MC Stats */,
 				F11F634C2A81E50E00D47187 /* watchOS */,
 				F31D45B42D6DC67B00981B1C /* macOS */,
@@ -817,12 +850,17 @@
 			children = (
 				F13E5FFC2A4BD614005BE9B2 /* MC Stats.swift */,
 				F13E60002A4BD614005BE9B2 /* App Container.swift */,
+				F3FCD2002E5282D3003BDE5E /* ValueStore.swift */,
 				F3C1E43A2D6C949900950F3D /* App Container Helper.swift */,
 				F39EAF722D6C82B900072794 /* Page Destinations.swift */,
 				F326DB572D6416E100BCCB69 /* Localizable.xcstrings */,
 				F3C8E5492D7E24E900644E47 /* InfoPlist.xcstrings */,
 				F13E60022A4BD615005BE9B2 /* Assets.xcassets */,
-				F3D6775E2DD78C5300721DE8 /* Tutorial.xcassets */,
+				F31AC0D22E72FE17003C4A84 /* Shared Assets.xcassets */,
+				F31AC0C42E72F64B003C4A84 /* AppIcon.icon */,
+				F336614B2E745167008E73C9 /* Supporter.icon */,
+				F336613F2E745162008E73C9 /* Enthusiast.icon */,
+				F33661452E745164008E73C9 /* Legend.icon */,
 				F3DD08852D75253000A67D4B /* Release Notes */,
 				F396F8072D81BF0E00FCB648 /* Tipping */,
 				F1E671752CA73A86002BDFC0 /* Custom Progress View.swift */,
@@ -1058,6 +1096,7 @@
 			children = (
 				F17A16BA2A893DD700F8FF2F /* Settings View.swift */,
 				F35E1A6C2D6489FD00718CB7 /* General Settings.swift */,
+				F3FCD1FA2E528256003BDE5E /* ColorTheme.swift */,
 				F150B4352CC1709700739646 /* Shortcuts Guide.swift */,
 				F37883692D6AF86A00D38522 /* Debug Settings.swift */,
 				F35E1A722D649D1700718CB7 /* Siri */,
@@ -1220,7 +1259,7 @@
 				F1612CC72CACC37300E602DC /* Nuke */,
 				F1612CC92CACC37300E602DC /* NukeUI */,
 				F3C1E4382D6C8CA400950F3D /* MCStatsDataLayer */,
-				F376E17F2DDA3C1100D98252 /* ScrechKit */,
+				F3FCD1F82E527A8D003BDE5E /* ScrechKit */,
 			);
 			productName = MinecraftServerStatus;
 			productReference = F13E5FF92A4BD614005BE9B2 /* MC Stats.app */;
@@ -1239,6 +1278,7 @@
 			name = Intents;
 			packageProductDependencies = (
 				F3C923632D6C6CE7004D31A9 /* MCStatsDataLayer */,
+				F3FCD1F62E527A7D003BDE5E /* ScrechKit */,
 			);
 			productName = MCStatusIntentsFramework;
 			productReference = F1406BA92AA391B800815BE8 /* Intents.appex */;
@@ -1357,7 +1397,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1630;
-				LastUpgradeCheck = 1630;
+				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					F11F634A2A81E50E00D47187 = {
 						CreatedOnToolsVersion = 15.0;
@@ -1395,6 +1435,7 @@
 				en,
 				Base,
 				ru,
+				nl,
 			);
 			mainGroup = F13E5FF02A4BD614005BE9B2;
 			packageReferences = (
@@ -1425,9 +1466,13 @@
 			isa = PBXResourcesBuildPhase;
 			files = (
 				F38218852D671BAB005025E7 /* Assets.xcassets in Resources */,
-				F3D677602DD78C5300721DE8 /* Tutorial.xcassets in Resources */,
+				F33661472E745164008E73C9 /* Legend.icon in Resources */,
 				F325F8C42D80697300FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */,
+				F336614D2E745167008E73C9 /* Supporter.icon in Resources */,
+				F33661412E745162008E73C9 /* Enthusiast.icon in Resources */,
 				F326DB592D6416E100BCCB69 /* Localizable.xcstrings in Resources */,
+				F31AC0C62E72F64B003C4A84 /* AppIcon.icon in Resources */,
+				F31AC0D52E72FE17003C4A84 /* Shared Assets.xcassets in Resources */,
 			);
 		};
 		F13095232CBC997200C4C7BA /* Resources */ = {
@@ -1435,20 +1480,25 @@
 			files = (
 				F326DB5C2D6416E100BCCB69 /* Localizable.xcstrings in Resources */,
 				F30472282D63E9C20055C007 /* Assets.xcassets in Resources */,
+				F31AC0D12E72F6B3003C4A84 /* AppIcon.icon in Resources */,
 			);
 		};
 		F13E5FF72A4BD614005BE9B2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
 				F35E1A782D64DC2700718CB7 /* Assets.xcassets in Resources */,
-				F3D6775F2DD78C5300721DE8 /* Tutorial.xcassets in Resources */,
+				F336614C2E745167008E73C9 /* Supporter.icon in Resources */,
 				F3C8E54A2D7E24E900644E47 /* InfoPlist.xcstrings in Resources */,
 				F325F8C32D80651B00FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */,
+				F31AC0D62E72FE17003C4A84 /* Shared Assets.xcassets in Resources */,
 				F326DB582D6416E100BCCB69 /* Localizable.xcstrings in Resources */,
 				F304725D2D63FBFC0055C007 /* MinecraftBold.otf in Resources */,
 				F304725E2D63FBFC0055C007 /* MinecraftBoldItalic.otf in Resources */,
 				F304725F2D63FBFC0055C007 /* MinecraftItalic.otf in Resources */,
+				F33661402E745162008E73C9 /* Enthusiast.icon in Resources */,
 				F30472602D63FBFC0055C007 /* MinecraftRegular.otf in Resources */,
+				F31AC0C82E72F64B003C4A84 /* AppIcon.icon in Resources */,
+				F33661462E745164008E73C9 /* Legend.icon in Resources */,
 			);
 		};
 		F1406BA72AA391B800815BE8 /* Resources */ = {
@@ -1462,15 +1512,20 @@
 			files = (
 				F326DB5B2D6416E100BCCB69 /* Localizable.xcstrings in Resources */,
 				F30472092D63E9C00055C007 /* Assets.xcassets in Resources */,
+				F31AC0D02E72F6B3003C4A84 /* AppIcon.icon in Resources */,
 			);
 		};
 		F31D459F2D6DC62600981B1C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
 				F31D45E42D6DC7A800981B1C /* Assets.xcassets in Resources */,
-				F3D677632DD78C5300721DE8 /* Tutorial.xcassets in Resources */,
+				F33661482E745164008E73C9 /* Legend.icon in Resources */,
 				F325F8C52D80697300FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */,
+				F336614E2E745167008E73C9 /* Supporter.icon in Resources */,
+				F33661422E745162008E73C9 /* Enthusiast.icon in Resources */,
 				F3C8E5532D7E2ADF00644E47 /* Localizable.xcstrings in Resources */,
+				F31AC0C52E72F64B003C4A84 /* AppIcon.icon in Resources */,
+				F31AC0D82E72FE17003C4A84 /* Shared Assets.xcassets in Resources */,
 			);
 		};
 		F3570D3A2D6E779500BDF069 /* Resources */ = {
@@ -1480,19 +1535,18 @@
 				F3DD08892D7527BF00A67D4B /* iMessage Icon.xcassets in Resources */,
 				F3DD08812D7524CF00A67D4B /* Localizable.xcstrings in Resources */,
 				F3DD08822D7524DA00A67D4B /* Assets.xcassets in Resources */,
-				F3D677642DD78C5300721DE8 /* Tutorial.xcassets in Resources */,
+				F31AC0D32E72FE17003C4A84 /* Shared Assets.xcassets in Resources */,
 			);
 		};
 		F35E1A7B2D6501A500718CB7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
 				F35E1AC12D65237200718CB7 /* MinecraftRegular.otf in Resources */,
-				F3D677612DD78C5300721DE8 /* Tutorial.xcassets in Resources */,
 				F325F8C72D80697300FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */,
+				F31AC0D72E72FE17003C4A84 /* Shared Assets.xcassets in Resources */,
 				F3C879D82D6572AA00840745 /* Localizable.xcstrings in Resources */,
 				F35E1AC22D65237200718CB7 /* MinecraftBold.otf in Resources */,
 				F360A8AC2D6C6942008E515E /* visionOS Icon.xcassets in Resources */,
-				F3D9AE622D6C68EB00069BDF /* Assets.xcassets in Resources */,
 				F35E1AC32D65237200718CB7 /* MinecraftBoldItalic.otf in Resources */,
 				F35E1AC42D65237200718CB7 /* MinecraftItalic.otf in Resources */,
 			);
@@ -1501,7 +1555,7 @@
 			isa = PBXResourcesBuildPhase;
 			files = (
 				F383D19B2D67E60400FE4239 /* Assets.xcassets in Resources */,
-				F3D677622DD78C5300721DE8 /* Tutorial.xcassets in Resources */,
+				F31AC0D42E72FE17003C4A84 /* Shared Assets.xcassets in Resources */,
 				F325F8C62D80697300FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */,
 				F3C879D72D6572AA00840745 /* Localizable.xcstrings in Resources */,
 				F3C879F42D6572DF00840745 /* MinecraftRegular.otf in Resources */,
@@ -1580,6 +1634,7 @@
 				F396F8042D81BE6A00FCB648 /* Tip VM.swift in Sources */,
 				F150B4342CC15F6A00739646 /* Siri Guide.swift in Sources */,
 				F3C87A032D6574D200840745 /* FAQ Row.swift in Sources */,
+				F3FCD1FC2E528256003BDE5E /* ColorTheme.swift in Sources */,
 				F35E1A772D64D32D00718CB7 /* Refresh Widgets.swift in Sources */,
 				F17AE0FC2CC05F9000DC7A80 /* Tip View.swift in Sources */,
 				F1A43C822A8472B20081A24C /* Server Details.swift in Sources */,
@@ -1613,6 +1668,7 @@
 				F16990822CA5DDE500F41232 /* Intent Errors.swift in Sources */,
 				F30246D82D66816E0030F71C /* Ping Graph.swift in Sources */,
 				F1CFCD512CABB567001A9E69 /* Custom Extentions.swift in Sources */,
+				F3FCD2022E5282D3003BDE5E /* ValueStore.swift in Sources */,
 				F35E1A9E2D65209500718CB7 /* Player Card.swift in Sources */,
 				F16990872CA5DDE500F41232 /* Shortcuts Provider.swift in Sources */,
 				F17A16BB2A893DD700F8FF2F /* Settings View.swift in Sources */,
@@ -1698,6 +1754,7 @@
 				F31D45C92D6DC74C00981B1C /* Feature Row.swift in Sources */,
 				F31D45CA2D6DC74C00981B1C /* Feature.swift in Sources */,
 				F31D45C32D6DC74100981B1C /* App Container Helper.swift in Sources */,
+				F3FCD2032E5282D3003BDE5E /* ValueStore.swift in Sources */,
 				F31D45C42D6DC74100981B1C /* App Container.swift in Sources */,
 				F396F8032D81BE6A00FCB648 /* Tip VM.swift in Sources */,
 				F3EFC1722D70877F00EE988A /* Edit Server View.swift in Sources */,
@@ -1717,6 +1774,7 @@
 				F31D45E22D6DC76800981B1C /* Custom Extentions.swift in Sources */,
 				F31D45D42D6DC75700981B1C /* Shortcuts Guide.swift in Sources */,
 				F31D45CC2D6DC75200981B1C /* Player Card.swift in Sources */,
+				F3FCD1FF2E528256003BDE5E /* ColorTheme.swift in Sources */,
 				F31D45D52D6DC75D00981B1C /* Siri Phrase.swift in Sources */,
 				F31D45D62D6DC75D00981B1C /* Siri Guide.swift in Sources */,
 				F3EFC1752D709C5700EE988A /* Ping Error.swift in Sources */,
@@ -1751,6 +1809,7 @@
 				F3B074072D76564B00F24939 /* Player Card.swift in Sources */,
 				F3DD08802D75246700A67D4B /* Watch Helper.swift in Sources */,
 				F3B0740C2D76567000F24939 /* Server Details.swift in Sources */,
+				F3FCD2042E5282D3003BDE5E /* ValueStore.swift in Sources */,
 				F3DD087A2D7523BD00A67D4B /* Saved Server Entity.swift in Sources */,
 				F396F8052D81BE6A00FCB648 /* Tip VM.swift in Sources */,
 				F3B0742C2D77063B00F24939 /* Edit Server View Helper.swift in Sources */,
@@ -1767,6 +1826,7 @@
 				F3DD086B2D75232500A67D4B /* Server Row.swift in Sources */,
 				F3DD08882D75263100A67D4B /* Tip View.swift in Sources */,
 				F3DD086A2D75226A00A67D4B /* Server List.swift in Sources */,
+				F3FCD1FD2E528256003BDE5E /* ColorTheme.swift in Sources */,
 				F3DD08862D75253600A67D4B /* Feature.swift in Sources */,
 				F3B074032D76560700F24939 /* Ping Error.swift in Sources */,
 				F3B074042D76560700F24939 /* Swifty Ping.swift in Sources */,
@@ -1819,6 +1879,7 @@
 				F3C87A102D657A1500840745 /* Feature.swift in Sources */,
 				F378836C2D6AF86A00D38522 /* Debug Settings.swift in Sources */,
 				F3C87A072D6574DD00840745 /* FAQ.swift in Sources */,
+				F3FCD1FE2E528256003BDE5E /* ColorTheme.swift in Sources */,
 				F35E1AB92D65236300718CB7 /* Custom Extentions.swift in Sources */,
 				F35E1ABA2D65236300718CB7 /* Review Helper.swift in Sources */,
 				F3EFC1762D709C5700EE988A /* Ping Error.swift in Sources */,
@@ -1868,6 +1929,7 @@
 				F3C879DE2D6572BE00840745 /* Release Notes.swift in Sources */,
 				F3C879D92D6572B000840745 /* MC Stats.swift in Sources */,
 				F3C879DB2D6572BA00840745 /* Low Power Mode.swift in Sources */,
+				F3FCD1FB2E528256003BDE5E /* ColorTheme.swift in Sources */,
 				F3C879DC2D6572BA00840745 /* Refresh Widgets.swift in Sources */,
 				F3C879E62D6572CA00840745 /* Server Row.swift in Sources */,
 				F3EFC1772D709C5700EE988A /* Ping Error.swift in Sources */,
@@ -2086,10 +2148,11 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "2025 Sergei Saliukov";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0.10;
+				MARKETING_VERSION = 1.0.11;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -2148,9 +2211,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "2025 Sergei Saliukov";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0.10;
+				MARKETING_VERSION = 1.0.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
@@ -2166,8 +2230,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "MC Stats/Other/iOS.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "MC Stats";
@@ -2210,8 +2278,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "MC Stats/Other/iOS.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "MC Stats";
@@ -2308,6 +2380,9 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = Widgets/Widgets.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Widgets/Widgets.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "MC Stats";
@@ -2336,6 +2411,9 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = Widgets/Widgets.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Widgets/Widgets.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "MC Stats";
@@ -2367,8 +2445,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 8FQUA2F388;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = macOS/macOS.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "MC Stats";
@@ -2397,8 +2478,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 8FQUA2F388;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = macOS/macOS.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "MC Stats";
@@ -2500,7 +2584,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 7;
-				XROS_DEPLOYMENT_TARGET = 1.0;
+				XROS_DEPLOYMENT_TARGET = 26.0;
 			};
 			name = Debug;
 		};
@@ -2528,7 +2612,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 7;
 				VALIDATE_PRODUCT = YES;
-				XROS_DEPLOYMENT_TARGET = 1.0;
+				XROS_DEPLOYMENT_TARGET = 26.0;
 			};
 			name = Release;
 		};
@@ -2748,11 +2832,6 @@
 			package = F1612CC62CACC37300E602DC /* XCRemoteSwiftPackageReference "Nuke" */;
 			productName = NukeUI;
 		};
-		F376E17F2DDA3C1100D98252 /* ScrechKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F33A5CAB2D640BEB0020D8A5 /* XCRemoteSwiftPackageReference "ScrechKit" */;
-			productName = ScrechKit;
-		};
 		F376E1812DDA3C3700D98252 /* ScrechKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F33A5CAB2D640BEB0020D8A5 /* XCRemoteSwiftPackageReference "ScrechKit" */;
@@ -2839,6 +2918,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F1612CC62CACC37300E602DC /* XCRemoteSwiftPackageReference "Nuke" */;
 			productName = Nuke;
+		};
+		F3FCD1F62E527A7D003BDE5E /* ScrechKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F33A5CAB2D640BEB0020D8A5 /* XCRemoteSwiftPackageReference "ScrechKit" */;
+			productName = ScrechKit;
+		};
+		F3FCD1F82E527A8D003BDE5E /* ScrechKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F33A5CAB2D640BEB0020D8A5 /* XCRemoteSwiftPackageReference "ScrechKit" */;
+			productName = ScrechKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

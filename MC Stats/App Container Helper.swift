@@ -82,20 +82,20 @@ extension AppContainer {
     func goToServerView(_ vm: ServerStatusVM) {
         // check if user has disabled deep links, if so just go to main list
         if !UserDefaultsHelper.shared.get(for: .openToSpecificServer, defaultValue: true) {
-            self.nav.removeLast(self.nav.count)
+            nav.removeLast(nav.count)
             return
         }
         
         // go to server view
         // First, check if a server is already displayed and update it if so
-        if self.nav.isEmpty {
-            self.nav.append(vm)
+        if nav.isEmpty {
+            nav.append(vm)
         } else {
-            self.nav.removeLast(self.nav.count)
+            nav.removeLast(nav.count)
             
             Task {
                 // hack! otherwise data won't refresh correctly
-                self.nav.append(vm)
+                nav.append(vm)
             }
         }
     }

@@ -42,7 +42,7 @@ struct EditServerView: View {
                         Image(systemName: "list.bullet")
                             .foregroundColor(.gray)
                             .headline()
-                            .frame(width: 25, height: 25)
+                            .frame(25)
                         
                         Picker("Server Type", selection: $tempServerType) {
                             Text("Java Edition")
