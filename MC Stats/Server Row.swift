@@ -130,6 +130,7 @@ struct ServerRow: View {
 
 //#Preview {
 ////    ServerRowView(title: "test", subtitle: "subtitle")
+////    .darkSchemePreferred()
 ////    let vm = ServerStatusVM(modelContext: , server: <#T##SavedMinecraftServer#>)
 //}
 

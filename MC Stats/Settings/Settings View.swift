@@ -184,4 +184,5 @@ struct SettingsView: View {
     NavigationStack {
         SettingsView()
     }
+    .darkSchemePreferred()
 }

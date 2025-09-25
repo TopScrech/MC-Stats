@@ -97,4 +97,5 @@ struct TipCard: View {
 
 //#Preview {
 //    TipCard()
+//        .darkSchemePreferred()
 //}

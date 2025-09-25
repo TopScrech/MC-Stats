@@ -73,6 +73,7 @@ struct GeneralSettings: View {
     NavigationStack {
         GeneralSettings()
     }
+    .darkSchemePreferred()
 #if os(iOS)
     .environmentObject(ValueStore())
 #endif

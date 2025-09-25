@@ -44,4 +44,5 @@ struct SettingsView: View {
 
 #Preview {
     SettingsView()
+        .darkSchemePreferred()
 }

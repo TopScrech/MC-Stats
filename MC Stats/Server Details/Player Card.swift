@@ -50,8 +50,8 @@ struct PlayerCard: View {
 }
 
 #Preview {
-    PlayerCard(.init(
-        name: "Preview",
-        uuid: "Preview"
-    ))
+    PlayerCard(
+        Player(name: "Preview", uuid: "Preview")
+    )
+    .darkSchemePreferred()
 }

@@ -77,4 +77,5 @@ struct ServerDetails: View {
 
 //#Preview {
 //    ServerDetails()
+//    .darkSchemePreferred()
 //}

@@ -45,5 +45,6 @@ struct PlayerCard: View {
 
 //#Preview {
 //    PlayerCard()
+//    .darkSchemePreferred()
 //        .environment(ServerStatusVM())
 //}

@@ -161,7 +161,9 @@ struct ReleaseNotes: View {
         
         openUrl(writeReviewURL)
 #else
-        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene else {
+        guard
+            let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+        else {
             return
         }
         
@@ -172,4 +174,5 @@ struct ReleaseNotes: View {
 
 #Preview {
     ReleaseNotes()
+        .darkSchemePreferred()
 }
