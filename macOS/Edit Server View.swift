@@ -167,4 +167,5 @@ struct EditServerView: View {
     NavigationStack {
         EditServerView($server)
     }
+    .darkSchemePreferred()
 }

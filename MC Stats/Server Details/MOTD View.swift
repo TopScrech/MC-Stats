@@ -21,4 +21,5 @@ struct MOTDView: View {
 
 //#Preview {
 //    MOTDView()
+//    .darkSchemePreferred()
 //}

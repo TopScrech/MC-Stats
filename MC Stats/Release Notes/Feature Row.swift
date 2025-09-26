@@ -29,4 +29,5 @@ struct FeatureRow: View {
 
 #Preview {
     ReleaseNotes()
+        .darkSchemePreferred()
 }

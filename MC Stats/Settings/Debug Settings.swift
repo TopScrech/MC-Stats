@@ -70,4 +70,5 @@ struct DebugSettings: View {
 
 #Preview {
     DebugSettings {}
+        .darkSchemePreferred()
 }

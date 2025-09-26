@@ -196,4 +196,5 @@ struct PingGraph: View {
     }
     
     PingGraph($pings)
+        .darkSchemePreferred()
 }

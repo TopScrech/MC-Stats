@@ -210,4 +210,5 @@ struct AppContainer: View {
 
 //#Preview {
 //    AppContainer()
+//    .darkSchemePreferred()
 //}
