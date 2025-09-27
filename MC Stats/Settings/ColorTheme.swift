@@ -1,6 +1,6 @@
 import SwiftUI
 
-enum ColorTheme: String, Identifiable, CaseIterable {
+enum Appearance: String, Identifiable, CaseIterable {
     case system, dark, light
     
     var id: String {

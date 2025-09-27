@@ -1,8 +1,12 @@
 import SwiftUI
 import MCStatsDataLayer
 
+#if canImport(Appearance)
+import Appearance
+#endif
+
 struct GeneralSettings: View {
-#if os(iOS)
+#if canImport(Appearance)
     @EnvironmentObject private var store: ValueStore
 #endif
     @AppStorage(UserDefaultsHelper.Key.iCloudEnabled.rawValue)        private var icloudSync = true
@@ -12,14 +16,9 @@ struct GeneralSettings: View {
     
     var body: some View {
         Form {
-#if os(iOS)
+#if canImport(Appearance)
             Section {
-                Picker("Appearance", selection: $store.appearance) {
-                    ForEach(ColorTheme.allCases) { theme in
-                        Text(theme.loc)
-                            .tag(theme)
-                    }
-                }
+                AppearancePicker($store.appearance)
             }
 #endif
             Toggle(isOn: $icloudSync) {

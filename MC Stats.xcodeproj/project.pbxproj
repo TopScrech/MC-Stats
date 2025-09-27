@@ -424,13 +424,11 @@
 		F3F2E6422D8258AF0078EA89 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F2E6412D8258AF0078EA89 /* StoreKit.framework */; };
 		F3F2E6432D8258C50078EA89 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F325F93C2D80E84300FDF4D9 /* StoreKit.framework */; };
 		F3F2E6452D8258C90078EA89 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F2E6442D8258C90078EA89 /* StoreKit.framework */; };
+		F3F5AD672E885E47007AD97D /* Appearance in Frameworks */ = {isa = PBXBuildFile; productRef = F3F5AD662E885E47007AD97D /* Appearance */; };
+		F3F5AD742E886051007AD97D /* Appearance in Frameworks */ = {isa = PBXBuildFile; productRef = F3F5AD732E886051007AD97D /* Appearance */; };
+		F3F5AD762E886058007AD97D /* Appearance in Frameworks */ = {isa = PBXBuildFile; productRef = F3F5AD752E886058007AD97D /* Appearance */; };
 		F3FCD1F72E527A7D003BDE5E /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3FCD1F62E527A7D003BDE5E /* ScrechKit */; };
 		F3FCD1F92E527A8D003BDE5E /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3FCD1F82E527A8D003BDE5E /* ScrechKit */; };
-		F3FCD1FB2E528256003BDE5E /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1FA2E528256003BDE5E /* ColorTheme.swift */; };
-		F3FCD1FC2E528256003BDE5E /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1FA2E528256003BDE5E /* ColorTheme.swift */; };
-		F3FCD1FD2E528256003BDE5E /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1FA2E528256003BDE5E /* ColorTheme.swift */; };
-		F3FCD1FE2E528256003BDE5E /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1FA2E528256003BDE5E /* ColorTheme.swift */; };
-		F3FCD1FF2E528256003BDE5E /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD1FA2E528256003BDE5E /* ColorTheme.swift */; };
 		F3FCD2022E5282D3003BDE5E /* ValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD2002E5282D3003BDE5E /* ValueStore.swift */; };
 		F3FCD2032E5282D3003BDE5E /* ValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD2002E5282D3003BDE5E /* ValueStore.swift */; };
 		F3FCD2042E5282D3003BDE5E /* ValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD2002E5282D3003BDE5E /* ValueStore.swift */; };
@@ -552,7 +550,7 @@
 		F11F63512A81E51000D47187 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F13095252CBC997200C4C7BA /* Watch Widgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Watch Widgets.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F130954E2CBC9D5600C4C7BA /* Config Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Config Helper.swift"; sourceTree = "<group>"; };
-		F13E5FF92A4BD614005BE9B2 /* MC Stats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MC Stats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F13E5FF92A4BD614005BE9B2 /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F13E5FFC2A4BD614005BE9B2 /* MC Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MC Stats.swift"; sourceTree = "<group>"; };
 		F13E60002A4BD614005BE9B2 /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
 		F13E60022A4BD615005BE9B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -681,7 +679,6 @@
 		F3EFC1732D709C5700EE988A /* Ping Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ping Error.swift"; sourceTree = "<group>"; };
 		F3F2E6412D8258AF0078EA89 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS18.4.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
 		F3F2E6442D8258C90078EA89 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS11.4.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
-		F3FCD1FA2E528256003BDE5E /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
 		F3FCD2002E5282D3003BDE5E /* ValueStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -712,6 +709,7 @@
 				F3FCD1F92E527A8D003BDE5E /* ScrechKit in Frameworks */,
 				F325F93D2D80E84300FDF4D9 /* StoreKit.framework in Frameworks */,
 				F3C1E4392D6C8CA400950F3D /* MCStatsDataLayer in Frameworks */,
+				F3F5AD672E885E47007AD97D /* Appearance in Frameworks */,
 				F1612CC82CACC37300E602DC /* Nuke in Frameworks */,
 			);
 		};
@@ -738,6 +736,7 @@
 				F376E1862DDA3C5600D98252 /* ScrechKit in Frameworks */,
 				F31D45BC2D6DC6B700981B1C /* MCStatsDataLayer in Frameworks */,
 				F3F2E6432D8258C50078EA89 /* StoreKit.framework in Frameworks */,
+				F3F5AD742E886051007AD97D /* Appearance in Frameworks */,
 				F31D45C22D6DC6C600981B1C /* NukeUI in Frameworks */,
 			);
 		};
@@ -748,6 +747,7 @@
 				F376E18E2DDA3CBC00D98252 /* ScrechKit in Frameworks */,
 				F3570D412D6E779500BDF069 /* Messages.framework in Frameworks */,
 				F3DD086F2D75233300A67D4B /* NukeUI in Frameworks */,
+				F3F5AD762E886058007AD97D /* Appearance in Frameworks */,
 				F3DD08712D75233600A67D4B /* Nuke in Frameworks */,
 			);
 		};
@@ -832,7 +832,7 @@
 		F13E5FFA2A4BD614005BE9B2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F13E5FF92A4BD614005BE9B2 /* MC Stats.app */,
+				F13E5FF92A4BD614005BE9B2 /* iOS.app */,
 				F11F634B2A81E50E00D47187 /* watchOS.app */,
 				F1406BA92AA391B800815BE8 /* Intents.appex */,
 				F1EF76EC2CB7873F00EFFB20 /* Widgets.appex */,
@@ -1096,7 +1096,6 @@
 			children = (
 				F17A16BA2A893DD700F8FF2F /* Settings View.swift */,
 				F35E1A6C2D6489FD00718CB7 /* General Settings.swift */,
-				F3FCD1FA2E528256003BDE5E /* ColorTheme.swift */,
 				F150B4352CC1709700739646 /* Shortcuts Guide.swift */,
 				F37883692D6AF86A00D38522 /* Debug Settings.swift */,
 				F35E1A722D649D1700718CB7 /* Siri */,
@@ -1235,9 +1234,9 @@
 			productReference = F13095252CBC997200C4C7BA /* Watch Widgets.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		F13E5FF82A4BD614005BE9B2 /* MC Stats */ = {
+		F13E5FF82A4BD614005BE9B2 /* iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F13E600B2A4BD615005BE9B2 /* Build configuration list for PBXNativeTarget "MC Stats" */;
+			buildConfigurationList = F13E600B2A4BD615005BE9B2 /* Build configuration list for PBXNativeTarget "iOS" */;
 			buildPhases = (
 				F13E5FF52A4BD614005BE9B2 /* Sources */,
 				F13E5FF62A4BD614005BE9B2 /* Frameworks */,
@@ -1254,15 +1253,16 @@
 				F1EF76FE2CB7874000EFFB20 /* PBXTargetDependency */,
 				F3D677672DD7E81700721DE8 /* PBXTargetDependency */,
 			);
-			name = "MC Stats";
+			name = iOS;
 			packageProductDependencies = (
 				F1612CC72CACC37300E602DC /* Nuke */,
 				F1612CC92CACC37300E602DC /* NukeUI */,
 				F3C1E4382D6C8CA400950F3D /* MCStatsDataLayer */,
 				F3FCD1F82E527A8D003BDE5E /* ScrechKit */,
+				F3F5AD662E885E47007AD97D /* Appearance */,
 			);
 			productName = MinecraftServerStatus;
-			productReference = F13E5FF92A4BD614005BE9B2 /* MC Stats.app */;
+			productReference = F13E5FF92A4BD614005BE9B2 /* iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F1406BA82AA391B800815BE8 /* Intents */ = {
@@ -1320,6 +1320,7 @@
 				F31D45BF2D6DC6C200981B1C /* Nuke */,
 				F31D45C12D6DC6C600981B1C /* NukeUI */,
 				F376E1852DDA3C5600D98252 /* ScrechKit */,
+				F3F5AD732E886051007AD97D /* Appearance */,
 			);
 			productName = macOS;
 			productReference = F31D45A12D6DC62600981B1C /* MC Stats.app */;
@@ -1341,6 +1342,7 @@
 				F3DD086E2D75233300A67D4B /* NukeUI */,
 				F3DD08702D75233600A67D4B /* Nuke */,
 				F376E18D2DDA3CBC00D98252 /* ScrechKit */,
+				F3F5AD752E886058007AD97D /* Appearance */,
 			);
 			productName = "MC Stats iMessage MessagesExtension";
 			productReference = F3570D3C2D6E779500BDF069 /* iMessages.appex */;
@@ -1442,13 +1444,14 @@
 				F1612CC62CACC37300E602DC /* XCRemoteSwiftPackageReference "Nuke" */,
 				F33A5CAB2D640BEB0020D8A5 /* XCRemoteSwiftPackageReference "ScrechKit" */,
 				F394B82A2D6C6F9D0040EBD7 /* XCLocalSwiftPackageReference "MCStatsDataLayer" */,
+				F3F5AD652E885E47007AD97D /* XCRemoteSwiftPackageReference "Appearance" */,
 			);
 			preferredProjectObjectVersion = 90;
 			productRefGroup = F13E5FFA2A4BD614005BE9B2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F13E5FF82A4BD614005BE9B2 /* MC Stats */,
+				F13E5FF82A4BD614005BE9B2 /* iOS */,
 				F11F634A2A81E50E00D47187 /* watchOS */,
 				F31D45A02D6DC62600981B1C /* macOS */,
 				F3C879BC2D65720500840745 /* tvOS */,
@@ -1634,7 +1637,6 @@
 				F396F8042D81BE6A00FCB648 /* Tip VM.swift in Sources */,
 				F150B4342CC15F6A00739646 /* Siri Guide.swift in Sources */,
 				F3C87A032D6574D200840745 /* FAQ Row.swift in Sources */,
-				F3FCD1FC2E528256003BDE5E /* ColorTheme.swift in Sources */,
 				F35E1A772D64D32D00718CB7 /* Refresh Widgets.swift in Sources */,
 				F17AE0FC2CC05F9000DC7A80 /* Tip View.swift in Sources */,
 				F1A43C822A8472B20081A24C /* Server Details.swift in Sources */,
@@ -1774,7 +1776,6 @@
 				F31D45E22D6DC76800981B1C /* Custom Extentions.swift in Sources */,
 				F31D45D42D6DC75700981B1C /* Shortcuts Guide.swift in Sources */,
 				F31D45CC2D6DC75200981B1C /* Player Card.swift in Sources */,
-				F3FCD1FF2E528256003BDE5E /* ColorTheme.swift in Sources */,
 				F31D45D52D6DC75D00981B1C /* Siri Phrase.swift in Sources */,
 				F31D45D62D6DC75D00981B1C /* Siri Guide.swift in Sources */,
 				F3EFC1752D709C5700EE988A /* Ping Error.swift in Sources */,
@@ -1826,7 +1827,6 @@
 				F3DD086B2D75232500A67D4B /* Server Row.swift in Sources */,
 				F3DD08882D75263100A67D4B /* Tip View.swift in Sources */,
 				F3DD086A2D75226A00A67D4B /* Server List.swift in Sources */,
-				F3FCD1FD2E528256003BDE5E /* ColorTheme.swift in Sources */,
 				F3DD08862D75253600A67D4B /* Feature.swift in Sources */,
 				F3B074032D76560700F24939 /* Ping Error.swift in Sources */,
 				F3B074042D76560700F24939 /* Swifty Ping.swift in Sources */,
@@ -1879,7 +1879,6 @@
 				F3C87A102D657A1500840745 /* Feature.swift in Sources */,
 				F378836C2D6AF86A00D38522 /* Debug Settings.swift in Sources */,
 				F3C87A072D6574DD00840745 /* FAQ.swift in Sources */,
-				F3FCD1FE2E528256003BDE5E /* ColorTheme.swift in Sources */,
 				F35E1AB92D65236300718CB7 /* Custom Extentions.swift in Sources */,
 				F35E1ABA2D65236300718CB7 /* Review Helper.swift in Sources */,
 				F3EFC1762D709C5700EE988A /* Ping Error.swift in Sources */,
@@ -1929,7 +1928,6 @@
 				F3C879DE2D6572BE00840745 /* Release Notes.swift in Sources */,
 				F3C879D92D6572B000840745 /* MC Stats.swift in Sources */,
 				F3C879DB2D6572BA00840745 /* Low Power Mode.swift in Sources */,
-				F3FCD1FB2E528256003BDE5E /* ColorTheme.swift in Sources */,
 				F3C879DC2D6572BA00840745 /* Refresh Widgets.swift in Sources */,
 				F3C879E62D6572CA00840745 /* Server Row.swift in Sources */,
 				F3EFC1772D709C5700EE988A /* Ping Error.swift in Sources */,
@@ -2220,7 +2218,7 @@
 			};
 			name = Release;
 		};
-		F13E600C2A4BD615005BE9B2 /* Debug configuration for PBXNativeTarget "MC Stats" */ = {
+		F13E600C2A4BD615005BE9B2 /* Debug configuration for PBXNativeTarget "iOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -2268,7 +2266,7 @@
 			};
 			name = Debug;
 		};
-		F13E600D2A4BD615005BE9B2 /* Release configuration for PBXNativeTarget "MC Stats" */ = {
+		F13E600D2A4BD615005BE9B2 /* Release configuration for PBXNativeTarget "iOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -2708,11 +2706,11 @@
 			);
 			defaultConfigurationName = Release;
 		};
-		F13E600B2A4BD615005BE9B2 /* Build configuration list for PBXNativeTarget "MC Stats" */ = {
+		F13E600B2A4BD615005BE9B2 /* Build configuration list for PBXNativeTarget "iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F13E600C2A4BD615005BE9B2 /* Debug configuration for PBXNativeTarget "MC Stats" */,
-				F13E600D2A4BD615005BE9B2 /* Release configuration for PBXNativeTarget "MC Stats" */,
+				F13E600C2A4BD615005BE9B2 /* Debug configuration for PBXNativeTarget "iOS" */,
+				F13E600D2A4BD615005BE9B2 /* Release configuration for PBXNativeTarget "iOS" */,
 			);
 			defaultConfigurationName = Release;
 		};
@@ -2785,6 +2783,14 @@
 		F33A5CAB2D640BEB0020D8A5 /* XCRemoteSwiftPackageReference "ScrechKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/TopScrech/ScrechKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		F3F5AD652E885E47007AD97D /* XCRemoteSwiftPackageReference "Appearance" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TopScrech/Appearance";
 			requirement = {
 				branch = main;
 				kind = branch;
@@ -2918,6 +2924,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F1612CC62CACC37300E602DC /* XCRemoteSwiftPackageReference "Nuke" */;
 			productName = Nuke;
+		};
+		F3F5AD662E885E47007AD97D /* Appearance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3F5AD652E885E47007AD97D /* XCRemoteSwiftPackageReference "Appearance" */;
+			productName = Appearance;
+		};
+		F3F5AD732E886051007AD97D /* Appearance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3F5AD652E885E47007AD97D /* XCRemoteSwiftPackageReference "Appearance" */;
+			productName = Appearance;
+		};
+		F3F5AD752E886058007AD97D /* Appearance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3F5AD652E885E47007AD97D /* XCRemoteSwiftPackageReference "Appearance" */;
+			productName = Appearance;
 		};
 		F3FCD1F62E527A7D003BDE5E /* ScrechKit */ = {
 			isa = XCSwiftPackageProductDependency;
