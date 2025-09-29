@@ -9,7 +9,6 @@ enum Theme: String, CaseIterable {
          auto = "Auto"
 }
 
-
 struct ThemeIntentTypeAppEntity: AppEntity {
     static var typeDisplayRepresentation = TypeDisplayRepresentation(name: "Theme Intent Type")
     
@@ -29,8 +28,8 @@ struct ThemeIntentTypeAppEntity: AppEntity {
     
     struct ThemeIntentTypeAppEntityQuery: EntityQuery {
         func entities(for identifiers: [ThemeIntentTypeAppEntity.ID]) async throws -> [ThemeIntentTypeAppEntity] {
-            identifiers.map { id in
-                ThemeIntentTypeAppEntity(id: id, displayString: id)
+            identifiers.map {
+                ThemeIntentTypeAppEntity(id: $0, displayString: $0)
             }
         }
         
