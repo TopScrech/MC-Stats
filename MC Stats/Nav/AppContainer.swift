@@ -113,6 +113,7 @@ struct AppContainer: View {
                         Image(systemName: "gear")
 #endif
                     }
+                    .keyboardShortcut("s")
                 }
 #if os(tvOS)
                 ToolbarItem(placement: .topBarTrailing) {
