@@ -1,5 +1,5 @@
 {
-  "originHash" : "117600a90316ac9c593c64e8e14e040a2c76272c9d14c39512c548d9091766f2",
+  "originHash" : "624b6ea5f88c7ee6332ab3f43393e82281409bcbfb291b2222c9eb6593aba1fc",
   "pins" : [
     {
       "identity" : "appearance",
@@ -7,7 +7,7 @@
       "location" : "https://github.com/TopScrech/Appearance",
       "state" : {
         "branch" : "main",
-        "revision" : "737ef13cbcd497a84b4093e2827163c4fe001e9d"
+        "revision" : "ffd455ead37ffdf6809381083b85192a909eb001"
       }
     },
     {
