@@ -47,8 +47,8 @@ struct AppContainer: View {
                 //     .frame(maxWidth: .infinity, alignment: .center)
                 //     .listRowBackground(Color.clear) // this is ugly so removing it
             }
-            .navigationDestination(for: ServerStatusVM.self) { vm in
-                ServerDetails(vm) {
+            .navigationDestination(for: ServerStatusVM.self) {
+                ServerDetails($0) {
                     reloadData()
                     refreshDisplayOrders()
                 }
@@ -71,8 +71,8 @@ struct AppContainer: View {
                     }
                 }
             }
-            .navigationDestination(for: PageDestinations.self) { destination in
-                switch destination {
+            .navigationDestination(for: PageDestinations.self) {
+                switch $0 {
                 case .SettingsRoot:
                     SettingsView {
                         reloadData(forceRefresh: true)
@@ -82,8 +82,12 @@ struct AppContainer: View {
             }
             .overlay {
                 if let servers, servers.isEmpty {
-                    ContentUnavailableView("Add Server", systemImage: "server.rack", description: Text("Servers are synced with your phone. This may take some time"))
-                        .scrollDisabled(true)
+                    ContentUnavailableView(
+                        "Add Server",
+                        systemImage: "server.rack",
+                        description: Text("Servers are synced with your phone. This may take some time")
+                    )
+                    .scrollDisabled(true)
                 }
             }
         }

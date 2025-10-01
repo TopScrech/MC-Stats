@@ -123,8 +123,8 @@ struct SettingsView: View {
                 TipView()
             }
         }
-        .navigationDestination(for: SettingsPageDestinations.self) { destination in
-            switch destination {
+        .navigationDestination(for: SettingsPageDestinations.self) {
+            switch $0 {
             case .GeneralSettings: GeneralSettings()
             case .FAQ:             FAQView(getiOSFAQs())
             case .Shortcuts:       ShortcutsGuide()

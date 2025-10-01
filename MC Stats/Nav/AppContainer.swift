@@ -61,14 +61,14 @@ struct AppContainer: View {
             .refreshable {
                 reloadData(forceRefresh: true)
             }
-            .navigationDestination(for: ServerStatusVM.self) { vm in
-                ServerDetails(vm) {
+            .navigationDestination(for: ServerStatusVM.self) {
+                ServerDetails($0) {
                     reloadData()
                     refreshDisplayOrders()
                 }
             }
-            .navigationDestination(for: PageDestinations.self) { destination in
-                switch destination {
+            .navigationDestination(for: PageDestinations.self) {
+                switch $0 {
                 case .SettingsRoot:
                     SettingsView {
                         reloadData(forceRefresh: true)
