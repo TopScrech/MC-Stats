@@ -271,12 +271,10 @@ struct ServerDetails: View {
                 return
             }
             
-            let pingDuration = Int(round(pingResult.duration * 1000))
-            self.pingDuration = pingDuration
+            let ping = Int(round(pingResult.duration * 1000))
+            self.pingDuration = ping
             
-            pings.append(
-                ServerPing(pingDuration)
-            )
+            pings.append(ServerPing(ping))
             
             if pings.count > 60 {
                 pings.removeFirst()

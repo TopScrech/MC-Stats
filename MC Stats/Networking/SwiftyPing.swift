@@ -754,14 +754,15 @@ public class SwiftyPing: NSObject {
         var sum = UInt64(typecode) + UInt64(header.identifier) + UInt64(header.sequenceNumber)
         
         let payload = convert(payload: header.payload) + additionalPayload
+        let payloadCount = payload.count
         
-        guard payload.count % 2 == 0 else {
+        guard payloadCount % 2 == 0 else {
             throw PingError.unexpectedPayloadLength
         }
         
         var i = 0
         
-        while i < payload.count {
+        while i < payloadCount {
             guard payload.indices.contains(i + 1) else {
                 throw PingError.unexpectedPayloadLength
             }

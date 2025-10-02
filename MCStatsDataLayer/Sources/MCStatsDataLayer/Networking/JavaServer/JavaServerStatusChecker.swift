@@ -242,8 +242,9 @@ public class JavaServerStatusChecker: ServerStatusCheckerProtocol {
     private func readVariableSizedInt(bytes: inout [UInt8]) -> Int {
         var result = 0
         var shift = 0
+        let byteCount = bytes.count
         
-        for _ in 0...bytes.count {
+        for _ in 0...byteCount {
             if bytes.count == 0 {
                 return 0
             }

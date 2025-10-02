@@ -9,7 +9,8 @@ final class WatchServerStatusChecker {
     
     init() {
         self.connectivityProvider.responseListener = { message in
-            // recevied message from phone. Parse and remove from expected results, before passing on to listener
+            // Recevied message from phone
+            // Parse and remove from expected results, before passing on to listener
             guard let (serverID, status) = self.parseWatchResponse(message) else {
                 return
             }

@@ -39,8 +39,8 @@ struct DebugSettings: View {
     }
     
     private func deleteAllServers() {
-        for server in servers {
-            modelContext.delete(server)
+        servers.forEach {
+            modelContext.delete($0)
         }
         
         do {
