@@ -45,7 +45,7 @@ extension ServerStatus {
             }
             
             // Append the formatted text to the combinedText
-            combinedText = combinedText + text
+            combinedText = Text("combinedText \(text)")
         }
         
         // Remove the last newline

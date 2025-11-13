@@ -167,7 +167,7 @@ struct ReleaseNotes: View {
             return
         }
         
-        SKStoreReviewController.requestReview(in: windowScene)
+        AppStore.requestReview(in: windowScene)
 #endif
     }
 }

@@ -361,6 +361,7 @@ public class SwiftyPing: NSObject {
         timeoutTimer = nil
     }
     
+    @MainActor
     deinit {
         tearDown()
     }
@@ -418,30 +419,57 @@ public class SwiftyPing: NSObject {
         _serial.async {
             let address = self.destination.ipv4Address
             
-            do {
-                let icmpPackage = try self.createICMPPackage(
-                    identifier: UInt16(self.identifier),
-                    sequenceNumber: UInt16(self.sequenceIndex)
-                )
-                
-                guard let socket = self.socket else {
-                    return
-                }
-                
-                let socketError = CFSocketSendData(
-                    socket,
-                    address as CFData,
-                    icmpPackage as CFData,
-                    self.configuration.timeoutInterval
-                )
-                
-                if socketError != .success {
-                    var error: PingError?
+            Task { @MainActor in
+                do {
+                    let icmpPackage = try self.createICMPPackage(
+                        identifier: UInt16(self.identifier),
+                        sequenceNumber: UInt16(self.sequenceIndex)
+                    )
                     
-                    switch socketError {
-                    case .error: error = .requestError
-                    case .timeout: error = .requestTimeout
-                    default: break
+                    guard let socket = self.socket else {
+                        return
+                    }
+                    
+                    let socketError = CFSocketSendData(
+                        socket,
+                        address as CFData,
+                        icmpPackage as CFData,
+                        self.configuration.timeoutInterval
+                    )
+                    
+                    if socketError != .success {
+                        var error: PingError?
+                        
+                        switch socketError {
+                        case .error: error = .requestError
+                        case .timeout: error = .requestTimeout
+                        default: break
+                        }
+                        
+                        let response = PingResponse(
+                            identifier: self.identifier,
+                            ipAddress: self.destination.ip,
+                            sequenceNumber: self.sequenceIndex,
+                            trueSequenceNumber: self.trueSequenceIndex,
+                            duration: self.timeIntervalSinceStart,
+                            error: error,
+                            byteCount: nil,
+                            ipHeader: nil
+                        )
+                        
+                        self.erroredIndices.append(Int(self.sequenceIndex))
+                        self.isPinging = false
+                        self.informObserver(of: response)
+                        
+                        return self.scheduleNextPing()
+                    }
+                } catch {
+                    let pingError: PingError
+                    
+                    if let err = error as? PingError {
+                        pingError = err
+                    } else {
+                        pingError = .packageCreationFailed
                     }
                     
                     let response = PingResponse(
@@ -450,7 +478,7 @@ public class SwiftyPing: NSObject {
                         sequenceNumber: self.sequenceIndex,
                         trueSequenceNumber: self.trueSequenceIndex,
                         duration: self.timeIntervalSinceStart,
-                        error: error,
+                        error: pingError,
                         byteCount: nil,
                         ipHeader: nil
                     )
@@ -461,31 +489,6 @@ public class SwiftyPing: NSObject {
                     
                     return self.scheduleNextPing()
                 }
-            } catch {
-                let pingError: PingError
-                
-                if let err = error as? PingError {
-                    pingError = err
-                } else {
-                    pingError = .packageCreationFailed
-                }
-                
-                let response = PingResponse(
-                    identifier: self.identifier,
-                    ipAddress: self.destination.ip,
-                    sequenceNumber: self.sequenceIndex,
-                    trueSequenceNumber: self.trueSequenceIndex,
-                    duration: self.timeIntervalSinceStart,
-                    error: pingError,
-                    byteCount: nil,
-                    ipHeader: nil
-                )
-                
-                self.erroredIndices.append(Int(self.sequenceIndex))
-                self.isPinging = false
-                self.informObserver(of: response)
-                
-                return self.scheduleNextPing()
             }
         }
     }
@@ -560,7 +563,8 @@ public class SwiftyPing: NSObject {
         }
         
         if shouldSchedulePing() {
-            _serial.asyncAfter(deadline: .now() + configuration.pingInterval) {
+            Task {
+                try await Task.sleep(for: .seconds(configuration.pingInterval))
                 self.sendPing()
             }
         }
