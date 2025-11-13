@@ -15,8 +15,8 @@ struct SavedServerEntity: AppEntity {
         self.type = server.serverType.rawValue
     }
     
-    static var defaultQuery = SavedServerQuery()
-    static var typeDisplayRepresentation: TypeDisplayRepresentation = "Server"
+    static let defaultQuery = SavedServerQuery()
+    static let typeDisplayRepresentation: TypeDisplayRepresentation = "Server"
     
     var displayRepresentation: DisplayRepresentation {
 #if os(macOS)

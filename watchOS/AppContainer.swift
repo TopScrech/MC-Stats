@@ -137,18 +137,20 @@ struct AppContainer: View {
             let container = CKContainer.default()
             
             container.accountStatus { accountStatus, error in
-                switch accountStatus {
-                case .available:
-                    self.iCloudStatus = .available
-                    
-                case .noAccount, .restricted:
-                    self.iCloudStatus = .unavailable
-                    
-                case .couldNotDetermine, .temporarilyUnavailable:
-                    self.iCloudStatus = .unknown
-                    
-                @unknown default:
-                    self.iCloudStatus = .unknown
+                Task { @MainActor in
+                    switch accountStatus {
+                    case .available:
+                        self.iCloudStatus = .available
+                        
+                    case .noAccount, .restricted:
+                        self.iCloudStatus = .unavailable
+                        
+                    case .couldNotDetermine, .temporarilyUnavailable:
+                        self.iCloudStatus = .unknown
+                        
+                    @unknown default:
+                        self.iCloudStatus = .unknown
+                    }
                 }
                 
                 if let error {

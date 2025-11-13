@@ -4,8 +4,8 @@ import AppIntents
 struct ServerSelectNoThemeWidgetIntent: AppIntent, WidgetConfigurationIntent, CustomIntentMigratedAppIntent {
     static let intentClassName = "ServerSelectNoThemeIntent"
     
-    static var title: LocalizedStringResource = "Server Select"
-    static var description: IntentDescription = "Select which server to show"
+    static let title: LocalizedStringResource = "Server Select"
+    static let description: IntentDescription = "Select which server to show"
     
     @Parameter(title: "Server")
     var Server: ServerIntentTypeAppEntity?

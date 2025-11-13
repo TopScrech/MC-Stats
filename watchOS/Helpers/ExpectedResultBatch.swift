@@ -1,7 +1,7 @@
 import Foundation
 import MCStatsDataLayer
 
-class ExpectedResultBatch: Hashable {
+class ExpectedResultBatch: Hashable, @unchecked Sendable {
     var expectedResults: [UUID: SavedMinecraftServer] = [:]
     
     init(expectedResults: [UUID: SavedMinecraftServer]) {

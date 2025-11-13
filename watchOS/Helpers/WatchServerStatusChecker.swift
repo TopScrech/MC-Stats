@@ -2,6 +2,7 @@ import Foundation
 import MCStatsDataLayer
 import WatchConnectivity
 
+@MainActor
 final class WatchServerStatusChecker {
     var responseListener: ((UUID, ServerStatus) -> Void)?
     let connectivityProvider = ConnectivityProvider()
@@ -51,7 +52,7 @@ final class WatchServerStatusChecker {
         
         expectedResponseBatches.insert(expectedBatch)
         
-        Task {
+        Task { @MainActor in
             do {
                 var connectiveStateCounter = 0
                 // first wait up to 1s for the phone to become available
@@ -108,7 +109,6 @@ final class WatchServerStatusChecker {
         messageRequest.servers = servers
         
         let encoder = JSONEncoder()
-        
         let jsonData = try encoder.encode(messageRequest)
         
         // Convert the JSON data to a string

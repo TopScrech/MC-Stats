@@ -872,7 +872,7 @@ public class SwiftyPing: NSObject {
 // MARK: ICMP
 
 /// Format of IPv4 header
-public struct IPHeader {
+public struct IPHeader: Sendable {
     public var versionAndHeaderLength: UInt8
     public var differentiatedServices: UInt8
     public var totalLength: UInt16
@@ -915,7 +915,7 @@ public enum ICMPType: UInt8 {
 // MARK: - Helpers
 
 /// A struct encapsulating a ping response
-public struct PingResponse {
+public struct PingResponse: Sendable {
     /// The randomly generated identifier used in the ping header
     public let identifier: UInt16
     

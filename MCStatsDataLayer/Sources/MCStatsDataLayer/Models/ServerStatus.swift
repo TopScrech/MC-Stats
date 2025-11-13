@@ -9,7 +9,7 @@ public enum Source: Codable {
 }
 
 @Observable
-public class ServerStatus: Identifiable, Codable {
+public class ServerStatus: Identifiable, Codable, @unchecked Sendable {
     public var source: Source?
     public var description: FormattedMOTD?
     public var status = OnlineStatus.unknown

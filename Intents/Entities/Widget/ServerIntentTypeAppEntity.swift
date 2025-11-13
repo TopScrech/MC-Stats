@@ -4,9 +4,9 @@ import MCStatsDataLayer
 
 // this is bascially a duplicate of the SavedServerEntity, but had to be split into its own thing to maintain widget compatibility with people who had widgets pre 2.0 (id is string instead of UUID, variable is named displayString instead of serverName)
 struct ServerIntentTypeAppEntity: AppEntity {
-    static var typeDisplayRepresentation = TypeDisplayRepresentation(name: "Server Intent Type")
+    static let typeDisplayRepresentation = TypeDisplayRepresentation(name: "Server Intent Type")
     
-    static var defaultQuery = ServerIntentTypeAppEntityQuery()
+    static let defaultQuery = ServerIntentTypeAppEntityQuery()
     
     // if your identifier is not a String, conform the entity to EntityIdentifierConvertible
     var id: String

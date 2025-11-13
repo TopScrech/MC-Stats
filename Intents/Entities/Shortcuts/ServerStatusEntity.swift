@@ -22,8 +22,8 @@ struct ServerStatusEntity: AppEntity {
     
     var id: UUID
     
-    static var defaultQuery = ServerStausQuery()
-    static var typeDisplayRepresentation: TypeDisplayRepresentation = "Server Status"
+    static let defaultQuery = ServerStausQuery()
+    static let typeDisplayRepresentation: TypeDisplayRepresentation = "Server Status"
     
     var displayRepresentation: DisplayRepresentation {
         DisplayRepresentation(title: "\(serverName) is \(onlineStatus.lowercased()) with \(playerCount) players.")

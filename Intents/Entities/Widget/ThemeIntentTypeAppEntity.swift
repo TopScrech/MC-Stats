@@ -10,9 +10,9 @@ enum Theme: String, CaseIterable {
 }
 
 struct ThemeIntentTypeAppEntity: AppEntity {
-    static var typeDisplayRepresentation = TypeDisplayRepresentation(name: "Theme Intent Type")
+    static let typeDisplayRepresentation = TypeDisplayRepresentation(name: "Theme Intent Type")
     
-    static var defaultQuery = ThemeIntentTypeAppEntityQuery()
+    static let defaultQuery = ThemeIntentTypeAppEntityQuery()
     
     var id: String // if your identifier is not a String, conform the entity to EntityIdentifierConvertible.
     var displayString: String

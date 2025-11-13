@@ -4,11 +4,11 @@ import AppIntents
 struct SelectServerIntent: AppIntent, WidgetConfigurationIntent, CustomIntentMigratedAppIntent {
     static let intentClassName = "ServerSelectIntent"
     
-    static var title: LocalizedStringResource = "Server Select"
-    static var description: IntentDescription = "Select which server to show"
+    static let title: LocalizedStringResource = "Server Select"
+    static let description: IntentDescription = "Select which server to show"
     
     // Not for shortcuts
-    static var isDiscoverable = false
+    static let isDiscoverable = false
     
     @Parameter(title: "Server")
     var Server: ServerIntentTypeAppEntity?

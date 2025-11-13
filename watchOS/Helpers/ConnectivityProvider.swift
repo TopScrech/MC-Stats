@@ -4,7 +4,7 @@ enum WatchConnectivityError: Error {
     case DeviceNotConnected, ResponseParseError
 }
 
-final class ConnectivityProvider: NSObject, WCSessionDelegate {
+final class ConnectivityProvider: NSObject, WCSessionDelegate, @unchecked Sendable {
 #if os(iOS)
     func sessionDidBecomeInactive(_ session: WCSession) {}
     
