@@ -93,7 +93,7 @@ struct LockscreenProvider: AppIntentTimelineProvider {
         guard
             let serverId = configuration.Server?.id,
             let uuid = UUID(uuidString: serverId),
-            let server = await SwiftDataHelper.getSavedServerById(uuid, from: container)
+            let server = SwiftDataHelper.getSavedServerById(uuid, from: container)
         else {
             return nil
         }
@@ -122,7 +122,7 @@ struct LockscreenProvider: AppIntentTimelineProvider {
             var vm = WidgetEntryVM()
             vm.setForUnconfiguredView()
             
-            let serverCount = await SwiftDataHelper.getSavedServers(container).count
+            let serverCount = SwiftDataHelper.getSavedServers(container).count
             
             if serverCount == 0 {
                 // if user has nothing in the DB tell them to open the app
