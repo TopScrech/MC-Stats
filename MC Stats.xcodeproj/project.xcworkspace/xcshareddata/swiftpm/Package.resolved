@@ -1,6 +1,15 @@
 {
-  "originHash" : "dfda1b2373faf41caa3188671ba670b2200fab944b02101cc60f880c7bb040cf",
+  "originHash" : "624b6ea5f88c7ee6332ab3f43393e82281409bcbfb291b2222c9eb6593aba1fc",
   "pins" : [
+    {
+      "identity" : "appearance",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/TopScrech/Appearance",
+      "state" : {
+        "branch" : "main",
+        "revision" : "1a8f0bc05a667f1079c9f7b3b31840f60abd7db5"
+      }
+    },
     {
       "identity" : "nuke",
       "kind" : "remoteSourceControl",
@@ -16,7 +25,7 @@
       "location" : "https://github.com/TopScrech/ScrechKit",
       "state" : {
         "branch" : "main",
-        "revision" : "c551fdb49de6625903e9d11b13e7e89eaf8a8bf3"
+        "revision" : "d8ffdc58388da376d18a7b71f0e78f34e5416219"
       }
     }
   ],

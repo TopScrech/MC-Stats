@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F13E5FF82A4BD614005BE9B2"
-               BuildableName = "MC Stats.app"
-               BlueprintName = "MC Stats"
+               BuildableName = "iOS.app"
+               BlueprintName = "iOS"
                ReferencedContainer = "container:MC Stats.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
