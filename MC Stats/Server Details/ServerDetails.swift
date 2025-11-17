@@ -215,11 +215,9 @@ struct ServerDetails: View {
             
 #if os(macOS)
             ToolbarItem(placement: .primaryAction) {
-                Button {
+                Button("Refresh Servers", systemImage: "arrow.clockwise") {
                     vm.reloadData(ConfigHelper.getServerCheckerConfig())
                     refreshPing()
-                } label: {
-                    Label("Refresh Servers", systemImage: "arrow.clockwise")
                 }
             }
 #endif

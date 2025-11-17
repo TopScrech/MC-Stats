@@ -12,18 +12,14 @@ struct DebugSettings: View {
     
     var body: some View {
         Section {
-            Button {
+            Button("Add test servers", systemImage: "plus") {
                 addTestServers()
-            } label: {
-                Label("Add test servers", systemImage: "plus")
             }
             
-            Button(role: .destructive) {
+            Button("Delete all servers", systemImage: "trash", role: .destructive) {
                 confirmDeleteAll = true
-            } label: {
-                Label("Delete all servers", systemImage: "trash")
-                    .foregroundStyle(.red)
             }
+            .foregroundStyle(.red)
             .confirmationDialog("Are you sure?", isPresented: $confirmDeleteAll) {
                 Button("Delete all servers", role: .destructive) {
                     deleteAllServers()

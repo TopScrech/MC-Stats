@@ -39,10 +39,8 @@ struct PlayerCard: View {
         .listRowInsets(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 15))
 #if !os(tvOS)
         .contextMenu {
-            Button {
+            Button("Copy Nickname", systemImage: "document.on.document") {
                 Pasteboard.copy(player.name)
-            } label: {
-                Label("Copy Nickname", systemImage: "document.on.document")
             }
         }
 #endif

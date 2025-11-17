@@ -62,13 +62,10 @@ struct AppContainer: View {
                 }
                 
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button {
+                    Button("Refresh", systemImage: "arrow.clockwise") {
                         reloadData(forceRefresh: true)
-                    } label: {
-                        Label("Refresh", systemImage: "arrow.clockwise")
-                            .foregroundColor(.white)
-                        
                     }
+                    .foregroundColor(.white)
                 }
             }
             .navigationDestination(for: PageDestinations.self) {

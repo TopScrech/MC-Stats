@@ -41,18 +41,14 @@ struct ServerDetails: View {
             PlayerList()
             
             Section {
-                Button {
+                Button("Edit", systemImage: "pencil") {
                     sheetEdit = true
-                } label: {
-                    Label("Edit", systemImage: "pencil")
                 }
                 
-                Button(role: .destructive) {
+                Button("Delete", systemImage: "trash", role: .destructive) {
                     alertDelete = true
-                } label: {
-                    Label("Delete", systemImage: "trash")
-                        .foregroundStyle(.red)
                 }
+                .foregroundStyle(.red)
             }
         }
         .navigationTitle(vm.server.name)
