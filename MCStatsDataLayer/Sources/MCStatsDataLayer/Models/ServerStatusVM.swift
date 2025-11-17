@@ -83,8 +83,8 @@ public class ServerStatusVM: Identifiable, Hashable {
     }
     
     public func getServerAddressToPing() -> String {
-        if !server.srvServerUrl.isEmpty {
-            server.srvServerUrl
+        if !server.srvServerURL.isEmpty {
+            server.srvServerURL
         } else {
             server.serverURL
         }
@@ -95,11 +95,11 @@ public class ServerStatusVM: Identifiable, Hashable {
     }
     
     public func hasSRVRecord() -> Bool {
-        guard !server.srvServerUrl.isEmpty && server.srvServerPort != 0 else {
+        guard !server.srvServerURL.isEmpty && server.srvServerPort != 0 else {
             return false
         }
         
-        if server.srvServerUrl == server.serverURL && server.srvServerPort == server.serverPort {
+        if server.srvServerURL == server.serverURL && server.srvServerPort == server.serverPort {
             return false
         }
         

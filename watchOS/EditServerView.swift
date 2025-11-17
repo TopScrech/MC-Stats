@@ -136,9 +136,9 @@ struct EditServerView: View {
         id: UUID(),
         serverType: .Java,
         name: "",
-        serverUrl: "",
+        serverURL: "",
         serverPort: 0,
-        srvServerUrl: "",
+        srvServerURL: "",
         srvServerPort: 0,
         serverIcon: "",
         displayOrder: 0

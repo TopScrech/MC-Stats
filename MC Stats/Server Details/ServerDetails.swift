@@ -57,7 +57,7 @@ struct ServerDetails: View {
     
     private var srvAddressText: String {
         if vm.hasSRVRecord() {
-            "SRV: " + vm.server.srvServerUrl + ":" + String(vm.server.srvServerPort)
+            "SRV: " + vm.server.srvServerURL + ":" + String(vm.server.srvServerPort)
         } else {
             ""
         }

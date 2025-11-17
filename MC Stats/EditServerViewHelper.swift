@@ -67,7 +67,7 @@ extension EditServerView {
             
             server.name = tempNameInput
             server.serverType = tempServerType
-            server.srvServerUrl = ""
+            server.srvServerURL = ""
             server.srvServerPort = 0
             modelContext.insert(server)
             

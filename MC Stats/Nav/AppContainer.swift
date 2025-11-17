@@ -31,9 +31,9 @@ struct AppContainer: View {
         id: UUID(),
         serverType: .Java,
         name: "",
-        serverUrl: "",
+        serverURL: "",
         serverPort: 0,
-        srvServerUrl: "",
+        srvServerURL: "",
         srvServerPort: 0,
         serverIcon: "",
         displayOrder: 0
@@ -228,9 +228,9 @@ struct AppContainer: View {
                 id: UUID(),
                 serverType: .Java,
                 name: name,
-                serverUrl: address,
+                serverURL: address,
                 serverPort: 0,
-                srvServerUrl: "",
+                srvServerURL: "",
                 srvServerPort: 0,
                 serverIcon: "",
                 displayOrder: 0
