@@ -56,8 +56,6 @@ struct SavedServerQuery: EntityQuery {
         let container = SwiftDataHelper.getModelContainter()
         let servers = await SwiftDataHelper.getSavedServers(container)
         
-        return servers.compactMap(
-            SavedServerEntity.init
-        )
+        return servers.compactMap(SavedServerEntity.init)
     }
 }
