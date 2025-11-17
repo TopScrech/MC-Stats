@@ -2,7 +2,7 @@ import WatchConnectivity
 import SwiftData
 import MCStatsDataLayer
 
-class WatchHelper: NSObject, WCSessionDelegate {
+final class WatchHelper: NSObject, WCSessionDelegate {
     override init() {
         super.init()
         connect()
