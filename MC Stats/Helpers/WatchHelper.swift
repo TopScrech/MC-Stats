@@ -5,7 +5,8 @@ import MCStatsDataLayer
 final class WatchHelper: NSObject, WCSessionDelegate {
     override init() {
         super.init()
-        connect()
+#warning("WatchHelper disabled")
+        //        connect()
     }
     
     func connect() {
