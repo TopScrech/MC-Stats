@@ -8,6 +8,13 @@ final class WatchHelper: NSObject, WCSessionDelegate {
         connect()
     }
     
+    func connect() {
+        if WCSession.isSupported() {
+            WCSession.default.delegate = self
+            WCSession.default.activate()
+        }
+    }
+    
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         print("Watch session changed state:", activationState.rawValue)
     }
@@ -71,12 +78,5 @@ final class WatchHelper: NSObject, WCSessionDelegate {
         handleWatchMessage(message: message, session: session)
         
         print("container:", container.schema.debugDescription)
-    }
-    
-    func connect() {
-        if WCSession.isSupported() {
-            WCSession.default.delegate = self
-            WCSession.default.activate()
-        }
     }
 }
