@@ -86,7 +86,7 @@ public class ServerStatusVM: Identifiable, Hashable {
         if !server.srvServerUrl.isEmpty {
             server.srvServerUrl
         } else {
-            server.serverUrl
+            server.serverURL
         }
     }
     
@@ -99,7 +99,7 @@ public class ServerStatusVM: Identifiable, Hashable {
             return false
         }
         
-        if server.srvServerUrl == server.serverUrl && server.srvServerPort == server.serverPort {
+        if server.srvServerUrl == server.serverURL && server.srvServerPort == server.serverPort {
             return false
         }
         

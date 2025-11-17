@@ -103,8 +103,8 @@ struct EditServerView: View {
             }
         }
         .onAppear {
-            tempServerInput = server.serverUrl
-            extractPort(server.serverUrl)
+            tempServerInput = server.serverURL
+            extractPort(server.serverURL)
             
             if server.serverPort != 0 {
                 tempPortInput = server.serverPort

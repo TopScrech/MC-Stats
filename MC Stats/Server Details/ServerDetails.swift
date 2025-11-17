@@ -88,7 +88,7 @@ struct ServerDetails: View {
                             Text(vm.server.name)
                                 .title(.bold)
                             
-                            let serverAddressString = vm.server.serverUrl + ":" + String(vm.server.serverPort)
+                            let serverAddressString = vm.server.serverURL + ":" + String(vm.server.serverPort)
                             
                             Text(serverAddressString)
                                 .footnote()

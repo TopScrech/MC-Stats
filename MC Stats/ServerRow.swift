@@ -84,7 +84,7 @@ struct ServerRow: View {
                 showingEditSheet = true
             }
 #if !os(tvOS)
-            let serverAddressString = vm.server.serverUrl + ":" + String(vm.server.serverPort)
+            let serverAddressString = vm.server.serverURL + ":" + String(vm.server.serverPort)
             ShareLink(item: serverAddressString)
 #endif
             Section {
