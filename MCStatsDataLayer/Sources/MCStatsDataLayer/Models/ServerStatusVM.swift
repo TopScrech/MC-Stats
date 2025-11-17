@@ -14,7 +14,7 @@ public class ServerStatusVM: Identifiable, Hashable {
     
     private var modelContext: ModelContext
     
-    public init(modelContext: ModelContext, server: SavedMinecraftServer, status: ServerStatus? = nil) {
+    public init(_ modelContext: ModelContext, server: SavedMinecraftServer, status: ServerStatus? = nil) {
         self.server = server
         self.status = status
         self.modelContext = modelContext
@@ -83,10 +83,10 @@ public class ServerStatusVM: Identifiable, Hashable {
     }
     
     public func getServerAddressToPing() -> String {
-        if !server.srvServerUrl.isEmpty {
-            server.srvServerUrl
+        if !server.srvServerURL.isEmpty {
+            server.srvServerURL
         } else {
-            server.serverUrl
+            server.serverURL
         }
     }
     
@@ -95,11 +95,11 @@ public class ServerStatusVM: Identifiable, Hashable {
     }
     
     public func hasSRVRecord() -> Bool {
-        guard !server.srvServerUrl.isEmpty && server.srvServerPort != 0 else {
+        guard !server.srvServerURL.isEmpty && server.srvServerPort != 0 else {
             return false
         }
         
-        if server.srvServerUrl == server.serverUrl && server.srvServerPort == server.serverPort {
+        if server.srvServerURL == server.serverURL && server.srvServerPort == server.serverPort {
             return false
         }
         

@@ -130,7 +130,7 @@ final class WatchServerStatusChecker {
             print("CALLING BACKUP SERVER")
             
             let res = try await WebServerStatusChecker.checkServer(
-                url: server.serverUrl,
+                url: server.serverURL,
                 port: server.serverPort,
                 type: server.serverType,
                 config: nil

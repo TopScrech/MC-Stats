@@ -12,7 +12,7 @@ extension EditServerView {
     
     func inputHasChanged() -> Bool {
         tempNameInput != server.name ||
-        tempServerInput != server.serverUrl ||
+        tempServerInput != server.serverURL ||
         (tempPortInput ?? 0) != server.serverPort
     }
     
@@ -30,7 +30,7 @@ extension EditServerView {
         }
     }
     
-    // CALLED WHEN A SERVER IS EDITED OR ADDED
+    /// Called when a server is edited or added
     func saveItem() {
         // first validate url doesnt contains any / or :
         tempServerInput = tempServerInput.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -53,7 +53,7 @@ extension EditServerView {
         }
         
         withAnimation {
-            server.serverUrl = tempServerInput
+            server.serverURL = tempServerInput
             
             if let tempPortInput {
                 server.serverPort = tempPortInput
@@ -67,7 +67,7 @@ extension EditServerView {
             
             server.name = tempNameInput
             server.serverType = tempServerType
-            server.srvServerUrl = ""
+            server.srvServerURL = ""
             server.srvServerPort = 0
             modelContext.insert(server)
             
@@ -77,7 +77,7 @@ extension EditServerView {
                 print(error.localizedDescription)
             }
             
-            print("Added server")
+            print("Server added")
             
             ShortcutsProvider.updateAppShortcutParameters()
             

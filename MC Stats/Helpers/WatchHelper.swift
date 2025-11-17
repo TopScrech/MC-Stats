@@ -2,10 +2,18 @@ import WatchConnectivity
 import SwiftData
 import MCStatsDataLayer
 
-class WatchHelper: NSObject, WCSessionDelegate {
+final class WatchHelper: NSObject, WCSessionDelegate {
     override init() {
         super.init()
-        connect()
+#warning("WatchHelper disabled")
+        //        connect()
+    }
+    
+    func connect() {
+        if WCSession.isSupported() {
+            WCSession.default.delegate = self
+            WCSession.default.activate()
+        }
     }
     
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
@@ -71,12 +79,5 @@ class WatchHelper: NSObject, WCSessionDelegate {
         handleWatchMessage(message: message, session: session)
         
         print("container:", container.schema.debugDescription)
-    }
-    
-    func connect() {
-        if WCSession.isSupported() {
-            WCSession.default.delegate = self
-            WCSession.default.activate()
-        }
     }
 }

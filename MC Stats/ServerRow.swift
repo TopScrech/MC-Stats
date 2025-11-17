@@ -80,20 +80,16 @@ struct ServerRow: View {
             }
         }
         .contextMenu {
-            Button {
+            Button("Edit", systemImage: "pencil") {
                 showingEditSheet = true
-            } label: {
-                Label("Edit", systemImage: "pencil")
             }
 #if !os(tvOS)
-            let serverAddressString = vm.server.serverUrl + ":" + String(vm.server.serverPort)
+            let serverAddressString = vm.server.serverURL + ":" + String(vm.server.serverPort)
             ShareLink(item: serverAddressString)
 #endif
             Section {
-                Button(role: .destructive) {
+                Button("Delete", systemImage: "trash", role: .destructive) {
                     showingDeleteAlert = true
-                } label: {
-                    Label("Delete", systemImage: "trash")
                 }
             }
         }

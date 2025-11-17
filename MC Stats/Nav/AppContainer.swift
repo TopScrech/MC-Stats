@@ -31,9 +31,9 @@ struct AppContainer: View {
         id: UUID(),
         serverType: .Java,
         name: "",
-        serverUrl: "",
+        serverURL: "",
         serverPort: 0,
-        srvServerUrl: "",
+        srvServerURL: "",
         srvServerPort: 0,
         serverIcon: "",
         displayOrder: 0
@@ -228,9 +228,9 @@ struct AppContainer: View {
                 id: UUID(),
                 serverType: .Java,
                 name: name,
-                serverUrl: address,
+                serverURL: address,
                 serverPort: 0,
-                srvServerUrl: "",
+                srvServerURL: "",
                 srvServerPort: 0,
                 serverIcon: "",
                 displayOrder: 0
@@ -275,10 +275,7 @@ struct AppContainer: View {
             // Force SRV refresh if needed
             config.forceSRVRefresh = forceSRVRefreh
             
-            let vm = ServerStatusVM(
-                modelContext: modelContext,
-                server: $0
-            )
+            let vm = ServerStatusVM(modelContext, server: $0)
             
             serverVMCache[$0.id] = vm
             

@@ -2,7 +2,7 @@ import SwiftUI
 import AppIntents
 import MCStatsDataLayer
 
-struct SavedServerEntity: @preconcurrency AppEntity {
+struct SavedServerEntity: AppEntity {
     var id: UUID
     var serverName: String
     var icon: String
@@ -18,7 +18,6 @@ struct SavedServerEntity: @preconcurrency AppEntity {
     static let defaultQuery = SavedServerQuery()
     static let typeDisplayRepresentation: TypeDisplayRepresentation = "Server"
     
-    @MainActor
     var displayRepresentation: DisplayRepresentation {
 #if os(macOS)
         let image = ImageHelper.favIconString(icon) ?? NSImage(named: "DefaultIcon") ?? NSImage()
@@ -27,7 +26,6 @@ struct SavedServerEntity: @preconcurrency AppEntity {
         let image = ImageHelper.favIconString(icon) ?? UIImage(named: "DefaultIcon") ?? UIImage()
         let imageData = image.pngData() ?? Data()
 #endif
-        
         return DisplayRepresentation(
             title: "\(serverName)",
             subtitle: "\(type)",
@@ -56,8 +54,6 @@ struct SavedServerQuery: EntityQuery {
         let container = SwiftDataHelper.getModelContainter()
         let servers = await SwiftDataHelper.getSavedServers(container)
         
-        return servers.compactMap(
-            SavedServerEntity.init
-        )
+        return servers.compactMap(SavedServerEntity.init)
     }
 }

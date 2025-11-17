@@ -14,9 +14,9 @@ struct SettingsView: View {
         id: UUID(),
         serverType: .Java,
         name: "",
-        serverUrl: "",
+        serverURL: "",
         serverPort: 0,
-        srvServerUrl: "",
+        srvServerURL: "",
         srvServerPort: 0,
         serverIcon: "",
         displayOrder: 0
@@ -24,10 +24,8 @@ struct SettingsView: View {
     
     var body: some View {
         List {
-            Button {
+            Button("Add Server", systemImage: "plus") {
                 sheetAdd = true
-            } label: {
-                Label("Add Server", systemImage: "plus")
             }
             
             DebugSettings {

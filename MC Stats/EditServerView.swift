@@ -129,8 +129,8 @@ struct EditServerView: View {
             }
         }
         .onAppear {
-            tempServerInput = server.serverUrl
-            extractPort(server.serverUrl)
+            tempServerInput = server.serverURL
+            extractPort(server.serverURL)
             
             if server.serverPort != 0 {
                 tempPortInput = server.serverPort
@@ -162,9 +162,9 @@ struct EditServerView: View {
         id: UUID(),
         serverType: .Java,
         name: "",
-        serverUrl: "",
+        serverURL: "",
         serverPort: 0,
-        srvServerUrl: "",
+        srvServerURL: "",
         srvServerPort: 0,
         serverIcon: "",
         displayOrder: 0

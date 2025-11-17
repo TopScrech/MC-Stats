@@ -62,13 +62,10 @@ struct AppContainer: View {
                 }
                 
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button {
+                    Button("Refresh", systemImage: "arrow.clockwise") {
                         reloadData(forceRefresh: true)
-                    } label: {
-                        Label("Refresh", systemImage: "arrow.clockwise")
-                            .foregroundColor(.white)
-                        
                     }
+                    .foregroundColor(.white)
                 }
             }
             .navigationDestination(for: PageDestinations.self) {
@@ -186,7 +183,7 @@ struct AppContainer: View {
                 return cachedVm
             }
             
-            let vm = ServerStatusVM(modelContext: modelContext, server: $0)
+            let vm = ServerStatusVM(modelContext, server: $0)
             serverVMCache[$0.id] = vm
             
             if !forceRefresh {

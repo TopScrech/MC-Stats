@@ -12,18 +12,14 @@ struct DebugSettings: View {
     
     var body: some View {
         Section {
-            Button {
+            Button("Add test servers", systemImage: "plus") {
                 addTestServers()
-            } label: {
-                Label("Add test servers", systemImage: "plus")
             }
             
-            Button(role: .destructive) {
+            Button("Delete all servers", systemImage: "trash", role: .destructive) {
                 confirmDeleteAll = true
-            } label: {
-                Label("Delete all servers", systemImage: "trash")
-                    .foregroundStyle(.red)
             }
+            .foregroundStyle(.red)
             .confirmationDialog("Are you sure?", isPresented: $confirmDeleteAll) {
                 Button("Delete all servers", role: .destructive) {
                     deleteAllServers()
@@ -53,16 +49,16 @@ struct DebugSettings: View {
     }
     
     private func addTestServers() {
-        modelContext.insert(SavedMinecraftServer.initialize(id: UUID(), serverType: .Java, name: "Insanity Craft", serverUrl: "join.insanitycraft.net", serverPort: 25565))
-        modelContext.insert(SavedMinecraftServer.initialize(id: UUID(), serverType: .Java, name: "OpBlocks", serverUrl: "hub.opblocks.com", serverPort: 25565))
-        modelContext.insert(SavedMinecraftServer.initialize(id: UUID(), serverType: .Java, name: "Ace MC", serverUrl: "mc.acemc.co", serverPort: 25565))
-        modelContext.insert(SavedMinecraftServer.initialize(id: UUID(), serverType: .Java, name: "Vanilla Realms", serverUrl: "mcs.vanillarealms.com", serverPort: 25565))
-        modelContext.insert(SavedMinecraftServer.initialize(id: UUID(), serverType: .Java, name: "Earth MC", serverUrl: "org.earthmc.net", serverPort: 25565))
-        modelContext.insert(SavedMinecraftServer.initialize(id: UUID(), serverType: .Java, name: "Zero's Server", serverUrl: "zero.minr.org", serverPort: 25565))
-        modelContext.insert(SavedMinecraftServer.initialize(id: UUID(), serverType: .Java, name: "Rainy Day", serverUrl: "rainyday.gg", serverPort: 25565))
-        modelContext.insert(SavedMinecraftServer.initialize(id: UUID(), serverType: .Java, name: "Harmony Server", serverUrl: "join.harmonyfallssmp.world", serverPort: 25565))
-        modelContext.insert(SavedMinecraftServer.initialize(id: UUID(), serverType: .Bedrock, name: "Fade Cloud", serverUrl: "mp.fadecloud.com", serverPort: 19132))
-        modelContext.insert(SavedMinecraftServer.initialize(id: UUID(), serverType: .Bedrock, name: "MC Hub", serverUrl: "mps.mchub.com", serverPort: 19132))
+        modelContext.insert(SavedMinecraftServer.initialize(id: UUID(), serverType: .Java, name: "Insanity Craft", serverURL: "join.insanitycraft.net", serverPort: 25565))
+        modelContext.insert(SavedMinecraftServer.initialize(id: UUID(), serverType: .Java, name: "OpBlocks", serverURL: "hub.opblocks.com", serverPort: 25565))
+        modelContext.insert(SavedMinecraftServer.initialize(id: UUID(), serverType: .Java, name: "Ace MC", serverURL: "mc.acemc.co", serverPort: 25565))
+        modelContext.insert(SavedMinecraftServer.initialize(id: UUID(), serverType: .Java, name: "Vanilla Realms", serverURL: "mcs.vanillarealms.com", serverPort: 25565))
+        modelContext.insert(SavedMinecraftServer.initialize(id: UUID(), serverType: .Java, name: "Earth MC", serverURL: "org.earthmc.net", serverPort: 25565))
+        modelContext.insert(SavedMinecraftServer.initialize(id: UUID(), serverType: .Java, name: "Zero's Server", serverURL: "zero.minr.org", serverPort: 25565))
+        modelContext.insert(SavedMinecraftServer.initialize(id: UUID(), serverType: .Java, name: "Rainy Day", serverURL: "rainyday.gg", serverPort: 25565))
+        modelContext.insert(SavedMinecraftServer.initialize(id: UUID(), serverType: .Java, name: "Harmony Server", serverURL: "join.harmonyfallssmp.world", serverPort: 25565))
+        modelContext.insert(SavedMinecraftServer.initialize(id: UUID(), serverType: .Bedrock, name: "Fade Cloud", serverURL: "mp.fadecloud.com", serverPort: 19132))
+        modelContext.insert(SavedMinecraftServer.initialize(id: UUID(), serverType: .Bedrock, name: "MC Hub", serverURL: "mps.mchub.com", serverPort: 19132))
         
         reloadServers()
     }

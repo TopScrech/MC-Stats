@@ -57,7 +57,7 @@ struct ServerDetails: View {
     
     private var srvAddressText: String {
         if vm.hasSRVRecord() {
-            "SRV: " + vm.server.srvServerUrl + ":" + String(vm.server.srvServerPort)
+            "SRV: " + vm.server.srvServerURL + ":" + String(vm.server.srvServerPort)
         } else {
             ""
         }
@@ -88,7 +88,7 @@ struct ServerDetails: View {
                             Text(vm.server.name)
                                 .title(.bold)
                             
-                            let serverAddressString = vm.server.serverUrl + ":" + String(vm.server.serverPort)
+                            let serverAddressString = vm.server.serverURL + ":" + String(vm.server.serverPort)
                             
                             Text(serverAddressString)
                                 .footnote()
@@ -215,11 +215,9 @@ struct ServerDetails: View {
             
 #if os(macOS)
             ToolbarItem(placement: .primaryAction) {
-                Button {
+                Button("Refresh Servers", systemImage: "arrow.clockwise") {
                     vm.reloadData(ConfigHelper.getServerCheckerConfig())
                     refreshPing()
-                } label: {
-                    Label("Refresh Servers", systemImage: "arrow.clockwise")
                 }
             }
 #endif

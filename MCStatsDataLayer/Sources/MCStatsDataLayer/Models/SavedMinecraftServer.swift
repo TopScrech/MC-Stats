@@ -9,9 +9,9 @@ public enum ServerType: String, Codable {
 public class SavedMinecraftServer: Identifiable, Codable, @unchecked Sendable {
     public var id = UUID()
     public var name = ""
-    public var serverUrl = ""
+    public var serverURL = ""
     public var serverPort = 0
-    public var srvServerUrl = ""
+    public var srvServerURL = ""
     public var srvServerPort = 0
     public var serverIcon = ""
     public var displayOrder = 0
@@ -21,9 +21,9 @@ public class SavedMinecraftServer: Identifiable, Codable, @unchecked Sendable {
         id: UUID,
         serverType: ServerType,
         name: String,
-        serverUrl: String,
+        serverURL: String,
         serverPort: Int,
-        srvServerUrl: String = "",
+        srvServerURL: String = "",
         srvServerPort: Int = 1,
         serverIcon: String = "",
         displayOrder: Int = 0
@@ -32,9 +32,9 @@ public class SavedMinecraftServer: Identifiable, Codable, @unchecked Sendable {
         
         server.id = id
         server.name = name
-        server.serverUrl = serverUrl
+        server.serverURL = serverURL
         server.serverPort = serverPort
-        server.srvServerUrl = srvServerUrl
+        server.srvServerURL = srvServerURL
         server.srvServerPort = srvServerPort
         server.serverIcon = serverIcon
         server.displayOrder = displayOrder
@@ -46,8 +46,8 @@ public class SavedMinecraftServer: Identifiable, Codable, @unchecked Sendable {
     init() {}
     
     public enum CodingKeys: CodingKey {
-        case id, name, serverUrl,
-             serverPort, srvServerUrl, srvServerPort,
+        case id, name, serverURL,
+             serverPort, srvServerURL, srvServerPort,
              serverIcon, displayOrder, serverType
     }
     
@@ -55,9 +55,9 @@ public class SavedMinecraftServer: Identifiable, Codable, @unchecked Sendable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.id = try container.decode(UUID.self, forKey: .id)
         self.name = try container.decode(String.self, forKey: .name)
-        self.serverUrl = try container.decode(String.self, forKey: .serverUrl)
+        self.serverURL = try container.decode(String.self, forKey: .serverURL)
         self.serverPort = try container.decode(Int.self, forKey: .serverPort)
-        self.srvServerUrl = try container.decode(String.self, forKey: .srvServerUrl)
+        self.srvServerURL = try container.decode(String.self, forKey: .srvServerURL)
         self.srvServerPort = try container.decode(Int.self, forKey: .srvServerPort)
         self.serverIcon = try container.decode(String.self, forKey: .serverIcon)
         self.displayOrder = try container.decode(Int.self, forKey: .displayOrder)
@@ -68,9 +68,9 @@ public class SavedMinecraftServer: Identifiable, Codable, @unchecked Sendable {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(id, forKey: .id)
         try container.encode(name, forKey: .name)
-        try container.encode(serverUrl, forKey: .serverUrl)
+        try container.encode(serverURL, forKey: .serverURL)
         try container.encode(serverPort, forKey: .serverPort)
-        try container.encode(srvServerUrl, forKey: .srvServerUrl)
+        try container.encode(srvServerURL, forKey: .srvServerURL)
         try container.encode(srvServerPort, forKey: .srvServerPort)
         try container.encode(serverIcon, forKey: .serverIcon)
         try container.encode(displayOrder, forKey: .displayOrder)
