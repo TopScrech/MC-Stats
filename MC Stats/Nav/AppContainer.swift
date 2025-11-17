@@ -275,10 +275,7 @@ struct AppContainer: View {
             // Force SRV refresh if needed
             config.forceSRVRefresh = forceSRVRefreh
             
-            let vm = ServerStatusVM(
-                modelContext: modelContext,
-                server: $0
-            )
+            let vm = ServerStatusVM(modelContext, server: $0)
             
             serverVMCache[$0.id] = vm
             

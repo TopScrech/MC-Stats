@@ -183,7 +183,7 @@ struct AppContainer: View {
                 return cachedVm
             }
             
-            let vm = ServerStatusVM(modelContext: modelContext, server: $0)
+            let vm = ServerStatusVM(modelContext, server: $0)
             serverVMCache[$0.id] = vm
             
             if !forceRefresh {

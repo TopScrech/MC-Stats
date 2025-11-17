@@ -14,7 +14,7 @@ public class ServerStatusVM: Identifiable, Hashable {
     
     private var modelContext: ModelContext
     
-    public init(modelContext: ModelContext, server: SavedMinecraftServer, status: ServerStatus? = nil) {
+    public init(_ modelContext: ModelContext, server: SavedMinecraftServer, status: ServerStatus? = nil) {
         self.server = server
         self.status = status
         self.modelContext = modelContext
