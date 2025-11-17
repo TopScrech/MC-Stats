@@ -68,9 +68,6 @@
         }
       }
     },
-    "+" : {
-      "shouldTranslate" : false
-    },
     "1. **Long press** the widget" : {
       "extractionState" : "manual",
       "localizations" : {
