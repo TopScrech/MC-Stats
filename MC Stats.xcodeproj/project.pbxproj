@@ -7,135 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F10C42172AAD55BF000107D6 /* ShortcutsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C42162AAD55BF000107D6 /* ShortcutsProvider.swift */; };
-		F10E94B12A8C61B60039DD2B /* ConnectivityProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10E94B02A8C61B60039DD2B /* ConnectivityProvider.swift */; };
 		F11F63582A81E51000D47187 /* watchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F11F634B2A81E50E00D47187 /* watchOS.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F13095262CBC997200C4C7BA /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EF76ED2CB7873F00EFFB20 /* WidgetKit.framework */; };
 		F13095272CBC997200C4C7BA /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EF76EF2CB7873F00EFFB20 /* SwiftUI.framework */; };
 		F13095302CBC997300C4C7BA /* Watch Widgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F13095252CBC997200C4C7BA /* Watch Widgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		F130954C2CBC9C5D00C4C7BA /* CustomExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CFCD502CABB55B001A9E69 /* CustomExtentions.swift */; };
-		F130954F2CBC9D5600C4C7BA /* ConfigHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F130954E2CBC9D5600C4C7BA /* ConfigHelper.swift */; };
-		F13095502CBC9D5600C4C7BA /* ConfigHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F130954E2CBC9D5600C4C7BA /* ConfigHelper.swift */; };
-		F13095512CBC9D5600C4C7BA /* ConfigHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F130954E2CBC9D5600C4C7BA /* ConfigHelper.swift */; };
-		F13095532CBC9D5600C4C7BA /* ConfigHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F130954E2CBC9D5600C4C7BA /* ConfigHelper.swift */; };
-		F13095572CBD48ED00C4C7BA /* WatchServerStatusChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F174A3002A915E450051DA5B /* WatchServerStatusChecker.swift */; };
-		F13095582CBD494300C4C7BA /* ConnectivityProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10E94B02A8C61B60039DD2B /* ConnectivityProvider.swift */; };
-		F13095592CBD497200C4C7BA /* WatchServerStatusChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F174A3002A915E450051DA5B /* WatchServerStatusChecker.swift */; };
-		F130955A2CBD499700C4C7BA /* ConnectivityProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10E94B02A8C61B60039DD2B /* ConnectivityProvider.swift */; };
 		F13E5FFD2A4BD614005BE9B2 /* MCStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13E5FFC2A4BD614005BE9B2 /* MCStats.swift */; };
-		F13E60012A4BD614005BE9B2 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13E60002A4BD614005BE9B2 /* AppContainer.swift */; };
-		F1406BAC2AA391B800815BE8 /* Intents.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1406BAB2AA391B800815BE8 /* Intents.swift */; };
-		F1406BBF2AA3933400815BE8 /* IntentErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1406BA32AA2DD2C00815BE8 /* IntentErrors.swift */; };
-		F150B4342CC15F6A00739646 /* SiriGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = F150B4332CC15F6A00739646 /* SiriGuide.swift */; };
-		F150B4362CC1709700739646 /* ShortcutsGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = F150B4352CC1709700739646 /* ShortcutsGuide.swift */; };
-		F150B43F2CC18C1100739646 /* ReleaseNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F150B43E2CC18C1100739646 /* ReleaseNotes.swift */; };
 		F1612CC82CACC37300E602DC /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = F1612CC72CACC37300E602DC /* Nuke */; };
 		F1612CCA2CACC37300E602DC /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = F1612CC92CACC37300E602DC /* NukeUI */; };
-		F16990822CA5DDE500F41232 /* IntentErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1406BA32AA2DD2C00815BE8 /* IntentErrors.swift */; };
-		F16990872CA5DDE500F41232 /* ShortcutsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C42162AAD55BF000107D6 /* ShortcutsProvider.swift */; };
-		F174A2FC2A8F7FFA0051DA5B /* WatchHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F174A2FB2A8F7FFA0051DA5B /* WatchHelper.swift */; };
-		F174A3012A915E450051DA5B /* WatchServerStatusChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F174A3002A915E450051DA5B /* WatchServerStatusChecker.swift */; };
-		F17A16BB2A893DD700F8FF2F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17A16BA2A893DD700F8FF2F /* SettingsView.swift */; };
 		F17A16BD2A8956DE00F8FF2F /* EditServerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17A16BC2A8956DE00F8FF2F /* EditServerView.swift */; };
-		F17AE07D2CBE0B6600DC7A80 /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E671752CA73A86002BDFC0 /* CustomProgressView.swift */; };
-		F17AE0EC2CC01E9E00DC7A80 /* FAQView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17AE0EB2CC01E9E00DC7A80 /* FAQView.swift */; };
-		F17AE0EE2CC0363F00DC7A80 /* MOTDViewGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17AE0ED2CC0363F00DC7A80 /* MOTDViewGenerator.swift */; };
-		F17AE0EF2CC0363F00DC7A80 /* MOTDViewGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17AE0ED2CC0363F00DC7A80 /* MOTDViewGenerator.swift */; };
-		F17AE0F02CC0363F00DC7A80 /* MOTDViewGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17AE0ED2CC0363F00DC7A80 /* MOTDViewGenerator.swift */; };
-		F17AE0F12CC0363F00DC7A80 /* MOTDViewGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17AE0ED2CC0363F00DC7A80 /* MOTDViewGenerator.swift */; };
-		F17AE0F22CC0363F00DC7A80 /* MOTDViewGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17AE0ED2CC0363F00DC7A80 /* MOTDViewGenerator.swift */; };
-		F17AE0F42CC0504200DC7A80 /* ReviewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17AE0F32CC0504200DC7A80 /* ReviewHelper.swift */; };
-		F17AE0F52CC0504200DC7A80 /* ReviewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17AE0F32CC0504200DC7A80 /* ReviewHelper.swift */; };
-		F17AE0F62CC0504200DC7A80 /* ReviewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17AE0F32CC0504200DC7A80 /* ReviewHelper.swift */; };
-		F17AE0F72CC0504200DC7A80 /* ReviewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17AE0F32CC0504200DC7A80 /* ReviewHelper.swift */; };
-		F17AE0F82CC0504200DC7A80 /* ReviewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17AE0F32CC0504200DC7A80 /* ReviewHelper.swift */; };
-		F17AE0FC2CC05F9000DC7A80 /* TipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17AE0FB2CC05F9000DC7A80 /* TipView.swift */; };
-		F1A43C822A8472B20081A24C /* ServerDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A43C812A8472B20081A24C /* ServerDetails.swift */; };
 		F1AE29162CA48577009D0D14 /* ServerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AE29152CA48577009D0D14 /* ServerRow.swift */; };
-		F1C010492AAAB9B60017B9A9 /* SwiftyPing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C010482AAAB9B60017B9A9 /* SwiftyPing.swift */; };
-		F1CFCD512CABB567001A9E69 /* CustomExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CFCD502CABB55B001A9E69 /* CustomExtentions.swift */; };
-		F1CFCD522CABB567001A9E69 /* CustomExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CFCD502CABB55B001A9E69 /* CustomExtentions.swift */; };
-		F1CFCD532CABB567001A9E69 /* CustomExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CFCD502CABB55B001A9E69 /* CustomExtentions.swift */; };
-		F1E671762CA73A86002BDFC0 /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E671752CA73A86002BDFC0 /* CustomProgressView.swift */; };
-		F1EF76BA2CB41A2700EFFB20 /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E671752CA73A86002BDFC0 /* CustomProgressView.swift */; };
-		F1EF76C22CB4204E00EFFB20 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF76BF2CB4204E00EFFB20 /* AppContainer.swift */; };
-		F1EF76C32CB4204E00EFFB20 /* ServerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF76C02CB4204E00EFFB20 /* ServerRow.swift */; };
 		F1EF76C62CB4216F00EFFB20 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = F1EF76C52CB4216F00EFFB20 /* Nuke */; };
 		F1EF76C82CB4216F00EFFB20 /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = F1EF76C72CB4216F00EFFB20 /* NukeUI */; };
-		F1EF76CA2CB422D400EFFB20 /* ServerDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF76C92CB422D400EFFB20 /* ServerDetails.swift */; };
-		F1EF76D22CB449E700EFFB20 /* IntentErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1406BA32AA2DD2C00815BE8 /* IntentErrors.swift */; };
-		F1EF76D52CB449E700EFFB20 /* ShortcutsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C42162AAD55BF000107D6 /* ShortcutsProvider.swift */; };
 		F1EF76EE2CB7873F00EFFB20 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EF76ED2CB7873F00EFFB20 /* WidgetKit.framework */; };
 		F1EF76F02CB7873F00EFFB20 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EF76EF2CB7873F00EFFB20 /* SwiftUI.framework */; };
 		F1EF76FF2CB7874000EFFB20 /* Widgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F1EF76EC2CB7873F00EFFB20 /* Widgets.appex */; platformFilters = (ios, maccatalyst, ); settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		F1EF77622CB8C62D00EFFB20 /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E671752CA73A86002BDFC0 /* CustomProgressView.swift */; };
-		F1EF77632CB958B700EFFB20 /* CustomExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CFCD502CABB55B001A9E69 /* CustomExtentions.swift */; };
-		F30246C62D65E6F70030F71C /* SiriPhrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30246C42D65E6F70030F71C /* SiriPhrase.swift */; };
-		F30246C72D65E6F70030F71C /* SiriPhrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30246C42D65E6F70030F71C /* SiriPhrase.swift */; };
-		F30246C92D6661D60030F71C /* PlayerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30246C82D6661D60030F71C /* PlayerList.swift */; };
-		F30246CA2D6661D60030F71C /* PlayerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30246C82D6661D60030F71C /* PlayerList.swift */; };
-		F30246CB2D6661D60030F71C /* PlayerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30246C82D6661D60030F71C /* PlayerList.swift */; };
-		F30246D22D667ED50030F71C /* ServerPing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30246D12D667ED50030F71C /* ServerPing.swift */; };
-		F30246D32D667ED50030F71C /* ServerPing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30246D12D667ED50030F71C /* ServerPing.swift */; };
-		F30246D42D667ED50030F71C /* ServerPing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30246D12D667ED50030F71C /* ServerPing.swift */; };
-		F30246D62D66816E0030F71C /* PingGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30246D52D66816E0030F71C /* PingGraph.swift */; };
-		F30246D82D66816E0030F71C /* PingGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30246D52D66816E0030F71C /* PingGraph.swift */; };
-		F30472092D63E9C00055C007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F30472012D63E9C00055C007 /* Assets.xcassets */; };
-		F304720B2D63E9C00055C007 /* Homescreen Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30471F52D63E9C00055C007 /* Homescreen Provider.swift */; };
-		F304720C2D63E9C00055C007 /* Lockscreen Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30471F62D63E9C00055C007 /* Lockscreen Provider.swift */; };
-		F304720D2D63E9C00055C007 /* Circular Accessory WidgetView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30471F82D63E9C00055C007 /* Circular Accessory WidgetView1.swift */; };
-		F304720E2D63E9C00055C007 /* Circular Accessory WidgetView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30471F92D63E9C00055C007 /* Circular Accessory WidgetView2.swift */; };
-		F304720F2D63E9C00055C007 /* Corner Accessory WidgetView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30471FA2D63E9C00055C007 /* Corner Accessory WidgetView1.swift */; };
-		F30472102D63E9C00055C007 /* Inline Accessory Widget View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30471FB2D63E9C00055C007 /* Inline Accessory Widget View.swift */; };
-		F30472112D63E9C00055C007 /* Inline Accessory Widget View 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30471FC2D63E9C00055C007 /* Inline Accessory Widget View 2.swift */; };
-		F30472122D63E9C00055C007 /* Medium Widget View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30471FD2D63E9C00055C007 /* Medium Widget View.swift */; };
-		F30472132D63E9C00055C007 /* Rectangular Accessory WidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30471FE2D63E9C00055C007 /* Rectangular Accessory WidgetView.swift */; };
-		F30472142D63E9C00055C007 /* Small Widget View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30471FF2D63E9C00055C007 /* Small Widget View.swift */; };
-		F30472152D63E9C00055C007 /* Widgets Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30472042D63E9C00055C007 /* Widgets Bundle.swift */; };
-		F30472162D63E9C00055C007 /* MinecraftServerStatusHSWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30472052D63E9C00055C007 /* MinecraftServerStatusHSWidget.swift */; };
-		F30472172D63E9C00055C007 /* Minecraft Server Status LSWidget1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30472062D63E9C00055C007 /* Minecraft Server Status LSWidget1.swift */; };
-		F30472182D63E9C00055C007 /* WidgetEntryVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30472072D63E9C00055C007 /* WidgetEntryVM.swift */; };
-		F30472192D63E9C00055C007 /* Circular Accessory WidgetView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30471F82D63E9C00055C007 /* Circular Accessory WidgetView1.swift */; };
-		F304721A2D63E9C00055C007 /* Circular Accessory WidgetView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30471F92D63E9C00055C007 /* Circular Accessory WidgetView2.swift */; };
-		F304721B2D63E9C00055C007 /* Minecraft Server Status LSWidget1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30472062D63E9C00055C007 /* Minecraft Server Status LSWidget1.swift */; };
-		F304721C2D63E9C00055C007 /* WidgetEntryVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30472072D63E9C00055C007 /* WidgetEntryVM.swift */; };
-		F304721D2D63E9C00055C007 /* Rectangular Accessory WidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30471FE2D63E9C00055C007 /* Rectangular Accessory WidgetView.swift */; };
-		F304721E2D63E9C00055C007 /* Inline Accessory Widget View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30471FB2D63E9C00055C007 /* Inline Accessory Widget View.swift */; };
-		F304721F2D63E9C00055C007 /* Corner Accessory WidgetView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30471FA2D63E9C00055C007 /* Corner Accessory WidgetView1.swift */; };
-		F30472202D63E9C00055C007 /* Inline Accessory Widget View 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30471FC2D63E9C00055C007 /* Inline Accessory Widget View 2.swift */; };
-		F30472212D63E9C00055C007 /* Lockscreen Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30471F62D63E9C00055C007 /* Lockscreen Provider.swift */; };
-		F30472282D63E9C20055C007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F30472222D63E9C20055C007 /* Assets.xcassets */; };
-		F304722E2D63E9CF0055C007 /* RefreshWidgetIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304722A2D63E9CF0055C007 /* RefreshWidgetIntent.swift */; };
-		F304722F2D63E9CF0055C007 /* ServerSelectNoThemeWidgetIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304722B2D63E9CF0055C007 /* ServerSelectNoThemeWidgetIntent.swift */; };
-		F30472302D63E9CF0055C007 /* SelectServerIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304722C2D63E9CF0055C007 /* SelectServerIntent.swift */; };
-		F30472372D63E9CF0055C007 /* SelectServerIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304722C2D63E9CF0055C007 /* SelectServerIntent.swift */; };
-		F30472382D63E9CF0055C007 /* RefreshWidgetIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304722A2D63E9CF0055C007 /* RefreshWidgetIntent.swift */; };
-		F30472392D63E9CF0055C007 /* ServerSelectNoThemeWidgetIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304722B2D63E9CF0055C007 /* ServerSelectNoThemeWidgetIntent.swift */; };
-		F304723A2D63E9CF0055C007 /* SelectServerIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304722C2D63E9CF0055C007 /* SelectServerIntent.swift */; };
-		F304723B2D63E9CF0055C007 /* RefreshWidgetIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304722A2D63E9CF0055C007 /* RefreshWidgetIntent.swift */; };
-		F304723C2D63E9CF0055C007 /* ServerSelectNoThemeWidgetIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304722B2D63E9CF0055C007 /* ServerSelectNoThemeWidgetIntent.swift */; };
-		F30472402D63E9D00055C007 /* ArbitraryServerStatusOnlineCheckIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304723D2D63E9D00055C007 /* ArbitraryServerStatusOnlineCheckIntent.swift */; };
-		F30472412D63E9D00055C007 /* SavedServerStatusOnlineCheckIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304723E2D63E9D00055C007 /* SavedServerStatusOnlineCheckIntent.swift */; };
-		F30472422D63E9D00055C007 /* ArbitraryServerStatusOnlineCheckIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304723D2D63E9D00055C007 /* ArbitraryServerStatusOnlineCheckIntent.swift */; };
-		F30472432D63E9D00055C007 /* SavedServerStatusOnlineCheckIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304723E2D63E9D00055C007 /* SavedServerStatusOnlineCheckIntent.swift */; };
-		F30472442D63E9D00055C007 /* ArbitraryServerStatusOnlineCheckIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304723D2D63E9D00055C007 /* ArbitraryServerStatusOnlineCheckIntent.swift */; };
-		F30472452D63E9D00055C007 /* SavedServerStatusOnlineCheckIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304723E2D63E9D00055C007 /* SavedServerStatusOnlineCheckIntent.swift */; };
-		F30472492D63E9D20055C007 /* ServerIntentTypeAppEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30472462D63E9D20055C007 /* ServerIntentTypeAppEntity.swift */; };
-		F304724A2D63E9D20055C007 /* ThemeIntentTypeAppEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30472472D63E9D20055C007 /* ThemeIntentTypeAppEntity.swift */; };
-		F304724B2D63E9D20055C007 /* ServerIntentTypeAppEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30472462D63E9D20055C007 /* ServerIntentTypeAppEntity.swift */; };
-		F304724C2D63E9D20055C007 /* ThemeIntentTypeAppEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30472472D63E9D20055C007 /* ThemeIntentTypeAppEntity.swift */; };
-		F304724D2D63E9D20055C007 /* ServerIntentTypeAppEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30472462D63E9D20055C007 /* ServerIntentTypeAppEntity.swift */; };
-		F304724E2D63E9D20055C007 /* ThemeIntentTypeAppEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30472472D63E9D20055C007 /* ThemeIntentTypeAppEntity.swift */; };
-		F30472522D63E9D30055C007 /* SavedServerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304724F2D63E9D30055C007 /* SavedServerEntity.swift */; };
-		F30472532D63E9D30055C007 /* ServerStatusEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30472502D63E9D30055C007 /* ServerStatusEntity.swift */; };
-		F30472542D63E9D30055C007 /* SavedServerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304724F2D63E9D30055C007 /* SavedServerEntity.swift */; };
-		F30472552D63E9D30055C007 /* ServerStatusEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30472502D63E9D30055C007 /* ServerStatusEntity.swift */; };
-		F30472562D63E9D30055C007 /* SavedServerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304724F2D63E9D30055C007 /* SavedServerEntity.swift */; };
-		F30472572D63E9D30055C007 /* ServerStatusEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30472502D63E9D30055C007 /* ServerStatusEntity.swift */; };
-		F304725D2D63FBFC0055C007 /* MinecraftBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F30472582D63FBFC0055C007 /* MinecraftBold.otf */; };
-		F304725E2D63FBFC0055C007 /* MinecraftBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = F30472592D63FBFC0055C007 /* MinecraftBoldItalic.otf */; };
-		F304725F2D63FBFC0055C007 /* MinecraftItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = F304725A2D63FBFC0055C007 /* MinecraftItalic.otf */; };
-		F30472602D63FBFC0055C007 /* MinecraftRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F304725B2D63FBFC0055C007 /* MinecraftRegular.otf */; };
 		F31AC0C52E72F64B003C4A84 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = F31AC0C42E72F64B003C4A84 /* AppIcon.icon */; };
 		F31AC0C62E72F64B003C4A84 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = F31AC0C42E72F64B003C4A84 /* AppIcon.icon */; };
 		F31AC0C82E72F64B003C4A84 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = F31AC0C42E72F64B003C4A84 /* AppIcon.icon */; };
@@ -151,44 +36,8 @@
 		F31D45BC2D6DC6B700981B1C /* MCStatsDataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = F31D45BB2D6DC6B700981B1C /* MCStatsDataLayer */; };
 		F31D45C02D6DC6C200981B1C /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = F31D45BF2D6DC6C200981B1C /* Nuke */; };
 		F31D45C22D6DC6C600981B1C /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = F31D45C12D6DC6C600981B1C /* NukeUI */; };
-		F31D45C32D6DC74100981B1C /* AppContainerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C1E43A2D6C949900950F3D /* AppContainerHelper.swift */; };
-		F31D45C42D6DC74100981B1C /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13E60002A4BD614005BE9B2 /* AppContainer.swift */; };
-		F31D45C52D6DC74100981B1C /* PageDestinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39EAF722D6C82B900072794 /* PageDestinations.swift */; };
-		F31D45C62D6DC74C00981B1C /* TipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17AE0FB2CC05F9000DC7A80 /* TipView.swift */; };
-		F31D45C72D6DC74C00981B1C /* ReleaseNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F150B43E2CC18C1100739646 /* ReleaseNotes.swift */; };
-		F31D45C82D6DC74C00981B1C /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E671752CA73A86002BDFC0 /* CustomProgressView.swift */; };
-		F31D45C92D6DC74C00981B1C /* FeatureRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E1A6E2D649C6000718CB7 /* FeatureRow.swift */; };
-		F31D45CA2D6DC74C00981B1C /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C87A0E2D657A1500840745 /* Feature.swift */; };
-		F31D45CB2D6DC75200981B1C /* ServerDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A43C812A8472B20081A24C /* ServerDetails.swift */; };
-		F31D45CC2D6DC75200981B1C /* PlayerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E1A9D2D65209500718CB7 /* PlayerCard.swift */; };
-		F31D45CD2D6DC75200981B1C /* ServerPing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30246D12D667ED50030F71C /* ServerPing.swift */; };
-		F31D45CE2D6DC75200981B1C /* PlayerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30246C82D6661D60030F71C /* PlayerList.swift */; };
-		F31D45CF2D6DC75200981B1C /* PingGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30246D52D66816E0030F71C /* PingGraph.swift */; };
-		F31D45D02D6DC75200981B1C /* MOTDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BFB14C2D68055A00E16468 /* MOTDView.swift */; };
-		F31D45D12D6DC75700981B1C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17A16BA2A893DD700F8FF2F /* SettingsView.swift */; };
-		F31D45D22D6DC75700981B1C /* GeneralSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E1A6C2D6489FD00718CB7 /* GeneralSettings.swift */; };
-		F31D45D32D6DC75700981B1C /* DebugSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37883692D6AF86A00D38522 /* DebugSettings.swift */; };
-		F31D45D42D6DC75700981B1C /* ShortcutsGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = F150B4352CC1709700739646 /* ShortcutsGuide.swift */; };
-		F31D45D52D6DC75D00981B1C /* SiriPhrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30246C42D65E6F70030F71C /* SiriPhrase.swift */; };
-		F31D45D62D6DC75D00981B1C /* SiriGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = F150B4332CC15F6A00739646 /* SiriGuide.swift */; };
-		F31D45D72D6DC75D00981B1C /* SiriGuidePhrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E1A702D649D1300718CB7 /* SiriGuidePhrase.swift */; };
-		F31D45D82D6DC76200981B1C /* FAQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C87A052D6574DD00840745 /* FAQ.swift */; };
 		F31D45DA2D6DC76200981B1C /* ServerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AE29152CA48577009D0D14 /* ServerRow.swift */; };
-		F31D45DB2D6DC76200981B1C /* FAQView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17AE0EB2CC01E9E00DC7A80 /* FAQView.swift */; };
-		F31D45DC2D6DC76200981B1C /* FAQRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C87A012D6574D200840745 /* FAQRow.swift */; };
-		F31D45DD2D6DC76800981B1C /* MOTDViewGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17AE0ED2CC0363F00DC7A80 /* MOTDViewGenerator.swift */; };
-		F31D45E02D6DC76800981B1C /* ConfigHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F130954E2CBC9D5600C4C7BA /* ConfigHelper.swift */; };
-		F31D45E12D6DC76800981B1C /* ReviewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17AE0F32CC0504200DC7A80 /* ReviewHelper.swift */; };
-		F31D45E22D6DC76800981B1C /* CustomExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CFCD502CABB55B001A9E69 /* CustomExtentions.swift */; };
-		F31D45E32D6DC79200981B1C /* SwiftyPing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C010482AAAB9B60017B9A9 /* SwiftyPing.swift */; };
 		F31D45E42D6DC7A800981B1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F13E60022A4BD615005BE9B2 /* Assets.xcassets */; };
-		F31D45E52D6DC9C600981B1C /* LowPowerMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E1A732D64A4B200718CB7 /* LowPowerMode.swift */; };
-		F31D45E62D6DC9C600981B1C /* RefreshWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E1A762D64D32D00718CB7 /* RefreshWidgets.swift */; };
-		F31D45E72D6DCA3400981B1C /* ShortcutsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C42162AAD55BF000107D6 /* ShortcutsProvider.swift */; };
-		F31D45E82D6DCA3E00981B1C /* SavedServerStatusOnlineCheckIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304723E2D63E9D00055C007 /* SavedServerStatusOnlineCheckIntent.swift */; };
-		F31D45E92D6DCA5000981B1C /* SavedServerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304724F2D63E9D30055C007 /* SavedServerEntity.swift */; };
-		F31D45EA2D6DCA5E00981B1C /* IntentErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1406BA32AA2DD2C00815BE8 /* IntentErrors.swift */; };
-		F31D45EB2D6DCB1300981B1C /* ServerStatusEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30472502D63E9D30055C007 /* ServerStatusEntity.swift */; };
 		F325F8C32D80651B00FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */ = {isa = PBXBuildFile; fileRef = F325F85D2D805FF300FDF4D9 /* MC Stats StoreKit Synced.storekit */; };
 		F325F8C42D80697300FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */ = {isa = PBXBuildFile; fileRef = F325F85D2D805FF300FDF4D9 /* MC Stats StoreKit Synced.storekit */; };
 		F325F8C52D80697300FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */ = {isa = PBXBuildFile; fileRef = F325F85D2D805FF300FDF4D9 /* MC Stats StoreKit Synced.storekit */; };
@@ -201,7 +50,6 @@
 		F326DB5A2D6416E100BCCB69 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F326DB572D6416E100BCCB69 /* Localizable.xcstrings */; };
 		F326DB5B2D6416E100BCCB69 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F326DB572D6416E100BCCB69 /* Localizable.xcstrings */; };
 		F326DB5C2D6416E100BCCB69 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F326DB572D6416E100BCCB69 /* Localizable.xcstrings */; };
-		F32A18B72ECB2FB600BE176C /* AppContainerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C1E43A2D6C949900950F3D /* AppContainerHelper.swift */; };
 		F33661402E745162008E73C9 /* Enthusiast.icon in Resources */ = {isa = PBXBuildFile; fileRef = F336613F2E745162008E73C9 /* Enthusiast.icon */; };
 		F33661412E745162008E73C9 /* Enthusiast.icon in Resources */ = {isa = PBXBuildFile; fileRef = F336613F2E745162008E73C9 /* Enthusiast.icon */; };
 		F33661422E745162008E73C9 /* Enthusiast.icon in Resources */ = {isa = PBXBuildFile; fileRef = F336613F2E745162008E73C9 /* Enthusiast.icon */; };
@@ -212,51 +60,11 @@
 		F336614D2E745167008E73C9 /* Supporter.icon in Resources */ = {isa = PBXBuildFile; fileRef = F336614B2E745167008E73C9 /* Supporter.icon */; };
 		F336614E2E745167008E73C9 /* Supporter.icon in Resources */ = {isa = PBXBuildFile; fileRef = F336614B2E745167008E73C9 /* Supporter.icon */; };
 		F3570D412D6E779500BDF069 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3570D402D6E779500BDF069 /* Messages.framework */; };
-		F3570D5C2D6E77C000BDF069 /* Messages VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3570D572D6E77C000BDF069 /* Messages VC.swift */; };
-		F3570D622D6E8C4F00BDF069 /* NavContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3570D612D6E8C4F00BDF069 /* NavContainer.swift */; };
-		F3570D642D6E8CB300BDF069 /* MessagesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3570D632D6E8CB300BDF069 /* MessagesVM.swift */; };
-		F35E1A6D2D6489FD00718CB7 /* GeneralSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E1A6C2D6489FD00718CB7 /* GeneralSettings.swift */; };
-		F35E1A6F2D649C6000718CB7 /* FeatureRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E1A6E2D649C6000718CB7 /* FeatureRow.swift */; };
-		F35E1A712D649D1300718CB7 /* SiriGuidePhrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E1A702D649D1300718CB7 /* SiriGuidePhrase.swift */; };
-		F35E1A742D64A4B200718CB7 /* LowPowerMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E1A732D64A4B200718CB7 /* LowPowerMode.swift */; };
-		F35E1A752D64ACE400718CB7 /* Widgets Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30472042D63E9C00055C007 /* Widgets Bundle.swift */; };
-		F35E1A772D64D32D00718CB7 /* RefreshWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E1A762D64D32D00718CB7 /* RefreshWidgets.swift */; };
 		F35E1A782D64DC2700718CB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F13E60022A4BD615005BE9B2 /* Assets.xcassets */; };
-		F35E1A9E2D65209500718CB7 /* PlayerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E1A9D2D65209500718CB7 /* PlayerCard.swift */; };
-		F35E1AA12D6522B300718CB7 /* LowPowerMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E1A732D64A4B200718CB7 /* LowPowerMode.swift */; };
-		F35E1AA22D6522B300718CB7 /* RefreshWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E1A762D64D32D00718CB7 /* RefreshWidgets.swift */; };
-		F35E1AA32D6522C600718CB7 /* FeatureRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E1A6E2D649C6000718CB7 /* FeatureRow.swift */; };
-		F35E1AA42D6522C600718CB7 /* ReleaseNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F150B43E2CC18C1100739646 /* ReleaseNotes.swift */; };
-		F35E1AA52D6522CB00718CB7 /* SiriGuidePhrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E1A702D649D1300718CB7 /* SiriGuidePhrase.swift */; };
-		F35E1AA62D6522CB00718CB7 /* SiriGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = F150B4332CC15F6A00739646 /* SiriGuide.swift */; };
-		F35E1AA72D6522D100718CB7 /* PlayerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E1A9D2D65209500718CB7 /* PlayerCard.swift */; };
-		F35E1AA82D6522D100718CB7 /* ServerDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A43C812A8472B20081A24C /* ServerDetails.swift */; };
-		F35E1AA92D6522D100718CB7 /* TipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17AE0FB2CC05F9000DC7A80 /* TipView.swift */; };
-		F35E1AAA2D6522D100718CB7 /* FAQView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17AE0EB2CC01E9E00DC7A80 /* FAQView.swift */; };
-		F35E1AAB2D6522D100718CB7 /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E671752CA73A86002BDFC0 /* CustomProgressView.swift */; };
 		F35E1AAC2D6522D600718CB7 /* EditServerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17A16BC2A8956DE00F8FF2F /* EditServerView.swift */; };
-		F35E1AAD2D6522D600718CB7 /* GeneralSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E1A6C2D6489FD00718CB7 /* GeneralSettings.swift */; };
-		F35E1AAE2D6522D600718CB7 /* ShortcutsGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = F150B4352CC1709700739646 /* ShortcutsGuide.swift */; };
 		F35E1AAF2D6522D600718CB7 /* ServerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AE29152CA48577009D0D14 /* ServerRow.swift */; };
-		F35E1AB02D6522D600718CB7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17A16BA2A893DD700F8FF2F /* SettingsView.swift */; };
 		F35E1AB42D6522F400718CB7 /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = F35E1AB32D6522F400718CB7 /* NukeUI */; };
-		F35E1AB72D65231500718CB7 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13E60002A4BD614005BE9B2 /* AppContainer.swift */; };
-		F35E1AB92D65236300718CB7 /* CustomExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CFCD502CABB55B001A9E69 /* CustomExtentions.swift */; };
-		F35E1ABA2D65236300718CB7 /* ReviewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17AE0F32CC0504200DC7A80 /* ReviewHelper.swift */; };
-		F35E1ABD2D65236300718CB7 /* ConfigHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F130954E2CBC9D5600C4C7BA /* ConfigHelper.swift */; };
-		F35E1ABF2D65236300718CB7 /* MOTDViewGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17AE0ED2CC0363F00DC7A80 /* MOTDViewGenerator.swift */; };
-		F35E1AC02D65236900718CB7 /* SwiftyPing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C010482AAAB9B60017B9A9 /* SwiftyPing.swift */; };
-		F35E1AC12D65237200718CB7 /* MinecraftRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F304725B2D63FBFC0055C007 /* MinecraftRegular.otf */; };
-		F35E1AC22D65237200718CB7 /* MinecraftBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F30472582D63FBFC0055C007 /* MinecraftBold.otf */; };
-		F35E1AC32D65237200718CB7 /* MinecraftBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = F30472592D63FBFC0055C007 /* MinecraftBoldItalic.otf */; };
-		F35E1AC42D65237200718CB7 /* MinecraftItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = F304725A2D63FBFC0055C007 /* MinecraftItalic.otf */; };
 		F35E1AC52D65238800718CB7 /* MCStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13E5FFC2A4BD614005BE9B2 /* MCStats.swift */; };
-		F35E1AC62D652B3000718CB7 /* ShortcutsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C42162AAD55BF000107D6 /* ShortcutsProvider.swift */; };
-		F35E1AC72D652B3B00718CB7 /* SavedServerStatusOnlineCheckIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304723E2D63E9D00055C007 /* SavedServerStatusOnlineCheckIntent.swift */; };
-		F35E1AC82D652B4700718CB7 /* IntentErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1406BA32AA2DD2C00815BE8 /* IntentErrors.swift */; };
-		F35E1AC92D652C5B00718CB7 /* SavedServerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304724F2D63E9D30055C007 /* SavedServerEntity.swift */; };
-		F35E1ACA2D652C6D00718CB7 /* ServerStatusEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30472502D63E9D30055C007 /* ServerStatusEntity.swift */; };
-		F360A8AC2D6C6942008E515E /* visionOS Icon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F35E1A932D6501CC00718CB7 /* visionOS Icon.xcassets */; };
 		F360A8AD2D6C6B5C008E515E /* MCStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13E5FFC2A4BD614005BE9B2 /* MCStats.swift */; };
 		F376E1822DDA3C3700D98252 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F376E1812DDA3C3700D98252 /* ScrechKit */; };
 		F376E1842DDA3C5000D98252 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F376E1832DDA3C5000D98252 /* ScrechKit */; };
@@ -265,64 +73,6 @@
 		F376E18A2DDA3CA800D98252 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F376E1892DDA3CA800D98252 /* ScrechKit */; };
 		F376E18C2DDA3CAE00D98252 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F376E18B2DDA3CAE00D98252 /* ScrechKit */; };
 		F376E18E2DDA3CBC00D98252 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F376E18D2DDA3CBC00D98252 /* ScrechKit */; };
-		F378836A2D6AF86A00D38522 /* DebugSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37883692D6AF86A00D38522 /* DebugSettings.swift */; };
-		F378836B2D6AF86A00D38522 /* DebugSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37883692D6AF86A00D38522 /* DebugSettings.swift */; };
-		F378836C2D6AF86A00D38522 /* DebugSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37883692D6AF86A00D38522 /* DebugSettings.swift */; };
-		F38218852D671BAB005025E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F11F63512A81E51000D47187 /* Assets.xcassets */; };
-		F38218882D676E23005025E7 /* PingGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30246D52D66816E0030F71C /* PingGraph.swift */; };
-		F383D1982D67D3D100FE4239 /* SiriGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = F150B4332CC15F6A00739646 /* SiriGuide.swift */; };
-		F383D1992D67D3DB00FE4239 /* SiriGuidePhrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E1A702D649D1300718CB7 /* SiriGuidePhrase.swift */; };
-		F383D19A2D67D3DB00FE4239 /* SiriPhrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30246C42D65E6F70030F71C /* SiriPhrase.swift */; };
-		F383D19B2D67E60400FE4239 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3C879CD2D65722200840745 /* Assets.xcassets */; };
-		F396F7FC2D81BDC600FCB648 /* TipCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396F7FB2D81BDC600FCB648 /* TipCard.swift */; };
-		F396F7FD2D81BDC600FCB648 /* TipCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396F7FB2D81BDC600FCB648 /* TipCard.swift */; };
-		F396F7FE2D81BDC600FCB648 /* TipCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396F7FB2D81BDC600FCB648 /* TipCard.swift */; };
-		F396F7FF2D81BDC600FCB648 /* TipCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396F7FB2D81BDC600FCB648 /* TipCard.swift */; };
-		F396F8002D81BDC600FCB648 /* TipCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396F7FB2D81BDC600FCB648 /* TipCard.swift */; };
-		F396F8022D81BE6A00FCB648 /* TipVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396F8012D81BE6A00FCB648 /* TipVM.swift */; };
-		F396F8032D81BE6A00FCB648 /* TipVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396F8012D81BE6A00FCB648 /* TipVM.swift */; };
-		F396F8042D81BE6A00FCB648 /* TipVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396F8012D81BE6A00FCB648 /* TipVM.swift */; };
-		F396F8052D81BE6A00FCB648 /* TipVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396F8012D81BE6A00FCB648 /* TipVM.swift */; };
-		F396F8062D81BE6A00FCB648 /* TipVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396F8012D81BE6A00FCB648 /* TipVM.swift */; };
-		F39EAF732D6C82B900072794 /* PageDestinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39EAF722D6C82B900072794 /* PageDestinations.swift */; };
-		F39EAF742D6C82B900072794 /* PageDestinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39EAF722D6C82B900072794 /* PageDestinations.swift */; };
-		F39EAF752D6C82B900072794 /* PageDestinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39EAF722D6C82B900072794 /* PageDestinations.swift */; };
-		F39EAF762D6C82C200072794 /* PageDestinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39EAF722D6C82B900072794 /* PageDestinations.swift */; };
-		F39EAF782D6C831000072794 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39EAF772D6C831000072794 /* SettingsView.swift */; };
-		F39EAF792D6C845000072794 /* DebugSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37883692D6AF86A00D38522 /* DebugSettings.swift */; };
-		F3A9A7ED2D704CD700964023 /* AppContainerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C1E43A2D6C949900950F3D /* AppContainerHelper.swift */; };
-		F3B073F32D7655D000F24939 /* DebugSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37883692D6AF86A00D38522 /* DebugSettings.swift */; };
-		F3B073F42D7655D000F24939 /* ShortcutsGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = F150B4352CC1709700739646 /* ShortcutsGuide.swift */; };
-		F3B073F52D7655D000F24939 /* GeneralSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E1A6C2D6489FD00718CB7 /* GeneralSettings.swift */; };
-		F3B073F62D7655D000F24939 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17A16BA2A893DD700F8FF2F /* SettingsView.swift */; };
-		F3B073F72D7655D500F24939 /* SiriGuidePhrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E1A702D649D1300718CB7 /* SiriGuidePhrase.swift */; };
-		F3B073F82D7655D500F24939 /* SiriGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = F150B4332CC15F6A00739646 /* SiriGuide.swift */; };
-		F3B073F92D7655D500F24939 /* SiriPhrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30246C42D65E6F70030F71C /* SiriPhrase.swift */; };
-		F3B073FA2D7655D900F24939 /* FAQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C87A052D6574DD00840745 /* FAQ.swift */; };
-		F3B073FB2D7655D900F24939 /* FAQRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C87A012D6574D200840745 /* FAQRow.swift */; };
-		F3B073FC2D7655D900F24939 /* FAQView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17AE0EB2CC01E9E00DC7A80 /* FAQView.swift */; };
-		F3B074032D76560700F24939 /* PingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EFC1732D709C5700EE988A /* PingError.swift */; };
-		F3B074042D76560700F24939 /* SwiftyPing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C010482AAAB9B60017B9A9 /* SwiftyPing.swift */; };
-		F3B074052D76564B00F24939 /* PingGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30246D52D66816E0030F71C /* PingGraph.swift */; };
-		F3B074062D76564B00F24939 /* PlayerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30246C82D6661D60030F71C /* PlayerList.swift */; };
-		F3B074072D76564B00F24939 /* PlayerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E1A9D2D65209500718CB7 /* PlayerCard.swift */; };
-		F3B074082D76565500F24939 /* ServerPing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30246D12D667ED50030F71C /* ServerPing.swift */; };
-		F3B074092D76565C00F24939 /* MOTDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BFB14C2D68055A00E16468 /* MOTDView.swift */; };
-		F3B0740A2D76566200F24939 /* MOTDViewGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17AE0ED2CC0363F00DC7A80 /* MOTDViewGenerator.swift */; };
-		F3B0740B2D76566700F24939 /* CustomExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CFCD502CABB55B001A9E69 /* CustomExtentions.swift */; };
-		F3B0740C2D76567000F24939 /* ServerDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A43C812A8472B20081A24C /* ServerDetails.swift */; };
-		F3B0740E2D76697000F24939 /* ExpectedResultBatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B0740D2D76697000F24939 /* ExpectedResultBatch.swift */; };
-		F3B0740F2D76697000F24939 /* ExpectedResultBatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B0740D2D76697000F24939 /* ExpectedResultBatch.swift */; };
-		F3B074102D76697000F24939 /* ExpectedResultBatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B0740D2D76697000F24939 /* ExpectedResultBatch.swift */; };
-		F3B074132D766AC200F24939 /* EditServerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B074122D766AC200F24939 /* EditServerView.swift */; };
-		F3B074182D76E2E100F24939 /* PlayerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B074172D76E2E100F24939 /* PlayerCard.swift */; };
-		F3B074212D76FF5500F24939 /* ServerDetailsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B074202D76FF5500F24939 /* ServerDetailsHelper.swift */; };
-		F3B074222D76FF5500F24939 /* ServerDetailsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B074202D76FF5500F24939 /* ServerDetailsHelper.swift */; };
-		F3B074232D76FF5500F24939 /* ServerDetailsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B074202D76FF5500F24939 /* ServerDetailsHelper.swift */; };
-		F3B074242D76FF5500F24939 /* ServerDetailsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B074202D76FF5500F24939 /* ServerDetailsHelper.swift */; };
-		F3B074252D76FF5500F24939 /* ServerDetailsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B074202D76FF5500F24939 /* ServerDetailsHelper.swift */; };
-		F3B074262D76FFB300F24939 /* ServerDetailsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B074202D76FF5500F24939 /* ServerDetailsHelper.swift */; };
-		F3B074272D77008C00F24939 /* PlayerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30246C82D6661D60030F71C /* PlayerList.swift */; };
 		F3B074292D77050900F24939 /* EditServerViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B074282D77050900F24939 /* EditServerViewHelper.swift */; };
 		F3B0742A2D77063B00F24939 /* EditServerViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B074282D77050900F24939 /* EditServerViewHelper.swift */; };
 		F3B0742B2D77063B00F24939 /* EditServerViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B074282D77050900F24939 /* EditServerViewHelper.swift */; };
@@ -330,57 +80,14 @@
 		F3B0742D2D77064000F24939 /* EditServerViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B074282D77050900F24939 /* EditServerViewHelper.swift */; };
 		F3B0742E2D770BF900F24939 /* EditServerViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B074282D77050900F24939 /* EditServerViewHelper.swift */; };
 		F3BC6B202D6F56950016A68D /* MCStatsDataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = F3BC6B1F2D6F56950016A68D /* MCStatsDataLayer */; };
-		F3BFB14D2D68055A00E16468 /* MOTDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BFB14C2D68055A00E16468 /* MOTDView.swift */; };
-		F3BFB14E2D68055A00E16468 /* MOTDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BFB14C2D68055A00E16468 /* MOTDView.swift */; };
-		F3BFB14F2D68055A00E16468 /* MOTDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BFB14C2D68055A00E16468 /* MOTDView.swift */; };
-		F3BFB1502D68055A00E16468 /* MOTDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BFB14C2D68055A00E16468 /* MOTDView.swift */; };
 		F3C1E4392D6C8CA400950F3D /* MCStatsDataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = F3C1E4382D6C8CA400950F3D /* MCStatsDataLayer */; };
-		F3C1E43C2D6C949900950F3D /* AppContainerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C1E43A2D6C949900950F3D /* AppContainerHelper.swift */; };
-		F3C1E43D2D6C949900950F3D /* AppContainerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C1E43A2D6C949900950F3D /* AppContainerHelper.swift */; };
-		F3C1E43F2D6C957900950F3D /* RefreshWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E1A762D64D32D00718CB7 /* RefreshWidgets.swift */; };
 		F3C879D72D6572AA00840745 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F326DB572D6416E100BCCB69 /* Localizable.xcstrings */; };
 		F3C879D82D6572AA00840745 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F326DB572D6416E100BCCB69 /* Localizable.xcstrings */; };
 		F3C879D92D6572B000840745 /* MCStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13E5FFC2A4BD614005BE9B2 /* MCStats.swift */; };
-		F3C879DA2D6572B000840745 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13E60002A4BD614005BE9B2 /* AppContainer.swift */; };
-		F3C879DB2D6572BA00840745 /* LowPowerMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E1A732D64A4B200718CB7 /* LowPowerMode.swift */; };
-		F3C879DC2D6572BA00840745 /* RefreshWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E1A762D64D32D00718CB7 /* RefreshWidgets.swift */; };
-		F3C879DD2D6572BE00840745 /* FeatureRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E1A6E2D649C6000718CB7 /* FeatureRow.swift */; };
-		F3C879DE2D6572BE00840745 /* ReleaseNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F150B43E2CC18C1100739646 /* ReleaseNotes.swift */; };
-		F3C879DF2D6572C400840745 /* ServerDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A43C812A8472B20081A24C /* ServerDetails.swift */; };
-		F3C879E02D6572C400840745 /* PlayerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E1A9D2D65209500718CB7 /* PlayerCard.swift */; };
-		F3C879E22D6572C400840745 /* TipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17AE0FB2CC05F9000DC7A80 /* TipView.swift */; };
-		F3C879E42D6572C400840745 /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E671752CA73A86002BDFC0 /* CustomProgressView.swift */; };
-		F3C879E52D6572C400840745 /* FAQView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17AE0EB2CC01E9E00DC7A80 /* FAQView.swift */; };
 		F3C879E62D6572CA00840745 /* ServerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AE29152CA48577009D0D14 /* ServerRow.swift */; };
-		F3C879E72D6572CA00840745 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17A16BA2A893DD700F8FF2F /* SettingsView.swift */; };
 		F3C879E82D6572CA00840745 /* EditServerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17A16BC2A8956DE00F8FF2F /* EditServerView.swift */; };
-		F3C879E92D6572CA00840745 /* ShortcutsGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = F150B4352CC1709700739646 /* ShortcutsGuide.swift */; };
-		F3C879EA2D6572CA00840745 /* GeneralSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E1A6C2D6489FD00718CB7 /* GeneralSettings.swift */; };
-		F3C879EC2D6572D000840745 /* MOTDViewGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17AE0ED2CC0363F00DC7A80 /* MOTDViewGenerator.swift */; };
-		F3C879ED2D6572D000840745 /* CustomExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CFCD502CABB55B001A9E69 /* CustomExtentions.swift */; };
-		F3C879EE2D6572D000840745 /* ConfigHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F130954E2CBC9D5600C4C7BA /* ConfigHelper.swift */; };
-		F3C879F12D6572D000840745 /* ReviewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17AE0F32CC0504200DC7A80 /* ReviewHelper.swift */; };
-		F3C879F32D6572D500840745 /* SwiftyPing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C010482AAAB9B60017B9A9 /* SwiftyPing.swift */; };
-		F3C879F42D6572DF00840745 /* MinecraftRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F304725B2D63FBFC0055C007 /* MinecraftRegular.otf */; };
-		F3C879F52D6572DF00840745 /* MinecraftItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = F304725A2D63FBFC0055C007 /* MinecraftItalic.otf */; };
-		F3C879F62D6572DF00840745 /* MinecraftBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F30472582D63FBFC0055C007 /* MinecraftBold.otf */; };
-		F3C879F72D6572DF00840745 /* MinecraftBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = F30472592D63FBFC0055C007 /* MinecraftBoldItalic.otf */; };
 		F3C879FD2D6572FD00840745 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = F3C879FC2D6572FD00840745 /* Nuke */; };
 		F3C879FF2D65730000840745 /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = F3C879FE2D65730000840745 /* NukeUI */; };
-		F3C87A022D6574D200840745 /* FAQRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C87A012D6574D200840745 /* FAQRow.swift */; };
-		F3C87A032D6574D200840745 /* FAQRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C87A012D6574D200840745 /* FAQRow.swift */; };
-		F3C87A042D6574D200840745 /* FAQRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C87A012D6574D200840745 /* FAQRow.swift */; };
-		F3C87A062D6574DD00840745 /* FAQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C87A052D6574DD00840745 /* FAQ.swift */; };
-		F3C87A072D6574DD00840745 /* FAQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C87A052D6574DD00840745 /* FAQ.swift */; };
-		F3C87A082D6574DD00840745 /* FAQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C87A052D6574DD00840745 /* FAQ.swift */; };
-		F3C87A092D65759B00840745 /* ShortcutsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C42162AAD55BF000107D6 /* ShortcutsProvider.swift */; };
-		F3C87A0A2D6575AE00840745 /* SavedServerStatusOnlineCheckIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304723E2D63E9D00055C007 /* SavedServerStatusOnlineCheckIntent.swift */; };
-		F3C87A0B2D6575B700840745 /* IntentErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1406BA32AA2DD2C00815BE8 /* IntentErrors.swift */; };
-		F3C87A0C2D6575C800840745 /* ServerStatusEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30472502D63E9D30055C007 /* ServerStatusEntity.swift */; };
-		F3C87A0D2D6575DE00840745 /* SavedServerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304724F2D63E9D30055C007 /* SavedServerEntity.swift */; };
-		F3C87A0F2D657A1500840745 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C87A0E2D657A1500840745 /* Feature.swift */; };
-		F3C87A102D657A1500840745 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C87A0E2D657A1500840745 /* Feature.swift */; };
-		F3C87A112D657A1500840745 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C87A0E2D657A1500840745 /* Feature.swift */; };
 		F3C8E54A2D7E24E900644E47 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3C8E5492D7E24E900644E47 /* InfoPlist.xcstrings */; };
 		F3C8E5532D7E2ADF00644E47 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F326DB572D6416E100BCCB69 /* Localizable.xcstrings */; };
 		F3C9235E2D6C6CD3004D31A9 /* MCStatsDataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = F3C9235D2D6C6CD3004D31A9 /* MCStatsDataLayer */; };
@@ -390,37 +97,12 @@
 		F3C923662D6C6CF2004D31A9 /* MCStatsDataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = F3C923652D6C6CF2004D31A9 /* MCStatsDataLayer */; };
 		F3C923682D6C6CF6004D31A9 /* MCStatsDataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = F3C923672D6C6CF6004D31A9 /* MCStatsDataLayer */; };
 		F3D677652DD7E81700721DE8 /* Intents.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = F1406BA92AA391B800815BE8 /* Intents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		F3DD086A2D75226A00A67D4B /* ServerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DD08692D75226A00A67D4B /* ServerList.swift */; };
 		F3DD086B2D75232500A67D4B /* ServerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AE29152CA48577009D0D14 /* ServerRow.swift */; };
 		F3DD086F2D75233300A67D4B /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = F3DD086E2D75233300A67D4B /* NukeUI */; };
 		F3DD08712D75233600A67D4B /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = F3DD08702D75233600A67D4B /* Nuke */; };
-		F3DD08722D75234F00A67D4B /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E671752CA73A86002BDFC0 /* CustomProgressView.swift */; };
 		F3DD08732D75236E00A67D4B /* EditServerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17A16BC2A8956DE00F8FF2F /* EditServerView.swift */; };
-		F3DD08742D75237D00A67D4B /* RefreshWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E1A762D64D32D00718CB7 /* RefreshWidgets.swift */; };
-		F3DD08752D75237D00A67D4B /* LowPowerMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E1A732D64A4B200718CB7 /* LowPowerMode.swift */; };
-		F3DD08762D75238B00A67D4B /* ConfigHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F130954E2CBC9D5600C4C7BA /* ConfigHelper.swift */; };
-		F3DD08772D7523A500A67D4B /* ShortcutsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C42162AAD55BF000107D6 /* ShortcutsProvider.swift */; };
-		F3DD08782D7523AC00A67D4B /* SavedServerStatusOnlineCheckIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304723E2D63E9D00055C007 /* SavedServerStatusOnlineCheckIntent.swift */; };
-		F3DD08792D7523B300A67D4B /* IntentErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1406BA32AA2DD2C00815BE8 /* IntentErrors.swift */; };
-		F3DD087A2D7523BD00A67D4B /* SavedServerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304724F2D63E9D30055C007 /* SavedServerEntity.swift */; };
-		F3DD087B2D7523C500A67D4B /* ServerStatusEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30472502D63E9D30055C007 /* ServerStatusEntity.swift */; };
-		F3DD087D2D75241D00A67D4B /* PageDestinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39EAF722D6C82B900072794 /* PageDestinations.swift */; };
-		F3DD087E2D75241D00A67D4B /* AppContainerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C1E43A2D6C949900950F3D /* AppContainerHelper.swift */; };
-		F3DD087F2D75243200A67D4B /* ReviewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17AE0F32CC0504200DC7A80 /* ReviewHelper.swift */; };
-		F3DD08802D75246700A67D4B /* WatchHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F174A2FB2A8F7FFA0051DA5B /* WatchHelper.swift */; };
 		F3DD08812D7524CF00A67D4B /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F326DB572D6416E100BCCB69 /* Localizable.xcstrings */; };
 		F3DD08822D7524DA00A67D4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F13E60022A4BD615005BE9B2 /* Assets.xcassets */; };
-		F3DD08832D75251300A67D4B /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13E60002A4BD614005BE9B2 /* AppContainer.swift */; };
-		F3DD08842D75252400A67D4B /* ReleaseNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F150B43E2CC18C1100739646 /* ReleaseNotes.swift */; };
-		F3DD08862D75253600A67D4B /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C87A0E2D657A1500840745 /* Feature.swift */; };
-		F3DD08872D75253600A67D4B /* FeatureRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35E1A6E2D649C6000718CB7 /* FeatureRow.swift */; };
-		F3DD08882D75263100A67D4B /* TipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17AE0FB2CC05F9000DC7A80 /* TipView.swift */; };
-		F3DD08892D7527BF00A67D4B /* iMessage Icon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3570D532D6E77C000BDF069 /* iMessage Icon.xcassets */; };
-		F3EFC1722D70877F00EE988A /* EditServerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EFC1712D70877F00EE988A /* EditServerView.swift */; };
-		F3EFC1742D709C5700EE988A /* PingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EFC1732D709C5700EE988A /* PingError.swift */; };
-		F3EFC1752D709C5700EE988A /* PingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EFC1732D709C5700EE988A /* PingError.swift */; };
-		F3EFC1762D709C5700EE988A /* PingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EFC1732D709C5700EE988A /* PingError.swift */; };
-		F3EFC1772D709C5700EE988A /* PingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EFC1732D709C5700EE988A /* PingError.swift */; };
 		F3F2E6422D8258AF0078EA89 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F2E6412D8258AF0078EA89 /* StoreKit.framework */; };
 		F3F2E6432D8258C50078EA89 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F325F93C2D80E84300FDF4D9 /* StoreKit.framework */; };
 		F3F2E6452D8258C90078EA89 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F2E6442D8258C90078EA89 /* StoreKit.framework */; };
@@ -429,9 +111,6 @@
 		F3F5AD762E886058007AD97D /* Appearance in Frameworks */ = {isa = PBXBuildFile; productRef = F3F5AD752E886058007AD97D /* Appearance */; };
 		F3FCD1F72E527A7D003BDE5E /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3FCD1F62E527A7D003BDE5E /* ScrechKit */; };
 		F3FCD1F92E527A8D003BDE5E /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3FCD1F82E527A8D003BDE5E /* ScrechKit */; };
-		F3FCD2022E5282D3003BDE5E /* ValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD2002E5282D3003BDE5E /* ValueStore.swift */; };
-		F3FCD2032E5282D3003BDE5E /* ValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD2002E5282D3003BDE5E /* ValueStore.swift */; };
-		F3FCD2042E5282D3003BDE5E /* ValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCD2002E5282D3003BDE5E /* ValueStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -544,89 +223,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F10C42162AAD55BF000107D6 /* ShortcutsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsProvider.swift; sourceTree = "<group>"; };
-		F10E94B02A8C61B60039DD2B /* ConnectivityProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityProvider.swift; sourceTree = "<group>"; };
 		F11F634B2A81E50E00D47187 /* watchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watchOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F11F63512A81E51000D47187 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F13095252CBC997200C4C7BA /* Watch Widgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Watch Widgets.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F130954E2CBC9D5600C4C7BA /* ConfigHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigHelper.swift; sourceTree = "<group>"; };
 		F13E5FF92A4BD614005BE9B2 /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F13E5FFC2A4BD614005BE9B2 /* MCStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCStats.swift; sourceTree = "<group>"; };
-		F13E60002A4BD614005BE9B2 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
 		F13E60022A4BD615005BE9B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F13E60042A4BD615005BE9B2 /* iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOS.entitlements; sourceTree = "<group>"; };
 		F13E60082A4BD615005BE9B2 /* iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = iOS.plist; sourceTree = "<group>"; };
-		F1406BA32AA2DD2C00815BE8 /* IntentErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentErrors.swift; sourceTree = "<group>"; };
 		F1406BA92AA391B800815BE8 /* Intents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = Intents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		F1406BAB2AA391B800815BE8 /* Intents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intents.swift; sourceTree = "<group>"; };
-		F1406BAF2AA391B800815BE8 /* Intents.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Intents.plist; sourceTree = "<group>"; };
-		F1406BB72AA391F400815BE8 /* Intents.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Intents.entitlements; sourceTree = "<group>"; };
-		F150B4332CC15F6A00739646 /* SiriGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriGuide.swift; sourceTree = "<group>"; };
-		F150B4352CC1709700739646 /* ShortcutsGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsGuide.swift; sourceTree = "<group>"; };
-		F150B43E2CC18C1100739646 /* ReleaseNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseNotes.swift; sourceTree = "<group>"; };
-		F174A2FB2A8F7FFA0051DA5B /* WatchHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchHelper.swift; sourceTree = "<group>"; };
-		F174A3002A915E450051DA5B /* WatchServerStatusChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchServerStatusChecker.swift; sourceTree = "<group>"; };
-		F17A16BA2A893DD700F8FF2F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		F17A16BC2A8956DE00F8FF2F /* EditServerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditServerView.swift; sourceTree = "<group>"; };
-		F17AE0EB2CC01E9E00DC7A80 /* FAQView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQView.swift; sourceTree = "<group>"; };
-		F17AE0ED2CC0363F00DC7A80 /* MOTDViewGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOTDViewGenerator.swift; sourceTree = "<group>"; };
-		F17AE0F32CC0504200DC7A80 /* ReviewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewHelper.swift; sourceTree = "<group>"; };
-		F17AE0FB2CC05F9000DC7A80 /* TipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipView.swift; sourceTree = "<group>"; };
-		F1A43C812A8472B20081A24C /* ServerDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerDetails.swift; sourceTree = "<group>"; };
 		F1AE29152CA48577009D0D14 /* ServerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerRow.swift; sourceTree = "<group>"; };
-		F1C010482AAAB9B60017B9A9 /* SwiftyPing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyPing.swift; sourceTree = "<group>"; };
-		F1C9A9AE2A879A4800C058C7 /* watchOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = watchOS.entitlements; sourceTree = "<group>"; };
-		F1C9A9AF2A879FBC00C058C7 /* watchOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = watchOS.plist; sourceTree = "<group>"; };
-		F1CFCD502CABB55B001A9E69 /* CustomExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomExtentions.swift; sourceTree = "<group>"; };
-		F1E671752CA73A86002BDFC0 /* CustomProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressView.swift; sourceTree = "<group>"; };
-		F1EF76BF2CB4204E00EFFB20 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
-		F1EF76C02CB4204E00EFFB20 /* ServerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerRow.swift; sourceTree = "<group>"; };
-		F1EF76C92CB422D400EFFB20 /* ServerDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerDetails.swift; sourceTree = "<group>"; };
 		F1EF76EC2CB7873F00EFFB20 /* Widgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Widgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1EF76ED2CB7873F00EFFB20 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		F1EF76EF2CB7873F00EFFB20 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		F30246C42D65E6F70030F71C /* SiriPhrase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriPhrase.swift; sourceTree = "<group>"; };
-		F30246C82D6661D60030F71C /* PlayerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerList.swift; sourceTree = "<group>"; };
-		F30246D12D667ED50030F71C /* ServerPing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerPing.swift; sourceTree = "<group>"; };
-		F30246D52D66816E0030F71C /* PingGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingGraph.swift; sourceTree = "<group>"; };
-		F30471F52D63E9C00055C007 /* Homescreen Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Homescreen Provider.swift"; sourceTree = "<group>"; };
-		F30471F62D63E9C00055C007 /* Lockscreen Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lockscreen Provider.swift"; sourceTree = "<group>"; };
-		F30471F82D63E9C00055C007 /* Circular Accessory WidgetView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Circular Accessory WidgetView1.swift"; sourceTree = "<group>"; };
-		F30471F92D63E9C00055C007 /* Circular Accessory WidgetView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Circular Accessory WidgetView2.swift"; sourceTree = "<group>"; };
-		F30471FA2D63E9C00055C007 /* Corner Accessory WidgetView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Corner Accessory WidgetView1.swift"; sourceTree = "<group>"; };
-		F30471FB2D63E9C00055C007 /* Inline Accessory Widget View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Inline Accessory Widget View.swift"; sourceTree = "<group>"; };
-		F30471FC2D63E9C00055C007 /* Inline Accessory Widget View 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Inline Accessory Widget View 2.swift"; sourceTree = "<group>"; };
-		F30471FD2D63E9C00055C007 /* Medium Widget View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Medium Widget View.swift"; sourceTree = "<group>"; };
-		F30471FE2D63E9C00055C007 /* Rectangular Accessory WidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rectangular Accessory WidgetView.swift"; sourceTree = "<group>"; };
-		F30471FF2D63E9C00055C007 /* Small Widget View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Small Widget View.swift"; sourceTree = "<group>"; };
-		F30472012D63E9C00055C007 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F30472022D63E9C00055C007 /* Widgets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Widgets.plist; sourceTree = "<group>"; };
-		F30472032D63E9C00055C007 /* Widgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Widgets.entitlements; sourceTree = "<group>"; };
-		F30472042D63E9C00055C007 /* Widgets Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Widgets Bundle.swift"; sourceTree = "<group>"; };
-		F30472052D63E9C00055C007 /* MinecraftServerStatusHSWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinecraftServerStatusHSWidget.swift; sourceTree = "<group>"; };
-		F30472062D63E9C00055C007 /* Minecraft Server Status LSWidget1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Minecraft Server Status LSWidget1.swift"; sourceTree = "<group>"; };
-		F30472072D63E9C00055C007 /* WidgetEntryVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetEntryVM.swift; sourceTree = "<group>"; };
-		F30472222D63E9C20055C007 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F30472232D63E9C20055C007 /* Widgets watchOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Widgets watchOS.plist"; sourceTree = "<group>"; };
-		F30472242D63E9C20055C007 /* Widgets watchOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Widgets watchOS.entitlements"; sourceTree = "<group>"; };
-		F304722A2D63E9CF0055C007 /* RefreshWidgetIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshWidgetIntent.swift; sourceTree = "<group>"; };
-		F304722B2D63E9CF0055C007 /* ServerSelectNoThemeWidgetIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerSelectNoThemeWidgetIntent.swift; sourceTree = "<group>"; };
-		F304722C2D63E9CF0055C007 /* SelectServerIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectServerIntent.swift; sourceTree = "<group>"; };
-		F304723D2D63E9D00055C007 /* ArbitraryServerStatusOnlineCheckIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArbitraryServerStatusOnlineCheckIntent.swift; sourceTree = "<group>"; };
-		F304723E2D63E9D00055C007 /* SavedServerStatusOnlineCheckIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedServerStatusOnlineCheckIntent.swift; sourceTree = "<group>"; };
-		F30472462D63E9D20055C007 /* ServerIntentTypeAppEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerIntentTypeAppEntity.swift; sourceTree = "<group>"; };
-		F30472472D63E9D20055C007 /* ThemeIntentTypeAppEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeIntentTypeAppEntity.swift; sourceTree = "<group>"; };
-		F304724F2D63E9D30055C007 /* SavedServerEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedServerEntity.swift; sourceTree = "<group>"; };
-		F30472502D63E9D30055C007 /* ServerStatusEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerStatusEntity.swift; sourceTree = "<group>"; };
-		F30472582D63FBFC0055C007 /* MinecraftBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MinecraftBold.otf; sourceTree = "<group>"; };
-		F30472592D63FBFC0055C007 /* MinecraftBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MinecraftBoldItalic.otf; sourceTree = "<group>"; };
-		F304725A2D63FBFC0055C007 /* MinecraftItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MinecraftItalic.otf; sourceTree = "<group>"; };
-		F304725B2D63FBFC0055C007 /* MinecraftRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MinecraftRegular.otf; sourceTree = "<group>"; };
 		F31AC0C42E72F64B003C4A84 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 		F31AC0D22E72FE17003C4A84 /* Shared Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Shared Assets.xcassets"; sourceTree = "<group>"; };
 		F31D45A12D6DC62600981B1C /* MC Stats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MC Stats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F31D45B22D6DC67B00981B1C /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		F31D45BA2D6DC6A800981B1C /* macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = macOS.plist; sourceTree = "<group>"; };
 		F325F85D2D805FF300FDF4D9 /* MC Stats StoreKit Synced.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = "MC Stats StoreKit Synced.storekit"; sourceTree = "<group>"; };
 		F325F93C2D80E84300FDF4D9 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		F326DB572D6416E100BCCB69 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
@@ -635,52 +247,417 @@
 		F336614B2E745167008E73C9 /* Supporter.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = Supporter.icon; sourceTree = "<group>"; };
 		F3570D3C2D6E779500BDF069 /* iMessages.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = iMessages.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3570D402D6E779500BDF069 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = Library/Frameworks/Messages.framework; sourceTree = DEVELOPER_DIR; };
-		F3570D532D6E77C000BDF069 /* iMessage Icon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "iMessage Icon.xcassets"; sourceTree = "<group>"; };
-		F3570D542D6E77C000BDF069 /* iMessage.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = iMessage.plist; sourceTree = "<group>"; };
-		F3570D572D6E77C000BDF069 /* Messages VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Messages VC.swift"; sourceTree = "<group>"; };
-		F3570D5D2D6E7D5900BDF069 /* iMessages.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iMessages.entitlements; sourceTree = "<group>"; };
-		F3570D612D6E8C4F00BDF069 /* NavContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavContainer.swift; sourceTree = "<group>"; };
-		F3570D632D6E8CB300BDF069 /* MessagesVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesVM.swift; sourceTree = "<group>"; };
-		F35E1A6C2D6489FD00718CB7 /* GeneralSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSettings.swift; sourceTree = "<group>"; };
-		F35E1A6E2D649C6000718CB7 /* FeatureRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureRow.swift; sourceTree = "<group>"; };
-		F35E1A702D649D1300718CB7 /* SiriGuidePhrase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriGuidePhrase.swift; sourceTree = "<group>"; };
-		F35E1A732D64A4B200718CB7 /* LowPowerMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowPowerMode.swift; sourceTree = "<group>"; };
-		F35E1A762D64D32D00718CB7 /* RefreshWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshWidgets.swift; sourceTree = "<group>"; };
 		F35E1A7D2D6501A500718CB7 /* visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F35E1A932D6501CC00718CB7 /* visionOS Icon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "visionOS Icon.xcassets"; sourceTree = "<group>"; };
-		F35E1A952D6501CC00718CB7 /* visionOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = visionOS.plist; sourceTree = "<group>"; };
-		F35E1A9D2D65209500718CB7 /* PlayerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCard.swift; sourceTree = "<group>"; };
-		F35E1ACB2D652C9000718CB7 /* visionOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = visionOS.entitlements; sourceTree = "<group>"; };
 		F360A8AE2D6C6BC3008E515E /* MCStatsDataLayer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = MCStatsDataLayer; sourceTree = "<group>"; };
-		F37883692D6AF86A00D38522 /* DebugSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugSettings.swift; sourceTree = "<group>"; };
-		F396F7FB2D81BDC600FCB648 /* TipCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCard.swift; sourceTree = "<group>"; };
-		F396F8012D81BE6A00FCB648 /* TipVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipVM.swift; sourceTree = "<group>"; };
-		F39EAF722D6C82B900072794 /* PageDestinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageDestinations.swift; sourceTree = "<group>"; };
-		F39EAF772D6C831000072794 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		F3AE99DC2E2F884A00D70249 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		F3AE99DD2E2F884A00D70249 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		F3B0740D2D76697000F24939 /* ExpectedResultBatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpectedResultBatch.swift; sourceTree = "<group>"; };
-		F3B074122D766AC200F24939 /* EditServerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditServerView.swift; sourceTree = "<group>"; };
-		F3B074172D76E2E100F24939 /* PlayerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCard.swift; sourceTree = "<group>"; };
-		F3B074202D76FF5500F24939 /* ServerDetailsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerDetailsHelper.swift; sourceTree = "<group>"; };
 		F3B074282D77050900F24939 /* EditServerViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditServerViewHelper.swift; sourceTree = "<group>"; };
-		F3BFB14C2D68055A00E16468 /* MOTDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOTDView.swift; sourceTree = "<group>"; };
-		F3C1E43A2D6C949900950F3D /* AppContainerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainerHelper.swift; sourceTree = "<group>"; };
 		F3C879BD2D65720500840745 /* tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tvOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3C879CD2D65722200840745 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F3C879D52D65724C00840745 /* tvOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = tvOS.entitlements; sourceTree = "<group>"; };
-		F3C879D62D65726200840745 /* tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = tvOS.plist; sourceTree = "<group>"; };
-		F3C87A012D6574D200840745 /* FAQRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQRow.swift; sourceTree = "<group>"; };
-		F3C87A052D6574DD00840745 /* FAQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQ.swift; sourceTree = "<group>"; };
-		F3C87A0E2D657A1500840745 /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
 		F3C8E5492D7E24E900644E47 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
-		F3DD08692D75226A00A67D4B /* ServerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerList.swift; sourceTree = "<group>"; };
-		F3EFC1712D70877F00EE988A /* EditServerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditServerView.swift; sourceTree = "<group>"; };
-		F3EFC1732D709C5700EE988A /* PingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingError.swift; sourceTree = "<group>"; };
 		F3F2E6412D8258AF0078EA89 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS18.4.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
 		F3F2E6442D8258C90078EA89 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS11.4.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
-		F3FCD2002E5282D3003BDE5E /* ValueStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		F383A8892ECF323300350A0F /* Exceptions for "Helpers" folder in "watchOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				LowPowerMode.swift,
+				ValueStore.swift,
+				WatchHelper.swift,
+			);
+			target = F11F634A2A81E50E00D47187 /* watchOS */;
+		};
+		F383A88D2ECF323300350A0F /* Exceptions for "Helpers" folder in "Intents" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				CustomProgressView.swift,
+				LowPowerMode.swift,
+				RefreshWidgets.swift,
+				ValueStore.swift,
+				WatchHelper.swift,
+			);
+			target = F1406BA82AA391B800815BE8 /* Intents */;
+		};
+		F383A88E2ECF323300350A0F /* Exceptions for "Helpers" folder in "Widgets" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				LowPowerMode.swift,
+				RefreshWidgets.swift,
+				ValueStore.swift,
+				WatchHelper.swift,
+			);
+			target = F1EF76EB2CB7873F00EFFB20 /* Widgets */;
+		};
+		F383A88F2ECF323300350A0F /* Exceptions for "Helpers" folder in "Watch Widgets" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				CustomExtentions.swift,
+				CustomProgressView.swift,
+				MOTDViewGenerator.swift,
+				ReviewHelper.swift,
+			);
+			target = F13095242CBC997200C4C7BA /* Watch Widgets */;
+		};
+		F383A8D02ECF323C00350A0F /* Exceptions for "Settings" folder in "watchOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AppSettingsDebug.swift,
+			);
+			target = F11F634A2A81E50E00D47187 /* watchOS */;
+		};
+		F383A8FF2ECF323F00350A0F /* Exceptions for "Server Details" folder in "watchOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				MOTDView.swift,
+				PlayerList.swift,
+				ServerDetailsHelper.swift,
+			);
+			target = F11F634A2A81E50E00D47187 /* watchOS */;
+		};
+		F383A9052ECF324800350A0F /* Exceptions for "visionOS" folder in "visionOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"visionOS Icon.xcassets",
+			);
+			target = F35E1A7C2D6501A500718CB7 /* visionOS */;
+		};
+		F383A90B2ECF324B00350A0F /* Exceptions for "tvOS" folder in "tvOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+			);
+			target = F3C879BC2D65720500840745 /* tvOS */;
+		};
+		F383A9112ECF325000350A0F /* Exceptions for "macOS" folder in "macOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				EditServerView.swift,
+			);
+			target = F31D45A02D6DC62600981B1C /* macOS */;
+		};
+		F383A9172ECF325400350A0F /* Exceptions for "Widgets watchOS" folder in "Watch Widgets" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+			);
+			target = F13095242CBC997200C4C7BA /* Watch Widgets */;
+		};
+		F383A9262ECF326A00350A0F /* Exceptions for "iMessage" folder in "iMessages" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				iMessage.plist,
+			);
+			target = F3570D3B2D6E779500BDF069 /* iMessages */;
+		};
+		F383A9742ECF327700350A0F /* Exceptions for "Intents" folder in "iOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Entities/IntentErrors.swift,
+				Entities/Shortcuts/SavedServerEntity.swift,
+				Entities/Shortcuts/ServerStatusEntity.swift,
+				Intents/Shortcuts/ArbitraryServerStatusOnlineCheckIntent.swift,
+				Intents/Shortcuts/SavedServerStatusOnlineCheckIntent.swift,
+				Providers/ShortcutsProvider.swift,
+			);
+			target = F13E5FF82A4BD614005BE9B2 /* iOS */;
+		};
+		F383A9752ECF327700350A0F /* Exceptions for "Intents" folder in "watchOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Entities/IntentErrors.swift,
+				Entities/Shortcuts/SavedServerEntity.swift,
+				Entities/Shortcuts/ServerStatusEntity.swift,
+				Intents/Shortcuts/ArbitraryServerStatusOnlineCheckIntent.swift,
+				Intents/Shortcuts/SavedServerStatusOnlineCheckIntent.swift,
+				Providers/ShortcutsProvider.swift,
+			);
+			target = F11F634A2A81E50E00D47187 /* watchOS */;
+		};
+		F383A9762ECF327700350A0F /* Exceptions for "Intents" folder in "macOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Entities/IntentErrors.swift,
+				Entities/Shortcuts/SavedServerEntity.swift,
+				Entities/Shortcuts/ServerStatusEntity.swift,
+				Intents/Shortcuts/SavedServerStatusOnlineCheckIntent.swift,
+				Providers/ShortcutsProvider.swift,
+			);
+			target = F31D45A02D6DC62600981B1C /* macOS */;
+		};
+		F383A9772ECF327700350A0F /* Exceptions for "Intents" folder in "tvOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Entities/IntentErrors.swift,
+				Entities/Shortcuts/SavedServerEntity.swift,
+				Entities/Shortcuts/ServerStatusEntity.swift,
+				Intents/Shortcuts/SavedServerStatusOnlineCheckIntent.swift,
+				Providers/ShortcutsProvider.swift,
+			);
+			target = F3C879BC2D65720500840745 /* tvOS */;
+		};
+		F383A9782ECF327700350A0F /* Exceptions for "Intents" folder in "visionOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Entities/IntentErrors.swift,
+				Entities/Shortcuts/SavedServerEntity.swift,
+				Entities/Shortcuts/ServerStatusEntity.swift,
+				Intents/Shortcuts/SavedServerStatusOnlineCheckIntent.swift,
+				Providers/ShortcutsProvider.swift,
+			);
+			target = F35E1A7C2D6501A500718CB7 /* visionOS */;
+		};
+		F383A9792ECF327700350A0F /* Exceptions for "Intents" folder in "Intents" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Intents.plist,
+			);
+			target = F1406BA82AA391B800815BE8 /* Intents */;
+		};
+		F383A97A2ECF327700350A0F /* Exceptions for "Intents" folder in "Widgets" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Entities/Widget/ServerIntentTypeAppEntity.swift,
+				Entities/Widget/ThemeIntentTypeAppEntity.swift,
+				Intents/Widget/RefreshWidgetIntent.swift,
+				Intents/Widget/SelectServerIntent.swift,
+				Intents/Widget/ServerSelectNoThemeWidgetIntent.swift,
+			);
+			target = F1EF76EB2CB7873F00EFFB20 /* Widgets */;
+		};
+		F383A97B2ECF327700350A0F /* Exceptions for "Intents" folder in "Watch Widgets" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Entities/Widget/ServerIntentTypeAppEntity.swift,
+				Entities/Widget/ThemeIntentTypeAppEntity.swift,
+				Intents/Widget/RefreshWidgetIntent.swift,
+				Intents/Widget/SelectServerIntent.swift,
+				Intents/Widget/ServerSelectNoThemeWidgetIntent.swift,
+			);
+			target = F13095242CBC997200C4C7BA /* Watch Widgets */;
+		};
+		F383A97C2ECF327700350A0F /* Exceptions for "Intents" folder in "iMessages" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Entities/IntentErrors.swift,
+				Entities/Shortcuts/SavedServerEntity.swift,
+				Entities/Shortcuts/ServerStatusEntity.swift,
+				Intents/Shortcuts/SavedServerStatusOnlineCheckIntent.swift,
+				Providers/ShortcutsProvider.swift,
+			);
+			target = F3570D3B2D6E779500BDF069 /* iMessages */;
+		};
+		F383A9D92ECF329400350A0F /* Exceptions for "Widgets" folder in "Widgets" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Widgets.plist,
+			);
+			target = F1EF76EB2CB7873F00EFFB20 /* Widgets */;
+		};
+		F383A9DA2ECF329400350A0F /* Exceptions for "Widgets" folder in "Watch Widgets" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+				MinecraftServerStatusHSWidget.swift,
+				"Timeline Providers/Homescreen Provider.swift",
+				"Views/Medium Widget View.swift",
+				"Views/Small Widget View.swift",
+				Widgets.plist,
+			);
+			target = F13095242CBC997200C4C7BA /* Watch Widgets */;
+		};
+		F383A9FB2ECF329D00350A0F /* Exceptions for "watchOS" folder in "watchOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				watchOS.plist,
+			);
+			target = F11F634A2A81E50E00D47187 /* watchOS */;
+		};
+		F383A9FC2ECF329D00350A0F /* Exceptions for "watchOS" folder in "Intents" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Helpers/ConnectivityProvider.swift,
+				Helpers/ExpectedResultBatch.swift,
+				Helpers/WatchServerStatusChecker.swift,
+			);
+			target = F1406BA82AA391B800815BE8 /* Intents */;
+		};
+		F383A9FD2ECF329D00350A0F /* Exceptions for "watchOS" folder in "Watch Widgets" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Helpers/ConnectivityProvider.swift,
+				Helpers/ExpectedResultBatch.swift,
+				Helpers/WatchServerStatusChecker.swift,
+			);
+			target = F13095242CBC997200C4C7BA /* Watch Widgets */;
+		};
+		F383AA212ECF32C300350A0F /* Exceptions for "Nav" folder in "watchOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AppContainer.swift,
+			);
+			target = F11F634A2A81E50E00D47187 /* watchOS */;
+		};
+		F383AA252ECF32CB00350A0F /* Exceptions for "Helpers" folder in "tvOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ValueStore.swift,
+				WatchHelper.swift,
+			);
+			target = F3C879BC2D65720500840745 /* tvOS */;
+		};
+		F383AA262ECF32CB00350A0F /* Exceptions for "Helpers" folder in "visionOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ValueStore.swift,
+				WatchHelper.swift,
+			);
+			target = F35E1A7C2D6501A500718CB7 /* visionOS */;
+		};
+		F383AA3E2ECF33FC00350A0F /* Exceptions for "Helpers" folder in "macOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				WatchHelper.swift,
+			);
+			target = F31D45A02D6DC62600981B1C /* macOS */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		F383A8232ECF322E00350A0F /* Tipping */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Tipping;
+			sourceTree = "<group>";
+		};
+		F383A8362ECF322E00350A0F /* Release Notes */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Release Notes";
+			sourceTree = "<group>";
+		};
+		F383A84D2ECF323300350A0F /* Helpers */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F383A8892ECF323300350A0F /* Exceptions for "Helpers" folder in "watchOS" target */,
+				F383AA3E2ECF33FC00350A0F /* Exceptions for "Helpers" folder in "macOS" target */,
+				F383AA252ECF32CB00350A0F /* Exceptions for "Helpers" folder in "tvOS" target */,
+				F383AA262ECF32CB00350A0F /* Exceptions for "Helpers" folder in "visionOS" target */,
+				F383A88D2ECF323300350A0F /* Exceptions for "Helpers" folder in "Intents" target */,
+				F383A88E2ECF323300350A0F /* Exceptions for "Helpers" folder in "Widgets" target */,
+				F383A88F2ECF323300350A0F /* Exceptions for "Helpers" folder in "Watch Widgets" target */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F383A89C2ECF323C00350A0F /* Settings */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F383A8D02ECF323C00350A0F /* Exceptions for "Settings" folder in "watchOS" target */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F383A8D82ECF323F00350A0F /* Server Details */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F383A8FF2ECF323F00350A0F /* Exceptions for "Server Details" folder in "watchOS" target */,
+			);
+			path = "Server Details";
+			sourceTree = "<group>";
+		};
+		F383A9032ECF324800350A0F /* visionOS */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F383A9052ECF324800350A0F /* Exceptions for "visionOS" folder in "visionOS" target */,
+			);
+			path = visionOS;
+			sourceTree = "<group>";
+		};
+		F383A9092ECF324B00350A0F /* tvOS */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F383A90B2ECF324B00350A0F /* Exceptions for "tvOS" folder in "tvOS" target */,
+			);
+			path = tvOS;
+			sourceTree = "<group>";
+		};
+		F383A90F2ECF325000350A0F /* macOS */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F383A9112ECF325000350A0F /* Exceptions for "macOS" folder in "macOS" target */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		F383A9152ECF325400350A0F /* Widgets watchOS */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F383A9172ECF325400350A0F /* Exceptions for "Widgets watchOS" folder in "Watch Widgets" target */,
+			);
+			path = "Widgets watchOS";
+			sourceTree = "<group>";
+		};
+		F383A91F2ECF326A00350A0F /* iMessage */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F383A9262ECF326A00350A0F /* Exceptions for "iMessage" folder in "iMessages" target */,
+			);
+			path = iMessage;
+			sourceTree = "<group>";
+		};
+		F383A93C2ECF327700350A0F /* Intents */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F383A9742ECF327700350A0F /* Exceptions for "Intents" folder in "iOS" target */,
+				F383A9752ECF327700350A0F /* Exceptions for "Intents" folder in "watchOS" target */,
+				F383A9762ECF327700350A0F /* Exceptions for "Intents" folder in "macOS" target */,
+				F383A9772ECF327700350A0F /* Exceptions for "Intents" folder in "tvOS" target */,
+				F383A9782ECF327700350A0F /* Exceptions for "Intents" folder in "visionOS" target */,
+				F383A9792ECF327700350A0F /* Exceptions for "Intents" folder in "Intents" target */,
+				F383A97A2ECF327700350A0F /* Exceptions for "Intents" folder in "Widgets" target */,
+				F383A97B2ECF327700350A0F /* Exceptions for "Intents" folder in "Watch Widgets" target */,
+				F383A97C2ECF327700350A0F /* Exceptions for "Intents" folder in "iMessages" target */,
+			);
+			path = Intents;
+			sourceTree = "<group>";
+		};
+		F383A9B82ECF329400350A0F /* Widgets */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F383A9D92ECF329400350A0F /* Exceptions for "Widgets" folder in "Widgets" target */,
+				F383A9DA2ECF329400350A0F /* Exceptions for "Widgets" folder in "Watch Widgets" target */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		F383A9E92ECF329D00350A0F /* watchOS */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F383A9FB2ECF329D00350A0F /* Exceptions for "watchOS" folder in "watchOS" target */,
+				F383A9FC2ECF329D00350A0F /* Exceptions for "watchOS" folder in "Intents" target */,
+				F383A9FD2ECF329D00350A0F /* Exceptions for "watchOS" folder in "Watch Widgets" target */,
+			);
+			path = watchOS;
+			sourceTree = "<group>";
+		};
+		F383AA002ECF32BF00350A0F /* Networking */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F383AA0E2ECF32C300350A0F /* Nav */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F383AA212ECF32C300350A0F /* Exceptions for "Nav" folder in "watchOS" target */,
+			);
+			path = Nav;
+			sourceTree = "<group>";
+		};
+		F383AA2B2ECF32E500350A0F /* Fonts */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F11F63482A81E50E00D47187 /* Frameworks */ = {
@@ -772,14 +749,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F10C42152AAD55A6000107D6 /* Providers */ = {
-			isa = PBXGroup;
-			children = (
-				F10C42162AAD55BF000107D6 /* ShortcutsProvider.swift */,
-			);
-			path = Providers;
-			sourceTree = "<group>";
-		};
 		F10C421B2AAE40BC000107D6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -793,36 +762,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F11F634C2A81E50E00D47187 /* watchOS */ = {
-			isa = PBXGroup;
-			children = (
-				F1EF76BF2CB4204E00EFFB20 /* AppContainer.swift */,
-				F1C9A9AF2A879FBC00C058C7 /* watchOS.plist */,
-				F1C9A9AE2A879A4800C058C7 /* watchOS.entitlements */,
-				F11F63512A81E51000D47187 /* Assets.xcassets */,
-				F1EF76C02CB4204E00EFFB20 /* ServerRow.swift */,
-				F39EAF772D6C831000072794 /* SettingsView.swift */,
-				F3B074122D766AC200F24939 /* EditServerView.swift */,
-				F3B074142D76E20800F24939 /* Server Details */,
-				F1EF76C42CB4205200EFFB20 /* Helpers */,
-			);
-			path = watchOS;
-			sourceTree = "<group>";
-		};
 		F13E5FF02A4BD614005BE9B2 = {
 			isa = PBXGroup;
 			children = (
 				F3AE99DC2E2F884A00D70249 /* LICENSE */,
 				F3AE99DD2E2F884A00D70249 /* README.md */,
 				F13E5FFB2A4BD614005BE9B2 /* MC Stats */,
-				F11F634C2A81E50E00D47187 /* watchOS */,
-				F31D45B42D6DC67B00981B1C /* macOS */,
-				F35E1A972D6501CC00718CB7 /* visionOS */,
-				F3C879D02D65722200840745 /* tvOS */,
-				F30472082D63E9C00055C007 /* Widgets */,
-				F30472262D63E9C20055C007 /* Widgets watchOS */,
-				F3570D582D6E77C000BDF069 /* iMessage */,
-				F1406BAA2AA391B800815BE8 /* Intents */,
+				F383A9E92ECF329D00350A0F /* watchOS */,
+				F383A90F2ECF325000350A0F /* macOS */,
+				F383A9032ECF324800350A0F /* visionOS */,
+				F383A9092ECF324B00350A0F /* tvOS */,
+				F383A9B82ECF329400350A0F /* Widgets */,
+				F383A9152ECF325400350A0F /* Widgets watchOS */,
+				F383A91F2ECF326A00350A0F /* iMessage */,
+				F383A93C2ECF327700350A0F /* Intents */,
 				F360A8AE2D6C6BC3008E515E /* MCStatsDataLayer */,
 				F13E5FFA2A4BD614005BE9B2 /* Products */,
 				F10C421B2AAE40BC000107D6 /* Frameworks */,
@@ -849,7 +802,7 @@
 			isa = PBXGroup;
 			children = (
 				F13E5FFC2A4BD614005BE9B2 /* MCStats.swift */,
-				F39F35272E8B2AB700D30939 /* Nav */,
+				F383AA0E2ECF32C300350A0F /* Nav */,
 				F326DB572D6416E100BCCB69 /* Localizable.xcstrings */,
 				F3C8E5492D7E24E900644E47 /* InfoPlist.xcstrings */,
 				F13E60022A4BD615005BE9B2 /* Assets.xcassets */,
@@ -858,52 +811,18 @@
 				F336614B2E745167008E73C9 /* Supporter.icon */,
 				F336613F2E745162008E73C9 /* Enthusiast.icon */,
 				F33661452E745164008E73C9 /* Legend.icon */,
-				F3FCD2002E5282D3003BDE5E /* ValueStore.swift */,
-				F3DD08852D75253000A67D4B /* Release Notes */,
-				F396F8072D81BF0E00FCB648 /* Tipping */,
-				F1E671752CA73A86002BDFC0 /* CustomProgressView.swift */,
+				F383A8362ECF322E00350A0F /* Release Notes */,
+				F383A8232ECF322E00350A0F /* Tipping */,
 				F17A16BC2A8956DE00F8FF2F /* EditServerView.swift */,
 				F3B074282D77050900F24939 /* EditServerViewHelper.swift */,
 				F1AE29152CA48577009D0D14 /* ServerRow.swift */,
-				F30246CC2D667EBF0030F71C /* Server Details */,
-				F35E1A6B2D6489F900718CB7 /* Settings */,
+				F383A8D82ECF323F00350A0F /* Server Details */,
+				F383A89C2ECF323C00350A0F /* Settings */,
 				F1A43C7E2A8472420081A24C /* Other */,
-				F1BF5D9D2A8025EE00966D56 /* Helpers */,
-				F1BF5D712A75F19F00966D56 /* Networking */,
+				F383A84D2ECF323300350A0F /* Helpers */,
+				F383AA002ECF32BF00350A0F /* Networking */,
 			);
 			path = "MC Stats";
-			sourceTree = "<group>";
-		};
-		F1406BA02AA2CC2F00815BE8 /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-				F30472482D63E9D20055C007 /* Widget */,
-				F30472512D63E9D30055C007 /* Shortcuts */,
-				F1406BA32AA2DD2C00815BE8 /* IntentErrors.swift */,
-			);
-			path = Entities;
-			sourceTree = "<group>";
-		};
-		F1406BAA2AA391B800815BE8 /* Intents */ = {
-			isa = PBXGroup;
-			children = (
-				F1406BAB2AA391B800815BE8 /* Intents.swift */,
-				F1406BAF2AA391B800815BE8 /* Intents.plist */,
-				F1406BB72AA391F400815BE8 /* Intents.entitlements */,
-				F10C42152AAD55A6000107D6 /* Providers */,
-				F149FEC32AA9696F00A269A3 /* Intents */,
-				F1406BA02AA2CC2F00815BE8 /* Entities */,
-			);
-			path = Intents;
-			sourceTree = "<group>";
-		};
-		F149FEC32AA9696F00A269A3 /* Intents */ = {
-			isa = PBXGroup;
-			children = (
-				F304722D2D63E9CF0055C007 /* Widget */,
-				F304723F2D63E9D00055C007 /* Shortcuts */,
-			);
-			path = Intents;
 			sourceTree = "<group>";
 		};
 		F1A43C7E2A8472420081A24C /* Other */ = {
@@ -912,286 +831,9 @@
 				F13E60082A4BD615005BE9B2 /* iOS.plist */,
 				F13E60042A4BD615005BE9B2 /* iOS.entitlements */,
 				F325F85D2D805FF300FDF4D9 /* MC Stats StoreKit Synced.storekit */,
-				F304725C2D63FBFC0055C007 /* Fonts */,
+				F383AA2B2ECF32E500350A0F /* Fonts */,
 			);
 			path = Other;
-			sourceTree = "<group>";
-		};
-		F1BF5D712A75F19F00966D56 /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-				F1C010482AAAB9B60017B9A9 /* SwiftyPing.swift */,
-				F3EFC1732D709C5700EE988A /* PingError.swift */,
-			);
-			path = Networking;
-			sourceTree = "<group>";
-		};
-		F1BF5D9D2A8025EE00966D56 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				F35E1A732D64A4B200718CB7 /* LowPowerMode.swift */,
-				F35E1A762D64D32D00718CB7 /* RefreshWidgets.swift */,
-				F17AE0F32CC0504200DC7A80 /* ReviewHelper.swift */,
-				F17AE0ED2CC0363F00DC7A80 /* MOTDViewGenerator.swift */,
-				F130954E2CBC9D5600C4C7BA /* ConfigHelper.swift */,
-				F1CFCD502CABB55B001A9E69 /* CustomExtentions.swift */,
-				F174A2FB2A8F7FFA0051DA5B /* WatchHelper.swift */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
-		F1EF76C42CB4205200EFFB20 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				F10E94B02A8C61B60039DD2B /* ConnectivityProvider.swift */,
-				F174A3002A915E450051DA5B /* WatchServerStatusChecker.swift */,
-				F3B0740D2D76697000F24939 /* ExpectedResultBatch.swift */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
-		F30246CC2D667EBF0030F71C /* Server Details */ = {
-			isa = PBXGroup;
-			children = (
-				F1A43C812A8472B20081A24C /* ServerDetails.swift */,
-				F3B074202D76FF5500F24939 /* ServerDetailsHelper.swift */,
-				F3BFB14C2D68055A00E16468 /* MOTDView.swift */,
-				F30246D12D667ED50030F71C /* ServerPing.swift */,
-				F30246D52D66816E0030F71C /* PingGraph.swift */,
-				F30246C82D6661D60030F71C /* PlayerList.swift */,
-				F35E1A9D2D65209500718CB7 /* PlayerCard.swift */,
-			);
-			path = "Server Details";
-			sourceTree = "<group>";
-		};
-		F30471F72D63E9C00055C007 /* Timeline Providers */ = {
-			isa = PBXGroup;
-			children = (
-				F30471F52D63E9C00055C007 /* Homescreen Provider.swift */,
-				F30471F62D63E9C00055C007 /* Lockscreen Provider.swift */,
-			);
-			path = "Timeline Providers";
-			sourceTree = "<group>";
-		};
-		F30472002D63E9C00055C007 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				F39296302D6CFFE90021E2ED /* Lock Screen */,
-				F30471FD2D63E9C00055C007 /* Medium Widget View.swift */,
-				F30471FF2D63E9C00055C007 /* Small Widget View.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		F30472082D63E9C00055C007 /* Widgets */ = {
-			isa = PBXGroup;
-			children = (
-				F30472042D63E9C00055C007 /* Widgets Bundle.swift */,
-				F30472022D63E9C00055C007 /* Widgets.plist */,
-				F30472032D63E9C00055C007 /* Widgets.entitlements */,
-				F30472012D63E9C00055C007 /* Assets.xcassets */,
-				F30472052D63E9C00055C007 /* MinecraftServerStatusHSWidget.swift */,
-				F30472072D63E9C00055C007 /* WidgetEntryVM.swift */,
-				F30471F72D63E9C00055C007 /* Timeline Providers */,
-				F30472002D63E9C00055C007 /* Views */,
-			);
-			path = Widgets;
-			sourceTree = "<group>";
-		};
-		F30472262D63E9C20055C007 /* Widgets watchOS */ = {
-			isa = PBXGroup;
-			children = (
-				F30472232D63E9C20055C007 /* Widgets watchOS.plist */,
-				F30472242D63E9C20055C007 /* Widgets watchOS.entitlements */,
-				F30472222D63E9C20055C007 /* Assets.xcassets */,
-			);
-			path = "Widgets watchOS";
-			sourceTree = "<group>";
-		};
-		F304722D2D63E9CF0055C007 /* Widget */ = {
-			isa = PBXGroup;
-			children = (
-				F304722A2D63E9CF0055C007 /* RefreshWidgetIntent.swift */,
-				F304722B2D63E9CF0055C007 /* ServerSelectNoThemeWidgetIntent.swift */,
-				F304722C2D63E9CF0055C007 /* SelectServerIntent.swift */,
-			);
-			path = Widget;
-			sourceTree = "<group>";
-		};
-		F304723F2D63E9D00055C007 /* Shortcuts */ = {
-			isa = PBXGroup;
-			children = (
-				F304723D2D63E9D00055C007 /* ArbitraryServerStatusOnlineCheckIntent.swift */,
-				F304723E2D63E9D00055C007 /* SavedServerStatusOnlineCheckIntent.swift */,
-			);
-			path = Shortcuts;
-			sourceTree = "<group>";
-		};
-		F30472482D63E9D20055C007 /* Widget */ = {
-			isa = PBXGroup;
-			children = (
-				F30472462D63E9D20055C007 /* ServerIntentTypeAppEntity.swift */,
-				F30472472D63E9D20055C007 /* ThemeIntentTypeAppEntity.swift */,
-			);
-			path = Widget;
-			sourceTree = "<group>";
-		};
-		F30472512D63E9D30055C007 /* Shortcuts */ = {
-			isa = PBXGroup;
-			children = (
-				F304724F2D63E9D30055C007 /* SavedServerEntity.swift */,
-				F30472502D63E9D30055C007 /* ServerStatusEntity.swift */,
-			);
-			path = Shortcuts;
-			sourceTree = "<group>";
-		};
-		F304725C2D63FBFC0055C007 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				F30472582D63FBFC0055C007 /* MinecraftBold.otf */,
-				F30472592D63FBFC0055C007 /* MinecraftBoldItalic.otf */,
-				F304725A2D63FBFC0055C007 /* MinecraftItalic.otf */,
-				F304725B2D63FBFC0055C007 /* MinecraftRegular.otf */,
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
-		F31D45B42D6DC67B00981B1C /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				F31D45BA2D6DC6A800981B1C /* macOS.plist */,
-				F31D45B22D6DC67B00981B1C /* macOS.entitlements */,
-				F3EFC1712D70877F00EE988A /* EditServerView.swift */,
-			);
-			path = macOS;
-			sourceTree = "<group>";
-		};
-		F3393E932D805BD000E71438 /* Inline */ = {
-			isa = PBXGroup;
-			children = (
-				F30471FB2D63E9C00055C007 /* Inline Accessory Widget View.swift */,
-				F30471FC2D63E9C00055C007 /* Inline Accessory Widget View 2.swift */,
-			);
-			path = Inline;
-			sourceTree = "<group>";
-		};
-		F3570D582D6E77C000BDF069 /* iMessage */ = {
-			isa = PBXGroup;
-			children = (
-				F3570D572D6E77C000BDF069 /* Messages VC.swift */,
-				F3570D612D6E8C4F00BDF069 /* NavContainer.swift */,
-				F3570D542D6E77C000BDF069 /* iMessage.plist */,
-				F3570D5D2D6E7D5900BDF069 /* iMessages.entitlements */,
-				F3570D532D6E77C000BDF069 /* iMessage Icon.xcassets */,
-				F3DD08692D75226A00A67D4B /* ServerList.swift */,
-				F3570D632D6E8CB300BDF069 /* MessagesVM.swift */,
-			);
-			path = iMessage;
-			sourceTree = "<group>";
-		};
-		F35E1A6B2D6489F900718CB7 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				F17A16BA2A893DD700F8FF2F /* SettingsView.swift */,
-				F35E1A6C2D6489FD00718CB7 /* GeneralSettings.swift */,
-				F150B4352CC1709700739646 /* ShortcutsGuide.swift */,
-				F37883692D6AF86A00D38522 /* DebugSettings.swift */,
-				F35E1A722D649D1700718CB7 /* Siri */,
-				F3C87A002D6574CA00840745 /* FAQ */,
-			);
-			path = Settings;
-			sourceTree = "<group>";
-		};
-		F35E1A722D649D1700718CB7 /* Siri */ = {
-			isa = PBXGroup;
-			children = (
-				F150B4332CC15F6A00739646 /* SiriGuide.swift */,
-				F35E1A702D649D1300718CB7 /* SiriGuidePhrase.swift */,
-				F30246C42D65E6F70030F71C /* SiriPhrase.swift */,
-			);
-			path = Siri;
-			sourceTree = "<group>";
-		};
-		F35E1A972D6501CC00718CB7 /* visionOS */ = {
-			isa = PBXGroup;
-			children = (
-				F35E1A952D6501CC00718CB7 /* visionOS.plist */,
-				F35E1ACB2D652C9000718CB7 /* visionOS.entitlements */,
-				F35E1A932D6501CC00718CB7 /* visionOS Icon.xcassets */,
-			);
-			path = visionOS;
-			sourceTree = "<group>";
-		};
-		F39296302D6CFFE90021E2ED /* Lock Screen */ = {
-			isa = PBXGroup;
-			children = (
-				F3393E932D805BD000E71438 /* Inline */,
-				F30472062D63E9C00055C007 /* Minecraft Server Status LSWidget1.swift */,
-				F30471F82D63E9C00055C007 /* Circular Accessory WidgetView1.swift */,
-				F30471F92D63E9C00055C007 /* Circular Accessory WidgetView2.swift */,
-				F30471FA2D63E9C00055C007 /* Corner Accessory WidgetView1.swift */,
-				F30471FE2D63E9C00055C007 /* Rectangular Accessory WidgetView.swift */,
-			);
-			path = "Lock Screen";
-			sourceTree = "<group>";
-		};
-		F396F8072D81BF0E00FCB648 /* Tipping */ = {
-			isa = PBXGroup;
-			children = (
-				F17AE0FB2CC05F9000DC7A80 /* TipView.swift */,
-				F396F7FB2D81BDC600FCB648 /* TipCard.swift */,
-				F396F8012D81BE6A00FCB648 /* TipVM.swift */,
-			);
-			path = Tipping;
-			sourceTree = "<group>";
-		};
-		F39F35272E8B2AB700D30939 /* Nav */ = {
-			isa = PBXGroup;
-			children = (
-				F13E60002A4BD614005BE9B2 /* AppContainer.swift */,
-				F3C1E43A2D6C949900950F3D /* AppContainerHelper.swift */,
-				F39EAF722D6C82B900072794 /* PageDestinations.swift */,
-			);
-			path = Nav;
-			sourceTree = "<group>";
-		};
-		F3B074142D76E20800F24939 /* Server Details */ = {
-			isa = PBXGroup;
-			children = (
-				F1EF76C92CB422D400EFFB20 /* ServerDetails.swift */,
-				F3B074172D76E2E100F24939 /* PlayerCard.swift */,
-			);
-			path = "Server Details";
-			sourceTree = "<group>";
-		};
-		F3C879D02D65722200840745 /* tvOS */ = {
-			isa = PBXGroup;
-			children = (
-				F3C879D62D65726200840745 /* tvOS.plist */,
-				F3C879D52D65724C00840745 /* tvOS.entitlements */,
-				F3C879CD2D65722200840745 /* Assets.xcassets */,
-			);
-			path = tvOS;
-			sourceTree = "<group>";
-		};
-		F3C87A002D6574CA00840745 /* FAQ */ = {
-			isa = PBXGroup;
-			children = (
-				F17AE0EB2CC01E9E00DC7A80 /* FAQView.swift */,
-				F3C87A012D6574D200840745 /* FAQRow.swift */,
-				F3C87A052D6574DD00840745 /* FAQ.swift */,
-			);
-			path = FAQ;
-			sourceTree = "<group>";
-		};
-		F3DD08852D75253000A67D4B /* Release Notes */ = {
-			isa = PBXGroup;
-			children = (
-				F150B43E2CC18C1100739646 /* ReleaseNotes.swift */,
-				F35E1A6E2D649C6000718CB7 /* FeatureRow.swift */,
-				F3C87A0E2D657A1500840745 /* Feature.swift */,
-			);
-			path = "Release Notes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1211,6 +853,11 @@
 			dependencies = (
 				F1EF76D02CB4496F00EFFB20 /* PBXTargetDependency */,
 				F130952F2CBC997300C4C7BA /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F383A84D2ECF323300350A0F /* Helpers */,
+				F383A9E92ECF329D00350A0F /* watchOS */,
+				F383AA0E2ECF32C300350A0F /* Nav */,
 			);
 			name = watchOS;
 			packageProductDependencies = (
@@ -1232,6 +879,9 @@
 				F13095232CBC997200C4C7BA /* Resources */,
 			);
 			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				F383A9B82ECF329400350A0F /* Widgets */,
 			);
 			name = "Watch Widgets";
 			packageProductDependencies = (
@@ -1261,6 +911,16 @@
 				F1EF76FE2CB7874000EFFB20 /* PBXTargetDependency */,
 				F3D677672DD7E81700721DE8 /* PBXTargetDependency */,
 			);
+			fileSystemSynchronizedGroups = (
+				F383A8232ECF322E00350A0F /* Tipping */,
+				F383A8362ECF322E00350A0F /* Release Notes */,
+				F383A84D2ECF323300350A0F /* Helpers */,
+				F383A89C2ECF323C00350A0F /* Settings */,
+				F383A8D82ECF323F00350A0F /* Server Details */,
+				F383AA002ECF32BF00350A0F /* Networking */,
+				F383AA0E2ECF32C300350A0F /* Nav */,
+				F383AA2B2ECF32E500350A0F /* Fonts */,
+			);
 			name = iOS;
 			packageProductDependencies = (
 				F1612CC72CACC37300E602DC /* Nuke */,
@@ -1283,6 +943,10 @@
 			);
 			buildRules = (
 			);
+			fileSystemSynchronizedGroups = (
+				F383A84D2ECF323300350A0F /* Helpers */,
+				F383A93C2ECF327700350A0F /* Intents */,
+			);
 			name = Intents;
 			packageProductDependencies = (
 				F3C923632D6C6CE7004D31A9 /* MCStatsDataLayer */,
@@ -1301,6 +965,10 @@
 				F1EF76EA2CB7873F00EFFB20 /* Resources */,
 			);
 			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				F383A84D2ECF323300350A0F /* Helpers */,
+				F383A9B82ECF329400350A0F /* Widgets */,
 			);
 			name = Widgets;
 			packageProductDependencies = (
@@ -1321,6 +989,15 @@
 				F376E1582DD9F76300D98252 /* Embed Frameworks */,
 			);
 			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				F383A8232ECF322E00350A0F /* Tipping */,
+				F383A8362ECF322E00350A0F /* Release Notes */,
+				F383A84D2ECF323300350A0F /* Helpers */,
+				F383A89C2ECF323C00350A0F /* Settings */,
+				F383A8D82ECF323F00350A0F /* Server Details */,
+				F383AA002ECF32BF00350A0F /* Networking */,
+				F383AA0E2ECF32C300350A0F /* Nav */,
 			);
 			name = macOS;
 			packageProductDependencies = (
@@ -1343,6 +1020,16 @@
 				F3570D3A2D6E779500BDF069 /* Resources */,
 			);
 			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				F383A8232ECF322E00350A0F /* Tipping */,
+				F383A8362ECF322E00350A0F /* Release Notes */,
+				F383A84D2ECF323300350A0F /* Helpers */,
+				F383A89C2ECF323C00350A0F /* Settings */,
+				F383A8D82ECF323F00350A0F /* Server Details */,
+				F383A91F2ECF326A00350A0F /* iMessage */,
+				F383AA002ECF32BF00350A0F /* Networking */,
+				F383AA0E2ECF32C300350A0F /* Nav */,
 			);
 			name = iMessages;
 			packageProductDependencies = (
@@ -1367,6 +1054,16 @@
 			);
 			buildRules = (
 			);
+			fileSystemSynchronizedGroups = (
+				F383A8232ECF322E00350A0F /* Tipping */,
+				F383A8362ECF322E00350A0F /* Release Notes */,
+				F383A84D2ECF323300350A0F /* Helpers */,
+				F383A89C2ECF323C00350A0F /* Settings */,
+				F383A8D82ECF323F00350A0F /* Server Details */,
+				F383AA002ECF32BF00350A0F /* Networking */,
+				F383AA0E2ECF32C300350A0F /* Nav */,
+				F383AA2B2ECF32E500350A0F /* Fonts */,
+			);
 			name = visionOS;
 			packageProductDependencies = (
 				F35E1AB32D6522F400718CB7 /* NukeUI */,
@@ -1387,6 +1084,16 @@
 				F376E15A2DD9F76700D98252 /* Embed Frameworks */,
 			);
 			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				F383A8232ECF322E00350A0F /* Tipping */,
+				F383A8362ECF322E00350A0F /* Release Notes */,
+				F383A84D2ECF323300350A0F /* Helpers */,
+				F383A89C2ECF323C00350A0F /* Settings */,
+				F383A8D82ECF323F00350A0F /* Server Details */,
+				F383AA002ECF32BF00350A0F /* Networking */,
+				F383AA0E2ECF32C300350A0F /* Nav */,
+				F383AA2B2ECF32E500350A0F /* Fonts */,
 			);
 			name = tvOS;
 			packageProductDependencies = (
@@ -1476,7 +1183,6 @@
 		F11F63492A81E50E00D47187 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
-				F38218852D671BAB005025E7 /* Assets.xcassets in Resources */,
 				F33661472E745164008E73C9 /* Legend.icon in Resources */,
 				F325F8C42D80697300FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */,
 				F336614D2E745167008E73C9 /* Supporter.icon in Resources */,
@@ -1490,7 +1196,6 @@
 			isa = PBXResourcesBuildPhase;
 			files = (
 				F326DB5C2D6416E100BCCB69 /* Localizable.xcstrings in Resources */,
-				F30472282D63E9C20055C007 /* Assets.xcassets in Resources */,
 				F31AC0D12E72F6B3003C4A84 /* AppIcon.icon in Resources */,
 			);
 		};
@@ -1503,11 +1208,7 @@
 				F325F8C32D80651B00FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */,
 				F31AC0D62E72FE17003C4A84 /* Shared Assets.xcassets in Resources */,
 				F326DB582D6416E100BCCB69 /* Localizable.xcstrings in Resources */,
-				F304725D2D63FBFC0055C007 /* MinecraftBold.otf in Resources */,
-				F304725E2D63FBFC0055C007 /* MinecraftBoldItalic.otf in Resources */,
-				F304725F2D63FBFC0055C007 /* MinecraftItalic.otf in Resources */,
 				F33661402E745162008E73C9 /* Enthusiast.icon in Resources */,
-				F30472602D63FBFC0055C007 /* MinecraftRegular.otf in Resources */,
 				F31AC0C82E72F64B003C4A84 /* AppIcon.icon in Resources */,
 				F33661462E745164008E73C9 /* Legend.icon in Resources */,
 			);
@@ -1522,7 +1223,6 @@
 			isa = PBXResourcesBuildPhase;
 			files = (
 				F326DB5B2D6416E100BCCB69 /* Localizable.xcstrings in Resources */,
-				F30472092D63E9C00055C007 /* Assets.xcassets in Resources */,
 				F31AC0D02E72F6B3003C4A84 /* AppIcon.icon in Resources */,
 			);
 		};
@@ -1543,7 +1243,6 @@
 			isa = PBXResourcesBuildPhase;
 			files = (
 				F325F8C82D80697700FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */,
-				F3DD08892D7527BF00A67D4B /* iMessage Icon.xcassets in Resources */,
 				F3DD08812D7524CF00A67D4B /* Localizable.xcstrings in Resources */,
 				F3DD08822D7524DA00A67D4B /* Assets.xcassets in Resources */,
 				F31AC0D32E72FE17003C4A84 /* Shared Assets.xcassets in Resources */,
@@ -1552,27 +1251,17 @@
 		F35E1A7B2D6501A500718CB7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
-				F35E1AC12D65237200718CB7 /* MinecraftRegular.otf in Resources */,
 				F325F8C72D80697300FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */,
 				F31AC0D72E72FE17003C4A84 /* Shared Assets.xcassets in Resources */,
 				F3C879D82D6572AA00840745 /* Localizable.xcstrings in Resources */,
-				F35E1AC22D65237200718CB7 /* MinecraftBold.otf in Resources */,
-				F360A8AC2D6C6942008E515E /* visionOS Icon.xcassets in Resources */,
-				F35E1AC32D65237200718CB7 /* MinecraftBoldItalic.otf in Resources */,
-				F35E1AC42D65237200718CB7 /* MinecraftItalic.otf in Resources */,
 			);
 		};
 		F3C879BB2D65720500840745 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
-				F383D19B2D67E60400FE4239 /* Assets.xcassets in Resources */,
 				F31AC0D42E72FE17003C4A84 /* Shared Assets.xcassets in Resources */,
 				F325F8C62D80697300FDF4D9 /* MC Stats StoreKit Synced.storekit in Resources */,
 				F3C879D72D6572AA00840745 /* Localizable.xcstrings in Resources */,
-				F3C879F42D6572DF00840745 /* MinecraftRegular.otf in Resources */,
-				F3C879F52D6572DF00840745 /* MinecraftItalic.otf in Resources */,
-				F3C879F62D6572DF00840745 /* MinecraftBold.otf in Resources */,
-				F3C879F72D6572DF00840745 /* MinecraftBoldItalic.otf in Resources */,
 			);
 		};
 /* End PBXResourcesBuildPhase section */
@@ -1581,369 +1270,66 @@
 		F11F63472A81E50E00D47187 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
-				F1EF76CA2CB422D400EFFB20 /* ServerDetails.swift in Sources */,
-				F174A3012A915E450051DA5B /* WatchServerStatusChecker.swift in Sources */,
 				F360A8AD2D6C6B5C008E515E /* MCStats.swift in Sources */,
-				F13095532CBC9D5600C4C7BA /* ConfigHelper.swift in Sources */,
-				F39EAF782D6C831000072794 /* SettingsView.swift in Sources */,
 				F3B074292D77050900F24939 /* EditServerViewHelper.swift in Sources */,
-				F39EAF792D6C845000072794 /* DebugSettings.swift in Sources */,
-				F1CFCD532CABB567001A9E69 /* CustomExtentions.swift in Sources */,
-				F3B074102D76697000F24939 /* ExpectedResultBatch.swift in Sources */,
-				F1EF76D22CB449E700EFFB20 /* IntentErrors.swift in Sources */,
-				F17AE0F82CC0504200DC7A80 /* ReviewHelper.swift in Sources */,
-				F3C1E43F2D6C957900950F3D /* RefreshWidgets.swift in Sources */,
-				F3B074182D76E2E100F24939 /* PlayerCard.swift in Sources */,
-				F17AE0EE2CC0363F00DC7A80 /* MOTDViewGenerator.swift in Sources */,
-				F3B074132D766AC200F24939 /* EditServerView.swift in Sources */,
-				F1EF76D52CB449E700EFFB20 /* ShortcutsProvider.swift in Sources */,
-				F3B074262D76FFB300F24939 /* ServerDetailsHelper.swift in Sources */,
-				F30472442D63E9D00055C007 /* ArbitraryServerStatusOnlineCheckIntent.swift in Sources */,
-				F3BFB1502D68055A00E16468 /* MOTDView.swift in Sources */,
-				F30472452D63E9D00055C007 /* SavedServerStatusOnlineCheckIntent.swift in Sources */,
-				F1EF76C22CB4204E00EFFB20 /* AppContainer.swift in Sources */,
-				F3A9A7ED2D704CD700964023 /* AppContainerHelper.swift in Sources */,
-				F1EF76C32CB4204E00EFFB20 /* ServerRow.swift in Sources */,
-				F39EAF762D6C82C200072794 /* PageDestinations.swift in Sources */,
-				F1EF76BA2CB41A2700EFFB20 /* CustomProgressView.swift in Sources */,
-				F30472562D63E9D30055C007 /* SavedServerEntity.swift in Sources */,
-				F3B074272D77008C00F24939 /* PlayerList.swift in Sources */,
-				F30472572D63E9D30055C007 /* ServerStatusEntity.swift in Sources */,
-				F10E94B12A8C61B60039DD2B /* ConnectivityProvider.swift in Sources */,
 			);
 		};
 		F13095212CBC997200C4C7BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
-				F13095572CBD48ED00C4C7BA /* WatchServerStatusChecker.swift in Sources */,
-				F13095582CBD494300C4C7BA /* ConnectivityProvider.swift in Sources */,
-				F35E1A752D64ACE400718CB7 /* Widgets Bundle.swift in Sources */,
-				F304723A2D63E9CF0055C007 /* SelectServerIntent.swift in Sources */,
-				F304723B2D63E9CF0055C007 /* RefreshWidgetIntent.swift in Sources */,
-				F304723C2D63E9CF0055C007 /* ServerSelectNoThemeWidgetIntent.swift in Sources */,
-				F17AE07D2CBE0B6600DC7A80 /* CustomProgressView.swift in Sources */,
-				F17AE0F42CC0504200DC7A80 /* ReviewHelper.swift in Sources */,
-				F304724D2D63E9D20055C007 /* ServerIntentTypeAppEntity.swift in Sources */,
-				F304724E2D63E9D20055C007 /* ThemeIntentTypeAppEntity.swift in Sources */,
-				F30472192D63E9C00055C007 /* Circular Accessory WidgetView1.swift in Sources */,
-				F3B0740E2D76697000F24939 /* ExpectedResultBatch.swift in Sources */,
-				F304721A2D63E9C00055C007 /* Circular Accessory WidgetView2.swift in Sources */,
-				F304721B2D63E9C00055C007 /* Minecraft Server Status LSWidget1.swift in Sources */,
-				F304721C2D63E9C00055C007 /* WidgetEntryVM.swift in Sources */,
-				F304721D2D63E9C00055C007 /* Rectangular Accessory WidgetView.swift in Sources */,
-				F304721E2D63E9C00055C007 /* Inline Accessory Widget View.swift in Sources */,
-				F304721F2D63E9C00055C007 /* Corner Accessory WidgetView1.swift in Sources */,
-				F30472202D63E9C00055C007 /* Inline Accessory Widget View 2.swift in Sources */,
-				F30472212D63E9C00055C007 /* Lockscreen Provider.swift in Sources */,
-				F17AE0F02CC0363F00DC7A80 /* MOTDViewGenerator.swift in Sources */,
-				F130954C2CBC9C5D00C4C7BA /* CustomExtentions.swift in Sources */,
 			);
 		};
 		F13E5FF52A4BD614005BE9B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
-				F396F8042D81BE6A00FCB648 /* TipVM.swift in Sources */,
-				F150B4342CC15F6A00739646 /* SiriGuide.swift in Sources */,
-				F3C87A032D6574D200840745 /* FAQRow.swift in Sources */,
-				F35E1A772D64D32D00718CB7 /* RefreshWidgets.swift in Sources */,
-				F17AE0FC2CC05F9000DC7A80 /* TipView.swift in Sources */,
-				F1A43C822A8472B20081A24C /* ServerDetails.swift in Sources */,
-				F32A18B72ECB2FB600BE176C /* AppContainerHelper.swift in Sources */,
-				F35E1A6F2D649C6000718CB7 /* FeatureRow.swift in Sources */,
-				F30472542D63E9D30055C007 /* SavedServerEntity.swift in Sources */,
-				F378836A2D6AF86A00D38522 /* DebugSettings.swift in Sources */,
 				F3B0742D2D77064000F24939 /* EditServerViewHelper.swift in Sources */,
-				F35E1A742D64A4B200718CB7 /* LowPowerMode.swift in Sources */,
-				F3BFB14D2D68055A00E16468 /* MOTDView.swift in Sources */,
-				F3C87A062D6574DD00840745 /* FAQ.swift in Sources */,
-				F30472552D63E9D30055C007 /* ServerStatusEntity.swift in Sources */,
-				F30246CB2D6661D60030F71C /* PlayerList.swift in Sources */,
-				F35E1A712D649D1300718CB7 /* SiriGuidePhrase.swift in Sources */,
-				F396F7FF2D81BDC600FCB648 /* TipCard.swift in Sources */,
-				F174A2FC2A8F7FFA0051DA5B /* WatchHelper.swift in Sources */,
 				F17A16BD2A8956DE00F8FF2F /* EditServerView.swift in Sources */,
-				F17AE0EC2CC01E9E00DC7A80 /* FAQView.swift in Sources */,
-				F17AE0F62CC0504200DC7A80 /* ReviewHelper.swift in Sources */,
-				F1C010492AAAB9B60017B9A9 /* SwiftyPing.swift in Sources */,
-				F3C87A112D657A1500840745 /* Feature.swift in Sources */,
-				F30246D42D667ED50030F71C /* ServerPing.swift in Sources */,
 				F13E5FFD2A4BD614005BE9B2 /* MCStats.swift in Sources */,
-				F150B4362CC1709700739646 /* ShortcutsGuide.swift in Sources */,
-				F35E1A6D2D6489FD00718CB7 /* GeneralSettings.swift in Sources */,
-				F30472422D63E9D00055C007 /* ArbitraryServerStatusOnlineCheckIntent.swift in Sources */,
-				F30472432D63E9D00055C007 /* SavedServerStatusOnlineCheckIntent.swift in Sources */,
-				F39EAF742D6C82B900072794 /* PageDestinations.swift in Sources */,
-				F17AE0EF2CC0363F00DC7A80 /* MOTDViewGenerator.swift in Sources */,
-				F30246C72D65E6F70030F71C /* SiriPhrase.swift in Sources */,
-				F16990822CA5DDE500F41232 /* IntentErrors.swift in Sources */,
-				F30246D82D66816E0030F71C /* PingGraph.swift in Sources */,
-				F1CFCD512CABB567001A9E69 /* CustomExtentions.swift in Sources */,
-				F3FCD2022E5282D3003BDE5E /* ValueStore.swift in Sources */,
-				F35E1A9E2D65209500718CB7 /* PlayerCard.swift in Sources */,
-				F16990872CA5DDE500F41232 /* ShortcutsProvider.swift in Sources */,
-				F17A16BB2A893DD700F8FF2F /* SettingsView.swift in Sources */,
-				F3EFC1742D709C5700EE988A /* PingError.swift in Sources */,
-				F3B074252D76FF5500F24939 /* ServerDetailsHelper.swift in Sources */,
 				F1AE29162CA48577009D0D14 /* ServerRow.swift in Sources */,
-				F13E60012A4BD614005BE9B2 /* AppContainer.swift in Sources */,
-				F1E671762CA73A86002BDFC0 /* CustomProgressView.swift in Sources */,
-				F150B43F2CC18C1100739646 /* ReleaseNotes.swift in Sources */,
-				F130954F2CBC9D5600C4C7BA /* ConfigHelper.swift in Sources */,
 			);
 		};
 		F1406BA52AA391B800815BE8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
-				F30472522D63E9D30055C007 /* SavedServerEntity.swift in Sources */,
-				F3B0740F2D76697000F24939 /* ExpectedResultBatch.swift in Sources */,
-				F30472532D63E9D30055C007 /* ServerStatusEntity.swift in Sources */,
-				F30472402D63E9D00055C007 /* ArbitraryServerStatusOnlineCheckIntent.swift in Sources */,
-				F30472412D63E9D00055C007 /* SavedServerStatusOnlineCheckIntent.swift in Sources */,
-				F13095592CBD497200C4C7BA /* WatchServerStatusChecker.swift in Sources */,
-				F10C42172AAD55BF000107D6 /* ShortcutsProvider.swift in Sources */,
-				F304724B2D63E9D20055C007 /* ServerIntentTypeAppEntity.swift in Sources */,
-				F304724C2D63E9D20055C007 /* ThemeIntentTypeAppEntity.swift in Sources */,
-				F1CFCD522CABB567001A9E69 /* CustomExtentions.swift in Sources */,
-				F17AE0F52CC0504200DC7A80 /* ReviewHelper.swift in Sources */,
-				F1406BAC2AA391B800815BE8 /* Intents.swift in Sources */,
-				F1406BBF2AA3933400815BE8 /* IntentErrors.swift in Sources */,
-				F130955A2CBD499700C4C7BA /* ConnectivityProvider.swift in Sources */,
-				F304722E2D63E9CF0055C007 /* RefreshWidgetIntent.swift in Sources */,
-				F304722F2D63E9CF0055C007 /* ServerSelectNoThemeWidgetIntent.swift in Sources */,
-				F30472302D63E9CF0055C007 /* SelectServerIntent.swift in Sources */,
-				F13095512CBC9D5600C4C7BA /* ConfigHelper.swift in Sources */,
-				F17AE0F22CC0363F00DC7A80 /* MOTDViewGenerator.swift in Sources */,
 			);
 		};
 		F1EF76E82CB7873F00EFFB20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
-				F304720B2D63E9C00055C007 /* Homescreen Provider.swift in Sources */,
-				F304720C2D63E9C00055C007 /* Lockscreen Provider.swift in Sources */,
-				F30472372D63E9CF0055C007 /* SelectServerIntent.swift in Sources */,
-				F30472382D63E9CF0055C007 /* RefreshWidgetIntent.swift in Sources */,
-				F30472392D63E9CF0055C007 /* ServerSelectNoThemeWidgetIntent.swift in Sources */,
-				F304720D2D63E9C00055C007 /* Circular Accessory WidgetView1.swift in Sources */,
-				F304720E2D63E9C00055C007 /* Circular Accessory WidgetView2.swift in Sources */,
-				F304720F2D63E9C00055C007 /* Corner Accessory WidgetView1.swift in Sources */,
-				F30472102D63E9C00055C007 /* Inline Accessory Widget View.swift in Sources */,
-				F30472112D63E9C00055C007 /* Inline Accessory Widget View 2.swift in Sources */,
-				F30472122D63E9C00055C007 /* Medium Widget View.swift in Sources */,
-				F30472132D63E9C00055C007 /* Rectangular Accessory WidgetView.swift in Sources */,
-				F30472142D63E9C00055C007 /* Small Widget View.swift in Sources */,
-				F30472152D63E9C00055C007 /* Widgets Bundle.swift in Sources */,
-				F30472162D63E9C00055C007 /* MinecraftServerStatusHSWidget.swift in Sources */,
-				F30472172D63E9C00055C007 /* Minecraft Server Status LSWidget1.swift in Sources */,
-				F30472182D63E9C00055C007 /* WidgetEntryVM.swift in Sources */,
-				F17AE0F12CC0363F00DC7A80 /* MOTDViewGenerator.swift in Sources */,
-				F17AE0F72CC0504200DC7A80 /* ReviewHelper.swift in Sources */,
-				F30472492D63E9D20055C007 /* ServerIntentTypeAppEntity.swift in Sources */,
-				F304724A2D63E9D20055C007 /* ThemeIntentTypeAppEntity.swift in Sources */,
-				F1EF77632CB958B700EFFB20 /* CustomExtentions.swift in Sources */,
-				F1EF77622CB8C62D00EFFB20 /* CustomProgressView.swift in Sources */,
-				F13095502CBC9D5600C4C7BA /* ConfigHelper.swift in Sources */,
 			);
 		};
 		F31D459D2D6DC62600981B1C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
 				F31D45B92D6DC68F00981B1C /* MCStats.swift in Sources */,
-				F396F7FE2D81BDC600FCB648 /* TipCard.swift in Sources */,
-				F31D45D82D6DC76200981B1C /* FAQ.swift in Sources */,
 				F31D45DA2D6DC76200981B1C /* ServerRow.swift in Sources */,
-				F31D45EB2D6DCB1300981B1C /* ServerStatusEntity.swift in Sources */,
-				F31D45EA2D6DCA5E00981B1C /* IntentErrors.swift in Sources */,
-				F31D45DB2D6DC76200981B1C /* FAQView.swift in Sources */,
 				F3B0742E2D770BF900F24939 /* EditServerViewHelper.swift in Sources */,
-				F31D45DC2D6DC76200981B1C /* FAQRow.swift in Sources */,
-				F31D45C62D6DC74C00981B1C /* TipView.swift in Sources */,
-				F31D45E92D6DCA5000981B1C /* SavedServerEntity.swift in Sources */,
-				F31D45C72D6DC74C00981B1C /* ReleaseNotes.swift in Sources */,
-				F3B074232D76FF5500F24939 /* ServerDetailsHelper.swift in Sources */,
-				F31D45C82D6DC74C00981B1C /* CustomProgressView.swift in Sources */,
-				F31D45C92D6DC74C00981B1C /* FeatureRow.swift in Sources */,
-				F31D45CA2D6DC74C00981B1C /* Feature.swift in Sources */,
-				F31D45C32D6DC74100981B1C /* AppContainerHelper.swift in Sources */,
-				F3FCD2032E5282D3003BDE5E /* ValueStore.swift in Sources */,
-				F31D45C42D6DC74100981B1C /* AppContainer.swift in Sources */,
-				F396F8032D81BE6A00FCB648 /* TipVM.swift in Sources */,
-				F3EFC1722D70877F00EE988A /* EditServerView.swift in Sources */,
-				F31D45E52D6DC9C600981B1C /* LowPowerMode.swift in Sources */,
-				F31D45E62D6DC9C600981B1C /* RefreshWidgets.swift in Sources */,
-				F31D45C52D6DC74100981B1C /* PageDestinations.swift in Sources */,
-				F31D45CB2D6DC75200981B1C /* ServerDetails.swift in Sources */,
-				F31D45D12D6DC75700981B1C /* SettingsView.swift in Sources */,
-				F31D45E82D6DCA3E00981B1C /* SavedServerStatusOnlineCheckIntent.swift in Sources */,
-				F31D45D22D6DC75700981B1C /* GeneralSettings.swift in Sources */,
-				F31D45E72D6DCA3400981B1C /* ShortcutsProvider.swift in Sources */,
-				F31D45D32D6DC75700981B1C /* DebugSettings.swift in Sources */,
-				F31D45DD2D6DC76800981B1C /* MOTDViewGenerator.swift in Sources */,
-				F31D45E32D6DC79200981B1C /* SwiftyPing.swift in Sources */,
-				F31D45E02D6DC76800981B1C /* ConfigHelper.swift in Sources */,
-				F31D45E12D6DC76800981B1C /* ReviewHelper.swift in Sources */,
-				F31D45E22D6DC76800981B1C /* CustomExtentions.swift in Sources */,
-				F31D45D42D6DC75700981B1C /* ShortcutsGuide.swift in Sources */,
-				F31D45CC2D6DC75200981B1C /* PlayerCard.swift in Sources */,
-				F31D45D52D6DC75D00981B1C /* SiriPhrase.swift in Sources */,
-				F31D45D62D6DC75D00981B1C /* SiriGuide.swift in Sources */,
-				F3EFC1752D709C5700EE988A /* PingError.swift in Sources */,
-				F31D45D72D6DC75D00981B1C /* SiriGuidePhrase.swift in Sources */,
-				F31D45CD2D6DC75200981B1C /* ServerPing.swift in Sources */,
-				F31D45CE2D6DC75200981B1C /* PlayerList.swift in Sources */,
-				F31D45CF2D6DC75200981B1C /* PingGraph.swift in Sources */,
-				F31D45D02D6DC75200981B1C /* MOTDView.swift in Sources */,
 			);
 		};
 		F3570D382D6E779500BDF069 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
-				F3B0740A2D76566200F24939 /* MOTDViewGenerator.swift in Sources */,
-				F3DD08762D75238B00A67D4B /* ConfigHelper.swift in Sources */,
-				F3B074082D76565500F24939 /* ServerPing.swift in Sources */,
-				F3DD08772D7523A500A67D4B /* ShortcutsProvider.swift in Sources */,
-				F3570D5C2D6E77C000BDF069 /* Messages VC.swift in Sources */,
-				F3DD087F2D75243200A67D4B /* ReviewHelper.swift in Sources */,
-				F3DD08742D75237D00A67D4B /* RefreshWidgets.swift in Sources */,
-				F3DD08752D75237D00A67D4B /* LowPowerMode.swift in Sources */,
-				F3570D622D6E8C4F00BDF069 /* NavContainer.swift in Sources */,
-				F3B074092D76565C00F24939 /* MOTDView.swift in Sources */,
-				F3DD08722D75234F00A67D4B /* CustomProgressView.swift in Sources */,
-				F3DD087D2D75241D00A67D4B /* PageDestinations.swift in Sources */,
-				F3DD087E2D75241D00A67D4B /* AppContainerHelper.swift in Sources */,
-				F3B0740B2D76566700F24939 /* CustomExtentions.swift in Sources */,
-				F3DD08832D75251300A67D4B /* AppContainer.swift in Sources */,
-				F3DD087B2D7523C500A67D4B /* ServerStatusEntity.swift in Sources */,
-				F3B074052D76564B00F24939 /* PingGraph.swift in Sources */,
-				F3B074062D76564B00F24939 /* PlayerList.swift in Sources */,
-				F3B074072D76564B00F24939 /* PlayerCard.swift in Sources */,
-				F3DD08802D75246700A67D4B /* WatchHelper.swift in Sources */,
-				F3B0740C2D76567000F24939 /* ServerDetails.swift in Sources */,
-				F3FCD2042E5282D3003BDE5E /* ValueStore.swift in Sources */,
-				F3DD087A2D7523BD00A67D4B /* SavedServerEntity.swift in Sources */,
-				F396F8052D81BE6A00FCB648 /* TipVM.swift in Sources */,
 				F3B0742C2D77063B00F24939 /* EditServerViewHelper.swift in Sources */,
-				F396F8002D81BDC600FCB648 /* TipCard.swift in Sources */,
 				F3DD08732D75236E00A67D4B /* EditServerView.swift in Sources */,
-				F3B073F72D7655D500F24939 /* SiriGuidePhrase.swift in Sources */,
-				F3B073FA2D7655D900F24939 /* FAQ.swift in Sources */,
-				F3B074242D76FF5500F24939 /* ServerDetailsHelper.swift in Sources */,
-				F3B073FB2D7655D900F24939 /* FAQRow.swift in Sources */,
-				F3B073FC2D7655D900F24939 /* FAQView.swift in Sources */,
-				F3B073F82D7655D500F24939 /* SiriGuide.swift in Sources */,
-				F3B073F92D7655D500F24939 /* SiriPhrase.swift in Sources */,
-				F3DD08792D7523B300A67D4B /* IntentErrors.swift in Sources */,
 				F3DD086B2D75232500A67D4B /* ServerRow.swift in Sources */,
-				F3DD08882D75263100A67D4B /* TipView.swift in Sources */,
-				F3DD086A2D75226A00A67D4B /* ServerList.swift in Sources */,
-				F3DD08862D75253600A67D4B /* Feature.swift in Sources */,
-				F3B074032D76560700F24939 /* PingError.swift in Sources */,
-				F3B074042D76560700F24939 /* SwiftyPing.swift in Sources */,
-				F3DD08872D75253600A67D4B /* FeatureRow.swift in Sources */,
-				F3570D642D6E8CB300BDF069 /* MessagesVM.swift in Sources */,
-				F3B073F32D7655D000F24939 /* DebugSettings.swift in Sources */,
-				F3B073F42D7655D000F24939 /* ShortcutsGuide.swift in Sources */,
-				F3B073F52D7655D000F24939 /* GeneralSettings.swift in Sources */,
-				F3B073F62D7655D000F24939 /* SettingsView.swift in Sources */,
-				F3DD08782D7523AC00A67D4B /* SavedServerStatusOnlineCheckIntent.swift in Sources */,
-				F3DD08842D75252400A67D4B /* ReleaseNotes.swift in Sources */,
 			);
 		};
 		F35E1A792D6501A500718CB7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
-				F35E1AA12D6522B300718CB7 /* LowPowerMode.swift in Sources */,
-				F396F7FC2D81BDC600FCB648 /* TipCard.swift in Sources */,
-				F3BFB14E2D68055A00E16468 /* MOTDView.swift in Sources */,
-				F35E1AA22D6522B300718CB7 /* RefreshWidgets.swift in Sources */,
-				F35E1AA52D6522CB00718CB7 /* SiriGuidePhrase.swift in Sources */,
-				F35E1AA62D6522CB00718CB7 /* SiriGuide.swift in Sources */,
-				F30246D62D66816E0030F71C /* PingGraph.swift in Sources */,
 				F3B0742B2D77063B00F24939 /* EditServerViewHelper.swift in Sources */,
-				F35E1AA32D6522C600718CB7 /* FeatureRow.swift in Sources */,
-				F35E1AA72D6522D100718CB7 /* PlayerCard.swift in Sources */,
-				F3C1E43D2D6C949900950F3D /* AppContainerHelper.swift in Sources */,
-				F35E1AA82D6522D100718CB7 /* ServerDetails.swift in Sources */,
-				F3B074222D76FF5500F24939 /* ServerDetailsHelper.swift in Sources */,
-				F35E1AA92D6522D100718CB7 /* TipView.swift in Sources */,
-				F35E1AB72D65231500718CB7 /* AppContainer.swift in Sources */,
-				F30246D32D667ED50030F71C /* ServerPing.swift in Sources */,
-				F30246C62D65E6F70030F71C /* SiriPhrase.swift in Sources */,
-				F35E1AAA2D6522D100718CB7 /* FAQView.swift in Sources */,
-				F396F8062D81BE6A00FCB648 /* TipVM.swift in Sources */,
-				F30246C92D6661D60030F71C /* PlayerList.swift in Sources */,
-				F3C87A022D6574D200840745 /* FAQRow.swift in Sources */,
 				F35E1AAC2D6522D600718CB7 /* EditServerView.swift in Sources */,
-				F35E1ACA2D652C6D00718CB7 /* ServerStatusEntity.swift in Sources */,
-				F35E1AC02D65236900718CB7 /* SwiftyPing.swift in Sources */,
-				F39EAF752D6C82B900072794 /* PageDestinations.swift in Sources */,
-				F35E1AC72D652B3B00718CB7 /* SavedServerStatusOnlineCheckIntent.swift in Sources */,
-				F35E1AC62D652B3000718CB7 /* ShortcutsProvider.swift in Sources */,
-				F35E1AAD2D6522D600718CB7 /* GeneralSettings.swift in Sources */,
-				F35E1AAE2D6522D600718CB7 /* ShortcutsGuide.swift in Sources */,
 				F35E1AAF2D6522D600718CB7 /* ServerRow.swift in Sources */,
 				F35E1AC52D65238800718CB7 /* MCStats.swift in Sources */,
-				F35E1AB02D6522D600718CB7 /* SettingsView.swift in Sources */,
-				F35E1AAB2D6522D100718CB7 /* CustomProgressView.swift in Sources */,
-				F3C87A102D657A1500840745 /* Feature.swift in Sources */,
-				F378836C2D6AF86A00D38522 /* DebugSettings.swift in Sources */,
-				F3C87A072D6574DD00840745 /* FAQ.swift in Sources */,
-				F35E1AB92D65236300718CB7 /* CustomExtentions.swift in Sources */,
-				F35E1ABA2D65236300718CB7 /* ReviewHelper.swift in Sources */,
-				F3EFC1762D709C5700EE988A /* PingError.swift in Sources */,
-				F35E1AC82D652B4700718CB7 /* IntentErrors.swift in Sources */,
-				F35E1ABD2D65236300718CB7 /* ConfigHelper.swift in Sources */,
-				F35E1ABF2D65236300718CB7 /* MOTDViewGenerator.swift in Sources */,
-				F35E1AC92D652C5B00718CB7 /* SavedServerEntity.swift in Sources */,
-				F35E1AA42D6522C600718CB7 /* ReleaseNotes.swift in Sources */,
 			);
 		};
 		F3C879B92D65720500840745 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
-				F3C879DF2D6572C400840745 /* ServerDetails.swift in Sources */,
-				F396F7FD2D81BDC600FCB648 /* TipCard.swift in Sources */,
-				F3BFB14F2D68055A00E16468 /* MOTDView.swift in Sources */,
-				F3C879E02D6572C400840745 /* PlayerCard.swift in Sources */,
-				F3C87A0B2D6575B700840745 /* IntentErrors.swift in Sources */,
-				F383D1982D67D3D100FE4239 /* SiriGuide.swift in Sources */,
-				F3C87A092D65759B00840745 /* ShortcutsProvider.swift in Sources */,
 				F3B0742A2D77063B00F24939 /* EditServerViewHelper.swift in Sources */,
-				F3C87A0D2D6575DE00840745 /* SavedServerEntity.swift in Sources */,
-				F3C879F32D6572D500840745 /* SwiftyPing.swift in Sources */,
-				F3C1E43C2D6C949900950F3D /* AppContainerHelper.swift in Sources */,
-				F3C87A0A2D6575AE00840745 /* SavedServerStatusOnlineCheckIntent.swift in Sources */,
-				F3B074212D76FF5500F24939 /* ServerDetailsHelper.swift in Sources */,
-				F3C879E22D6572C400840745 /* TipView.swift in Sources */,
-				F30246D22D667ED50030F71C /* ServerPing.swift in Sources */,
-				F30246CA2D6661D60030F71C /* PlayerList.swift in Sources */,
-				F383D1992D67D3DB00FE4239 /* SiriGuidePhrase.swift in Sources */,
-				F383D19A2D67D3DB00FE4239 /* SiriPhrase.swift in Sources */,
-				F396F8022D81BE6A00FCB648 /* TipVM.swift in Sources */,
-				F3C879E42D6572C400840745 /* CustomProgressView.swift in Sources */,
-				F3C87A082D6574DD00840745 /* FAQ.swift in Sources */,
-				F3C879E52D6572C400840745 /* FAQView.swift in Sources */,
-				F38218882D676E23005025E7 /* PingGraph.swift in Sources */,
-				F3C879EC2D6572D000840745 /* MOTDViewGenerator.swift in Sources */,
-				F39EAF732D6C82B900072794 /* PageDestinations.swift in Sources */,
-				F3C879ED2D6572D000840745 /* CustomExtentions.swift in Sources */,
-				F3C879EE2D6572D000840745 /* ConfigHelper.swift in Sources */,
-				F3C87A042D6574D200840745 /* FAQRow.swift in Sources */,
-				F3C879F12D6572D000840745 /* ReviewHelper.swift in Sources */,
-				F3C87A0C2D6575C800840745 /* ServerStatusEntity.swift in Sources */,
-				F3C87A0F2D657A1500840745 /* Feature.swift in Sources */,
-				F3C879DD2D6572BE00840745 /* FeatureRow.swift in Sources */,
-				F378836B2D6AF86A00D38522 /* DebugSettings.swift in Sources */,
-				F3C879DE2D6572BE00840745 /* ReleaseNotes.swift in Sources */,
 				F3C879D92D6572B000840745 /* MCStats.swift in Sources */,
-				F3C879DB2D6572BA00840745 /* LowPowerMode.swift in Sources */,
-				F3C879DC2D6572BA00840745 /* RefreshWidgets.swift in Sources */,
 				F3C879E62D6572CA00840745 /* ServerRow.swift in Sources */,
-				F3EFC1772D709C5700EE988A /* PingError.swift in Sources */,
-				F3C879E72D6572CA00840745 /* SettingsView.swift in Sources */,
 				F3C879E82D6572CA00840745 /* EditServerView.swift in Sources */,
-				F3C879E92D6572CA00840745 /* ShortcutsGuide.swift in Sources */,
-				F3C879EA2D6572CA00840745 /* GeneralSettings.swift in Sources */,
-				F3C879DA2D6572B000840745 /* AppContainer.swift in Sources */,
 			);
 		};
 /* End PBXSourcesBuildPhase section */

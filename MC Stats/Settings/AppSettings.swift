@@ -2,11 +2,7 @@ import SwiftUI
 import StoreKit
 import MCStatsDataLayer
 
-enum SettingsPageDestinations {
-    case GeneralSettings, FAQ, Shortcuts, Siri, WhatsNew
-}
-
-struct SettingsView: View {
+struct AppSettings: View {
     @Environment(\.openURL) private var openUrl
     
     private let reloadServers: () -> Void
@@ -112,7 +108,7 @@ struct SettingsView: View {
                 Text("See the code that makes this app work, as well as file bugs and feature requests. Forked from [eclair4151's MC-Status](https://github.com/eclair4151/MC-Status-Widget-for-Minecraft)")
             }
 #endif
-            DebugSettings {
+            AppSettingsDebug {
                 reloadServers()
             }
         }
@@ -125,7 +121,7 @@ struct SettingsView: View {
         }
         .navigationDestination(for: SettingsPageDestinations.self) {
             switch $0 {
-            case .GeneralSettings: GeneralSettings()
+            case .GeneralSettings: AppSettingsGeneral()
             case .FAQ:             FAQView(getiOSFAQs())
             case .Shortcuts:       ShortcutsGuide()
             case .Siri:            SiriGuide()
@@ -182,7 +178,7 @@ struct SettingsView: View {
 
 #Preview {
     NavigationStack {
-        SettingsView()
+        AppSettings()
     }
     .darkSchemePreferred()
 }

@@ -5,7 +5,7 @@ import MCStatsDataLayer
 import Appearance
 #endif
 
-struct GeneralSettings: View {
+struct AppSettingsGeneral: View {
 #if canImport(Appearance)
     @EnvironmentObject private var store: ValueStore
 #endif
@@ -70,7 +70,7 @@ struct GeneralSettings: View {
 
 #Preview {
     NavigationStack {
-        GeneralSettings()
+        AppSettingsGeneral()
     }
     .darkSchemePreferred()
 #if os(iOS)

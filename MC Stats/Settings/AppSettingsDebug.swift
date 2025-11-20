@@ -2,7 +2,7 @@ import SwiftUI
 import SwiftData
 import MCStatsDataLayer
 
-struct DebugSettings: View {
+struct AppSettingsDebug: View {
     @Query private var servers: [SavedMinecraftServer]
     @Environment(\.modelContext) private var modelContext
     
@@ -65,6 +65,6 @@ struct DebugSettings: View {
 }
 
 #Preview {
-    DebugSettings {}
+    AppSettingsDebug {}
         .darkSchemePreferred()
 }

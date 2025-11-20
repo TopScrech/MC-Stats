@@ -70,7 +70,7 @@ struct AppContainer: View {
             .navigationDestination(for: PageDestinations.self) {
                 switch $0 {
                 case .SettingsRoot:
-                    SettingsView {
+                    AppSettings {
                         reloadData(forceRefresh: true)
                     }
                 }
