@@ -32,13 +32,7 @@ public class ServerStatusChecker {
             do {
                 print("CHECKING SERVER FROM CACHED SRV:", server.srvServerURL)
                 
-                let res = try await DirectServerStatusChecker.checkServer(
-                    serverUrl: server.srvServerURL,
-                    serverPort: server.srvServerPort,
-                    serverType: server.serverType,
-                    config: config
-                )
-                
+                let res = try await DirectServerStatusChecker.checkServer(server, config: config)
                 res.source = .CachedSRV
                 
                 return res
@@ -55,13 +49,7 @@ public class ServerStatusChecker {
             do {
                 print("CONNECTING TO SERVER DIRECTLY (IGNORING SRV)")
                 
-                let res = try await DirectServerStatusChecker.checkServer(
-                    serverUrl: server.serverURL,
-                    serverPort: server.serverPort,
-                    serverType: server.serverType,
-                    config: config
-                )
-                
+                let res = try await DirectServerStatusChecker.checkServer(server, config: config)
                 res.source = .Direct
                 
                 return res
@@ -71,7 +59,7 @@ public class ServerStatusChecker {
             }
         }
         
-        // STEP 3 first check if we already tried ot refresh the SRV based on previous forcing.
+        // STEP 3 first check if we already tried ot refresh the SRV based on previous forcing
         // if not, and we still could not connect, refresh the SRV if its a java server, maybe there is an update
         // if we recevied updated values from previous SRV, attempt ot connect using that
         if !forceRefeshSrv && server.serverType == .Java {
@@ -86,14 +74,9 @@ public class ServerStatusChecker {
                 print("FOUND NEW SRV RECORD FROM DNS! CHECKING SERVER AT:", server.srvServerURL)
                 
                 do {
-                    let res = try await DirectServerStatusChecker.checkServer(
-                        serverUrl: server.srvServerURL,
-                        serverPort: server.srvServerPort,
-                        serverType: server.serverType,
-                        config: config
-                    )
-                    
+                    let res = try await DirectServerStatusChecker.checkServer(server, config: config)
                     res.source = .UpdatedSRV
+                    
                     return res
                 } catch {
                     // something when horribly wrong
@@ -108,13 +91,7 @@ public class ServerStatusChecker {
         do {
             print("CALLING BACKUP SERVER")
             
-            let res = try await WebServerStatusChecker.checkServer(
-                url: server.serverURL,
-                port: server.serverPort,
-                type: server.serverType,
-                config: config
-            )
-            
+            let res = try await WebServerStatusChecker.checkServer(server, config: config)
             res.source = .ThirdParty
             
             print("Got result from third part. Returning...")

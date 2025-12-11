@@ -5,21 +5,16 @@ public class WebServerStatusChecker {
     static let API_URL = "https://api.mcstatus.io/v2/status"
     static let timeout = 4
     
-    public static func checkServer(
-        url: String,
-        port: Int,
-        type: ServerType,
-        config: ServerCheckerConfig?
-    ) async throws -> ServerStatus {
+    public static func checkServer(_ server: SavedMinecraftServer, config: ServerCheckerConfig?) async throws -> ServerStatus {
         var urlString = WebServerStatusChecker.API_URL
         
-        if type == .Java {
+        if server.serverType == .Java {
             urlString += "java/"
         } else {
             urlString += "bedrock/"
         }
         
-        urlString += url + ":" + String(port) + "?timeout=" + String(timeout)
+        urlString += server.serverURL + ":" + String(server.serverPort) + "?timeout=" + String(timeout)
         
         let url = URL(string: urlString)!
         let urlSession = URLSession.shared
@@ -38,7 +33,7 @@ public class WebServerStatusChecker {
             }
         }
         
-        if type == .Java {
+        if server.serverType == .Java {
             let decodedObj = try JSONDecoder().decode(WebJavaServerStatusResponse.self, from: data)
             
             return try WebServerStatusParser.parseServerResponse(
