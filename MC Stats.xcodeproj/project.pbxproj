@@ -483,6 +483,13 @@
 			);
 			target = F3570D3B2D6E779500BDF069 /* iMessages */;
 		};
+		F3E14B782F22D6ED00124D7D /* Exceptions for "MC Stats" folder in "iOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Other/iOS.plist,
+			);
+			target = F13E5FF82A4BD614005BE9B2 /* iOS */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -564,6 +571,7 @@
 		F383BE082ECF386800350A0F /* MC Stats */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
+				F3E14B782F22D6ED00124D7D /* Exceptions for "MC Stats" folder in "iOS" target */,
 				F383BF422ECF386800350A0F /* Exceptions for "MC Stats" folder in "watchOS" target */,
 				F383BF432ECF386800350A0F /* Exceptions for "MC Stats" folder in "macOS" target */,
 				F383BF442ECF386800350A0F /* Exceptions for "MC Stats" folder in "tvOS" target */,
@@ -961,7 +969,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1630;
-				LastUpgradeCheck = 2600;
+				LastUpgradeCheck = 2620;
 				TargetAttributes = {
 					F11F634A2A81E50E00D47187 = {
 						CreatedOnToolsVersion = 15.0;
