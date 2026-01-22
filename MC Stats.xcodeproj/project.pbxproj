@@ -44,7 +44,6 @@
 		F3D677652DD7E81700721DE8 /* Intents.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = F1406BA92AA391B800815BE8 /* Intents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F3DD086F2D75233300A67D4B /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = F3DD086E2D75233300A67D4B /* NukeUI */; };
 		F3DD08712D75233600A67D4B /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = F3DD08702D75233600A67D4B /* Nuke */; };
-		F3F2E6422D8258AF0078EA89 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F2E6412D8258AF0078EA89 /* StoreKit.framework */; };
 		F3F2E6432D8258C50078EA89 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F325F93C2D80E84300FDF4D9 /* StoreKit.framework */; };
 		F3F2E6452D8258C90078EA89 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F2E6442D8258C90078EA89 /* StoreKit.framework */; };
 		F3F5AD672E885E47007AD97D /* Appearance in Frameworks */ = {isa = PBXBuildFile; productRef = F3F5AD662E885E47007AD97D /* Appearance */; };
@@ -411,8 +410,12 @@
 				Helpers/ValueStore.swift,
 				Helpers/WatchHelper.swift,
 				InfoPlist.xcstrings,
+				"Other/MC Stats StoreKit Synced.storekit",
 				Legend.icon,
 				Supporter.icon,
+				Tipping/TipCard.swift,
+				Tipping/TipVM.swift,
+				Tipping/TipView.swift,
 			);
 			target = F3C879BC2D65720500840745 /* tvOS */;
 		};
@@ -671,7 +674,6 @@
 			files = (
 				F3C879FD2D6572FD00840745 /* Nuke in Frameworks */,
 				F376E1842DDA3C5000D98252 /* ScrechKit in Frameworks */,
-				F3F2E6422D8258AF0078EA89 /* StoreKit.framework in Frameworks */,
 				F3C923602D6C6CDC004D31A9 /* MCStatsDataLayer in Frameworks */,
 				F3C879FF2D65730000840745 /* NukeUI in Frameworks */,
 			);

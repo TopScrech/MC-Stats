@@ -1,5 +1,7 @@
 import SwiftUI
+#if !os(tvOS)
 import StoreKit
+#endif
 import MCStatsDataLayer
 
 struct AppSettings: View {
@@ -62,6 +64,7 @@ struct AppSettings: View {
                 Text("Leave a review to help others discover the app and support its development")
             }
 #endif
+            #if !os(tvOS)
             Section {
                 // Tip Developer
                 Button(action: tipDeveloper) {
@@ -76,6 +79,7 @@ struct AppSettings: View {
             } footer: {
                 Text("Help support the development of free and open source apps")
             }
+            #endif
             
 #if !os(tvOS)
             // Join TestFlight
@@ -114,11 +118,13 @@ struct AppSettings: View {
         }
         .navigationTitle("Settings")
         .scrollIndicators(.never)
+#if !os(tvOS)
         .sheet($showingTipSheet) {
             NavigationStack {
                 TipView()
             }
         }
+#endif
         .navigationDestination(for: SettingsPageDestinations.self) {
             switch $0 {
             case .GeneralSettings: AppSettingsGeneral()

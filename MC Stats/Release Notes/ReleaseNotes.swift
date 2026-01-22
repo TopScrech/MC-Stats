@@ -1,11 +1,15 @@
 import SwiftUI
+#if !os(tvOS)
 import StoreKit
+#endif
 
 struct ReleaseNotes: View {
     @Environment(\.dismiss) private var dismiss
     @Environment(\.openURL) private var openUrl
     
+#if !os(tvOS)
     @State private var showingTipSheet = false
+#endif
     var showDismissButton = true
     
     private let features = [
@@ -94,11 +98,18 @@ struct ReleaseNotes: View {
                         .headline()
                         .padding(.bottom, 10)
                     
-                    Text("If you love the app, consider leaving a review or leaving a small tip to help support development!")
-                        .subheadline()
-                        .multilineTextAlignment(.center)
-                        .secondary()
-                        .padding(.bottom, 20)
+                    Group {
+                        
+#if os(tvOS)
+                        Text("If you love the app, consider leaving a review to help support development!")
+#else
+                        Text("If you love the app, consider leaving a review or leaving a small tip to help support development!")
+#endif
+                    }
+                    .subheadline()
+                    .multilineTextAlignment(.center)
+                    .secondary()
+                    .padding(.bottom, 20)
                     
                     HStack(spacing: 10) {
                         Button {
@@ -112,7 +123,7 @@ struct ReleaseNotes: View {
                                 .foregroundColor(.white)
                                 .cornerRadius(10)
                         }
-                        
+#if !os(tvOS)
                         Button {
                             showingTipSheet = true
                         } label: {
@@ -124,6 +135,7 @@ struct ReleaseNotes: View {
                                 .foregroundColor(.white)
                                 .cornerRadius(10)
                         }
+#endif
                     }
                     .padding(.bottom, 20)
                     .frame(maxWidth: .infinity)
@@ -134,11 +146,13 @@ struct ReleaseNotes: View {
         }
         .navigationTitle("Features")
         .scrollIndicators(.never)
+#if !os(tvOS)
         .sheet($showingTipSheet) {
             NavigationStack {
                 TipView()
             }
         }
+#endif
         .toolbar {
             if showDismissButton {
                 ToolbarItem(placement: .confirmationAction) {
