@@ -28,7 +28,7 @@ struct SettingsView: View {
                 sheetAdd = true
             }
             
-            DebugSettings {
+            AppSettingsDebug {
                 reloadServers()
             }
         }

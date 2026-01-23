@@ -19,7 +19,7 @@ struct MCStatsApp: App {
 #if os(macOS)
         Settings {
             NavigationStack {
-                SettingsView()
+                AppSettings()
             }
             .frame(width: 800, height: 600)
         }

@@ -1,12 +1,10 @@
 import SwiftUI
+#if !os(tvOS)
 import StoreKit
+#endif
 import MCStatsDataLayer
 
-enum SettingsPageDestinations {
-    case GeneralSettings, FAQ, Shortcuts, Siri, WhatsNew
-}
-
-struct SettingsView: View {
+struct AppSettings: View {
     @Environment(\.openURL) private var openUrl
     
     private let reloadServers: () -> Void
@@ -66,6 +64,7 @@ struct SettingsView: View {
                 Text("Leave a review to help others discover the app and support its development")
             }
 #endif
+            #if !os(tvOS)
             Section {
                 // Tip Developer
                 Button(action: tipDeveloper) {
@@ -80,6 +79,7 @@ struct SettingsView: View {
             } footer: {
                 Text("Help support the development of free and open source apps")
             }
+            #endif
             
 #if !os(tvOS)
             // Join TestFlight
@@ -112,20 +112,22 @@ struct SettingsView: View {
                 Text("See the code that makes this app work, as well as file bugs and feature requests. Forked from [eclair4151's MC-Status](https://github.com/eclair4151/MC-Status-Widget-for-Minecraft)")
             }
 #endif
-            DebugSettings {
+            AppSettingsDebug {
                 reloadServers()
             }
         }
         .navigationTitle("Settings")
         .scrollIndicators(.never)
+#if !os(tvOS)
         .sheet($showingTipSheet) {
             NavigationStack {
                 TipView()
             }
         }
+#endif
         .navigationDestination(for: SettingsPageDestinations.self) {
             switch $0 {
-            case .GeneralSettings: GeneralSettings()
+            case .GeneralSettings: AppSettingsGeneral()
             case .FAQ:             FAQView(getiOSFAQs())
             case .Shortcuts:       ShortcutsGuide()
             case .Siri:            SiriGuide()
@@ -182,7 +184,7 @@ struct SettingsView: View {
 
 #Preview {
     NavigationStack {
-        SettingsView()
+        AppSettings()
     }
     .darkSchemePreferred()
 }
