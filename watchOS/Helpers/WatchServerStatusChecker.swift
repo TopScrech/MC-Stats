@@ -129,13 +129,7 @@ final class WatchServerStatusChecker {
         do {
             print("CALLING BACKUP SERVER")
             
-            let res = try await WebServerStatusChecker.checkServer(
-                url: server.serverURL,
-                port: server.serverPort,
-                type: server.serverType,
-                config: nil
-            )
-            
+            let res = try await WebServerStatusChecker.checkServer(server, config: nil)
             res.source = Source.ThirdParty
             
             print("Got result from third part. Returning...")
