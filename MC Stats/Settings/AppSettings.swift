@@ -13,8 +13,6 @@ struct AppSettings: View {
         self.reloadServers = reloadServers
     }
     
-    @State private var showingTipSheet = false
-    
     var body: some View {
         List {
             Section {
@@ -64,23 +62,6 @@ struct AppSettings: View {
                 Text("Leave a review to help others discover the app and support its development")
             }
 #endif
-            #if !os(tvOS)
-            Section {
-                // Tip Developer
-                Button(action: tipDeveloper) {
-                    Label {
-                        Text("Leave Developer a Tip")
-                    } icon: {
-                        Image(systemName: "gift")
-                            .foregroundStyle(.blue.gradient)
-                    }
-                }
-                .foregroundStyle(.foreground)
-            } footer: {
-                Text("Help support the development of free and open source apps")
-            }
-            #endif
-            
 #if !os(tvOS)
             // Join TestFlight
             Section {
@@ -118,13 +99,6 @@ struct AppSettings: View {
         }
         .navigationTitle("Settings")
         .scrollIndicators(.never)
-#if !os(tvOS)
-        .sheet($showingTipSheet) {
-            NavigationStack {
-                TipView()
-            }
-        }
-#endif
         .navigationDestination(for: SettingsPageDestinations.self) {
             switch $0 {
             case .GeneralSettings: AppSettingsGeneral()
@@ -175,10 +149,6 @@ struct AppSettings: View {
         
         AppStore.requestReview(in: windowScene)
 #endif
-    }
-    
-    private func tipDeveloper() {
-        showingTipSheet = true
     }
 }
 

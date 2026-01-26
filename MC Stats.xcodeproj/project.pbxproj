@@ -377,7 +377,6 @@
 				MCStats.swift,
 				Nav/AppContainerHelper.swift,
 				Nav/PageDestinations.swift,
-				"Other/MC Stats StoreKit Synced.storekit",
 				"Server Details/MOTDView.swift",
 				"Server Details/PlayerList.swift",
 				"Server Details/ServerDetailsHelper.swift",
@@ -411,11 +410,7 @@
 				Helpers/WatchHelper.swift,
 				InfoPlist.xcstrings,
 				Legend.icon,
-				"Other/MC Stats StoreKit Synced.storekit",
 				Supporter.icon,
-				Tipping/TipCard.swift,
-				Tipping/TipView.swift,
-				Tipping/TipVM.swift,
 			);
 			target = F3C879BC2D65720500840745 /* tvOS */;
 		};
@@ -583,9 +578,6 @@
 				F383BF472ECF386800350A0F /* Exceptions for "MC Stats" folder in "Widgets" target */,
 				F383BF482ECF386800350A0F /* Exceptions for "MC Stats" folder in "Watch Widgets" target */,
 				F383BF492ECF386800350A0F /* Exceptions for "MC Stats" folder in "iMessages" target */,
-			);
-			explicitFolders = (
-				"Other/MC Stats StoreKit Synced.storekit",
 			);
 			path = "MC Stats";
 			sourceTree = "<group>";
