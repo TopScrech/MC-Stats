@@ -1,8 +1,10 @@
+import OSLog
 import SwiftUI
 import Messages
 
 @Observable
 final class MessagesVM {
+    private let logger = Logger()
     private var vc: MessagesViewController?
     
     init(_ vc: MessagesViewController?) {
@@ -17,7 +19,7 @@ final class MessagesVM {
     
     func sendMessage(_ text: String) {
         guard let conversation = vc?.conversation else {
-            print("No active conversation")
+            logger.warning("No active conversation")
             return
         }
         
@@ -34,7 +36,7 @@ final class MessagesVM {
         
         conversation.insert(message) { error in
             if let error {
-                print("Error sending message:", error.localizedDescription)
+                self.logger.error("Error sending message: \(error)")
             }
         }
     }

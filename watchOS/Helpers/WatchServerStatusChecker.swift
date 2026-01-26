@@ -1,6 +1,9 @@
 import Foundation
 import MCStatsDataLayer
+import OSLog
 import WatchConnectivity
+
+private let logger = Logger()
 
 @MainActor
 final class WatchServerStatusChecker {
@@ -16,7 +19,7 @@ final class WatchServerStatusChecker {
                 return
             }
             
-            print("Received response from phone!")
+            logger.info("Received response from phone")
             
             for batch in self.expectedResponseBatches {
                 batch.expectedResults.removeValue(forKey: serverID)
@@ -42,7 +45,7 @@ final class WatchServerStatusChecker {
     }
     
     func checkServers(_ servers: [SavedMinecraftServer]) {
-        print("Watch is going to ask for server status from phone")
+        logger.info("Watch is going to ask for server status from phone")
         
         let serverBatch = servers.reduce(into: [UUID: SavedMinecraftServer]()) {
             $0[$1.id] = $1
@@ -69,7 +72,7 @@ final class WatchServerStatusChecker {
                 }
                 
             } catch let error {
-                print("Failed to check servers via phone:", error.localizedDescription)
+                logger.error("Failed to check servers via phone: \(error)")
             }
             
             // after timeout, anything left in the batch needs to be checked via the backup web API
@@ -99,7 +102,7 @@ final class WatchServerStatusChecker {
             let response = try decoder.decode(WatchResponseMessage.self, from: jsonData)
             return (response.id, response.status)
         } catch {
-            print("Error decoding", error.localizedDescription)
+            logger.error("Error decoding: \(error)")
             return nil
         }
     }
@@ -118,28 +121,28 @@ final class WatchServerStatusChecker {
         
         let payload = ["request": jsonString]
         
-        print("sending request...")
+        logger.info("Sending request")
         try connectivityProvider.send(payload)
         
-        print("try to send request...")
+        logger.info("Try to send request")
     }
     
     // if we are calling third party do it individually so we can show the responses as they come in
     private func checkServerViaWeb(_ server: SavedMinecraftServer) async -> ServerStatus {
         do {
-            print("CALLING BACKUP SERVER")
+            logger.warning("Calling backup server")
             
             let res = try await WebServerStatusChecker.checkServer(server, config: nil)
             res.source = Source.ThirdParty
             
-            print("Got result from third part. Returning...")
+            logger.info("Got result from third party. Returning")
             
             return res
         } catch {
             // If not able to connect to the MC server directly, nor able to connect to the 3rd party server
             // We arent online at all most likely
             // Status is unknown (default value)
-            print("ERROR DIRECT CONNECTING TO BACKUP SERVER: phone most likely not connected at all", error.localizedDescription)
+            logger.error("Error connecting to backup server, phone likely not connected: \(error)")
             return ServerStatus()
         }
     }

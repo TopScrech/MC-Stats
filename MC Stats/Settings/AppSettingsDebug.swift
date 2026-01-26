@@ -1,10 +1,13 @@
-import SwiftUI
-import SwiftData
 import MCStatsDataLayer
+import OSLog
+import SwiftData
+import SwiftUI
 
 struct AppSettingsDebug: View {
     @Query private var servers: [SavedMinecraftServer]
     @Environment(\.modelContext) private var modelContext
+    
+    private let logger = Logger()
     
     let reloadServers: () -> Void
     
@@ -42,7 +45,7 @@ struct AppSettingsDebug: View {
         do {
             try modelContext.save()
         } catch {
-            print(error.localizedDescription)
+            logger.error("Error deleting all servers: \(error)")
         }
         
         reloadServers()

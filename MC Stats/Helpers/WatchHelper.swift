@@ -1,8 +1,11 @@
-import WatchConnectivity
-import SwiftData
 import MCStatsDataLayer
+import SwiftData
+import WatchConnectivity
+import OSLog
 
 final class WatchHelper: NSObject, WCSessionDelegate {
+    private let logger = Logger(subsystem: "dev.topscrech.MC-Stats", category: "WatchHelper")
+    
     override init() {
         super.init()
 #warning("WatchHelper disabled")
@@ -17,15 +20,15 @@ final class WatchHelper: NSObject, WCSessionDelegate {
     }
     
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-        print("Watch session changed state:", activationState.rawValue)
+        logger.info("Watch session changed state: \(activationState.rawValue)")
     }
     
     func sessionDidBecomeInactive(_ session: WCSession) {
-        print("Watch session became inactive")
+        logger.info("Watch session became inactive")
     }
     
     func sessionDidDeactivate(_ session: WCSession) {
-        print("Watch session deactivated")
+        logger.info("Watch session deactivated")
     }
     
     func handleWatchMessage(message: [String: Any], session: WCSession) {
@@ -39,7 +42,7 @@ final class WatchHelper: NSObject, WCSessionDelegate {
             let request = try? decoder.decode(WatchRequestMessage.self, from: jsonData)
         else {
             // unknown input? return nothing
-            print("Error parsing watch request")
+            logger.error("Error parsing watch request")
             return
         }
         
@@ -60,17 +63,17 @@ final class WatchHelper: NSObject, WCSessionDelegate {
                 
                 let payload = ["response": jsonString]
                 
-                print("SENDING STATUS RESPONSE TO WATCH")
+                logger.info("Sending status response to watch")
                 
                 WCSession.default.sendMessage(payload, replyHandler: nil) { error in
-                    print("ERROR SENDING STATUS RESPONSE TO WATCH:", error.localizedDescription)
+                    self.logger.error("Error sending status response to watch: \(error)")
                 }
             }
         }
     }
     
     func session(_ session: WCSession, didReceiveMessage message: [String: Any]) {
-        print("We've been waken from the background, and have been asked for data from the watch!")
+        logger.info("Received watch background request for data")
         
         // initilize model container since sometimes it's not ready yet??
         // https://developer.apple.com/forums/thread/734212
@@ -78,6 +81,6 @@ final class WatchHelper: NSObject, WCSessionDelegate {
         
         handleWatchMessage(message: message, session: session)
         
-        print("container:", container.schema.debugDescription)
+        logger.info("Container: \(container.schema.debugDescription)")
     }
 }

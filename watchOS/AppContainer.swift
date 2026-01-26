@@ -1,13 +1,16 @@
-import SwiftUI
-import SwiftData
 import CloudKit
 import CoreData
-import WidgetKit
 import MCStatsDataLayer
+import OSLog
+import SwiftData
+import SwiftUI
+import WidgetKit
 
 struct AppContainer: View {
     @Environment(\.scenePhase) private var scenePhase
     @Environment(\.modelContext) var modelContext
+    
+    private let logger = Logger()
     
     private enum iCloudStatus {
         case available, unavailable, unknown
@@ -91,16 +94,16 @@ struct AppContainer: View {
         .onChange(of: scenePhase, initial: true) { _, newPhase in
             // Some code to investigate an Apple Watch bug
             if newPhase == .active {
-                print("Active")
+                logger.info("Active")
                 
                 reloadData()
                 checkForAutoReload()
                 
             } else if newPhase == .inactive {
-                print("Inactive")
+                logger.info("Inactive")
                 
             } else if newPhase == .background {
-                print("Background")
+                logger.info("Background")
             }
         }
         .onReceive(NotificationCenter.default.publisher(for: NSPersistentCloudKitContainer.eventChangedNotification)) { notification in
@@ -151,13 +154,13 @@ struct AppContainer: View {
                 }
                 
                 if let error {
-                    print("Error checking iCloud account status:", error.localizedDescription)
+                    logger.error("Error checking iCloud account status: \(error)")
                 }
             }
             
             //            let server = SavedMinecraftServer.initialize(id: UUID(), serverType: .Java, name: "OPBlocks", serverUrl: "hub.opblocks.com", serverPort: 25565)
             //            modelContext.insert(server)
-            //            print(server.name)
+            //            logger.info("Server name: \(server.name)")
             //
             //            modelContext.insert(server)
             

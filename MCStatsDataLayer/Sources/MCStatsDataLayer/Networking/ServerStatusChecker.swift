@@ -1,4 +1,7 @@
 import Foundation
+import OSLog
+
+private let logger = Logger()
 
 public class ServerStatusChecker {
     public static func checkServer(
@@ -24,13 +27,13 @@ public class ServerStatusChecker {
             }
         }
         
-        print("starting server check for:", server.serverURL)
+        logger.info("Starting server check for: \(server.serverURL)")
         
         // STEP 1 if we have SRV values, check that server
         // Only Java servers support SRV records
         if server.serverType == .Java && !server.srvServerURL.isEmpty && server.srvServerPort != 0 {
             do {
-                print("CHECKING SERVER FROM CACHED SRV:", server.srvServerURL)
+                logger.info("Checking server from cached SRV: \(server.srvServerURL)")
                 
                 let res = try await DirectServerStatusChecker.checkServer(server, config: config)
                 res.source = .CachedSRV
@@ -39,7 +42,7 @@ public class ServerStatusChecker {
             } catch {
                 // something when horribly wrong
                 // Move to next step
-                print("ERROR CONNECTING TO CACHED SRV:", error.localizedDescription)
+                logger.error("Error connecting to cached SRV: \(error)")
             }
         }
         
@@ -47,7 +50,7 @@ public class ServerStatusChecker {
         // ALSO THIS IS WHEN WE CONNECT TO BEDROCK SINCE THEY DONT HAVE SRV
         if server.serverType == .Bedrock || server.serverURL != server.srvServerURL || server.serverPort != server.srvServerPort {
             do {
-                print("CONNECTING TO SERVER DIRECTLY (IGNORING SRV)")
+                logger.info("Connecting to server directly, ignoring SRV")
                 
                 let res = try await DirectServerStatusChecker.checkServer(server, config: config)
                 res.source = .Direct
@@ -55,7 +58,7 @@ public class ServerStatusChecker {
                 return res
             } catch {
                 // something when horribly wrong. Move to next step
-                print("ERROR DIRECT CONNECTING TO MANUAL SERVER + PORT:", error.localizedDescription)
+                logger.error("Error connecting to manual server and port: \(error)")
             }
         }
         
@@ -71,7 +74,7 @@ public class ServerStatusChecker {
                 server.srvServerPort = srvRecord.1
                 
                 // we need to save it in swift data here
-                print("FOUND NEW SRV RECORD FROM DNS! CHECKING SERVER AT:", server.srvServerURL)
+                logger.info("Found new SRV record from DNS, checking server at: \(server.srvServerURL)")
                 
                 do {
                     let res = try await DirectServerStatusChecker.checkServer(server, config: config)
@@ -81,7 +84,7 @@ public class ServerStatusChecker {
                 } catch {
                     // something when horribly wrong
                     // Move to next step
-                    print("ERROR CONNECTING TO NEW SRV:", error.localizedDescription)
+                    logger.error("Error connecting to new SRV: \(error)")
                 }
             }
         }
@@ -89,18 +92,18 @@ public class ServerStatusChecker {
         // STEP 4 if all else fails, ask 3rd party web server for info
         // if we hear back from the 3rd party server, and they also say the server is offline, we can agree its offline
         do {
-            print("CALLING BACKUP SERVER")
+            logger.warning("Calling backup server")
             
             let res = try await WebServerStatusChecker.checkServer(server, config: config)
             res.source = .ThirdParty
             
-            print("Got result from third part. Returning...")
+            logger.info("Got result from third party, returning")
             
             return res
         } catch {
             // if we arent able to connect to the minecraft server directly, nor are we able to connect to the 3rd party server
             // we arent online at all most likely. status is unknown (default value)
-            print("ERROR DIRECT CONNECTING TO BACKUP SERVER: phone most likely not connected at all:", error.localizedDescription)
+            logger.error("Error connecting to backup server, phone likely not connected: \(error)")
             
             return ServerStatus()
         }
@@ -118,7 +121,7 @@ public struct ServerCheckerConfig {
 }
 
 // let res = await SwiftyPing.pingServer(serverUrl: serverURL)
-// print("got res:", String(res.duration))
+// logger.info("Got res: \(String(res.duration))")
 
 //let servers = [
 //    "buzz.manacube.com",
@@ -219,7 +222,7 @@ func testCall() {
     //        let statusCheckerTask = Task {
     //            let server = SavedMinecraftServer(id: UUID(), serverType: .Java, name: "", serverUrl: serverURL, serverPort: 25565)
     //            let status = await ServerStatusChecker.checkServer(server: server)
-    //            print("👉:", serverURL + "   -   " + status.version + "  -   " + status.status.rawValue)
+    //            logger.info("👉: \(serverURL) - \(status.version) - \(status.status.rawValue)")
     //        }
     //    }
 }

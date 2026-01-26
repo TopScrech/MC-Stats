@@ -1,5 +1,6 @@
-import SwiftUI
+import OSLog
 import SwiftData
+import SwiftUI
 
 public enum LoadingStatus: String {
     case Loading, Finished
@@ -7,6 +8,7 @@ public enum LoadingStatus: String {
 
 @Observable
 public class ServerStatusVM: Identifiable, Hashable {
+    private let logger = Logger()
     public var server: SavedMinecraftServer
     public var status: ServerStatus?
     public var loadingStatus = LoadingStatus.Loading
@@ -36,7 +38,7 @@ public class ServerStatusVM: Identifiable, Hashable {
         Task {
             // DONT DO THIS, LET USER PASS IN FUNC WHICH WILL RELOAD DATA TO ALLOW REUSE IN WATCH
             let statusResult = await ServerStatusChecker.checkServer(server, config: config)
-            print("Got result from status checker")
+            logger.info("Got result from status checker")
             
             self.status = statusResult
             // I need this, but it crashes everything
@@ -49,16 +51,16 @@ public class ServerStatusVM: Identifiable, Hashable {
                 if !statusResult.favIcon.isEmpty {
                     self.server.serverIcon = statusResult.favIcon
                     
-                    print("Going to insert updated model")
+                    self.logger.info("Going to insert updated model")
                     self.modelContext.insert(self.server)
                     
                     do {
                         try self.modelContext.save()
                     } catch {
-                        print(error.localizedDescription)
+                        self.logger.error("Error saving model context: \(error)")
                     }
                     
-                    print("Saved server icon to DB")
+                    self.logger.info("Saved server icon to DB")
                 }
             }
         }

@@ -1,9 +1,12 @@
-import SwiftUI
 import MCStatsDataLayer
+import OSLog
+import SwiftUI
 
 struct ServerRow: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(\.dismiss) private var dismiss
+    
+    private let logger = Logger()
     
     private var vm: ServerStatusVM
     
@@ -116,7 +119,7 @@ struct ServerRow: View {
             try modelContext.save()
         } catch {
             // Failures include issues such as an invalid unique constraint
-            print(error.localizedDescription)
+            logger.error("Error deleting server: \(error)")
         }
         
         refreshAllWidgets()

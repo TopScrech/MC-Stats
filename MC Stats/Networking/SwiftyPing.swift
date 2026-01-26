@@ -1,5 +1,6 @@
 // THIS CODE WAS MODIFIED FROM https://github.com/samiyr/SwiftyPing
 import Foundation
+import OSLog
 
 public typealias Observer = ((_ response: PingResponse) -> Void)
 public typealias FinishedCallback = ((_ result: PingResult) -> Void)
@@ -26,6 +27,7 @@ public class SocketInfo {
 
 /// Represents a single ping instance. A ping instance has a single destination
 public class SwiftyPing: NSObject {
+    private let logger = Logger()
     /// Describes the ping host destination
     public struct Destination {
         /// The host name, can be a IP address or a URL
@@ -220,7 +222,7 @@ public class SwiftyPing: NSObject {
                 )
                 
                 continuation.resume(returning: res)
-                print("ERROR PINGING:", error.localizedDescription)
+                Logger().error("Ping error: \(error)")
             }
         }
     }
@@ -687,7 +689,7 @@ public class SwiftyPing: NSObject {
         } catch let error as PingError {
             validationError = error
         } catch {
-            print("Unhandled error thrown:", error)
+            logger.error("Unhandled error thrown: \(error)")
         }
         
         timeoutTimer?.invalidate()

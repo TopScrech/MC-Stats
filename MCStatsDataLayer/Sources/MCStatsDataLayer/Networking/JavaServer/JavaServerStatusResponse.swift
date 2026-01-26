@@ -1,4 +1,7 @@
 import Foundation
+import OSLog
+
+private let logger = Logger()
 
 public class JavaServerStatusResponse: Decodable {
     var description: JavaMOTDDescriptionSection? = nil
@@ -37,7 +40,7 @@ public class JavaServerStatusResponse: Decodable {
             self.description = objDesc
             
         } else {
-            print("FAILED TO PARSE INCOMING SERVER JSON")
+            logger.error("Failed to parse incoming server JSON")
             throw ServerStatusCheckerError.StatusUnparsable
         }
         

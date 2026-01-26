@@ -1,5 +1,8 @@
 import Foundation
+import OSLog
 import SwiftData
+
+private let logger = Logger()
 
 public class SwiftDataHelper {
     public static func getModelContainter() -> ModelContainer {
@@ -17,7 +20,7 @@ public class SwiftDataHelper {
                 return try ModelContainer(for: SavedMinecraftServer.self, configurations: config)
             } catch {
                 // something broken with icloud? continue with local container without config
-                print("ERROR LOADING ICLOUD MODEL CONTAINTER:", error.localizedDescription)
+                logger.error("Error loading iCloud model container: \(error)")
             }
         }
         

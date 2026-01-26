@@ -1,4 +1,7 @@
 import Foundation
+import OSLog
+
+private let logger = Logger()
 
 public class DirectServerStatusChecker {
     public static func checkServer(_ server: SavedMinecraftServer, config: ServerCheckerConfig?) async throws -> ServerStatus {
@@ -6,14 +9,14 @@ public class DirectServerStatusChecker {
         
         let stringResult = try await statusChecker.checkServer()
         
-        print(stringResult)
+        logger.info("Raw status response: \(stringResult)")
         
         let result = try statusChecker.getParser().parseServerResponse(
             stringInput: stringResult,
             config: config
         )
         
-        print("Successful connection and parsing, returning result")
+        logger.info("Successful connection and parsing, returning result")
         
         return result
     }

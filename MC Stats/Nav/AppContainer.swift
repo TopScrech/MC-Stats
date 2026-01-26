@@ -1,11 +1,13 @@
-import ScrechKit
-import SwiftData
 import CoreData
 import MCStatsDataLayer
+import OSLog
+import ScrechKit
+import SwiftData
 
 struct AppContainer: View {
     @State var nav = NavigationPath()
     var reviewHelper = ReviewHelper()
+    private let logger = Logger()
 #if os(iOS)
     @EnvironmentObject private var store: ValueStore
     private let watchHelper = WatchHelper()
@@ -145,17 +147,17 @@ struct AppContainer: View {
         .onChange(of: scenePhase, initial: true) { _, newPhase in
             // Some code to investigate an Apple Watch bug
             if newPhase == .active {
-                print("Active")
+                logger.info("Active")
                 
                 reloadData()
                 checkForAutoReload()
                 checkForAppReviewRequest()
                 
             } else if newPhase == .inactive {
-                print("Inactive")
+                logger.info("Inactive")
                 
             } else if newPhase == .background {
-                print("Background")
+                logger.info("Background")
             }
         }
         .onReceive(NotificationCenter.default.publisher(for: NSPersistentCloudKitContainer.eventChangedNotification)) { notification in
@@ -169,7 +171,7 @@ struct AppContainer: View {
             // Can we somehow check if anything actually changed?
             // This is spam called on every open
             if event.endDate != nil && event.type == .import {
-                print("Refresh triggered via eventChangedNotification")
+                logger.info("Refresh triggered via eventChangedNotification")
                 
                 ShortcutsProvider.updateAppShortcutParameters()
                 
@@ -197,19 +199,19 @@ struct AppContainer: View {
     }
     
     private func processDeeplink(_ url: URL) {
-        print("Received deeplink:", url)
+        logger.info("Received deeplink: \(url)")
         
         // mc-stats://add-server?address=\(subdomain)
         if url.scheme == "mc-stats" {
             guard
                 let components = URLComponents(url: url, resolvingAgainstBaseURL: true)
             else {
-                print("Invalid URL")
+                logger.warning("Invalid URL")
                 return
             }
             
             guard let action = components.host, action == "add-server" else {
-                print("Unknown URL")
+                logger.warning("Unknown URL")
                 return
             }
             
@@ -217,7 +219,7 @@ struct AppContainer: View {
                 let address = components.queryItems?.first(where: { $0.name == "address" })?.value,
                 let name = components.queryItems?.first(where: { $0.name == "name" })?.value
             else {
-                print("Address not found")
+                logger.warning("Address not found")
                 return
             }
             
