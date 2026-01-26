@@ -208,10 +208,7 @@ struct AppContainer: View {
                 return
             }
             
-            guard
-                let action = components.host,
-                action == "add-server"
-            else {
+            guard let action = components.host, action == "add-server" else {
                 print("Unknown URL")
                 return
             }

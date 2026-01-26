@@ -383,9 +383,6 @@
         }
       }
     },
-    "Dismiss" : {
-
-    },
     "Displays the max player count alongside the current number of players in the widgets" : {
 
     },
@@ -468,16 +465,6 @@
     "Got it!" : {
 
     },
-    "Help support the development of free and open source apps" : {
-      "localizations" : {
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Помогите поддержать разработку бесплатных приложений с открытым исходным кодом"
-          }
-        }
-      }
-    },
     "How do I report a bug/request a feature?" : {
 
     },
@@ -500,9 +487,6 @@
           }
         }
       }
-    },
-    "If you love the app, consider leaving a review or leaving a small tip to help support development!" : {
-
     },
     "If you love the app, consider leaving a review to help support development!" : {
 
@@ -580,9 +564,6 @@
         }
       }
     },
-    "Leave a Tip" : {
-
-    },
     "Leave an App Review" : {
       "localizations" : {
         "ru" : {
@@ -592,9 +573,6 @@
           }
         }
       }
-    },
-    "Leave Developer a Tip" : {
-
     },
     "Light" : {
       "comment" : "Localized string key for the \"Light\" color theme.",
@@ -788,6 +766,7 @@
 
     },
     "Restore Purchases" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ru" : {
           "stringUnit" : {
@@ -1054,6 +1033,7 @@
       }
     },
     "Support the app!" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ru" : {
           "stringUnit" : {
@@ -1108,16 +1088,6 @@
     "These features require a server component, and would need to be a paid subscription service. This may become an option in the future" : {
 
     },
-    "This app is free and open-source. If you find it useful, consider tipping to help keep it going!" : {
-      "localizations" : {
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Это приложение бесплатно и с открытым исходным кодом. Если оно вам пригодилось, вы можете поддержать его развитие с помощью пожертвования!"
-          }
-        }
-      }
-    },
     "This server has disabled player lists" : {
       "localizations" : {
         "ru" : {
@@ -1127,9 +1097,6 @@
           }
         }
       }
-    },
-    "Tip %@" : {
-
     },
     "Title" : {
       "localizations" : {
