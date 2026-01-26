@@ -108,7 +108,7 @@ struct AppContainer: View {
                 ToolbarItem(placement: .topBarLeading) {
                     NavigationLink(value: PageDestinations.SettingsRoot) {
 #if os(tvOS)
-                        Text("Settings")
+                        Label("Settings", systemImage: "")
 #else
                         Image(systemName: "gear")
 #endif
@@ -119,7 +119,7 @@ struct AppContainer: View {
                 }
 #if os(tvOS)
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button("Refresh") {
+                    Button("Refresh", systemImage: "") {
                         reloadData(forceRefresh: true)
                     }
                 }
@@ -129,7 +129,7 @@ struct AppContainer: View {
                         sheetAdd = true
                     } label: {
 #if os(tvOS)
-                        Text("+")
+                        Label("+", systemImage: "")
 #else
                         Image(systemName: "plus")
 #endif

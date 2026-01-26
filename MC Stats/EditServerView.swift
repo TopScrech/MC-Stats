@@ -115,17 +115,15 @@ struct EditServerView: View {
         }
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
-                Button("Cancel") {
+                Button("Cancel", systemImage: "") {
                     dismiss()
                 }
             }
             
             ToolbarItem(placement: .topBarTrailing) {
-                Button("Save") {
-                    saveItem()
-                }
-                .bold()
-                .disabled(saveDisabled())
+                Button("Save", systemImage: "", action: saveItem)
+                    .bold()
+                    .disabled(saveDisabled())
             }
         }
         .onAppear {
