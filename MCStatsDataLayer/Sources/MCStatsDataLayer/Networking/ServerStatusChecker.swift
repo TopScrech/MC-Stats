@@ -104,7 +104,12 @@ public class ServerStatusChecker {
         do {
             logger.warning("Calling backup server")
             
-            let res = try await WebServerStatusChecker.checkServer(server, config: config)
+            let res = try await WebServerStatusChecker.checkServer(
+                serverType: server.serverType,
+                serverURL: server.serverURL,
+                serverPort: server.serverPort,
+                config: config
+            )
             res.source = .ThirdParty
             
             logger.info("Got result from third party, returning")
