@@ -1,4 +1,7 @@
 import Foundation
+import OSLog
+
+private let logger = Logger()
 
 public class JavaServerStatusParser: ServerStatusParserProtocol {
     public static func parseServerResponse(stringInput: String, config: ServerCheckerConfig?) throws -> ServerStatus {
@@ -15,7 +18,7 @@ public class JavaServerStatusParser: ServerStatusParserProtocol {
             // Attempt to parse it into a json using a custom parser defined in the object
             responseObject = try JSONDecoder().decode(JavaServerStatusResponse.self, from: jsonData)
         } catch let error {
-            print("Unable to parse response from input:", stringInput)
+            logger.error("Unable to parse response from input: \(stringInput)")
             throw error
         }
         

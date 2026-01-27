@@ -1,5 +1,6 @@
 import AppIntents
 import MCStatsDataLayer
+import OSLog
 
 private func runServerStatusIntentCheck(
     _ serverEntity: SavedServerEntity?,
@@ -46,7 +47,7 @@ private func runServerStatusIntentCheck(
     let status = await ServerStatusChecker.checkServer(refrencedServer, config: checkerConfig)
 #endif
     
-    print("container:", container.schema.debugDescription)
+    Logger().info("Container: \(container.schema.debugDescription)")
     
     return ServerStatusEntity(
         serverId: UUID(),

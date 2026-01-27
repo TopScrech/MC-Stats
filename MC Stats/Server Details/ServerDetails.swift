@@ -1,10 +1,13 @@
-import SwiftUI
 import MCStatsDataLayer
 import Nuke
+import OSLog
+import SwiftUI
 
 struct ServerDetails: View {
     @Environment(\.modelContext) var modelContext
     @Environment(\.dismiss) var dismiss
+    
+    private let logger = Logger()
     
     @State var vm: ServerStatusVM
     var refresh: () -> Void
@@ -265,7 +268,12 @@ struct ServerDetails: View {
             let pingResult = await SwiftyPing.pingServer(vm.getServerAddressToPing())
             
             guard pingResult.error == nil else {
-                print("Ping error:", pingResult.error ?? "Unknown")
+                if let error = pingResult.error {
+                    logger.error("Ping error: \(error)")
+                } else {
+                    logger.error("Ping error: Unknown")
+                }
+                
                 return
             }
             

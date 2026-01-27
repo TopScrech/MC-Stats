@@ -1,5 +1,6 @@
 import Foundation
 import Network
+import OSLog
 
 public enum UDPResponseType {
     case SUCCESS, ERROR
@@ -14,11 +15,15 @@ public class UDPClient {
     
     var resultHandler = NWConnection.SendCompletion.contentProcessed { NWError in
         guard NWError == nil else {
-            print("ERROR! Error when data (Type: Data) sending. NWError: \n \(NWError!)")
+            if let error = NWError {
+                Logger().error("Error sending data: \(error)")
+            } else {
+                Logger().error("Error sending data: unknown")
+            }
             return
         }
         
-        print("data sent successfully")
+        Logger().info("Data sent successfully")
     }
     
     public init?(address newAddress: String, port newPort: Int32, listener: @escaping (_ responseType: UDPResponseType, _ client: UDPClient?, _ data: Data?) -> Void) {
@@ -27,7 +32,7 @@ public class UDPClient {
         guard
             let codedPort = NWEndpoint.Port(rawValue: NWEndpoint.Port.RawValue(newPort))
         else {
-            print("Failed to create connection address")
+            Logger().error("Failed to create connection address")
             self.listener(.ERROR, nil, nil)
             
             return nil
@@ -45,20 +50,20 @@ public class UDPClient {
         connection.stateUpdateHandler = { newState in
             switch (newState) {
             case .ready:
-                print("State: Ready")
+                Logger().info("State: Ready")
                 return
                 
             case .setup:
-                print("State: Setup")
+                Logger().info("State: Setup")
                 
             case .cancelled:
-                print("State: Cancelled")
+                Logger().info("State: Cancelled")
                 
             case .preparing:
-                print("State: Preparing")
+                Logger().info("State: Preparing")
                 
             default:
-                print("ERROR! State not defined!\n")
+                Logger().error("State not defined")
                 self.listener(.ERROR, nil, nil)
                 
             }
@@ -81,22 +86,20 @@ public class UDPClient {
             }
         }
         
-        print("Sending Data")
+        Logger().info("Sending data")
         self.connection.send(content: data, completion: self.resultHandler)
-        
         
         self.connection.receiveMessage { data, context, isComplete, error in
             self.didRecieveData = true
             
             guard let data else {
-                print("Error: Received nil Data")
+                Logger().error("Received nil data")
                 
                 self.listener(.ERROR, self, nil)
                 return
             }
             
-            print("Received valid Data")
-            
+            Logger().info("Received valid data")
             self.listener(.SUCCESS, self, data)
         }
     }

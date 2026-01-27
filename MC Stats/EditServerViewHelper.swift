@@ -1,4 +1,5 @@
 import SwiftUI
+import OSLog
 
 extension EditServerView {
     // server domains cannot have / or :
@@ -74,10 +75,10 @@ extension EditServerView {
             do {
                 try modelContext.save()
             } catch {
-                print(error.localizedDescription)
+                Logger().error("Error saving server: \(error)")
             }
             
-            print("Server added")
+            Logger().info("Server added")
             
             ShortcutsProvider.updateAppShortcutParameters()
             

@@ -1,19 +1,34 @@
 import Foundation
+import OSLog
+
+private let logger = Logger()
 
 public class DirectServerStatusChecker {
-    public static func checkServer(_ server: SavedMinecraftServer, config: ServerCheckerConfig?) async throws -> ServerStatus {
-        let statusChecker = ServerStatusCheckerFactory().getStatusChecker(server)
+    public static func checkServer(
+        _ server: SavedMinecraftServer,
+        config: ServerCheckerConfig?,
+        address: String? = nil,
+        port: Int? = nil
+    ) async throws -> ServerStatus {
+        let resolvedAddress = address ?? server.serverURL
+        let resolvedPort = port ?? server.serverPort
+        
+        let statusChecker = ServerStatusCheckerFactory().getStatusChecker(
+            serverType: server.serverType,
+            address: resolvedAddress,
+            port: resolvedPort
+        )
         
         let stringResult = try await statusChecker.checkServer()
         
-        print(stringResult)
+        logger.info("Raw status response: \(stringResult)")
         
         let result = try statusChecker.getParser().parseServerResponse(
             stringInput: stringResult,
             config: config
         )
         
-        print("Successful connection and parsing, returning result")
+        logger.info("Successful connection and parsing, returning result")
         
         return result
     }
@@ -21,13 +36,17 @@ public class DirectServerStatusChecker {
 
 // Factory to dynamically handles creating the correct status checker for bedrock vs java
 public class ServerStatusCheckerFactory {
-    public func getStatusChecker(_ server: SavedMinecraftServer) -> ServerStatusCheckerProtocol {
-        switch server.serverType {
+    public func getStatusChecker(
+        serverType: ServerType,
+        address: String,
+        port: Int
+    ) -> ServerStatusCheckerProtocol {
+        switch serverType {
         case .Java:
-            JavaServerStatusChecker(address: server.serverURL, port: server.serverPort)
+            JavaServerStatusChecker(address: address, port: port)
             
         case .Bedrock:
-            BedrockServerStatusChecker(address: server.serverURL, port: server.serverPort)
+            BedrockServerStatusChecker(address: address, port: port)
         }
     }
 }

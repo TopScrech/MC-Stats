@@ -1,6 +1,9 @@
 // THIS CODE WAS MODIFIED from https://github.com/jamf/NoMAD-2
 import Foundation
+import OSLog
 import dnssd
+
+private let logger = Logger()
 
 public enum SRVResolverError: String, Error, Codable {
     case unableToComplete = "Unable to complete lookup"
@@ -108,7 +111,7 @@ public class SRVResolver {
         
         //if its a regular ip just return nil
         guard !SRVResolver.isValidIpAddress(ipToValidate: serverURL) else {
-            print("SRVResolver - ignoring ip address request")
+            logger.info("SRVResolver ignoring IP address request")
             return nil
         }
         

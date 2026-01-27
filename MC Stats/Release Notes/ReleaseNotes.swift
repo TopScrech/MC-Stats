@@ -1,3 +1,4 @@
+import OSLog
 import SwiftUI
 #if !os(tvOS)
 import StoreKit
@@ -6,6 +7,8 @@ import StoreKit
 struct ReleaseNotes: View {
     @Environment(\.dismiss) private var dismiss
     @Environment(\.openURL) private var openUrl
+    
+    private let logger = Logger()
     
     var showDismissButton = true
     
@@ -137,7 +140,7 @@ struct ReleaseNotes: View {
         let url = "https://apps.apple.com/app/6740754881?action=write-review"
         
         guard let writeReviewURL = URL(string: url) else {
-            print("Expected a valid URL")
+            logger.warning("Expected a valid URL")
             return
         }
         

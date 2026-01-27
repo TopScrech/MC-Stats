@@ -1,5 +1,6 @@
 import AppIntents
 import MCStatsDataLayer
+import OSLog
 
 struct ArbitraryServerStatusOnlineCheckIntent: AppIntent {
     static let title: LocalizedStringResource = "Arbitrary Minecraft Server Status Check"
@@ -38,7 +39,7 @@ struct ArbitraryServerStatusOnlineCheckIntent: AppIntent {
         // need to change this if we are on watch!!
         let status = await ServerStatusChecker.checkServer(tempServer)
         
-        print("container:", container.schema.debugDescription)
+        Logger().info("Container: \(container.schema.debugDescription)")
         
         let res = ServerStatusEntity(
             serverId: UUID(),

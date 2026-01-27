@@ -1,8 +1,10 @@
 import Foundation
 import Network
+import OSLog
 
 // This code could def use come cleanup, but overall does the job pretty well
 public class JavaServerStatusChecker: ServerStatusCheckerProtocol {
+    private let logger = Logger()
     let serverAddress: String
     let port: Int
     
@@ -66,14 +68,14 @@ public class JavaServerStatusChecker: ServerStatusCheckerProtocol {
     }
     
     func startTCPConnection(dataToSend: Data) {
-        print("Going to start TCP Connection to \(serverAddress):\(port)")
+        logger.info("Starting TCP connection to \(self.serverAddress):\(self.port)")
         
         guard
             port <= 65535,
             port >= 0,
             let port = NWEndpoint.Port(rawValue: UInt16(port))
         else {
-            print("Invalid Port... canceling")
+            logger.error("Invalid port, canceling")
             
             self.callContinuationError(.InvalidPort)
             return
@@ -91,12 +93,12 @@ public class JavaServerStatusChecker: ServerStatusCheckerProtocol {
             
             // see if we got any data so far, if we did wait 3 more seconds
             if self.recievedData {
-                print("Waited 3 seconds but got data so waiting 3 more")
+                logger.info("Waited 3 seconds but got data, waiting 3 more")
                 
                 try await Task.sleep(nanoseconds: UInt64(3) * NSEC_PER_SEC)
             }
             
-            print("Timed out after connecting to \(serverAddress):\(port)")
+            logger.error("Timed out after connecting to \(self.serverAddress):\(port.rawValue)")
             
             // ok now it took too long. timeout!
             callContinuationError(.ServerUnreachable)
@@ -106,31 +108,31 @@ public class JavaServerStatusChecker: ServerStatusCheckerProtocol {
         connection.stateUpdateHandler = { newState in
             switch newState {
             case .ready:
-                print("Connection established")
+                self.logger.info("Connection established")
                 
                 connection.send(content: dataToSend, completion: .contentProcessed { error in
                     if let error {
-                        print("Error sending data:", error)
+                        self.logger.error("Error sending data: \(error)")
                         
                         self.callContinuationError(.ServerUnreachable)
                         connection.cancel()
                     } else {
                         // nothing to do now, just wait for the response in the other listener
-                        print("Data sent successfully")
+                        self.logger.info("Data sent successfully")
                     }
                 })
                 
             case .failed(let error):
-                print("Connection failed with error: \(error)" + "   -   server:", self.serverAddress)
+                self.logger.error("Connection failed with error: \(error) - server: \(self.serverAddress)")
                 
                 self.callContinuationError(.ServerUnreachable)
                 connection.cancel()
                 
                 //                case .preparing, .setup:
-                //                    print("Connection preparing or setup")
+                //                    logger.info("Connection preparing or setup")
                 //
                 //                case .waiting(let error):
-                //                    print("Connection waiting with error: \(error)" + "   -   server:", self.serverAddress)
+                //                    logger.info("Connection waiting with error: \(error) - server: \(self.serverAddress)")
                 
             default:
                 break
@@ -154,13 +156,13 @@ public class JavaServerStatusChecker: ServerStatusCheckerProtocol {
         // I would prefer to use connection.receiveMessage like in UDP for the bedrock server, but in my testing, java minecraft servers do not automatically close the connection after the message is finished sending, so you need to manually keep track of the incoming data packets and close the connection once you have received all the expected data
         connection.receive(minimumIncompleteLength: 1, maximumLength: 65536) { [self] data, _, isComplete, error in
             if let error {
-                print("Error receiving data: \(error)" + "  -  address:", self.serverAddress)
+                logger.error("Error receiving data: \(error) - address: \(self.serverAddress)")
                 
                 self.callContinuationError(.ServerUnreachable)
                 connection.cancel()
                 
             } else if let data {
-                print("Data:", data)
+                logger.info("Received data: \(data)")
                 
                 // when we get here, the server has returned a chunk of data
                 // We need to dynamaically store the chunks of data in an array to we can reconstruct it whole once we are finished downloading
@@ -190,7 +192,7 @@ public class JavaServerStatusChecker: ServerStatusCheckerProtocol {
                 
                 // if we have the expected message length already, we can continue with parsing, if not, recursivly call this func to download the next chunk of data
                 if messageComplete {
-                    print("Data received successfully")
+                    logger.info("Data received successfully")
                     // Just in case
                     guard dataArr.count > 0 else {
                         callContinuationError(.StatusUnparsable)
@@ -214,7 +216,7 @@ public class JavaServerStatusChecker: ServerStatusCheckerProtocol {
                     callContinuationResume(result: response)
                     connection.cancel()
                 } else {
-                    print("Received partial data. Redownloading...")
+                    logger.info("Received partial data, redownloading")
                     
                     receiveConnectionData(
                         connection,

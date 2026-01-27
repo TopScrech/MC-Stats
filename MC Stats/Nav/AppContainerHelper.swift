@@ -1,5 +1,8 @@
 import Foundation
 import MCStatsDataLayer
+import OSLog
+
+private let logger = Logger()
 
 extension AppContainer {
     func refreshDisplayOrders() {
@@ -11,7 +14,7 @@ extension AppContainer {
         do {
             try modelContext.save()
         } catch {
-            print(error.localizedDescription)
+            logger.error("Error saving display order: \(error)")
         }
     }
     
@@ -25,7 +28,7 @@ extension AppContainer {
         do {
             try modelContext.save()
         } catch {
-            print(error.localizedDescription)
+            logger.error("Error deleting servers: \(error)")
         }
         
         servers?.remove(atOffsets: offsets)

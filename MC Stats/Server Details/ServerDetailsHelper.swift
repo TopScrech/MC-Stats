@@ -1,3 +1,7 @@
+import OSLog
+
+private let logger = Logger()
+
 extension ServerDetails {
     func deleteServer() {
         modelContext.delete(vm.server)
@@ -6,7 +10,7 @@ extension ServerDetails {
             try modelContext.save()
         } catch {
             // Failures include issues such as an invalid unique constraint
-            print(error.localizedDescription)
+            logger.error("Error deleting server: \(error)")
         }
         
         refreshAllWidgets()

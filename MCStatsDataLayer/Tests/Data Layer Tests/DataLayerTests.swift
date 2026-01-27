@@ -1,9 +1,12 @@
 import Foundation
+import OSLog
 import Testing
 
 @testable import MCStatsDataLayer
 
 struct ParsingTests {
+    private let logger = Logger()
+    
     @Test func testParsing() throws {
         let stringInput = #"""
         {
@@ -50,11 +53,11 @@ struct ParsingTests {
             // Attempt to parse it into a json using a custom parser defined in the object
             responseObject = try JSONDecoder().decode(JavaServerStatusResponse.self, from: jsonData)
         } catch let error {
-            print("Unable to parse response from input:", stringInput)
+            logger.error("Unable to parse response from input: \(stringInput)")
             
             throw error
         }
         
-        print(responseObject.version?.name ?? "unknown")
+        logger.info("Parsed version: \(responseObject.version?.name ?? "unknown")")
     }
 }

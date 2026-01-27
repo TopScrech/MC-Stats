@@ -1,3 +1,4 @@
+import OSLog
 import SwiftUI
 #if !os(tvOS)
 import StoreKit
@@ -6,6 +7,8 @@ import MCStatsDataLayer
 
 struct AppSettings: View {
     @Environment(\.openURL) private var openUrl
+    
+    private let logger = Logger()
     
     private let reloadServers: () -> Void
     
@@ -114,7 +117,7 @@ struct AppSettings: View {
         let url = "https://github.com/TopScrech/MC-Stats"
         
         guard let githubUrl = URL(string: url) else {
-            print("Expected a valid URL")
+            logger.warning("Expected a valid URL")
             return
         }
         
@@ -125,7 +128,7 @@ struct AppSettings: View {
         let url = "https://testflight.apple.com/join/CCYB35PS"
         
         guard let testflightUrl = URL(string: url) else {
-            print("Expected a valid URL")
+            logger.warning("Expected a valid URL")
             return
         }
         
@@ -137,7 +140,7 @@ struct AppSettings: View {
         let url = "https://apps.apple.com/app/6740754881?action=write-review"
         
         guard let writeReviewURL = URL(string: url) else {
-            print("Expected a valid URL")
+            logger.warning("Expected a valid URL")
             return
         }
         

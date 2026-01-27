@@ -37,7 +37,7 @@ public class UserDefaultsHelper {
 //
 //        var prev = getLogLines()
 //        let log = String(pid) + ":" + String(time) + ": appEvent - " + ident
-//        print("!👉", log)
+//        logger.info("!👉 \(log)")
 //        prev.append(log)
 //        defaults.set(prev, forKey: "appLog")
 //    }
