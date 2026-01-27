@@ -2,7 +2,7 @@ import Foundation
 
 // Class for calling MCStatus API when direct connection fails
 public class WebServerStatusChecker {
-    static let API_URL = "https://api.mcstatus.io/v2/status"
+    static let API_URL = "https://api.mcstatus.io/v2/status/"
     static let timeout = 4
     
     public static func checkServer(_ server: SavedMinecraftServer, config: ServerCheckerConfig?) async throws -> ServerStatus {

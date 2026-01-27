@@ -35,7 +35,12 @@ public class ServerStatusChecker {
             do {
                 logger.info("Checking server from cached SRV: \(server.srvServerURL)")
                 
-                let res = try await DirectServerStatusChecker.checkServer(server, config: config)
+                let res = try await DirectServerStatusChecker.checkServer(
+                    server,
+                    config: config,
+                    address: server.srvServerURL,
+                    port: server.srvServerPort
+                )
                 res.source = .CachedSRV
                 
                 return res
@@ -77,7 +82,12 @@ public class ServerStatusChecker {
                 logger.info("Found new SRV record from DNS, checking server at: \(server.srvServerURL)")
                 
                 do {
-                    let res = try await DirectServerStatusChecker.checkServer(server, config: config)
+                    let res = try await DirectServerStatusChecker.checkServer(
+                        server,
+                        config: config,
+                        address: server.srvServerURL,
+                        port: server.srvServerPort
+                    )
                     res.source = .UpdatedSRV
                     
                     return res
