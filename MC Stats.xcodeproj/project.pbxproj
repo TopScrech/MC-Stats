@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 90;
+	objectVersion = 100;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -1010,7 +1010,7 @@
 				F394B82A2D6C6F9D0040EBD7 /* XCLocalSwiftPackageReference "MCStatsDataLayer" */,
 				F3F5AD652E885E47007AD97D /* XCRemoteSwiftPackageReference "Appearance" */,
 			);
-			preferredProjectObjectVersion = 90;
+			preferredProjectObjectVersion = 100;
 			productRefGroup = F13E5FFA2A4BD614005BE9B2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
