@@ -49,9 +49,31 @@ final class WatchHelper: NSObject, WCSessionDelegate {
         // for each server, get response, and send responses back as we receive them to the watch
         // we start a new task for each server to let them run in parrallel
         for server in request.servers {
+            let serverID = server.id
+            let serverType = server.serverType
+            let name = server.name
+            let serverURL = server.serverURL
+            let serverPort = server.serverPort
+            let srvServerURL = server.srvServerURL
+            let srvServerPort = server.srvServerPort
+            let serverIcon = server.serverIcon
+            let displayOrder = server.displayOrder
+            
             Task {
+                let server = SavedMinecraftServer.initialize(
+                    id: serverID,
+                    serverType: serverType,
+                    name: name,
+                    serverURL: serverURL,
+                    serverPort: serverPort,
+                    srvServerURL: srvServerURL,
+                    srvServerPort: srvServerPort,
+                    serverIcon: serverIcon,
+                    displayOrder: displayOrder
+                )
+                
                 let result = await ServerStatusChecker.checkServer(server)
-                let messageResponse = WatchResponseMessage(id: server.id, status: result)
+                let messageResponse = WatchResponseMessage(id: serverID, status: result)
                 
                 let encoder = JSONEncoder()
                 let jsonData = try encoder.encode(messageResponse)
