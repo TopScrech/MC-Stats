@@ -1,12 +1,12 @@
 import Foundation
 import SwiftData
 
-public enum ServerType: String, Codable {
+public enum ServerType: String, Codable, Sendable {
     case Java, Bedrock
 }
 
 @Model
-public class SavedMinecraftServer: Identifiable, Codable, @unchecked Sendable {
+public class SavedMinecraftServer: Identifiable, Codable {
     public var id = UUID()
     public var name = ""
     public var serverURL = ""

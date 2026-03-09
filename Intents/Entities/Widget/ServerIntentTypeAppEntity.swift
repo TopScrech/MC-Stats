@@ -29,7 +29,7 @@ struct ServerIntentTypeAppEntity: AppEntity {
             for id in identifiers {
                 guard
                     let serverUUID = UUID(uuidString: id),
-                    let server = await SwiftDataHelper.getSavedServerById(serverUUID, from: container)
+                    let server = SwiftDataHelper.getSavedServerById(serverUUID, from: container)
                 else {
                     continue
                 }
@@ -46,7 +46,7 @@ struct ServerIntentTypeAppEntity: AppEntity {
         func suggestedEntities() async throws -> [ServerIntentTypeAppEntity] {
             let container = SwiftDataHelper.getModelContainter()
             
-            let res = await SwiftDataHelper.getSavedServers(container).map { server in
+            let res = SwiftDataHelper.getSavedServers(container).map { server in
                 ServerIntentTypeAppEntity(
                     id: server.id.uuidString,
                     displayString: server.name

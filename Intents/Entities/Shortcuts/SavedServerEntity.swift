@@ -40,7 +40,7 @@ struct SavedServerQuery: EntityQuery {
         var result: [SavedServerEntity] = []
         
         for id in identifiers {
-            guard let server = await SwiftDataHelper.getSavedServerById(id, from: container) else {
+            guard let server = SwiftDataHelper.getSavedServerById(id, from: container) else {
                 continue
             }
             
@@ -52,7 +52,7 @@ struct SavedServerQuery: EntityQuery {
     
     func suggestedEntities() async throws -> [SavedServerEntity] {
         let container = SwiftDataHelper.getModelContainter()
-        let servers = await SwiftDataHelper.getSavedServers(container)
+        let servers = SwiftDataHelper.getSavedServers(container)
         
         return servers.compactMap(SavedServerEntity.init)
     }

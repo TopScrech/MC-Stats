@@ -78,7 +78,7 @@ final class WatchServerStatusChecker {
             // after timeout, anything left in the batch needs to be checked via the backup web API
             expectedBatch.expectedResults.forEach { id, server in
                 // start new async task for each request to go in parrallel
-                Task {
+                Task { @MainActor in
                     let status = await checkServerViaWeb(server)
                     self.responseListener?(id, status)
                 }
@@ -132,7 +132,16 @@ final class WatchServerStatusChecker {
         do {
             logger.warning("Calling backup server")
             
-            let res = try await WebServerStatusChecker.checkServer(server, config: nil)
+            let serverType = server.serverType
+            let serverURL = server.serverURL
+            let serverPort = server.serverPort
+            
+            let res = try await WebServerStatusChecker.checkServer(
+                serverType: serverType,
+                serverURL: serverURL,
+                serverPort: serverPort,
+                config: nil
+            )
             res.source = Source.ThirdParty
             
             logger.info("Got result from third party. Returning")
