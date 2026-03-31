@@ -1,7 +1,8 @@
 import Foundation
 import MCStatsDataLayer
 
-class ExpectedResultBatch: Hashable, @unchecked Sendable {
+final class ExpectedResultBatch: Hashable, @unchecked Sendable {
+    let id = UUID()
     var expectedResults: [UUID: SavedMinecraftServer] = [:]
     
     init(expectedResults: [UUID: SavedMinecraftServer]) {
@@ -9,10 +10,10 @@ class ExpectedResultBatch: Hashable, @unchecked Sendable {
     }
     
     static func == (lhs: ExpectedResultBatch, rhs: ExpectedResultBatch) -> Bool {
-        lhs.expectedResults == rhs.expectedResults
+        lhs.id == rhs.id
     }
     
     func hash(into hasher: inout Hasher) {
-        hasher.combine(expectedResults)
+        hasher.combine(id)
     }
 }

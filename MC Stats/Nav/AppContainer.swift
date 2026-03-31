@@ -260,7 +260,13 @@ struct AppContainer: View {
         
         guard let results = try? modelContext.fetch(fetch) else {
             servers = []
+            serverVMCache = [:]
             return
+        }
+        
+        let serverIDs = Set(results.map(\.id))
+        serverVMCache = serverVMCache.filter {
+            serverIDs.contains($0.key)
         }
         
         var config = ConfigHelper.getServerCheckerConfig()

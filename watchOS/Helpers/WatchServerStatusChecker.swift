@@ -12,10 +12,10 @@ final class WatchServerStatusChecker {
     var expectedResponseBatches: Set<ExpectedResultBatch> = Set()
     
     init() {
-        self.connectivityProvider.responseListener = { message in
+        self.connectivityProvider.responseListener = { response in
             // Recevied message from phone
             // Parse and remove from expected results, before passing on to listener
-            guard let (serverID, status) = self.parseWatchResponse(message) else {
+            guard let (serverID, status) = self.parseWatchResponse(response) else {
                 return
             }
             
@@ -59,16 +59,16 @@ final class WatchServerStatusChecker {
             do {
                 var connectiveStateCounter = 0
                 // first wait up to 1s for the phone to become available
-                while (!WCSession.default.isReachable || connectivityProvider.connectionState != .activated) && connectiveStateCounter < 4 {
+                while (!WCSession.default.isReachable || WCSession.default.activationState != .activated) && connectiveStateCounter < 4 {
                     connectiveStateCounter += 1
-                    try await Task.sleep(nanoseconds: UInt64(0.25 * Double(NSEC_PER_SEC)))
+                    try await Task.sleep(for: .milliseconds(250))
                 }
                 
                 // only bother trying to connect via phone is it says it is reachable
                 if WCSession.default.isReachable {
                     try checkServersViaPhone(servers)
                     // wait 8 seconds, and check if we need to backup for any of the pending servers
-                    try await Task.sleep(nanoseconds: UInt64(8) * NSEC_PER_SEC)
+                    try await Task.sleep(for: .seconds(8))
                 }
                 
             } catch let error {
@@ -88,11 +88,8 @@ final class WatchServerStatusChecker {
         }
     }
     
-    private func parseWatchResponse(_ message: [String: Any]) -> (UUID, ServerStatus)? {
-        guard
-            let responseString = message["response"] as? String,
-            let jsonData = responseString.data(using: .utf8)
-        else {
+    private func parseWatchResponse(_ responseString: String) -> (UUID, ServerStatus)? {
+        guard let jsonData = responseString.data(using: .utf8) else {
             return nil
         }
         

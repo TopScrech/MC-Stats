@@ -212,13 +212,6 @@
 			);
 			target = F13095242CBC997200C4C7BA /* Watch Widgets */;
 		};
-		F383A9262ECF326A00350A0F /* Exceptions for "iMessage" folder in "iMessages" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				iMessage.plist,
-			);
-			target = F3570D3B2D6E779500BDF069 /* iMessages */;
-		};
 		F383A9742ECF327700350A0F /* Exceptions for "Intents" folder in "iOS" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -464,23 +457,6 @@
 			);
 			target = F13095242CBC997200C4C7BA /* Watch Widgets */;
 		};
-		F383BF492ECF386800350A0F /* Exceptions for "MC Stats" folder in "iMessages" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				AppIcon.icon,
-				Enthusiast.icon,
-				InfoPlist.xcstrings,
-				Legend.icon,
-				MCStats.swift,
-				Other/Fonts/MinecraftBold.otf,
-				Other/Fonts/MinecraftBoldItalic.otf,
-				Other/Fonts/MinecraftItalic.otf,
-				Other/Fonts/MinecraftRegular.otf,
-				Other/iOS.plist,
-				Supporter.icon,
-			);
-			target = F3570D3B2D6E779500BDF069 /* iMessages */;
-		};
 		F3E14B782F22D6ED00124D7D /* Exceptions for "MC Stats" folder in "iOS" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -525,9 +501,6 @@
 		};
 		F383A91F2ECF326A00350A0F /* iMessage */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				F383A9262ECF326A00350A0F /* Exceptions for "iMessage" folder in "iMessages" target */,
-			);
 			path = iMessage;
 			sourceTree = "<group>";
 		};
@@ -577,7 +550,6 @@
 				F383BF462ECF386800350A0F /* Exceptions for "MC Stats" folder in "Intents" target */,
 				F383BF472ECF386800350A0F /* Exceptions for "MC Stats" folder in "Widgets" target */,
 				F383BF482ECF386800350A0F /* Exceptions for "MC Stats" folder in "Watch Widgets" target */,
-				F383BF492ECF386800350A0F /* Exceptions for "MC Stats" folder in "iMessages" target */,
 			);
 			path = "MC Stats";
 			sourceTree = "<group>";
@@ -689,7 +661,6 @@
 		F13E5FF02A4BD614005BE9B2 = {
 			isa = PBXGroup;
 			children = (
-				F3AE99DC2E2F884A00D70249 /* LICENSE */,
 				F3AE99DD2E2F884A00D70249 /* README.md */,
 				F383BE082ECF386800350A0F /* MC Stats */,
 				F383A9E92ECF329D00350A0F /* watchOS */,
@@ -701,6 +672,7 @@
 				F383A91F2ECF326A00350A0F /* iMessage */,
 				F383A93C2ECF327700350A0F /* Intents */,
 				F360A8AE2D6C6BC3008E515E /* MCStatsDataLayer */,
+				F3AE99DC2E2F884A00D70249 /* LICENSE */,
 				F13E5FFA2A4BD614005BE9B2 /* Products */,
 				F10C421B2AAE40BC000107D6 /* Frameworks */,
 			);
@@ -1335,7 +1307,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "2025 Sergei Saliukov";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 64.0.1;
+				MARKETING_VERSION = 64.0.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1399,7 +1371,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "2025 Sergei Saliukov";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 64.0.1;
+				MARKETING_VERSION = 64.0.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;

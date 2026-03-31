@@ -20,6 +20,7 @@ struct AppContainer: View {
     @State var lastRefreshTime = Date()
     @State private var serverVMCache: [UUID: ServerStatusVM] = [:]
     @State private var iCloudStatus: iCloudStatus = .unknown
+    @State private var statusChecker = WatchServerStatusChecker()
     
     private var minSinceLastRefresh: Int {
         let currentTime = Date()
@@ -27,8 +28,6 @@ struct AppContainer: View {
         
         return Int(timeInterval / 60)
     }
-    
-    private var statusChecker = WatchServerStatusChecker()
     
     var body: some View {
         NavigationStack {
@@ -87,7 +86,8 @@ struct AppContainer: View {
                         systemImage: "server.rack",
                         description: Text("Servers are synced with your phone. This may take some time")
                     )
-                    .scrollDisabled(true)
+                } else if servers == nil {
+                    ProgressView()
                 }
             }
         }
@@ -176,7 +176,13 @@ struct AppContainer: View {
         
         guard let servers = try? modelContext.fetch(fetch) else {
             servers = []
+            serverVMCache = [:]
             return
+        }
+        
+        let serverIDs = Set(servers.map(\.id))
+        serverVMCache = serverVMCache.filter {
+            serverIDs.contains($0.key)
         }
         
         var serversToCheck: [SavedMinecraftServer] = []

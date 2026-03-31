@@ -4,8 +4,6 @@ import WatchConnectivity
 import OSLog
 
 final class WatchHelper: NSObject, WCSessionDelegate {
-    private let logger = Logger(subsystem: "dev.topscrech.MC-Stats", category: "WatchHelper")
-    
     override init() {
         super.init()
 #warning("WatchHelper disabled")
@@ -19,19 +17,30 @@ final class WatchHelper: NSObject, WCSessionDelegate {
         }
     }
     
-    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+    nonisolated func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        let logger = Logger(subsystem: "dev.topscrech.MC-Stats", category: "WatchHelper")
+        
         logger.info("Watch session changed state: \(activationState.rawValue)")
+        
+        if let error {
+            logger.error("Watch session activation failed: \(error)")
+        }
     }
     
-    func sessionDidBecomeInactive(_ session: WCSession) {
+    nonisolated func sessionDidBecomeInactive(_ session: WCSession) {
+        let logger = Logger(subsystem: "dev.topscrech.MC-Stats", category: "WatchHelper")
+        
         logger.info("Watch session became inactive")
     }
     
-    func sessionDidDeactivate(_ session: WCSession) {
+    nonisolated func sessionDidDeactivate(_ session: WCSession) {
+        let logger = Logger(subsystem: "dev.topscrech.MC-Stats", category: "WatchHelper")
+        
         logger.info("Watch session deactivated")
     }
     
-    func handleWatchMessage(message: [String: Any], session: WCSession) {
+    nonisolated func handleWatchMessage(message: [String: Any], session: WCSession) {
+        let logger = Logger(subsystem: "dev.topscrech.MC-Stats", category: "WatchHelper")
         let decoder = JSONDecoder()
         
         // I've done the lazy thing and hard coded the logic directly in here
@@ -60,6 +69,8 @@ final class WatchHelper: NSObject, WCSessionDelegate {
             let displayOrder = server.displayOrder
             
             Task {
+                let logger = Logger(subsystem: "dev.topscrech.MC-Stats", category: "WatchHelper")
+                
                 let server = SavedMinecraftServer.initialize(
                     id: serverID,
                     serverType: serverType,
@@ -88,13 +99,15 @@ final class WatchHelper: NSObject, WCSessionDelegate {
                 logger.info("Sending status response to watch")
                 
                 WCSession.default.sendMessage(payload, replyHandler: nil) { error in
-                    self.logger.error("Error sending status response to watch: \(error)")
+                    logger.error("Error sending status response to watch: \(error)")
                 }
             }
         }
     }
     
-    func session(_ session: WCSession, didReceiveMessage message: [String: Any]) {
+    nonisolated func session(_ session: WCSession, didReceiveMessage message: [String: Any]) {
+        let logger = Logger(subsystem: "dev.topscrech.MC-Stats", category: "WatchHelper")
+        
         logger.info("Received watch background request for data")
         
         // initilize model container since sometimes it's not ready yet??
