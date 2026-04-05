@@ -457,6 +457,13 @@
 			);
 			target = F13095242CBC997200C4C7BA /* Watch Widgets */;
 		};
+		F399E2E92F82C2B500A40F35 /* Exceptions for "iMessage" folder in "iMessages" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				iMessage.plist,
+			);
+			target = F3570D3B2D6E779500BDF069 /* iMessages */;
+		};
 		F3E14B782F22D6ED00124D7D /* Exceptions for "MC Stats" folder in "iOS" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -501,6 +508,9 @@
 		};
 		F383A91F2ECF326A00350A0F /* iMessage */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F399E2E92F82C2B500A40F35 /* Exceptions for "iMessage" folder in "iMessages" target */,
+			);
 			path = iMessage;
 			sourceTree = "<group>";
 		};
@@ -935,7 +945,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1630;
-				LastUpgradeCheck = 2620;
+				LastUpgradeCheck = 2650;
 				TargetAttributes = {
 					F11F634A2A81E50E00D47187 = {
 						CreatedOnToolsVersion = 15.0;

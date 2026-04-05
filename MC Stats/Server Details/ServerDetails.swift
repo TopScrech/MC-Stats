@@ -207,7 +207,7 @@ struct ServerDetails: View {
             refreshPing()
         }
         .sheet($sheetPings) {
-            PingGraph($pings)
+            PingSheet($pings)
         }
         .toolbar {
 #if os(macOS)

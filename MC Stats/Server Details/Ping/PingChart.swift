@@ -1,59 +1,24 @@
 import SwiftUI
 import Charts
 
-struct PingGraph: View {
+struct PingChart: View {
     @Binding private var data: [ServerPing]
+    @Binding private var selectedElement: ServerPing?
+    private let average: Int
     
-    init(_ data: Binding<[ServerPing]>) {
+    init(_ data: Binding<[ServerPing]>, selectedElement: Binding<ServerPing?>, average: Int) {
         _data = data
+        _selectedElement = selectedElement
+        self.average = average
     }
     
     private let detailChartHeight = 300.0
     
-    @State private var selectedElement: ServerPing? = nil
     @State private var lineWidth = 2.0
     @State private var chartColor: Color = .blue
     @State private var showSymbols = true
-    @State private var showLollipop = true
-    
-    var average: Int {
-        guard !data.isEmpty else {
-            return 0
-        }
-        
-        let avg = data.map {
-            Double($0.ping)
-        }.reduce(0, +) / Double(data.count)
-        
-        return Int(avg)
-    }
     
     var body: some View {
-        List {
-            chart
-            
-            Section {
-#if !os(tvOS)
-                Text("**Hold and drag** over the chart to view and move the lollipop")
-                    .callout()
-                
-                Toggle("Lollipop", isOn: $showLollipop)
-#endif
-                Text("Average: \(average) ms")
-                
-                Button("Clear") {
-                    selectedElement = nil
-                    data.removeAll()
-                }
-            }
-        }
-        .ornamentDismissButton()
-#if os(macOS)
-        .frame(minWidth: 600, minHeight: 500)
-#endif
-    }
-    
-    private var chart: some View {
         Chart(data) {
             RuleMark(y: .value("Avg.", average))
                 .opacity(0.1)
@@ -111,7 +76,7 @@ struct PingGraph: View {
         .chartBackground { proxy in
             ZStack(alignment: .topLeading) {
                 GeometryReader { geo in
-                    if showLollipop, let selectedElement, let plotFrame = proxy.plotFrame {
+                    if let selectedElement, let plotFrame = proxy.plotFrame {
                         let startPositionX1 = proxy.position(forX: selectedElement.date) ?? 0
                         
                         let lineX = startPositionX1 + geo[plotFrame].origin.x
@@ -188,13 +153,4 @@ struct PingGraph: View {
         return nil
     }
 #endif
-}
-
-#Preview {
-    @Previewable @State var pings = (0..<20).map {
-        ServerPing(Int.random(in: 10...100), date: Date().addingTimeInterval(Double($0)))
-    }
-    
-    PingGraph($pings)
-        .darkSchemePreferred()
 }
