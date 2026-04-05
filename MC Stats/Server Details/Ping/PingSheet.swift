@@ -6,7 +6,7 @@ struct PingSheet: View {
     init(_ data: Binding<[ServerPing]>) {
         _data = data
     }
-        
+    
     @State private var selectedElement: ServerPing? = nil
     
     var average: Int {
@@ -23,26 +23,21 @@ struct PingSheet: View {
     
     var body: some View {
         List {
-            Section {
+            Section("Average: \(average) ms") {
                 PingChart($data, selectedElement: $selectedElement, average: average)
-            } footer: {
-                Text("**Hold and drag** over the chart to view and move the lollipop")
-            }
-            
-            Section {
-                Text("Average: \(average) ms")
-                
-                Button("Clear") {
-                    selectedElement = nil
-                    data.removeAll()
-                }
             }
         }
         .ornamentDismissButton()
+        .toolbar {
+            Button("Clear") {
+                selectedElement = nil
+                data.removeAll()
+            }
+        }
 #if os(macOS)
         .frame(minWidth: 600, minHeight: 500)
 #endif
-    }    
+    }
 }
 
 #Preview {

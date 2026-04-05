@@ -39,6 +39,7 @@
       "shouldTranslate" : false
     },
     "**Hold and drag** over the chart to view and move the lollipop" : {
+      "extractionState" : "stale",
       "localizations" : {
         "nl" : {
           "stringUnit" : {

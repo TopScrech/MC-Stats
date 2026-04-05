@@ -207,7 +207,9 @@ struct ServerDetails: View {
             refreshPing()
         }
         .sheet($sheetPings) {
-            PingSheet($pings)
+            NavigationStack {
+                PingSheet($pings)
+            }
         }
         .toolbar {
 #if os(macOS)
