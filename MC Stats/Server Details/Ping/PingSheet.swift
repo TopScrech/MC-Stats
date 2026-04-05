@@ -1,6 +1,8 @@
-import SwiftUI
+import ScrechKit
 
 struct PingSheet: View {
+    @Environment(\.dismiss) private var dismiss
+    
     @Binding private var data: [ServerPing]
     
     init(_ data: Binding<[ServerPing]>) {
@@ -29,9 +31,17 @@ struct PingSheet: View {
         }
         .ornamentDismissButton()
         .toolbar {
-            Button("Clear") {
-                selectedElement = nil
-                data.removeAll()
+            ToolbarItem(placement: .topBarLeading) {
+                SFButton("xmark") {
+                    dismiss()
+                }
+            }
+            
+            ToolbarItem(placement: .topBarTrailing) {
+                Button("Clear") {
+                    selectedElement = nil
+                    data.removeAll()
+                }
             }
         }
 #if os(macOS)

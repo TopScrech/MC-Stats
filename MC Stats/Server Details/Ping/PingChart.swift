@@ -90,7 +90,7 @@ struct PingChart: View {
                             .position(x: lineX, y: lineHeight / 2)
                         
                         VStack(alignment: .center) {
-                            Text("\(selectedElement.date, format: .dateTime.hour().minute().second())")
+                            Text("\(selectedElement.date, format: .dateTime.minute().second())")
                                 .callout()
                                 .foregroundStyle(.secondary)
                             
@@ -118,7 +118,13 @@ struct PingChart: View {
             }
         }
 #endif
-        .chartXAxis(.automatic)
+        .chartXAxis {
+            AxisMarks(values: .automatic) {
+                AxisGridLine()
+                AxisTick()
+                AxisValueLabel(format: .dateTime.minute().second())
+            }
+        }
         .chartYAxis(.automatic)
         .frame(height: detailChartHeight)
         .animation(.default, value: data.count)
