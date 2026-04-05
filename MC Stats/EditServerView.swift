@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 import SwiftData
 import MCStatsDataLayer
 
@@ -115,7 +115,7 @@ struct EditServerView: View {
         }
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
-                Button("Cancel", systemImage: "") {
+                SFButton("xmark") {
                     dismiss()
                 }
             }

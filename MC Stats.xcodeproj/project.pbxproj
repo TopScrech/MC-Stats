@@ -984,6 +984,10 @@
 				Base,
 				ru,
 				nl,
+				tr,
+				uk,
+				de,
+				fr,
 			);
 			mainGroup = F13E5FF02A4BD614005BE9B2;
 			packageReferences = (

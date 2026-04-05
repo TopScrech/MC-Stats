@@ -21,6 +21,30 @@
             "state": "translated",
             "value": "MC Stats"
           }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MC Stats"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MC Stats"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MC Stats"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MC Stats"
+          }
         }
       }
     },
@@ -40,6 +64,30 @@
           }
         },
         "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MC Stats"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MC Stats"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MC Stats"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MC Stats"
+          }
+        },
+        "fr": {
           "stringUnit": {
             "state": "translated",
             "value": "MC Stats"
@@ -68,6 +116,30 @@
             "state": "translated",
             "value": "2025 Sergei Saliukov"
           }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2025 Sergei Saliukov"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2025 Sergei Saliukov"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2025 Sergei Saliukov"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2025 Sergei Saliukov"
+          }
         }
       }
     },
@@ -92,6 +164,30 @@
             "state": "translated",
             "value": "Deze app heeft toegang tot het lokale netwerk nodig om de status van servers op je lokale verbinding te controleren"
           }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu uygulama, yerel ağınızdaki sunucuların durumunu kontrol etmek için yerel ağ erişimi gerektirir"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Цій програмі потрібен доступ до локальної мережі, щоб перевіряти стан серверів у вашому локальному підключенні"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diese App benötigt Zugriff auf das lokale Netzwerk, um den Status von Servern in Ihrem lokalen Netzwerk zu prüfen"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cette app a besoin d’un accès au réseau local pour vérifier l’état des serveurs sur votre connexion locale"
+          }
         }
       }
     },
@@ -114,6 +210,30 @@
             "state": "translated",
             "value": "Serverstatus"
           }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sunucu Durumu"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Стан сервера"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Serverstatus"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "État du serveur"
+          }
         }
       }
     },
@@ -135,6 +255,30 @@
           "stringUnit": {
             "state": "translated",
             "value": "Status"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Durum"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Стан"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Status"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "État"
           }
         }
       }

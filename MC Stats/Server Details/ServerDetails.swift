@@ -83,9 +83,11 @@ struct ServerDetails: View {
 #if os(macOS)
                         Image(nsImage: vm.serverIcon)
                             .serverIconStyle()
+                            .animation(.default, value: vm.serverIcon)
 #else
                         Image(uiImage: vm.serverIcon)
                             .serverIconStyle()
+                            .animation(.default, value: vm.serverIcon)
 #endif
                         VStack(alignment: .leading, spacing: 0) {
                             Text(vm.server.name)
@@ -226,7 +228,17 @@ struct ServerDetails: View {
                 }
             }
 #endif
-            ToolbarItemGroup(placement: trailingPlacement) {
+            ToolbarItem(placement: trailingPlacement) {
+                Button("Edit") {
+                    sheetEdit = true
+                }
+            }
+            
+            if #available(iOS 26, macOS 26, tvOS 26, *) {
+                ToolbarSpacer(.fixed, placement: .topBarTrailing)
+            }
+            
+            ToolbarItem(placement: trailingPlacement) {
                 Button(role: .destructive) {
                     alertDelete = true
                 } label: {
@@ -238,10 +250,6 @@ struct ServerDetails: View {
 #endif
                 }
                 .foregroundColor(.red)
-                
-                Button("Edit") {
-                    sheetEdit = true
-                }
             }
         }
         .onAppear {
