@@ -233,11 +233,11 @@ struct ServerDetails: View {
                     sheetEdit = true
                 }
             }
-            
-            if #available(iOS 26, macOS 26, tvOS 26, *) {
-                ToolbarSpacer(.fixed, placement: .topBarTrailing)
+#if !os(tvOS) && !os(visionOS)
+            if #available(anyAppleOS 26, *) {
+                ToolbarSpacer(.fixed, placement: trailingPlacement)
             }
-            
+#endif
             ToolbarItem(placement: trailingPlacement) {
                 Button(role: .destructive) {
                     alertDelete = true

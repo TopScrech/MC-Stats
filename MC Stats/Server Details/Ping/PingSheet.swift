@@ -31,6 +31,18 @@ struct PingSheet: View {
         }
         .ornamentDismissButton()
         .toolbar {
+#if os(macOS)
+            ToolbarItemGroup {
+                SFButton("xmark") {
+                    dismiss()
+                }
+                
+                Button("Clear") {
+                    selectedElement = nil
+                    data.removeAll()
+                }
+            }
+#else
             ToolbarItem(placement: .topBarLeading) {
                 SFButton("xmark") {
                     dismiss()
@@ -43,6 +55,7 @@ struct PingSheet: View {
                     data.removeAll()
                 }
             }
+#endif
         }
 #if os(macOS)
         .frame(minWidth: 600, minHeight: 500)
