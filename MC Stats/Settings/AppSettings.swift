@@ -41,7 +41,7 @@ struct AppSettings: View {
                 
                 // Siri
                 NavigationLink(value: SettingsPageDestinations.Siri) {
-                    if #available(iOS 26, macOS 26, tvOS 26, visionOS 26, *) {
+                    if #available(anyAppleOS 26, *) {
                         Label("Siri", systemImage: "siri")
                     } else {
                         Label("Siri", systemImage: "mic")
