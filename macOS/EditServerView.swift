@@ -45,21 +45,8 @@ struct EditServerView: View {
                     
                     Text("Server Type")
                     
-                    Picker("", selection: $tempServerType) {
-                        Text("Java Edition")
-                            .tag(ServerType.Java)
-                        
-                        Text("Bedrock/MCPE")
-                            .tag(ServerType.Bedrock)
-                    }
+                    ServerTypePicker($tempServerType, portLabelPromptText: $portLabelPromptText, title: "")
                     .pickerStyle(.segmented)
-                    .onChange(of: tempServerType) { _, newValue in
-                        if newValue == .Java {
-                            portLabelPromptText = "Port (Optional - Default 25565)"
-                        } else if newValue == .Bedrock {
-                            portLabelPromptText = "Port (Optional - Default 19132)"
-                        }
-                    }
                 }
             }
             
