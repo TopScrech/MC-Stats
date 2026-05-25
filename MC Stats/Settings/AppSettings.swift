@@ -118,37 +118,19 @@ struct AppSettings: View {
     }
     
     private func openGithub() {
-        let url = "https://github.com/TopScrech/MC-Stats"
-        
-        guard let githubUrl = URL(string: url) else {
-            logger.warning("Expected a valid URL")
-            return
-        }
-        
-        openUrl(githubUrl)
+        let url = URL(string: "https://github.com/TopScrech/MC-Stats")!
+        openUrl(url)
     }
     
     private func joinTestFlight() {
-        let url = "https://testflight.apple.com/join/CCYB35PS"
-        
-        guard let testflightUrl = URL(string: url) else {
-            logger.warning("Expected a valid URL")
-            return
-        }
-        
-        openUrl(testflightUrl)
+        let url = URL(string: "https://testflight.apple.com/join/CCYB35PS")!
+        openUrl(url)
     }
     
     private func leaveAppReview() {
 #if os(tvOS) || os(macOS) || iMessage
-        let url = "https://apps.apple.com/app/6740754881?action=write-review"
-        
-        guard let writeReviewURL = URL(string: url) else {
-            logger.warning("Expected a valid URL")
-            return
-        }
-        
-        openUrl(writeReviewURL)
+        let url = URL(string: "https://apps.apple.com/app/6740754881?action=write-review")!
+        openUrl(url)
 #else
         guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene else {
             return
