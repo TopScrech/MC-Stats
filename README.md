@@ -6,7 +6,7 @@ It also includes a suite of Apple Watch watchface widgets<br>
 Get it on the [App Store](https://apps.apple.com/app/mc-stats/id6740754881) or [TestFlight](https://testflight.apple.com/join/CCYB35PS)
 
 ## Supported platforms
-- iOS/iPadOS 17+
+- iOS / iPadOS 17+
 - watchOS 10+
 - macOS 14+
 - tvOS 17+
