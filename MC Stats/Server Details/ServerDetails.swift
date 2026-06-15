@@ -24,8 +24,6 @@ struct ServerDetails: View {
     @State private var alertDelete = false
     @State private var sheetPings = false
     
-    // Ping updater
-    private let timer = Timer.publish(every: 1, on: .main, in: .default).autoconnect()
     private var prefetcher = ImagePrefetcher()
     
     private var pillText: String {
@@ -200,10 +198,8 @@ struct ServerDetails: View {
         .environment(\.defaultMinListHeaderHeight, 15)
         .navigationBarTitleDisplayMode(.inline)
 #endif
-        .onReceive(timer) { _ in
-            if !lowPowerMode {
-                refreshPing()
-            }
+        .task {
+            await refreshPingTimer()
         }
         .refreshable {
             vm.reloadData(ConfigHelper.getServerCheckerConfig())
@@ -295,6 +291,20 @@ struct ServerDetails: View {
             
             if pings.count > 60 {
                 pings.removeFirst()
+            }
+        }
+    }
+    
+    private func refreshPingTimer() async {
+        while !Task.isCancelled {
+            do {
+                try await Task.sleep(for: .seconds(1))
+            } catch {
+                return
+            }
+            
+            if !lowPowerMode {
+                refreshPing()
             }
         }
     }
