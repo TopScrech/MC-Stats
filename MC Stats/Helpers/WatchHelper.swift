@@ -71,35 +71,39 @@ final class WatchHelper: NSObject, WCSessionDelegate {
             Task {
                 let logger = Logger(subsystem: "dev.topscrech.MC-Stats", category: "WatchHelper")
                 
-                let server = SavedMinecraftServer.initialize(
-                    id: serverID,
-                    serverType: serverType,
-                    name: name,
-                    serverURL: serverURL,
-                    serverPort: serverPort,
-                    srvServerURL: srvServerURL,
-                    srvServerPort: srvServerPort,
-                    serverIcon: serverIcon,
-                    displayOrder: displayOrder
-                )
-                
-                let result = await ServerStatusChecker.checkServer(server)
-                let messageResponse = WatchResponseMessage(id: serverID, status: result)
-                
-                let encoder = JSONEncoder()
-                let jsonData = try encoder.encode(messageResponse)
-                
-                // Convert the JSON data to a string
-                guard let jsonString = String(data: jsonData, encoding: .utf8) else {
-                    throw ServerStatusCheckerError.StatusUnparsable
-                }
-                
-                let payload = ["response": jsonString]
-                
-                logger.info("Sending status response to watch")
-                
-                WCSession.default.sendMessage(payload, replyHandler: nil) { error in
-                    logger.error("Error sending status response to watch: \(error)")
+                do {
+                    let server = SavedMinecraftServer.initialize(
+                        id: serverID,
+                        serverType: serverType,
+                        name: name,
+                        serverURL: serverURL,
+                        serverPort: serverPort,
+                        srvServerURL: srvServerURL,
+                        srvServerPort: srvServerPort,
+                        serverIcon: serverIcon,
+                        displayOrder: displayOrder
+                    )
+                    
+                    let result = await ServerStatusChecker.checkServer(server)
+                    let messageResponse = WatchResponseMessage(id: serverID, status: result)
+                    
+                    let encoder = JSONEncoder()
+                    let jsonData = try encoder.encode(messageResponse)
+                    
+                    // Convert the JSON data to a string
+                    guard let jsonString = String(data: jsonData, encoding: .utf8) else {
+                        throw ServerStatusCheckerError.StatusUnparsable
+                    }
+                    
+                    let payload = ["response": jsonString]
+                    
+                    logger.info("Sending status response to watch")
+                    
+                    WCSession.default.sendMessage(payload, replyHandler: nil) { error in
+                        logger.error("Error sending status response to watch: \(error)")
+                    }
+                } catch {
+                    logger.error("Error preparing status response for watch: \(error)")
                 }
             }
         }

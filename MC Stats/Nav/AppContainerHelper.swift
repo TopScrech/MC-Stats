@@ -73,7 +73,12 @@ extension AppContainer {
         
         if reviewHelper.shouldShowRequestView() {
             Task {
-                try await Task.sleep(for: .seconds(6))
+                do {
+                    try await Task.sleep(for: .seconds(6))
+                } catch {
+                    return
+                }
+                
 #if !os(tvOS)
                 requestReview()
 #endif
