@@ -1,6 +1,7 @@
+import SwiftUI
+import SwiftData
 import MCStatsDataLayer
 import OSLog
-import SwiftUI
 
 struct ServerRow: View {
     @Environment(\.modelContext) private var modelContext

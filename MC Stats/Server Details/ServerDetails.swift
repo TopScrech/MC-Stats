@@ -1,7 +1,8 @@
+import SwiftUI
+import SwiftData
 import MCStatsDataLayer
 import Nuke
 import OSLog
-import SwiftUI
 
 struct ServerDetails: View {
     @Environment(\.modelContext) var modelContext

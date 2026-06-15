@@ -1,4 +1,5 @@
 import ScrechKit
+import WidgetKit
 
 @main
 struct MCStatsWidgetExtensionBundle: WidgetBundle {
