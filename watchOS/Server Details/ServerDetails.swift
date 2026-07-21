@@ -1,4 +1,5 @@
 import SwiftUI
+import SwiftData
 import MCStatsDataLayer
 import NukeUI
 

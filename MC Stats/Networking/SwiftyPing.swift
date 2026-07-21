@@ -566,7 +566,12 @@ public class SwiftyPing: NSObject {
         
         if shouldSchedulePing() {
             Task {
-                try await Task.sleep(for: .seconds(configuration.pingInterval))
+                do {
+                    try await Task.sleep(for: .seconds(configuration.pingInterval))
+                } catch {
+                    return
+                }
+                
                 self.sendPing()
             }
         }

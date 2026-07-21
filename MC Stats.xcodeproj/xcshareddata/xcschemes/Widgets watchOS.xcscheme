@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "2650"
+   LastUpgradeVersion = "2700"
    version = "2.0">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -48,7 +48,6 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F13095242CBC997200C4C7BA"
             BuildableName = "Watch Widgets.appex"
-            BlueprintName = "Watch Widgets"
             ReferencedContainer = "container:MC Stats.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

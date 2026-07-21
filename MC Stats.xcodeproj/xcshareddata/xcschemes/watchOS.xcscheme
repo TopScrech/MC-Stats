@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "2650"
+   LastUpgradeVersion = "2700"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -59,7 +59,6 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F11F634A2A81E50E00D47187"
             BuildableName = "watchOS.app"
-            BlueprintName = "watchOS"
             ReferencedContainer = "container:MC Stats.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -94,7 +93,6 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F11F634A2A81E50E00D47187"
             BuildableName = "watchOS.app"
-            BlueprintName = "watchOS"
             ReferencedContainer = "container:MC Stats.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
