@@ -1,7 +1,6 @@
 import SwiftUI
 import SwiftData
 import MCStatsDataLayer
-import NukeUI
 
 struct ServerDetails: View {
     @State var vm: ServerStatusVM
