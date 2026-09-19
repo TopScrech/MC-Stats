@@ -226,9 +226,10 @@ struct ServerDetails: View {
             }
 #endif
             ToolbarItem(placement: trailingPlacement) {
-                Button("Edit") {
+                Button("Edit", systemImage: "pencil") {
                     sheetEdit = true
                 }
+                .labelStyle(.iconOnly)
             }
 #if !os(tvOS) && !os(visionOS)
             if #available(anyAppleOS 26, *) {
@@ -246,7 +247,7 @@ struct ServerDetails: View {
                     Label("Delete Server", systemImage: "trash")
 #endif
                 }
-                .foregroundColor(.red)
+                .tint(.red)
             }
         }
         .onAppear {

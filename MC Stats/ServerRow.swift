@@ -87,6 +87,7 @@ struct ServerRow: View {
             Button("Edit", systemImage: "pencil") {
                 showingEditSheet = true
             }
+            .labelStyle(.iconOnly)
 #if !os(tvOS)
             let serverAddressString = vm.server.serverURL + ":" + String(vm.server.serverPort)
             ShareLink(item: serverAddressString)

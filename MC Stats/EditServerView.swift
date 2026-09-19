@@ -105,12 +105,14 @@ struct EditServerView: View {
                 SFButton("xmark") {
                     dismiss()
                 }
+                .tint(.red)
             }
             
             ToolbarItem(placement: .topBarTrailing) {
-                Button("Save", systemImage: "", action: saveItem)
+                Button("Save", systemImage: "checkmark", action: saveItem)
                     .bold()
                     .disabled(saveDisabled())
+                    .labelStyle(.iconOnly)
             }
         }
         .onAppear {
