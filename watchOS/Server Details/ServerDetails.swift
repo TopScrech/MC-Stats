@@ -44,6 +44,7 @@ struct ServerDetails: View {
                 Button("Edit", systemImage: "pencil") {
                     sheetEdit = true
                 }
+                .labelStyle(.iconOnly)
                 
                 Button("Delete", systemImage: "trash", role: .destructive) {
                     alertDelete = true

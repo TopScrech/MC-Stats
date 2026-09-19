@@ -103,11 +103,12 @@ struct EditServerView: View {
             }
             
             ToolbarItem(placement: .confirmationAction) {
-                Button("Save") {
+                Button("Save", systemImage: "pencil") {
                     saveItem()
                 }
                 .bold()
                 .disabled(saveDisabled())
+                .labelStyle(.iconOnly)
             }
         }
         .onAppear {

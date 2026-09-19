@@ -78,14 +78,16 @@ struct EditServerView: View {
                 Button("Cancel") {
                     dismiss()
                 }
+                .tint(.red)
             }
             
             ToolbarItem(placement: .topBarTrailing) {
-                Button("Save") {
+                Button("Save", systemImage: "checkmark") {
                     saveItem()
                 }
                 .bold()
                 .disabled(saveDisabled())
+                .labelStyle(.iconOnly)
             }
         }
         .onAppear {
