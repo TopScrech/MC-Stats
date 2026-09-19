@@ -42,6 +42,7 @@
   ],
   "files": [
     { "path": "README.md" },
+    { "path": "AGENTS.md" },
     {
       "kind": "folder",
       "path": "MC Stats",
