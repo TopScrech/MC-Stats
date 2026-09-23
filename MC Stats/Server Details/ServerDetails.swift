@@ -251,7 +251,10 @@ struct ServerDetails: View {
             }
         }
         .onAppear {
-            refreshPing()
+            Task {
+                await refreshPing()
+            }
+            
             startPrefetchingUserImages(vm)
         }
         .alert("Delete Server?", isPresented: $alertDelete) {
@@ -271,28 +274,26 @@ struct ServerDetails: View {
         }
     }
     
-    private func refreshPing() {
-        Task {
-            let pingResult = await SwiftyPing.pingServer(vm.getServerAddressToPing())
-            
-            guard pingResult.error == nil else {
-                if let error = pingResult.error {
-                    logger.error("Ping error: \(error)")
-                } else {
-                    logger.error("Ping error: Unknown")
-                }
-                
-                return
+    private func refreshPing() async {
+        let pingResult = await SwiftyPing.pingServer(vm.getServerAddressToPing())
+        
+        guard pingResult.error == nil else {
+            if let error = pingResult.error {
+                logger.error("Ping error: \(error)")
+            } else {
+                logger.error("Ping error: Unknown")
             }
             
-            let ping = Int(round(pingResult.duration * 1000))
-            self.pingDuration = ping
-            
-            pings.append(ServerPing(ping))
-            
-            if pings.count > 60 {
-                pings.removeFirst()
-            }
+            return
+        }
+        
+        let ping = Int(round(pingResult.duration * 1000))
+        self.pingDuration = ping
+        
+        pings.append(ServerPing(ping))
+        
+        if pings.count > 60 {
+            pings.removeFirst()
         }
     }
     
@@ -305,7 +306,7 @@ struct ServerDetails: View {
             }
             
             if !lowPowerMode {
-                refreshPing()
+                await refreshPing()
             }
         }
     }
