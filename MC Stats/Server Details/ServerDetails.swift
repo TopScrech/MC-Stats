@@ -221,7 +221,10 @@ struct ServerDetails: View {
             ToolbarItem(placement: .primaryAction) {
                 Button("Refresh Servers", systemImage: "arrow.clockwise") {
                     vm.reloadData(ConfigHelper.getServerCheckerConfig())
-                    refreshPing()
+
+                    Task {
+                        await refreshPing()
+                    }
                 }
             }
 #endif

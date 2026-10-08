@@ -94,6 +94,11 @@ public class JavaServerStatusParser: ServerStatusParserProtocol {
             if input[currentIndex] == "§" {
                 // if we found the modifier, advance to the next char and see what it is
                 currentIndex = input.index(after: currentIndex)
+                guard currentIndex < input.endIndex else {
+                    currentSection.text.append("§")
+                    break
+                }
+
                 let modifierKey = input[currentIndex]
                 
                 // apply formatter if it matches a known formatter value, then continue parsing string
@@ -133,6 +138,10 @@ public class JavaServerStatusParser: ServerStatusParserProtocol {
             currentIndex = input.index(after: currentIndex)
         }
         
+        if !currentSection.text.isEmpty {
+            motdSections.append(currentSection)
+        }
+
         return motdSections
     }
     

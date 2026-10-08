@@ -9,12 +9,14 @@ struct MOTDView: View {
     }
     
     var body: some View {
-        if let status, let _ = status.description {
+        if let status, status.description != nil {
             status.generateMOTDView()
+                .multilineTextAlignment(.center)
+                .fixedSize(horizontal: false, vertical: true)
                 .shadow(radius: 5)
                 .padding(10)
                 .frame(maxWidth: .infinity)
-                .cornerRadius(15)
+                .clipShape(.rect(cornerRadius: 15))
         }
     }
 }
