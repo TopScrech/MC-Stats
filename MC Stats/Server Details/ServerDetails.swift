@@ -203,7 +203,7 @@ struct ServerDetails: View {
         }
         .refreshable {
             vm.reloadData(ConfigHelper.getServerCheckerConfig())
-            refreshPing()
+            await refreshPing()
         }
         .sheet($sheetPings) {
             NavigationStack {
