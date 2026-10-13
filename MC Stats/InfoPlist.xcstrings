@@ -45,6 +45,24 @@
             "state": "translated",
             "value": "MC Stats"
           }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MC Stats"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MC Stats"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MC Stats"
+          }
         }
       }
     },
@@ -88,6 +106,24 @@
           }
         },
         "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MC Stats"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MC Stats"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MC Stats"
+          }
+        },
+        "ar": {
           "stringUnit": {
             "state": "translated",
             "value": "MC Stats"
@@ -140,6 +176,24 @@
             "state": "translated",
             "value": "2025 Sergei Saliukov"
           }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2025 Sergei Saliukov"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2025 Sergei Saliukov"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2025 Sergei Saliukov"
+          }
         }
       }
     },
@@ -188,6 +242,24 @@
             "state": "translated",
             "value": "Cette app a besoin d’un accès au réseau local pour vérifier l’état des serveurs sur votre connexion locale"
           }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "आपके स्थानीय नेटवर्क पर सर्वर की स्थिति जाँचने के लिए इस ऐप को स्थानीय नेटवर्क तक पहुँच की आवश्यकता है"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Questa app richiede l’accesso alla rete locale per controllare lo stato dei server sulla tua rete locale"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يتطلب هذا التطبيق الوصول إلى الشبكة المحلية للتحقق من حالة الخوادم على شبكتك المحلية"
+          }
         }
       }
     },
@@ -234,6 +306,24 @@
             "state": "translated",
             "value": "État du serveur"
           }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "सर्वर की स्थिति"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stato del server"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حالة الخادم"
+          }
         }
       }
     },
@@ -279,6 +369,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "État"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "स्थिति"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stato"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الحالة"
           }
         }
       }
