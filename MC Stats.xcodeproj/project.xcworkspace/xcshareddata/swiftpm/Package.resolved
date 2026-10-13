@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/TopScrech/Appearance",
       "state" : {
-        "revision" : "2cc3ca0e6d948cac08a97447fc588694616b9ef2",
-        "version" : "1.0.3"
+        "revision" : "e6a57bce13cb3b98f443d5228c5cfb773e9efb64",
+        "version" : "1.0.4"
       }
     },
     {
