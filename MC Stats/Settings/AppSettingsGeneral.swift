@@ -56,7 +56,7 @@ struct AppSettingsGeneral: View {
                     VStack(alignment: .leading, spacing: 2) {
                         Text("Widgets open directly to server")
                         
-                        Text("Tapping the widget will open the app directly to that server. Otherwise it will open the server list")
+                        Text("Otherwise it will open the server list")
                             .footnote()
                             .foregroundColor(.gray)
                     }

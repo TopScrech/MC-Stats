@@ -13,10 +13,10 @@ struct PlayerCard: View {
     
     var body: some View {
         HStack(spacing: 0) {
-            let imageUrl = URL(string: vm.getMcHeadsUrl(player.uuid))
-            // let imageUrl = URL(string: "https://httpbin.org/delay/10")
+            let imageURL = URL(string: vm.getMcHeadsUrl(player.uuid))
+            // let imageURL = URL(string: "https://httpbin.org/delay/10")
             
-            LazyImage(url: imageUrl) { state in
+            LazyImage(url: imageURL) { state in
                 if let image = state.image {
                     image
                         .resizable()
