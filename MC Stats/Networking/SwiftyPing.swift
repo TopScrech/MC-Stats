@@ -3,14 +3,6 @@ import Foundation
 import OSLog
 
 public typealias Observer = ((_ response: PingResponse) -> Void)
-public typealias FinishedCallback = ((_ result: PingResult) -> Void)
-
-/// Represents a ping delegate
-public protocol PingDelegate {
-    /// Called when a ping response is received
-    /// - Parameter response: A `PingResponse` object representing the echo reply
-    func didReceive(response: PingResponse)
-}
 
 // MARK: SwiftyPing
 
@@ -106,22 +98,8 @@ public class SwiftyPing: NSObject {
     /// This closure gets called with ping responses
     public var observer: Observer?
     
-    /// This closure gets called when pinging stops, either when `targetCount` is reached or pinging is stopped explicitly with `stop()` or `halt()`
-    public var finished: FinishedCallback?
-    
-    /// This delegate gets called with ping responses
-    public var delegate: PingDelegate?
-    
     /// The number of pings to make. Default is `1`, which means 1 ping
     public var targetCount: Int? = 1
-    
-    /// The current ping count, starting from 0
-    public var currentCount: UInt64 {
-        trueSequenceIndex
-    }
-    
-    /// Array of all ping responses sent to the `observer`
-    public private(set) var responses: [PingResponse] = []
     
     /// A random identifier which is a part of the ping request
     private let identifier = UInt16.random(in: 0..<UInt16.max)
@@ -241,28 +219,6 @@ public class SwiftyPing: NSObject {
     }
     
     // MARK: - Convenience Inits
-    /// Initializes a pinger from an IPv4 address string
-    /// - Parameter ipv4Address: The host's IP address
-    /// - Parameter configuration: A configuration object which can be used to customize pinging behavior
-    /// - Parameter queue: All responses are delivered through this dispatch queue
-    public convenience init(ipv4Address: String, config configuration: PingConfiguration, queue: DispatchQueue) throws {
-        var socketAddress = sockaddr_in()
-        
-        socketAddress.sin_len = UInt8(MemoryLayout<sockaddr_in>.size)
-        socketAddress.sin_family = UInt8(AF_INET)
-        socketAddress.sin_port = 0
-        socketAddress.sin_addr.s_addr = inet_addr(ipv4Address.cString(using: .utf8))
-        
-        let data = Data(bytes: &socketAddress, count: MemoryLayout<sockaddr_in>.size)
-        
-        let destination = Destination(host: ipv4Address, ipv4Address: data)
-        
-        try self.init(
-            destination: destination,
-            configuration: configuration,
-            queue: queue
-        )
-    }
     /// Initializes a pinger from a given host string
     /// - Parameter host: A string describing the host. This can be an IP address or host name
     /// - Parameter configuration: A configuration object which can be used to customize pinging behavior
@@ -523,15 +479,12 @@ public class SwiftyPing: NSObject {
     }
     
     private func informObserver(of response: PingResponse) {
-        responses.append(response)
-        
         if killswitch {
             return
         }
         
         currentQueue.sync {
             self.observer?(response)
-            self.delegate?.didReceive(response: response)
         }
     }
     
@@ -559,8 +512,6 @@ public class SwiftyPing: NSObject {
         if isTargetCountReached() {
             if configuration.haltAfterTarget {
                 haltPinging()
-            } else {
-                informFinishedStatus(trueSequenceIndex)
             }
         }
         
@@ -574,40 +525,6 @@ public class SwiftyPing: NSObject {
                 
                 self.sendPing()
             }
-        }
-    }
-    
-    private func informFinishedStatus(_ sequenceIndex: UInt64) {
-        if let callback = finished {
-            var roundtrip: PingResult.Roundtrip? = nil
-            
-            let roundtripTimes = responses.filter {
-                $0.error == nil
-            }.map(\.duration)
-            
-            if roundtripTimes.count != 0, let min = roundtripTimes.min(), let max = roundtripTimes.max() {
-                let count = Double(roundtripTimes.count)
-                let total = roundtripTimes.reduce(0, +)
-                let avg = total / count
-                let variance = roundtripTimes.reduce(0, { $0 + ($1 - avg) * ($1 - avg) })
-                let stddev = sqrt(variance / count)
-                
-                roundtrip = PingResult.Roundtrip(
-                    minimum: min,
-                    maximum: max,
-                    average: avg,
-                    standardDeviation: stddev
-                )
-            }
-            
-            let result = PingResult(
-                responses: responses,
-                packetsTransmitted: sequenceIndex,
-                packetsReceived: UInt64(roundtripTimes.count),
-                roundtrip: roundtrip
-            )
-            
-            callback(result)
         }
     }
     
@@ -644,15 +561,11 @@ public class SwiftyPing: NSObject {
         killswitch = true
         isPinging = false
         
-        let count = trueSequenceIndex
-        
         if resetSequence {
             sequenceIndex = 0
             trueSequenceIndex = 0
             erroredIndices.removeAll()
         }
-        
-        informFinishedStatus(count)
     }
     
     /// Stops pinging the host and destroys the CFSocket object
@@ -956,46 +869,6 @@ public struct PingResponse: Sendable {
     public let ipHeader: IPHeader?
 }
 
-/// A struct encapsulating the results of a ping instance
-public struct PingResult {
-    /// A struct encapsulating the roundtrip statistics
-    public struct Roundtrip {
-        /// The smallest roundtrip time
-        public let minimum: Double
-        
-        /// The largest roundtrip time
-        public let maximum: Double
-        
-        /// The average (mean) roundtrip time
-        public let average: Double
-        
-        /// The standard deviation of the roundtrip times
-        /// - Note: Standard deviation is calculated without Bessel's correction and thus gives zero if only one packet is received
-        public let standardDeviation: Double
-    }
-    
-    /// Collection of all responses, including errored or timed out
-    public let responses: [PingResponse]
-    
-    /// Number of packets sent
-    public let packetsTransmitted: UInt64
-    
-    /// Number of packets received
-    public let packetsReceived: UInt64
-    
-    /// The packet loss. If the number of packets transmitted (`packetsTransmitted`) is zero, returns `nil`
-    public var packetLoss: Double? {
-        if packetsTransmitted == 0 {
-            return nil
-        }
-        
-        return 1 - Double(packetsReceived) / Double(packetsTransmitted)
-    }
-    
-    /// Roundtrip statistics, including min, max, average and stddev
-    public let roundtrip: Roundtrip?
-}
-
 /// Controls pinging behaviour
 public struct PingConfiguration {
     /// The time between consecutive pings in seconds
@@ -1021,12 +894,6 @@ public struct PingConfiguration {
         timeoutInterval = timeout
     }
     
-    /// Initializes a `PingConfiguration` object with the given interval
-    /// - Parameter interval: The time between consecutive pings in seconds
-    /// - Note: Timeout interval will be set to 5 seconds
-    public init(interval: TimeInterval) {
-        self.init(interval: interval, with: 5)
-    }
 }
 
 // MARK: - Data Extensions

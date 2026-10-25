@@ -1,4 +1,3 @@
-import OSLog
 import SwiftUI
 #if !os(tvOS)
 import StoreKit
@@ -7,8 +6,6 @@ import MCStatsDataLayer
 
 struct AppSettings: View {
     @Environment(\.openURL) private var openUrl
-    
-    private let logger = Logger()
     
     private let reloadServers: () -> Void
     

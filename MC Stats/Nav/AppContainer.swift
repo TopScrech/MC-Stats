@@ -27,8 +27,6 @@ struct AppContainer: View {
     @State var serverVMCache: [UUID: ServerStatusVM] = [:]
     @State private(set) var lastRefreshTime = Date()
     @State private var sheetAdd = false
-    @State private var showReleaseNotes = false
-    @State private var showAlert = false
     @State var pendingDeepLink: String?
     
     @State private var newServer = SavedMinecraftServer.initialize(
@@ -193,16 +191,6 @@ struct AppContainer: View {
                     reloadData(forceSRVRefreh: true)
                     refreshDisplayOrders()
                 }
-            }
-        }
-        .sheet($showReleaseNotes) {
-            NavigationStack {
-                ReleaseNotes()
-            }
-        }
-        .alert("Title", isPresented: $showAlert) {
-            Button("OK") {
-                showReleaseNotes = true
             }
         }
     }

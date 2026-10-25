@@ -2,7 +2,7 @@ import OSLog
 import WatchConnectivity
 
 enum WatchConnectivityError: Error {
-    case DeviceNotConnected, ResponseParseError
+    case DeviceNotConnected
 }
 
 final class ConnectivityProvider: NSObject, WCSessionDelegate, @unchecked Sendable {

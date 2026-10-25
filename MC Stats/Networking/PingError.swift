@@ -34,9 +34,6 @@ public enum PingError: Error, Equatable {
          /// Host not found
          hostNotFound,
          
-         /// Address data couldn't be converted to `sockaddr`
-         addressMemoryError,
-         
          // Request errors
          /// An error occured while sending the request
          requestError,

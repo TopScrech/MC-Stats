@@ -7,7 +7,6 @@ public class BedrockServerStatusChecker: ServerStatusCheckerProtocol {
     
     var continuation: CheckedContinuation<String, Error>?
     var continuationHasBeenCalled = false
-    let continuationQueue = DispatchQueue(label: "continuationCallerQueue")
     let queue = DispatchQueue(label: "continuationCallerQueue")
     
     func callContinuationResume(result: String) {

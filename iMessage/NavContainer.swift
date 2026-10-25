@@ -3,14 +3,6 @@ import SwiftData
 import MCStatsDataLayer
 
 struct NavContainer: View {
-    @State private var vm: MessagesVM
-    @Binding private var vc: MessagesViewController?
-    
-    init(_ vc: Binding<MessagesViewController?>) {
-        _vc = vc
-        self.vm = .init(vc.wrappedValue)
-    }
-    
     @State private var fullScreen = false
     
     var body: some View {

@@ -278,13 +278,8 @@ struct ServerDetails: View {
     private func refreshPing() async {
         let pingResult = await SwiftyPing.pingServer(vm.getServerAddressToPing())
         
-        guard pingResult.error == nil else {
-            if let error = pingResult.error {
-                logger.error("Ping error: \(error)")
-            } else {
-                logger.error("Ping error: Unknown")
-            }
-            
+        if let error = pingResult.error {
+            logger.error("Ping error: \(error)")
             return
         }
         

@@ -1,4 +1,3 @@
-import CloudKit
 import CoreData
 import MCStatsDataLayer
 import OSLog
@@ -12,22 +11,10 @@ struct AppContainer: View {
     
     private let logger = Logger()
     
-    private enum iCloudStatus {
-        case available, unavailable, unknown
-    }
-    
     @State var servers: [ServerStatusVM]?
     @State var lastRefreshTime = Date()
     @State private var serverVMCache: [UUID: ServerStatusVM] = [:]
-    @State private var iCloudStatus: iCloudStatus = .unknown
     @State private var statusChecker = WatchServerStatusChecker()
-    
-    private var minSinceLastRefresh: Int {
-        let currentTime = Date()
-        let timeInterval = currentTime.timeIntervalSince(lastRefreshTime)
-        
-        return Int(timeInterval / 60)
-    }
     
     var body: some View {
         NavigationStack {
@@ -45,9 +32,6 @@ struct AppContainer: View {
                     refreshDisplayOrders()
                 }
                 
-                // Text("Updated \(minSinceLastRefresh)m ago")
-                //     .frame(maxWidth: .infinity, alignment: .center)
-                //     .listRowBackground(Color.clear) // this is ugly so removing it
             }
             .navigationDestination(for: ServerStatusVM.self) {
                 ServerDetails($0) {
@@ -133,36 +117,6 @@ struct AppContainer: View {
                     servervVM.loadIcon()
                 }
             }
-            
-            let container = CKContainer.default()
-            
-            container.accountStatus { accountStatus, error in
-                Task { @MainActor in
-                    switch accountStatus {
-                    case .available:
-                        self.iCloudStatus = .available
-                        
-                    case .noAccount, .restricted:
-                        self.iCloudStatus = .unavailable
-                        
-                    case .couldNotDetermine, .temporarilyUnavailable:
-                        self.iCloudStatus = .unknown
-                        
-                    @unknown default:
-                        self.iCloudStatus = .unknown
-                    }
-                }
-                
-                if let error {
-                    logger.error("Error checking iCloud account status: \(error)")
-                }
-            }
-            
-            //            let server = SavedMinecraftServer.initialize(id: UUID(), serverType: .Java, name: "OPBlocks", serverUrl: "hub.opblocks.com", serverPort: 25565)
-            //            modelContext.insert(server)
-            //            logger.info("Server name: \(server.name)")
-            //
-            //            modelContext.insert(server)
             
             ShortcutsProvider.updateAppShortcutParameters()
         }
