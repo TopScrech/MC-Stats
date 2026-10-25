@@ -11,22 +11,21 @@ struct PingSheet: View {
     
     @State private var selectedElement: ServerPing? = nil
     
-    var average: Int {
-        guard !data.isEmpty else {
-            return 0
-        }
-        
-        let avg = data.map {
-            Double($0.ping)
-        }.reduce(0, +) / Double(data.count)
-        
-        return Int(avg)
+    private var stats: PingStats {
+        PingStats(data)
     }
     
     var body: some View {
         List {
-            Section("Average: \(average) ms") {
-                PingChart($data, selectedElement: $selectedElement, average: average)
+            if data.isEmpty {
+                ContentUnavailableView("No pings yet", systemImage: "chart.xyaxis.line")
+            } else {
+                Section {
+                    PingStatsView(stats)
+                    
+                    PingGraphView(data, selectedElement: $selectedElement, average: stats.average)
+                        .padding(.top)
+                }
             }
         }
         .ornamentDismissButton()
