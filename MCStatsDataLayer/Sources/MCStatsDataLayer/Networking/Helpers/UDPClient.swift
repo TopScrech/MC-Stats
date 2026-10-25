@@ -13,13 +13,9 @@ public class UDPClient {
     var listener: (_ responseType: UDPResponseType, _ client: UDPClient?, _ data: Data?) -> Void
     var didRecieveData = false
     
-    var resultHandler = NWConnection.SendCompletion.contentProcessed { NWError in
-        guard NWError == nil else {
-            if let error = NWError {
-                Logger().error("Error sending data: \(error)")
-            } else {
-                Logger().error("Error sending data: unknown")
-            }
+    var resultHandler = NWConnection.SendCompletion.contentProcessed { error in
+        if let error {
+            Logger().error("Error sending data: \(error)")
             return
         }
         

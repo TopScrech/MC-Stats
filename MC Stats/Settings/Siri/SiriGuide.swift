@@ -6,16 +6,11 @@ struct SiriGuide: View {
         SiriPhrase("What's the status of my (Minecraft) server"),
         SiriPhrase("Check the status of [SERVER NAME]"),
         SiriPhrase("What's the status of [SERVER NAME]"),
-        SiriPhrase("Check [SERVER NAME]'s status for me"),
+        SiriPhrase("Check [SERVER NAME]'s status for me")
     ]
-    
-    @State private var tipVisibility = true
     
     var body: some View {
         Form {
-            // Looks bad, don't bother using build in view
-            // SiriTipView(intent: SavedServerStatusOnlineCheckIntent(), isVisible: $tipVisibility)
-            
             Section {
                 ForEach(phrases) { phrase in
                     SiriGuidePhrase(phrase)

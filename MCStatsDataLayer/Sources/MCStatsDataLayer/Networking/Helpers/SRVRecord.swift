@@ -4,30 +4,6 @@ import Foundation
 public struct SRVResult {
     let SRVRecords: [SRVRecord]
     let query: String
-    
-    func sortByWeight() -> [String]? {
-        guard SRVRecords.count > 0 else {
-            return nil
-        }
-        
-        var data_set = SRVRecords
-        var swap = true
-        
-        while swap == true {
-            swap = false
-            
-            for i in 0..<data_set.count - 1 {
-                if data_set[i].weight > data_set[i + 1].weight {
-                    let temp = data_set [i + 1]
-                    data_set [i + 1] = data_set[i]
-                    data_set[i] = temp
-                    swap = true
-                }
-            }
-        }
-        
-        return data_set.map(\.target)
-    }
 }
 
 extension SRVResult: CustomStringConvertible {

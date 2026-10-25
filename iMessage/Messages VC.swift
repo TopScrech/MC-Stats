@@ -5,14 +5,13 @@ import ScrechKit
 @objc(MessagesViewController)
 class MessagesViewController: MSMessagesAppViewController {
     private let logger = Logger()
-    var conversation: MSConversation? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view
         
-        let child = UIHostingController(rootView: NavContainer(.constant(self)))
+        let child = UIHostingController(rootView: NavContainer())
         child.view.translatesAutoresizingMaskIntoConstraints = false
         
         self.view.addSubview(child.view)
@@ -32,8 +31,6 @@ class MessagesViewController: MSMessagesAppViewController {
     
     override func willBecomeActive(with conversation: MSConversation) {
         logger.info("\(#function)")
-        
-        self.conversation = conversation
         
         // Extension will become active
         // This will happen when the extension is about to present UI
