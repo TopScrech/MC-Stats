@@ -10,14 +10,9 @@ struct ServerDetails: View {
     
     private let logger = Logger()
     
-    @State var vm: ServerStatusVM
+    @Environment(ServerStatusVM.self) var vm
     var refresh: () -> Void
-    
-    init(_ vm: ServerStatusVM, refresh: @escaping () -> Void) {
-        self.vm = vm
-        self.refresh = refresh
-    }
-    
+
     @State private var pings: [ServerPing] = []
     @State private var pingDuration = 0
     @State private var sheetEdit = false
@@ -75,6 +70,8 @@ struct ServerDetails: View {
     }
     
     var body: some View {
+        @Bindable var vm = vm
+
         List {
             Section {
                 VStack(alignment: .leading, spacing: 0) {
@@ -190,7 +187,8 @@ struct ServerDetails: View {
             
             PlayerList()
         }
-        .scrollIndicators(.never)
+        .navigationTitle(vm.server.name)
+        .scrollIndicators(.hidden)
         .environment(vm)
 #if !os(tvOS) && !os(macOS)
         .listSectionSpacing(10)
@@ -290,6 +288,8 @@ struct ServerDetails: View {
             return
         }
         
+        guard !Task.isCancelled else { return }
+
         let ping = Int(round(pingResult.duration * 1000))
         self.pingDuration = ping
         
