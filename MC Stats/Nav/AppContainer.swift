@@ -6,7 +6,8 @@ import OSLog
 import SwiftData
 
 struct AppContainer: View {
-    @State var nav = NavigationPath()
+    @State var selectedServerID: UUID?
+    @State private var showSettings = false
     var reviewHelper = ReviewHelper()
     private let logger = Logger()
 #if os(iOS)
@@ -23,7 +24,7 @@ struct AppContainer: View {
     @State var servers: [ServerStatusVM]?
     
     // Struggle to find a more efficient method without regenerating the VM each time
-    @State private(set) var serverVMCache: [UUID: ServerStatusVM] = [:]
+    @State var serverVMCache: [UUID: ServerStatusVM] = [:]
     @State private(set) var lastRefreshTime = Date()
     @State private var sheetAdd = false
     @State private var showReleaseNotes = false
@@ -43,10 +44,10 @@ struct AppContainer: View {
     )
     
     var body: some View {
-        NavigationStack(path: $nav) {
-            List {
+        NavigationSplitView {
+            List(selection: $selectedServerID) {
                 ForEach(servers ?? []) { vm in
-                    NavigationLink(value: vm) {
+                    NavigationLink(value: vm.server.id) {
                         ServerRow(vm)
                     }
                     .listRowInsets(EdgeInsets(top: 15, leading: 15, bottom: 15, trailing: 15))
@@ -60,23 +61,9 @@ struct AppContainer: View {
             }
             .animation(.default, value: servers)
             .navigationTitle("Servers")
-            .scrollIndicators(.never)
+            .scrollIndicators(.hidden)
             .refreshable {
                 reloadData(forceRefresh: true)
-            }
-            .navigationDestination(for: ServerStatusVM.self) {
-                ServerDetails($0) {
-                    reloadData()
-                    refreshDisplayOrders()
-                }
-            }
-            .navigationDestination(for: PageDestinations.self) {
-                switch $0 {
-                case .SettingsRoot:
-                    AppSettings {
-                        reloadData(forceRefresh: true)
-                    }
-                }
             }
             .overlay {
                 //hack to avoid showing overlay for a split second before we have had a chance to check the database
@@ -103,18 +90,14 @@ struct AppContainer: View {
                         reloadData(forceRefresh: true)
                     }
                     
-                    SFButton("plus") {
+                    Button("Add Server", systemImage: "plus") {
                         sheetAdd = true
                     }
                 }
 #else // not macOS
                 ToolbarItem(placement: .topBarLeading) {
-                    NavigationLink(value: PageDestinations.SettingsRoot) {
-#if os(tvOS)
-                        Label("Settings", systemImage: "")
-#else
-                        Image(systemName: "gear")
-#endif
+                    Button("Settings", systemImage: "gear") {
+                        showSettings = true
                     }
 #if !os(tvOS)
                     .keyboardShortcut("s")
@@ -128,17 +111,39 @@ struct AppContainer: View {
                 }
 #endif
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button {
+                    Button("Add Server", systemImage: "plus") {
                         sheetAdd = true
-                    } label: {
-#if os(tvOS)
-                        Label("+", systemImage: "")
-#else
-                        Image(systemName: "plus")
-#endif
                     }
                 }
 #endif
+            }
+        } detail: {
+            NavigationStack {
+                if let selectedServerID, let vm = serverVMCache[selectedServerID] {
+                    ServerDetails {
+                        reloadData()
+                        refreshDisplayOrders()
+                    }
+                    .environment(vm)
+                    .id(selectedServerID)
+                } else {
+                    ContentUnavailableView("Select a Server", systemImage: "server.rack", description: Text("Choose a server to view its status and ping"))
+                }
+            }
+        }
+        .navigationSplitViewStyle(.balanced)
+        .sheet(isPresented: $showSettings) {
+            NavigationStack {
+                AppSettings {
+                    reloadData(forceRefresh: true)
+                }
+                .toolbar {
+                    ToolbarItem(placement: .confirmationAction) {
+                        Button("Done") {
+                            showSettings = false
+                        }
+                    }
+                }
             }
         }
 #if os(iOS)
@@ -270,6 +275,10 @@ struct AppContainer: View {
             serverIDs.contains($0.key)
         }
         
+        if let selectedServerID, !serverIDs.contains(selectedServerID) {
+            self.selectedServerID = nil
+        }
+
         var config = ConfigHelper.getServerCheckerConfig()
         
         servers = results.map {

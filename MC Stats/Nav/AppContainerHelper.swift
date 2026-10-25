@@ -21,6 +21,12 @@ extension AppContainer {
     func deleteItems(at offsets: IndexSet) {
         offsets.makeIterator().forEach { pos in
             if let serverVM = servers?[pos] {
+#if !os(watchOS)
+                if selectedServerID == serverVM.server.id {
+                    selectedServerID = nil
+                }
+                serverVMCache.removeValue(forKey: serverVM.server.id)
+#endif
                 modelContext.delete(serverVM.server)
             }
         }
@@ -88,24 +94,8 @@ extension AppContainer {
     }
     
     func goToServerView(_ vm: ServerStatusVM) {
-        // check if user has disabled deep links, if so just go to main list
-        if !UserDefaultsHelper.shared.get(for: .openToSpecificServer, defaultValue: true) {
-            nav.removeLast(nav.count)
-            return
-        }
-        
-        // go to server view
-        // First, check if a server is already displayed and update it if so
-        if nav.isEmpty {
-            nav.append(vm)
-        } else {
-            nav.removeLast(nav.count)
-            
-            Task {
-                // hack! otherwise data won't refresh correctly
-                nav.append(vm)
-            }
-        }
+        selectedServerID = UserDefaultsHelper.shared.get(for: .openToSpecificServer, defaultValue: true)
+            ? vm.server.id : nil
     }
 #endif
 }
