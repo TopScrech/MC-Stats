@@ -6,8 +6,7 @@ import OSLog
 final class WatchHelper: NSObject, WCSessionDelegate {
     override init() {
         super.init()
-#warning("WatchHelper disabled")
-        //        connect()
+        connect()
     }
     
     func connect() {
