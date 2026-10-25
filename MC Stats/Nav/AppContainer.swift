@@ -11,13 +11,13 @@ struct AppContainer: View {
     var reviewHelper = ReviewHelper()
     private let logger = Logger()
 #if os(iOS)
-    @EnvironmentObject private var store: ValueStore
     private let watchHelper = WatchHelper()
 #endif
     
 #if !os(tvOS)
     @Environment(\.requestReview) var requestReview
 #endif
+    @Environment(\.colorScheme) private var colorScheme
     @Environment(\.scenePhase) private var scenePhase
     @Environment(\.modelContext) var modelContext
     
@@ -145,9 +145,12 @@ struct AppContainer: View {
                     }
                 }
             }
+#if os(iOS)
+            .modifier(AppearancePreferenceModifier(presentingColorScheme: colorScheme))
+#endif
         }
 #if os(iOS)
-        .preferredColorScheme(store.appearance.scheme)
+        .modifier(AppearancePreferenceModifier())
 #endif
         .onOpenURL(perform: processDeeplink)
         .onChange(of: scenePhase, initial: true) { _, newPhase in

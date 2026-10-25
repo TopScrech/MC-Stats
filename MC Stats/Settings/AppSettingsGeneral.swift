@@ -7,7 +7,7 @@ import Appearance
 
 struct AppSettingsGeneral: View {
 #if canImport(Appearance)
-    @EnvironmentObject private var store: ValueStore
+    @AppStorage("appearance") private var appearance: Appearance = .system
 #endif
     @AppStorage(UserDefaultsHelper.Key.iCloudEnabled.rawValue)        private var icloudSync = true
     @AppStorage(UserDefaultsHelper.Key.showUsersOnHomesreen.rawValue) private var playersInServerList = true
@@ -18,7 +18,7 @@ struct AppSettingsGeneral: View {
         Form {
 #if canImport(Appearance)
             Section {
-                AppearancePicker($store.appearance)
+                AppearancePicker($appearance)
             }
 #endif
             Toggle(isOn: $icloudSync) {
@@ -73,7 +73,4 @@ struct AppSettingsGeneral: View {
         AppSettingsGeneral()
     }
     .darkSchemePreferred()
-#if os(iOS)
-    .environmentObject(ValueStore())
-#endif
 }

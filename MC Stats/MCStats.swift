@@ -1,20 +1,16 @@
 import ScrechKit
+import SwiftData
 import MCStatsDataLayer
 
 @main
 struct MCStatsApp: App {
-#if os(iOS)
-    @StateObject private var store = ValueStore()
-#endif
-    
+    private let modelContainer = SwiftDataHelper.getModelContainter()
+
     var body: some Scene {
         WindowGroup {
             AppContainer()
-#if os(iOS)
-                .environmentObject(store)
-#endif
         }
-        .modelContainer(SwiftDataHelper.getModelContainter())
+        .modelContainer(modelContainer)
         
 #if os(macOS)
         Settings {
@@ -23,7 +19,7 @@ struct MCStatsApp: App {
             }
             .frame(width: 800, height: 600)
         }
-        .modelContainer(SwiftDataHelper.getModelContainter())
+        .modelContainer(modelContainer)
 #endif
     }
 }
