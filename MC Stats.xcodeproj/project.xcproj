@@ -26,8 +26,7 @@
       "version": {
         "up-to-next-major-version": "1.1.0",
       },
-    },
-    {
+    }, {
       "kind": "remote",
       "repository": "https://github.com/SimplyDanny/SwiftLintPlugins",
       "version": {
@@ -419,28 +418,28 @@
     {
       "name": "Package Update Tools",
       "id": "07892402BF96BE4A45A24A02",
-      "product": "id:BF8E4995B34B042F620236CF",
+      "product": "Products/Package Update Tools.bundle",
       "product-type": "bundle",
       "dependencies": [
         { "kind": "package", "package": "swift-update", "product-name": "swift-update" },
       ],
-      "build-phases": [],
       "build-settings": {
-        "SDKROOT": "macosx",
-        "SUPPORTED_PLATFORMS": "macosx",
-        "MACOSX_DEPLOYMENT_TARGET": "13.0",
         "CODE_SIGNING_ALLOWED": "NO",
         "GENERATE_INFOPLIST_FILE": "YES",
+        "MACOSX_DEPLOYMENT_TARGET": "13.0",
         "PRODUCT_BUNDLE_IDENTIFIER": "dev.topscrech.PackageUpdateTools",
         "PRODUCT_NAME": "Package Update Tools",
+        "SDKROOT": "macosx",
         "SKIP_INSTALL": "YES",
+        "SUPPORTED_PLATFORMS": "macosx",
       },
-    },
-    {
+    }, {
       "name": "Check Package Updates",
       "id": "FD9C46028659459F9CC2913B",
       "kind": "aggregate",
-      "dependencies": [ "Package Update Tools" ],
+      "dependencies": [
+        "Package Update Tools",
+      ],
       "build-phases": [
         {
           "kind": "script",
@@ -1104,7 +1103,7 @@
     "GCC_WARN_UNUSED_VARIABLE": "YES",
     "INFOPLIST_KEY_NSHumanReadableCopyright": "2025 Sergei Saliukov",
     "LOCALIZATION_PREFERS_STRING_CATALOGS": "YES",
-    "MARKETING_VERSION": "64.0.11",
+    "MARKETING_VERSION": "64.0.12",
     "MTL_ENABLE_DEBUG_INFO[config=Debug]": "INCLUDE_SOURCE",
     "MTL_ENABLE_DEBUG_INFO[config=Release]": "NO",
     "MTL_FAST_MATH": "YES",
