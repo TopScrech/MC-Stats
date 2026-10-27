@@ -26,12 +26,11 @@
       "version": {
         "up-to-next-major-version": "0.65.1",
       },
-    },
-    {
+    }, {
       "kind": "remote",
       "repository": "https://github.com/kean/Nuke",
       "version": {
-        "up-to-next-major-version": "12.8.0",
+        "up-to-next-major-version": "13.2.0",
       },
     }, {
       "kind": "remote",
@@ -419,17 +418,16 @@
           "name": "Check Package Updates",
           "run-on-every-build": true,
           "shell": "/bin/sh",
-          "script": "/usr/bin/python3 \"$SRCROOT/Scripts/check-package-updates.py\""
-        }
+          "script": "/usr/bin/python3 \"$SRCROOT/Scripts/check-package-updates.py\"",
+        },
       ],
       "build-settings": {
-        "SDKROOT": "macosx",
-        "SUPPORTED_PLATFORMS": "macosx",
         "ENABLE_USER_SCRIPT_SANDBOXING": "NO",
-        "SKIP_INSTALL": "YES"
-      }
-    },
-    {
+        "SDKROOT": "macosx",
+        "SKIP_INSTALL": "YES",
+        "SUPPORTED_PLATFORMS": "macosx",
+      },
+    }, {
       "name": "iOS",
       "id": "F13E5FF82A4BD614005BE9B2",
       "product": "Products/iOS.app",
