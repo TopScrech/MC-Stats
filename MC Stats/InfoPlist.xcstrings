@@ -1,396 +1,396 @@
 {
-  "sourceLanguage": "en",
-  "strings": {
-    "CFBundleDisplayName": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "MC Stats"
+  "sourceLanguage" : "en",
+  "strings" : {
+    "CFBundleDisplayName" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MC Stats"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Гойдакрафт"
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MC Stats"
           }
         },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "MC Stats"
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MC Stats"
           }
         },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "MC Stats"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MC Stats"
           }
         },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "MC Stats"
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MC Stats"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "MC Stats"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MC Stats"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "MC Stats"
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MC Stats"
           }
         },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "MC Stats"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Гойдакрафт"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "MC Stats"
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MC Stats"
           }
         },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "MC Stats"
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MC Stats"
           }
         }
       }
     },
-    "CFBundleName": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "MC Stats"
+    "CFBundleName" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MC Stats"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Гойдакрафт"
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MC Stats"
           }
         },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "MC Stats"
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MC Stats"
           }
         },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "MC Stats"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MC Stats"
           }
         },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "MC Stats"
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MC Stats"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "MC Stats"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MC Stats"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "MC Stats"
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MC Stats"
           }
         },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "MC Stats"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Гойдакрафт"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "MC Stats"
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MC Stats"
           }
         },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "MC Stats"
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MC Stats"
           }
         }
       }
     },
-    "NSHumanReadableCopyright": {
-      "comment": "Copyright (human-readable)",
-      "extractionState": "extracted_with_value",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "new",
-            "value": "2025 Sergei Saliukov"
+    "NSHumanReadableCopyright" : {
+      "comment" : "Copyright (human-readable)",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2025 Sergei Saliukov"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "2025 Сергей Салюков"
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2025 Sergei Saliukov"
           }
         },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "2025 Sergei Saliukov"
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "2025 Sergei Saliukov"
           }
         },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "2025 Sergei Saliukov"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2025 Sergei Saliukov"
           }
         },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "2025 Sergei Saliukov"
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2025 Sergei Saliukov"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "2025 Sergei Saliukov"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2025 Sergei Saliukov"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "2025 Sergei Saliukov"
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2025 Sergei Saliukov"
           }
         },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "2025 Sergei Saliukov"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2025 Сергей Салюков"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "2025 Sergei Saliukov"
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2025 Sergei Saliukov"
           }
         },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "2025 Sergei Saliukov"
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2025 Sergei Saliukov"
           }
         }
       }
     },
-    "NSLocalNetworkUsageDescription": {
-      "comment": "Privacy - Local Network Usage Description",
-      "extractionState": "extracted_with_value",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "new",
-            "value": "This app requires local network access in order to check the status of servers on your local connection"
+    "NSLocalNetworkUsageDescription" : {
+      "comment" : "Privacy - Local Network Usage Description",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يتطلب هذا التطبيق الوصول إلى الشبكة المحلية للتحقق من حالة الخوادم على شبكتك المحلية"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Это приложение требует доступ к локальной сети, чтобы проверить состояние LAN-серверов"
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diese App benötigt Zugriff auf das lokale Netzwerk, um den Status von Servern in Ihrem lokalen Netzwerk zu prüfen"
           }
         },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Deze app heeft toegang tot het lokale netwerk nodig om de status van servers op je lokale verbinding te controleren"
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "This app requires local network access in order to check the status of servers on your local connection"
           }
         },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Bu uygulama, yerel ağınızdaki sunucuların durumunu kontrol etmek için yerel ağ erişimi gerektirir"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cette app a besoin d’un accès au réseau local pour vérifier l’état des serveurs sur votre connexion locale"
           }
         },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Цій програмі потрібен доступ до локальної мережі, щоб перевіряти стан серверів у вашому локальному підключенні"
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "आपके स्थानीय नेटवर्क पर सर्वर की स्थिति जाँचने के लिए इस ऐप को स्थानीय नेटवर्क तक पहुँच की आवश्यकता है"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Diese App benötigt Zugriff auf das lokale Netzwerk, um den Status von Servern in Ihrem lokalen Netzwerk zu prüfen"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questa app richiede l’accesso alla rete locale per controllare lo stato dei server sulla tua rete locale"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Cette app a besoin d’un accès au réseau local pour vérifier l’état des serveurs sur votre connexion locale"
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deze app heeft toegang tot het lokale netwerk nodig om de status van servers op je lokale verbinding te controleren"
           }
         },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "आपके स्थानीय नेटवर्क पर सर्वर की स्थिति जाँचने के लिए इस ऐप को स्थानीय नेटवर्क तक पहुँच की आवश्यकता है"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Это приложение требует доступ к локальной сети, чтобы проверить состояние LAN-серверов"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Questa app richiede l’accesso alla rete locale per controllare lo stato dei server sulla tua rete locale"
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu uygulama, yerel ağınızdaki sunucuların durumunu kontrol etmek için yerel ağ erişimi gerektirir"
           }
         },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "يتطلب هذا التطبيق الوصول إلى الشبكة المحلية للتحقق من حالة الخوادم على شبكتك المحلية"
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Цій програмі потрібен доступ до локальної мережі, щоб перевіряти стан серверів у вашому локальному підключенні"
           }
         }
       }
     },
-    "Server Status": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Server Status"
+    "Server Status" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حالة الخادم"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Статус Сервера"
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Serverstatus"
           }
         },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Serverstatus"
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Server Status"
           }
         },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sunucu Durumu"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "État du serveur"
           }
         },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Стан сервера"
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सर्वर की स्थिति"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Serverstatus"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stato del server"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "État du serveur"
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Serverstatus"
           }
         },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "सर्वर की स्थिति"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Статус Сервера"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Stato del server"
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunucu Durumu"
           }
         },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "حالة الخادم"
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Стан сервера"
           }
         }
       }
     },
-    "Status": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Status"
+    "Status" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الحالة"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Статус"
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Status"
           }
         },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Status"
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Status"
           }
         },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Durum"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "État"
           }
         },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Стан"
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "स्थिति"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Status"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stato"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "État"
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Status"
           }
         },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "स्थिति"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Статус"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Stato"
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Durum"
           }
         },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "الحالة"
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Стан"
           }
         }
       }
     }
   },
-  "version": "1.0"
+  "version" : "1.0"
 }
