@@ -12,10 +12,10 @@ struct PingGraphView: View {
     }
 
     // Seconds of history across the full width
-    private let window: TimeInterval = 60
+    private let window = 60.0
 
     // Render slightly in the past so new pings slide in from the edge instead of popping in
-    private let delay: TimeInterval = 1.2
+    private let delay = 1.2
 
     private let graphHeight = 260.0
     private let lineColor: Color = .blue
